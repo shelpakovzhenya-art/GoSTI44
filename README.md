@@ -17,7 +17,14 @@ Node.js 22+, npm, PHP 8.2+, Composer 2, Git. Проверено на Node 25.8.1
 
 ## Первый запуск
 
-Клонируйте этот репозиторий, затем из его корня:
+Клонируйте [публичный репозиторий GoSTI44](https://github.com/shelpakovzhenya-art/GoSTI44):
+
+```powershell
+git clone https://github.com/shelpakovzhenya-art/GoSTI44.git
+cd GoSTI44
+```
+
+Затем из его корня:
 
 ```powershell
 npm ci
