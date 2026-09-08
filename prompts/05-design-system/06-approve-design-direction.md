@@ -1,0 +1,118 @@
+# Зафиксировать утверждённое дизайн-направление
+
+## Когда использовать
+
+Когда пользователь явно утвердил live concept или явно попросил пропустить concept stage.
+
+## Роль Codex
+
+Ты design systems lead. Твоя задача — сохранить характер утверждённой работы, не превратив её в длинный свод запретов.
+
+## Цель
+
+Создать короткие `approved-concept.md`, `design-direction.md` и `visual-north-star.md`, которые удерживают общую идентичность и оставляют будущим блокам композиционную свободу.
+
+## Контекст, который нужно дать
+
+- Утверждённый live concept и mobile / 1440 / 2560 screenshots; если stage явно пропущен, решение пользователя о skip.
+- Active decisions: `design-lab/design-concepts/concept-decisions.md` для native или `design-lab/gpt-taste/page/concept-decisions.md` для gpt-taste.
+- `design-lab/gpt-taste/page/design-plan.md` и `gpt-taste-profile-candidate.md`, если approved concept создан gpt-taste.
+- `style-shortlist.md` и `concept-feedback.md`.
+- Strategy, messaging, IA и reference principles.
+- `prompts/_guidelines/creator-critic-design-workflow.md`.
+- `prompts/_knowledge/contemporary-visual-direction.md`.
+- `prompts/_templates/visual-north-star-template.md`.
+- `prompts/_guidelines/gpt-taste-integration.md` и `prompts/_templates/gpt-taste-profile-template.md`, если approved concept создан `gpt-taste`.
+
+## Ограничения
+
+- Не утверждай направление без явного решения пользователя.
+- Не копируй reference 1:1 и не закрепляй fake proof как реальный asset.
+- Не фиксируй заранее layout каждого блока.
+- Не превращай North Star в полный UI checklist или каталог анти-паттернов.
+- Accessibility, semantic meaning, brand truth и proof honesty никогда не бывают provisional.
+
+## Stable и provisional
+
+Раздели будущую систему на два слоя:
+
+- `Stable foundation`: approved brand character, semantic color roles, typography roles, interaction meaning, accessibility, truth/proof rules и проверенные continuity anchors.
+- `Provisional expressive vocabulary`: marketing surfaces, decorative depth, section compositions, media treatments, pictogram language, motion accents и другие выразительные приёмы, которые ещё должны доказать себя в 2–3 живых блоках.
+
+Provisional не означает случайный. Он должен продолжать approved concept, проходить screenshot critic и не нарушать stable foundation.
+
+## Процесс
+
+1. Зафиксируй решение пользователя и ссылки на live/screenshot evidence. Если concept stage явно пропущен, напиши `Concept stage skipped by user`, не выдумывай evidence и собери минимальное направление из brand/reference/strategy inputs.
+2. Выдели 3–5 positive continuity anchors: наблюдаемые признаки, по которым новый блок узнаётся как часть этого проекта.
+3. Зафиксируй primary expressive lever, optional secondary lever и asset truth из concept. При explicit skip пометь expressive vocabulary provisional и оставь честные open questions для первого live block.
+4. Сформулируй `Stable foundation` и `Provisional expressive vocabulary`.
+5. Укажи creative freedom: composition, scale, whitespace, crop, focal object, section rhythm и сочетание выразительных приёмов можно выбирать после build, если сохраняются anchors и invariants.
+6. Оставь максимум три hard invariants. Предпочтение: явное решение пользователя, accessibility, truth/proof/brand safety.
+7. Назначь `Calibration checkpoint`: после 2–3 живых marketing-блоков провести page-level screenshot review и решить, какие provisional patterns становятся stable, какие меняются, какие удаляются.
+8. Создай документы по компактным схемам ниже.
+9. Если approved concept использовал `gpt-taste / page`, перенеси проверенные решения из `design-lab/gpt-taste/page/gpt-taste-profile-candidate.md` в `docs/design-system/gpt-taste-profile.md`:
+   - status `approved`;
+   - source/commit/SHA-256 остаются canonical;
+   - утверждённые identity choices становятся `locked`;
+   - оставшиеся варианты остаются `available/open`;
+   - used architectures и project seed сохраняются.
+   Не закрепляй как stable то, чего пользователь не видел или не утверждал.
+10. Обнови `docs/project-state.md`: concept/direction/North Star approved, creator engine/profile status и следующий prompt.
+
+## Output
+
+Пиши человекочитаемый артефакт и сообщение по-русски и кратко. Сохраняй технические идентификаторы; удаляй пустые разделы и повторы.
+
+`docs/design-system/concepts/approved-concept.md`:
+
+```md
+# Утверждённая дизайн-концепция
+
+## Решение пользователя
+## Подтверждение в живом интерфейсе
+## Сохранить
+## Основной выразительный приём
+## Необязательный дополнительный приём
+## Достоверность материалов
+## Открытые риски
+```
+
+`docs/design-system/design-direction.md`:
+
+```md
+# Направление дизайна
+
+## Цель дизайна
+## Позитивные визуальные принципы
+## Стабильная основа
+## Временный визуальный словарь
+## Достоверность медиа и ассетов
+## Требования к функциональным иконкам
+## Роль анимации, если нужна
+## Творческая свобода
+## Жёсткие ограничения
+## Калибровка после 2–3 живых блоков
+```
+
+`docs/design-system/visual-north-star.md` создай по короткому шаблону `prompts/_templates/visual-north-star-template.md`.
+
+Для approved `gpt-taste / page` также создай `docs/design-system/gpt-taste-profile.md`.
+
+В ответе покажи направление, 3–5 anchors, что уже stable, что пока provisional и когда будет calibration.
+
+## Done when
+
+- Есть явное user approval или явный skip.
+- При skip отсутствующее visual evidence не выдумано, а first-live-block calibration названа явно.
+- North Star короткий, положительный и связан с live evidence.
+- Зафиксированы 3–5 anchors, creative freedom и максимум три hard invariants.
+- Stable foundation отделён от provisional expressive vocabulary.
+- Для approved gpt-taste concept создан profile с locked/open/used choices; upstream `SKILL.md` не изменён.
+- Назначен calibration checkpoint после 2–3 живых блоков.
+- Media/proof truth и accessibility сохранены.
+- `docs/project-state.md` обновлён.
+
+## Follow-up
+
+Следующий промпт: `prompts/05-design-system/07-iconography-system.md`.

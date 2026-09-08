@@ -1,0 +1,4 @@
+interface:
+  display_name: "Исследователь статьи"
+  short_description: "Ищет доказательства и новые полезные углы"
+  default_prompt: "Use $article-researcher to prepare an evidence-based research pack for this SEO article."

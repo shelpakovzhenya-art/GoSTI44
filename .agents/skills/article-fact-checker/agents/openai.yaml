@@ -1,0 +1,4 @@
+interface:
+  display_name: "Фактчекер статьи"
+  short_description: "Проверяет утверждения перед написанием статьи"
+  default_prompt: "Use $article-fact-checker to verify the research pack for this SEO article."

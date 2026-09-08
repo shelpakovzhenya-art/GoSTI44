@@ -1,0 +1,277 @@
+# Проверить целостность Prompt Kit и release manifest
+
+## Когда использовать
+
+После установки или обновления Prompt Kit, для проверки verified incoming staging, а также перед публикацией нового release. Во время обычного update bundled updater сначала выполняет свою внутреннюю проверку и записывает manifest последним managed payload write, после чего этот prompt проводит полный installed integrity pass до alignment.
+
+## Роль Codex
+
+Ты действуешь как QA engineer для Markdown Prompt Kit, release payload и установленного manifest.
+
+## Цель
+
+Проверить, что Prompt Kit самодостаточный, manifest безопасен и согласован с payload, hashes совпадают, managed-блок `AGENTS.md` корректен, ссылки на промпты не сломаны, обязательные секции сохранены, а project-owned и Git-зоны не попали под управление updater.
+
+## Контекст, который нужно дать
+
+- Режим проверки: `installed`, `incoming staging` или `release candidate`.
+- Корень рабочего проекта или распакованного release candidate.
+- Manifest для проверки:
+  - installed `.prompt-kit/manifest.json`; или
+  - incoming `.prompt-kit/manifest.json` из verified staging до его установки.
+- `AGENTS.md` и папка `prompts/` из проверяемого payload/проекта.
+- `.prompt-kit/CHANGELOG.md`, `.prompt-kit/MIGRATIONS.md`, `.prompt-kit/TERMS.md` и `.prompt-kit/.gitignore`.
+- `prompts/OWNERSHIP.md`.
+- Archive и `SHA256SUMS`, если проверяется release candidate.
+- `docs/prompt-kit-update-summary.md`, если проверка идёт после или во время обновления.
+
+## Ограничения
+
+- По умолчанию работай read-only; разрешено создать или обновить только `docs/prompt-kit-integrity.md`.
+- Не исправляй содержательно prompts во время проверки. Сначала выдай точный issue list.
+- Не трогай `docs/project-state.md`, `src/`, пользовательские материалы и локальные правила.
+- Не считай `prompts/_local/` ошибкой в установленном проекте. Проверяй только, что manifest им не управляет, кроме разрешённого seed `create-if-missing`.
+- Не считай `prompts/_guidelines/` и `prompts/_knowledge/` staged prompts: reference-файлы не обязаны иметь prompt-анатомию.
+- Не выполняй никакие Git mutations и не изменяй `.git/`, remotes, branches, hooks или history.
+- Не запрашивай и не проверяй raw GitHub token. Private transport проверяется по manifest/updater contract и, когда нужен remote preflight, через browser-authenticated `gh` без `gh auth token`.
+- Не объявляй integrity passed при missing required file, checksum mismatch, unsafe manifest path, неправильном managed-блоке или несовпадении required payload hash.
+- Сообщения пользователю оформляй по `prompts/_knowledge/codex-user-response-quality.md`.
+
+## Процесс
+
+1. Зафиксируй mode:
+   - `installed` — проверяется текущий проект по installed manifest;
+   - `incoming staging` — проверяется распакованный или вручную staged payload против incoming manifest;
+   - `release candidate` — проверяется локально собранный архив перед публикацией.
+2. Проверь наличие обязательных control files:
+   - `.prompt-kit/manifest.json` в проверяемом manifest source;
+   - `.prompt-kit/CHANGELOG.md`;
+   - `.prompt-kit/VERSION.md`;
+   - `.prompt-kit/MIGRATIONS.md`;
+   - `.prompt-kit/TERMS.md`;
+   - `.prompt-kit/.gitignore`;
+   - `.prompt-kit/manifest.schema.json`;
+   - `.prompt-kit/update.mjs`;
+   - `.prompt-kit/secret-input.mjs`;
+   - `.agents/skills/article-researcher/SKILL.md` и `agents/openai.yaml`;
+   - `.agents/skills/article-fact-checker/SKILL.md` и `agents/openai.yaml`;
+   - shared `.agents/skills/_article-seo/references/source-ladder.md`;
+   - `$humanizer-ru`: `SKILL.md`, `LICENSE`, обе references, corrections, `lint.py` и `seo_guard.py`;
+   - `AGENTS.md`;
+   - `prompts/README.md`;
+   - `prompts/INDEX.md`;
+   - `prompts/ROUTER.md`;
+   - `prompts/STATE.md`;
+   - `prompts/OWNERSHIP.md`;
+   - `prompts/_knowledge/codex-user-response-quality.md`;
+   - `prompts/_knowledge/site-copy-quality.md`;
+   - `prompts/_knowledge/site-copy-quality-full.md`;
+   - `prompts/_knowledge/ui-design-quality.md`;
+   - все перечисленные диспетчером файлы в `prompts/_knowledge/ui-quality/`;
+   - `prompts/_knowledge/contemporary-visual-direction.md`;
+   - `prompts/_knowledge/nextjs-technical-baseline.md`;
+   - `prompts/_knowledge/technical-seo-baseline.md`;
+   - `prompts/_guidelines/creator-critic-design-workflow.md`;
+   - `prompts/_templates/visual-north-star-template.md`.
+3. Проверь manifest schema и identity. JSON Schema validation является первым слоем, но недостаточна сама по себе: обязательно запусти semantic validator bundled updater/release tooling для cross-field, safe-path, sorting, case-fold, ownership/policy и protected-boundary правил:
+   - поддерживаемый `schemaVersion`;
+   - `kit.id` равен `dmandrianov/web-kit`, `kit.name` равен `Web Kit`, channel равен `stable`, а `releasedAt` является реальной датой `YYYY-MM-DD`;
+   - `kit.version`, `source.tag` и release asset version согласованы;
+   - `source.transport` задаёт transport `github-release-gh` через browser-authenticated `gh` или совместимое legacy-значение `private-github-organization-gh`, оставленное для мостового release `0.9.0`;
+   - `source.repositoryId` является положительным числом и совпадает с embedded updater trust anchor для publishable/installed release; `null` допустим только для явно помеченного local diagnostic candidate и блокирует публикацию/remote update;
+   - `source.repositoryFullName` задан для publishable/installed release и соответствует canonical repository `dmandrianov/codex-web-kit-nextjs`; bootstrap name помогает пройти documented GitHub rename/transfer redirect, но numeric ID остаётся trust anchor;
+   - `source.tag` и `source.revision` имеют ожидаемый формат;
+   - `release.archiveRoot`, `release.zipAsset`, `release.tarAsset` и `release.checksumAsset` имеют ожидаемый формат;
+   - `compatibility.compatibleFrom`, `breaking`, `requiresExplicitConfirmation` и `minimumUpdaterSchemaVersion` присутствуют и допустимы;
+   - `managedBlocks.agents.beginPrefix` и `managedBlocks.agents.endMarker` являются canonical;
+   - `protectedPaths` присутствует и защищает Git, project-owned зоны и `prompts/_local/**`;
+   - manifest не хэшует сам себя и не заявляет собственный path как обычный managed payload.
+   - required `.prompt-kit/TERMS.md` присутствует в inventory как compatibility target, содержит canonical MIT License из root `LICENSE` и является publication gate для bridge release.
+4. Проверь безопасность `files[]` и `removed[]`:
+   - paths отсортированы, относительные, нормализованные, без `..`, absolute prefix, backslash traversal, exact дублей и case-fold collisions;
+   - один path не встречается одновременно в active files и removed;
+   - отсутствуют `.git/`, Git config/hooks, credentials, `src/`, `public/`, package files, project docs и другие project-owned targets;
+   - `prompts/_local/` отсутствует, кроме разрешённого seed README;
+   - ownership допускает только `kit`, `hybrid` или `seed`;
+   - policies допускают только заявленный contract: `replace-if-unmodified`, `managed-block`, `create-if-missing`, а для removed — только `delete-if-unmodified`; локально изменённый removed path является blocking manual conflict, а не другой manifest policy;
+   - required, sha256, bytes и mode имеют корректный формат;
+   - `AGENTS.md` entry содержит отдельный valid `managedBlockSha256`;
+   - removed entries имеют valid `since`, непустой `reason`, безопасный optional `replacement` и policy `delete-if-unmodified`.
+5. Проверь payload против manifest:
+   - каждый required file существует;
+   - SHA-256, byte size и file mode совпадают;
+   - unexpected files внутри release payload перечислены отдельно;
+   - manifest target paths соответствуют фактической структуре после единственного top-level archive directory.
+6. Для policy `managed-block` проверь отдельно:
+   - target path — только `AGENTS.md`;
+   - begin marker встречается ровно один раз;
+   - end marker встречается ровно один раз и идёт после begin;
+   - marker version совпадает с manifest version;
+   - hash проверяется только для canonical managed fragment согласно manifest contract, а не для project-specific prefix/suffix;
+   - всё вне managed fragment в installed project не оценивается как часть kit payload.
+7. Для policy `create-if-missing`:
+   - отсутствие optional seed допустимо до установки;
+   - существующий пользовательский seed не должен считаться кандидатом на overwrite;
+   - различие существующего seed с release не делает проект-owned customization ошибкой.
+8. В `installed` mode сравни фактические managed files с installed baseline:
+   - совпадение required files — passed;
+   - локальное изменение `replace-if-unmodified` или managed fragment — `local drift`, которое будущий updater обязан заблокировать;
+   - missing required file или повреждённый prompt — `needs fixes`;
+   - local-only unknown files не удаляй и не считай частью release.
+9. Если проверяется release candidate, дополнительно:
+   - проверь SHA-256 каждого archive asset по `SHA256SUMS`;
+   - проверь ровно один top-level directory;
+   - запрети symlinks, hardlinks, absolute/traversal paths, nested `.git`, backups, downloads, conflicts, tmp и secrets;
+   - сравни payload ZIP и TAR.GZ: file list, content hashes и modes должны совпадать.
+10. Проверь Prompt Kit structure:
+    - ссылки на конкретные prompt-файлы внутри `prompts/` ведут к существующим файлам;
+    - staged prompts в папках `00-13` и `_maintenance/` имеют секции `Когда использовать`, `Роль Codex`, `Цель`, context, constraints, `Процесс`, `Output`, `Done when`, `Follow-up`; creator/accessibility prompts могут использовать ясные смысловые эквиваленты вроде `Creator input`, `Hard invariants`, `Настоящие ограничения` или `Неподвижная граница`;
+    - reference files с именем, начинающимся на `_`, не считаются staged prompts;
+    - `_maintenance/` содержит update, integrity, migrate, alignment и release prompts;
+    - `prompts/_local/README.md` доступен как seed source.
+11. Проверь response-quality coverage:
+    - managed-блок `AGENTS.md` требует стандарт для всех сообщений пользователю;
+    - `prompts/ROUTER.md` отделяет технический Output от понятного сообщения человеку;
+    - `prompts/_templates/prompt-template.md` и `docs/prompt-anatomy.md` используют человеческий формат следующего шага;
+    - maintenance prompts также требуют `prompts/_knowledge/codex-user-response-quality.md`.
+12. Проверь First-render Responsive Delivery coverage:
+    - dispatcher `prompts/_knowledge/ui-design-quality.md` направляет responsive-задачи в `prompts/_knowledge/ui-quality/responsive-media.md`, где canonical rule требует CSS-first initial geometry и запрещает post-mount canvas correction;
+    - `05-design-system/09` создаёт project-level First-render Responsive Delivery Contract;
+    - `06-nextjs-setup/03`, `04` и `06` сохраняют server-first structure, CSS-first geometry, reserved media/measured geometry и font/loading stability;
+    - page/block templates переносят initial layout source, viewport dependency и media delivery;
+    - fast/deep build и quality проверяют fresh-load early frame против settled state, hydration и selected responsive resource.
+13. Проверь Creator-Critic Design Loop coverage:
+    - `AGENTS.md`, `ROUTER.md` и canonical guideline отделяют `creator`, `critic` и full `quality`;
+    - creator до render получает Visual North Star/approved evidence, реальные assets, применимую design-system основу и только `4-6` task-specific rules, а не полные UI/copy/anti-slop/contemporary базы;
+    - concept flow допускает до трёх дешёвых low-fi sketches/probes, но по умолчанию показывает пользователю один выбранный high-fidelity concept;
+    - content approval фиксирует meaning, facts, claims, voice и CTA intent, но не замораживает exact wording, line breaks, geometry и layout;
+    - copy formulas являются diagnostic fallback, а не обязательным шаблоном hero/CTA;
+    - fast visible build выполняет `creator -> live render -> critic до трёх findings -> one self-fix -> recheck`;
+    - полные UI/copy/accessibility/responsive/runtime checks остаются quality gate и не дублируются большими pre-render таблицами;
+    - stable vocabulary отделён от provisional expressive choices, есть calibration `promote / refine / remove` после первых `2-3` live marketing blocks;
+    - marketing chapter может охватывать `2-4` соседних blocks только для visual rhythm; product data, forms, checkout, pricing и business logic остаются block-scoped;
+    - truth, permissions, secrets, accessibility и core action/status semantics остаются hard invariants.
+    - integration guideline, profile/component templates, standalone component spec, dedicated build и profile approval prompts присутствуют в payload;
+    - canonical source, pinned commit и SHA-256 gpt-taste согласованы во всех этих файлах;
+    - modes `page / block / component` маршрутизируются явно, но original `SKILL.md` не входит в Prompt Kit payload и не переписан;
+    - missing/mismatched skill блокирует выбранный gpt-taste pass без silent native fallback;
+    - dashboard, checkout, forms, data/business UI, local fix, copy-only, quality, SEO, deployment и maintenance не получают gpt-taste автоматически;
+    - approved gpt-taste profile отделяет locked identity/seed от used/available/open choices;
+    - first block/component candidate становится approved только через explicit user approval route;
+    - block/component scope не синтезирует page shell, а visual findings возвращаются `$gpt-taste`.
+14. Проверь staged article workflow и skills:
+   - article route содержит все 8 этапов, compact handoff и прямой запрет запуска следующего этапа без явной просьбы;
+   - `$article-researcher` и `$article-fact-checker` присутствуют в manifest/payload и ссылаются на одну лестницу источников;
+   - уровни источников отделяют первичные и клиентские факты, видео с URL/таймкодом, `AUDIENCE SIGNAL` и `UNSUPPORTED`;
+   - plan/draft gate пропускает только `VERIFIED`, клиентские детали и атрибутированный `CONTEXT ONLY`;
+   - managed `$humanizer-ru` содержит MIT License, нужные references и scripts; этап 7 требует lint + SEO guard без `ERROR` и блокируется при missing file;
+   - другие `.agents/skills/**` не становятся managed targets.
+15. Проверь external seo-content-writer integration:
+   - `prompts/_guidelines/seo-content-writer-integration.md` и `prompts/_content/01-write-seo-article.md` присутствуют в payload;
+   - repository, preserved `v9.9.12`, pinned commit, `SKILL.md` SHA-256 и четыре reference checksums согласованы;
+   - original upstream skill и reference-файлы не входят в Prompt Kit payload и не переписаны;
+   - новая SEO-статья маршрутизируется явно через `$seo-content-writer`, а основная website stage сохраняется;
+   - missing/mismatched skill блокирует article draft без silent fallback;
+   - hero, CTA, cards, forms и обычный block content preview не получают skill автоматически;
+   - truth/source gates не разрешают invented claims, citations, dates или ranking promises.
+16. Проверь Next.js technical architecture coverage:
+   - `prompts/_knowledge/nextjs-technical-baseline.md` присутствует в payload и имеет дату последней сверки/major-version boundary;
+   - intake и brief template сначала спрашивают, кто меняет сайт после запуска;
+   - owner + Codex/ИИ workflow получает default `CMS not needed`, а editorial team — conditional CMS requirements до выбора платформы;
+   - `06-nextjs-setup/02-technical-architecture.md` стоит между preflight и scaffold и создаёт CMS status, version/runtime/hosting contract, sources of truth, data/render/cache matrix, locales/markets по применимости, public endpoint/security boundaries и critical scenarios;
+   - scaffold/App Router/tooling/Next ready проверяют architecture contract, server/client/module ownership и version-specific commands;
+   - `09-quality/07-application-flow-check.md` маршрутизируется перед page/project handoff или deploy динамического сайта;
+   - `11-ecommerce/12-commerce-operations-and-payment-safety.md` блокирует ecommerce verdict без server-side recalculation, signed webhook, idempotency, concurrency/out-of-order handling и recovery/reconciliation;
+   - deployment runtime подтверждает ранний hosting shape и покрывает multi-instance/serverless topology;
+   - release tests закрепляют новые prompt paths и эти coverage markers.
+16. Проверь Git isolation:
+   - `.git/` и Git metadata не находятся в payload/manifest;
+   - root Git config/remotes/hooks не менялись текущей maintenance operation, если есть before/after evidence;
+   - nested repository отсутствует.
+17. Проверь trusted distribution contract:
+   - bundled updater содержит embedded numeric repository ID и bootstrap full name для published build;
+   - installed/incoming manifest ID совпадает с embedded trust anchor;
+   - rename/transfer допускается только через documented GitHub redirect с последующей проверкой прежнего ID, `owner.login: dmandrianov`, `owner.type: User` и корректного boolean-поля `private`;
+   - новый numeric ID блокируется до trusted migration;
+   - remote path использует `gh api`/`gh release download`, не raw unauthenticated HTTPS;
+   - remote release обязан иметь `immutable: true`, валидную signed release attestation, а скачанные TAR.GZ и `SHA256SUMS` — проходить `gh release verify-asset` до extraction;
+   - updater не вызывает `gh auth token`, не читает raw token variables и не передаёт `GH_TOKEN`, `GITHUB_TOKEN`, `GITHUB_PAT` или `PAT` дочерним процессам;
+   - incoming updater содержит ровно один canonical trust marker и не меняет embedded repository ID через один только incoming manifest;
+   - target, backup, manifest и rollback paths не могут выйти из реального project root через symlinked parent;
+   - local `--archive` mode не требует и не вызывает `gh`;
+   - `.prompt-kit/TERMS.md` содержит MIT License без закрытых подписочных ограничений; legacy filename сохранён только потому, что updater `0.8.x` требует этот target до установки bridge release.
+18. Проверь secret handoff contract:
+   - application secret не принимается через chat, command argument, patch или видимый stdin;
+   - `.prompt-kit/secret-input.mjs` требует interactive TTY, проверяет untracked/ignored target до ввода, запрещает public-prefixed variables, private keys, symlink и ambiguous duplicate assignment;
+   - helper не выводит значение, пишет через ignored temporary file, оставляет target с закрытыми правами и не создаёт backup секрета;
+   - response standard не ограничивается `system restriction`, не отправляет пользователя сразу редактировать `.env` вручную и объясняет stale-task/new-task boundary после изменения `AGENTS.md`;
+   - permission deny не обходится.
+19. Сформируй counts, issues, warnings и однозначный verdict.
+
+## Output
+
+Пиши человекочитаемый артефакт и сообщение по-русски и кратко. Сохраняй технические идентификаторы; удаляй пустые разделы и повторы.
+
+Создай или обнови `docs/prompt-kit-integrity.md`. Успешный отчёт не должен перечислять каждую пройденную проверку отдельно:
+
+```md
+# Целостность Prompt Kit
+
+## Результат
+
+- Статус: пройдено / нужны исправления
+- Режим: установленный kit / входящий archive / release candidate
+- Версия, tag, ID репозитория и время проверки:
+- Ошибки и предупреждения:
+
+## Проверенные области
+
+| Область | Результат | Краткое подтверждение |
+| --- | --- | --- |
+| Идентичность, manifest и trust anchor | | |
+| Обязательные файлы, hashes, размер и mode | | |
+| ZIP/TAR.GZ, checksum и совпадение состава | | |
+| Управляемый блок AGENTS.md и локальная часть | | |
+| Ссылки и структура промптов | | |
+| Creator/critic и адаптивная доставка | | |
+| Проверки Next.js, CMS, commerce, SEO и deployment | | |
+| `_local`, проектные пути и безопасность Git | | |
+| Лицензия MIT и доверенное обновление | | |
+
+Обязательные coverage-маркеры: `Next.js technical architecture coverage`, `CMS workflow-first decision`, `Ecommerce operations/payment safety`, `Automated regression coverage`.
+
+## Проблемы
+
+| Приоритет | Путь | Проблема | Исправление |
+| --- | --- | --- | --- |
+
+## Следующее действие
+
+- [одно действие или «ничего»]
+```
+
+Удаляй строки без проблем. В сообщении пользователю достаточно результата, возможности безопасно продолжить и одного действия при ошибке.
+
+## Done when
+
+- Manifest schema, identity, paths, policies и compatibility проверены.
+- Embedded numeric repository trust anchor, trusted owner, `gh` transport, rename/transfer и new-ID migration boundaries проверены.
+- Required payload hashes, sizes и modes проверены.
+- MIT License at required compatibility path проверена; raw token/credential transport отсутствует.
+- Release archive checksum/structure проверены, если применимо.
+- Managed fragment `AGENTS.md` проверен без захвата project-specific content.
+- Prompt links и anatomy проверены.
+- Creator-Critic Design Loop проверен от routing и concept до content preview, fast build, critic и quality.
+- Response-quality coverage проверено.
+- First-render Responsive Delivery coverage проверено от design system до browser QA.
+- Next.js technical architecture coverage проверено от intake/CMS decision до scaffold, application flow, ecommerce и deployment.
+- Project-owned, `_local` и Git safety проверены.
+- Есть counts, issue list и честный verdict `passed` / `needs fixes`.
+
+## Follow-up
+
+Если проблема в отсутствующих или повреждённых markers `AGENTS.md`, используй `prompts/_maintenance/03-migrate-agents-md.md`.
+
+Если проверяется incoming staging до apply и status `passed`, верни управление в `prompts/_maintenance/01-update-prompt-kit.md`. Если проверяется уже установленное обновление и status `passed`, updater должен подтвердить, что `.prompt-kit/manifest.json` был последним managed payload write, и автоматически запустить `prompts/_maintenance/04-align-project-after-kit-update.md`.
+
+Если проверяется release candidate и status `passed`, вернись в `prompts/_maintenance/05-release-prompt-kit.md`. Если есть ошибки, исправь release source/tooling точечно и повтори этот prompt; ничего не публикуй до passed verdict.
