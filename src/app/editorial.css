@@ -158,3 +158,21 @@ h2 em,.muted { font:inherit; color:inherit; letter-spacing:inherit; }
 .content-photos{display:grid;gap:24px;margin-block:28px}.content-photos img{width:100%;height:auto;border-radius:12px}.content-actions{display:flex;flex-wrap:wrap;gap:16px;margin-top:32px}.content-page>.eyebrow{margin-top:32px}
 .preview-notice{position:relative;z-index:100;background:#fff1d8;color:#42270a;padding:12px 20px;text-align:center;font-size:14px;border-bottom:1px solid #eab36a}
 .why-features h3{font-size:17px}.why-features p{font-size:16px;line-height:1.6}.house-copy>p,.service-card>p{font-size:16px}
+
+/* Gentle display grading: original photographs and all property details are preserved. */
+img[data-photo-tone="outdoor"] { filter:brightness(1.09) saturate(.88) contrast(.96) sepia(.045); }
+img[data-photo-tone="interior"] { filter:brightness(1.075) saturate(.84) contrast(.95); }
+img[data-photo-tone="sauna"] { filter:brightness(1.12) saturate(.64) contrast(.94); }
+.hero-shade { background:radial-gradient(ellipse at 50% 48%,#201c185c 0%,#201c1800 72%),linear-gradient(180deg,#211d181a 0%,#211d185c 42%,#1715129e 100%); }
+.company-photo:after { background:linear-gradient(90deg,#26201bd1 0%,#26201b8f 47%,#26201b0d 100%); }
+.spa-section:before { background:linear-gradient(90deg,#28211a33,#28211ad9); }
+.booking-section:before { background:linear-gradient(90deg,#28231fd1,#28231f66); }
+.footer:before { background:linear-gradient(110deg,#24211dcc,#24211d94); }
+.atmosphere-picture:after { background:radial-gradient(ellipse at center,#26211bab 0%,#26211b73 65%,#26211b40 100%); }
+.gallery-photo>span { background:linear-gradient(transparent,#231e1aa6); }
+@media(max-width:767px) {
+ .company-photo:after { background:linear-gradient(180deg,#26201bc9,#26201b80); }
+ .spa-section:before { background:#28211abf; }
+ .booking-section:before { background:#28231fb8; }
+ .footer:before { background:#24211dbd; }
+}
