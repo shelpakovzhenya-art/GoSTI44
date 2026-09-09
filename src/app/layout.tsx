@@ -3,6 +3,8 @@ import { Cormorant_Garamond, Manrope } from "next/font/google";
 import { site } from "@/data/site";
 import "./village.css";
 import "./editorial.css";
+import "./glass-motion.css";
+import "./section-rhythm.css";
 
 const manrope = Manrope({ subsets: ["latin", "cyrillic"], variable: "--font-manrope", display: "swap" });
 const cormorant = Cormorant_Garamond({ subsets: ["latin", "cyrillic"], weight: ["500", "600"], variable: "--font-brand", display: "swap" });

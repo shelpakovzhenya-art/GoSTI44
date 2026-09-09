@@ -10,7 +10,17 @@ export const getEntries = cache(async (): Promise<ContentEntry[]> => {
     if (process.env.CONTENT_SOURCE !== "seed") throw new Error("Set CMS_URL or explicitly use CONTENT_SOURCE=seed for local preview");
     return initialSections.map(section => ({ key: section.key, kind: section.kind, data: section.draft }));
   }
-  const response = await fetch(`${origin.replace(/\/$/, "")}/api/content`, { cache: "no-store", signal: AbortSignal.timeout(5000) });
+  // The local PHP development server can take longer on a cold request.
+  const timeoutMs = process.env.NODE_ENV === "development" ? 30_000 : 5_000;
+  const response = await fetch(`${origin.replace(/\/$/, "")}/api/content`, {
+    cache: "no-store", signal: AbortSignal.timeout(timeoutMs),
+  }).catch((cause: unknown) => {
+    // Next's dev overlay cannot annotate DOMException.message (read-only).
+    if (cause instanceof Error && ["TimeoutError", "AbortError"].includes(cause.name)) {
+      throw new Error("CMS published content request timed out", { cause });
+    }
+    throw cause;
+  });
   if (!response.ok) throw new Error("CMS published content is unavailable");
   const payload = await response.json();
   if (payload.version !== 1 || !Array.isArray(payload.entries)) throw new Error("Invalid CMS content format");

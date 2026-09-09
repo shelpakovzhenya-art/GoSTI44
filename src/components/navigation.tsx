@@ -27,12 +27,12 @@ export function Navigation() {
       <div className="container header-inner">
         <Brand/>
         <nav className="desktop-nav" aria-label="Основная навигация">{links.filter(([,id]) => !["company","about"].includes(id.replace(/^#/,""))).map(([title,id]) => <a key={id} href={/^(https?:|mailto:|tel:|\/|#)/.test(id)?id:`#${id}`}>{title}</a>)}</nav>
-        <a className="header-phone" href={site.phoneHref}><Phone size={18}/><span>{site.phone}<small><CmsText id="navigation.003" fallback="Светлана · бронирование" /></small></span></a>
+        <a className="header-phone" href={site.phoneHref} aria-label={`Позвонить: ${site.phone}`}><Phone size={18}/><span>{site.phone}<small><CmsText id="navigation.003" fallback="Светлана · бронирование" /></small></span></a>
         <ContactLinks/>
         <a className="button button-yellow header-book" href="#booking"><CmsText id="navigation.004" fallback="Проверить даты" /><ArrowUpRight size={16}/></a>
         <button ref={menuButton} className="icon-button menu-toggle" aria-label={open ? "Закрыть меню" : "Открыть меню"} aria-expanded={open} aria-controls="mobile-navigation" onClick={() => setOpen(!open)}>{open ? <X/> : <Menu/>}</button>
       </div>
-      {open && <nav id="mobile-navigation" className="mobile-nav" aria-label="Мобильная навигация">{links.map(([title,id]) => <a key={id} href={/^(https?:|mailto:|tel:|\/|#)/.test(id)?id:`#${id}`} onClick={() => setOpen(false)}>{title}<ArrowUpRight size={18}/></a>)}<a href={site.phoneHref}><Phone size={18}/>{site.phone}</a><a className="button button-yellow" href="#booking" onClick={() => setOpen(false)}><CmsText id="navigation.005" fallback="Выбрать даты" /><ArrowUpRight size={18}/></a></nav>}
+      {open && <nav id="mobile-navigation" className="mobile-nav" aria-label="Мобильная навигация">{links.map(([title,id]) => <a key={id} href={/^(https?:|mailto:|tel:|\/|#)/.test(id)?id:`#${id}`} onClick={() => setOpen(false)}>{title}<ArrowUpRight size={18}/></a>)}<a href={site.phoneHref}><Phone size={18}/>{site.phone}</a><a className="button button-yellow" href="#booking" onClick={() => setOpen(false)}><CmsText id="navigation.005" fallback="Выбрать даты" /><ArrowUpRight size={18}/></a><ContactLinks labels/></nav>}
     </header>
     <div className="mobile-bottom"><a href={site.phoneHref} aria-label="Позвонить Светлане"><Phone size={20}/></a><a className="button button-yellow" href="#booking"><CmsText id="navigation.006" fallback="Выбрать даты" /><ArrowUpRight size={18}/></a></div>
   </>;

@@ -7,8 +7,8 @@ const getContacts = (site: Record<string,string>) => [
   { name: "Маршрут", label: "Маршрут до Танжерина в Яндекс Картах", href: site.route, className: "social-yandex", path: "M12 1a8 8 0 0 0-8 8c0 5.5 8 14 8 14s8-8.5 8-14a8 8 0 0 0-8-8Zm0 11.3a3.3 3.3 0 1 1 0-6.6 3.3 3.3 0 0 1 0 6.6Z" },
 ];
 
-export function ContactLinks({ labels = false }: { labels?: boolean }) {
-  const {site}=useSite(); const contacts=getContacts(site);
+export function ContactLinks({ labels = false, socialOnly = false }: { labels?: boolean; socialOnly?: boolean }) {
+  const {site}=useSite(); const contacts=getContacts(site).filter(contact => contact.href && (!socialOnly || contact.className !== "social-yandex"));
   return <div className={`contact-links ${labels ? "contact-links-labeled" : ""}`}>
     {contacts.map(contact => <a key={contact.name} className={`social-link ${contact.className}`} href={contact.href} aria-label={contact.label} title={contact.label} target="_blank" rel="noreferrer">
       <span className="social-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d={contact.path}/></svg></span>
