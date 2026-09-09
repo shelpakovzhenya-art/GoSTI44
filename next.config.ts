@@ -7,7 +7,8 @@ const config: NextConfig = {
   devIndicators: false,
   async rewrites() {
     const cms = process.env.CMS_URL;
-    return cms ? [{ source: "/storage/:path*", destination: `${cms.replace(/\/$/, "")}/storage/:path*` }] : [];
+    if (!cms) throw new Error("CMS_URL is required to serve CMS uploads");
+    return [{ source: "/storage/:path*", destination: `${cms.replace(/\/$/, "")}/storage/:path*` }];
   },
 };
 

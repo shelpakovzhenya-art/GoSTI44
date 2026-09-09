@@ -1,4 +1,9 @@
-import type { House } from "@/data/site";
+export type House = {
+  id: string; name: string; area: number; areaApproximate?: boolean; guests: string; bedrooms: number;
+  bathrooms: number; label: string; title: string; feature: string;
+  tone: "lime" | "lemon" | "citrus"; description: string;
+  images: { src: string; alt: string }[]; amenities: string[];
+};
 
 export type SiteContent = {
   site: Record<string, string>;

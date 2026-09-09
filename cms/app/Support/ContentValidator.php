@@ -15,6 +15,7 @@ final class ContentValidator
             $rules = array_merge($rules, [
                 'name' => 'required|string|max:100', 'title' => 'required|string|max:250', 'description' => 'required|string',
                 'area' => 'required|numeric|min:1', 'guests' => 'required|string', 'bedrooms' => 'required|integer|min:0', 'bathrooms' => 'required|integer|min:0',
+                'areaApproximate' => 'nullable|boolean',
                 'tone' => 'required|in:lime,lemon,citrus', 'images' => 'required|array|min:1', 'amenities' => 'required|array', 'amenities.*' => 'string',
             ]);
         }

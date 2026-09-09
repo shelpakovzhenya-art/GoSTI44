@@ -76,6 +76,7 @@ class ContentEntryForm
                 Tab::make('Дом')->visible(fn (Get $get) => $get('kind') === 'house')->schema([
                     TextInput::make('draft.name')->label('Название дома')->required(fn (Get $get) => $get('kind') === 'house'),
                     TextInput::make('draft.area')->label('Площадь, м²')->numeric()->minValue(1),
+                    Toggle::make('draft.areaApproximate')->label('Площадь приблизительная')->default(false),
                     TextInput::make('draft.guests')->label('Вместимость, например «до 7»'),
                     TextInput::make('draft.bedrooms')->label('Спальни')->integer()->minValue(0),
                     TextInput::make('draft.bathrooms')->label('Санузлы')->integer()->minValue(0),

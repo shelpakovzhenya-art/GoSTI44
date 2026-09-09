@@ -1,12 +1,12 @@
 # Развёртывание
 
-Production-сервер и домен не назначены. Ниже схема установки, а не отчёт о состоявшемся деплое.
+Production: https://tangerin.a-test.ru, VPS 186.246.50.205. Текущее состояние и точная конфигурация: [runbook](deployment/deploy-runbook.md).
 
 ## Сервисы
 
 - Node.js обслуживает Next.js server runtime.
 - PHP-FPM обслуживает Laravel из cms/public.
-- Reverse proxy маршрутизирует /admin, /livewire, /api/content, /storage и assets Filament к Laravel; сайт — к Node. Можно вынести CMS на отдельный поддомен и указать его в CMS_URL.
+- Reverse proxy маршрутизирует /admin, /livewire и /livewire-<hash>, /api/content, /storage и assets Filament к Laravel; сайт — к Node. Можно вынести CMS на отдельный поддомен и указать его в CMS_URL.
 - БД и cms/storage/app/public находятся на постоянном диске. Не заменяйте их при выпуске новой версии.
 
 ## Выпуск

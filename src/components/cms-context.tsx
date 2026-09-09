@@ -15,7 +15,7 @@ export function useSite() {
   return content;
 }
 
-export function CmsText({ id, fallback }: { id: string; fallback: string }) {
+export function CmsText({ id }: { id: string }) {
   const { texts } = useSite();
-  return <>{texts[id] ?? fallback}</>;
+  return <>{texts[id] ?? ""}</>;
 }

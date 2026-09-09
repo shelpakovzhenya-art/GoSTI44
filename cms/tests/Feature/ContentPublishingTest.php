@@ -58,4 +58,25 @@ class ContentPublishingTest extends TestCase
         $this->assertStringNotContainsString('onclick', $html);
         $this->assertStringContainsString('<strong>дома</strong>', $html);
     }
+
+    public function test_admin_alias_authenticates_through_filament_and_rejects_wrong_password(): void
+    {
+        $panel = \Filament\Facades\Filament::getPanel('admin');
+        \Filament\Facades\Filament::setCurrentPanel($panel);
+        \Filament\Facades\Filament::bootCurrentPanel();
+        config(['auth.login_aliases' => ['admin' => 'operator@example.test']]);
+        $user = User::factory()->create(['email' => 'operator@example.test', 'role' => 'admin', 'password' => 'test-only-password']);
+
+        \Livewire\Livewire::test(\App\Providers\Filament\CmsLogin::class)
+            ->fillForm(['email' => 'admin', 'password' => 'wrong-password'])
+            ->call('authenticate')
+            ->assertHasFormErrors(['email']);
+        $this->assertGuest();
+
+        \Livewire\Livewire::test(\App\Providers\Filament\CmsLogin::class)
+            ->fillForm(['email' => 'admin', 'password' => 'test-only-password'])
+            ->call('authenticate')
+            ->assertHasNoFormErrors();
+        $this->assertAuthenticatedAs($user);
+    }
 }

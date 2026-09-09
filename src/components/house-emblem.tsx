@@ -1,5 +1,5 @@
 import { useId } from "react";
-import type { House } from "@/data/site";
+import type { House } from "@/lib/content-types";
 
 /** Original botanical marks; decorative because the house name is always adjacent. */
 export function HouseEmblem({ tone }: { tone: House["tone"] }) {

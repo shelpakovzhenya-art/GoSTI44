@@ -63,6 +63,7 @@
     },
     {
       "id": "lemon",
+      "areaApproximate": true,
       "name": "Лимон",
       "area": 100,
       "guests": "до 9",

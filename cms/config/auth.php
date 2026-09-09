@@ -4,6 +4,10 @@ use App\Models\User;
 
 return [
 
+    'login_aliases' => env('CMS_ADMIN_LOGIN') && env('CMS_ADMIN_EMAIL')
+        ? [env('CMS_ADMIN_LOGIN') => env('CMS_ADMIN_EMAIL')]
+        : [],
+
     /*
     |--------------------------------------------------------------------------
     | Authentication Defaults

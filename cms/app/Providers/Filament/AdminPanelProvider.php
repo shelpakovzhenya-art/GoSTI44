@@ -26,7 +26,7 @@ class AdminPanelProvider extends PanelProvider
             ->default()
             ->id('admin')
             ->path('admin')
-            ->login()
+            ->login(CmsLogin::class)
             ->brandName('ТАНЖЕРИН · Управление сайтом')
             ->colors([
                 'primary' => Color::Amber,
@@ -54,5 +54,28 @@ class AdminPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ]);
+    }
+}
+
+/** Login aliases resolve to an existing email; authentication remains in Filament. */
+class CmsLogin extends \Filament\Auth\Pages\Login
+{
+    protected function getEmailFormComponent(): \Filament\Schemas\Components\Component
+    {
+        return \Filament\Forms\Components\TextInput::make('email')
+            ->label('Логин или email')
+            ->required()
+            ->autocomplete('username')
+            ->autofocus();
+    }
+
+    protected function getCredentialsFromFormData(#[\SensitiveParameter] array $data): array
+    {
+        $login = trim($data['email']);
+
+        return [
+            'email' => config('auth.login_aliases', [])[$login] ?? $login,
+            'password' => $data['password'],
+        ];
     }
 }
