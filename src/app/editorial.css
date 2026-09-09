@@ -7,12 +7,11 @@ h2 em,.muted { font:inherit; color:inherit; letter-spacing:inherit; }
 .eyebrow { font-size:12px; letter-spacing:.12em; font-weight:700; margin-bottom:20px; }
 .eyebrow:before { width:22px; height:1px; background:currentColor; opacity:.55; }
 .header,.header.is-scrolled,.header.menu-open { background:#fcfbf8; border:1px solid #e4e1d6; color:var(--ink); border-radius:14px; box-shadow:0 6px 25px #0000000c; backdrop-filter:none; }
-.header { top:35px; }
+.header:not(.is-scrolled) { top:52px; }
 .header .social-icon { background:#f1f0ea; border-color:#dbd9d0; color:#343a31; }
 .header .social-telegram .social-icon { color:#167ea9; }.header .social-vk .social-icon { color:#1679e7; }.header .social-yandex .social-icon { color:#d93b2b; }
 .desktop-nav { font-size:14px; gap:21px; }
 .brand-type { font-size:28px; }.brand-type small { font-size:14px; }
-.topline { top:6px; }.topline-inner { font-size:11px; }
 .hero { min-height:850px; background:#343a2d; }
 .hero-shade { background:linear-gradient(180deg,#141b1630 0%,#151b175c 32%,#101b159e 100%); }
 .hero h1 { font-weight:700; letter-spacing:-.045em; font-size:clamp(58px,6.7vw,100px); }
