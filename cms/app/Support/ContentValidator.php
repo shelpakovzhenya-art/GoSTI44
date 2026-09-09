@@ -29,7 +29,7 @@ final class ContentValidator
             $rules = array_merge($rules, ['title' => 'required|string', 'description' => 'required|string']);
         }
         Validator::make($data, $rules)->validate();
-        if ($kind === 'page' && preg_match('~^(admin|api|preview|_next|storage|images|brand)(/|$)~', $key)) {
+        if ($kind === 'page' && preg_match('~^(admin|api|preview|editor-preview|_next|storage|images|brand)(/|$)~', $key)) {
             throw ValidationException::withMessages(['key' => 'Этот путь зарезервирован приложением.']);
         }
         if ($kind === 'redirect') {

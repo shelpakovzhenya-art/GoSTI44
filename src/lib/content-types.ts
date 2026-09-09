@@ -10,11 +10,11 @@ export type SiteContent = {
   houses: House[];
   ratings: { id: string; name: string; rating: string; count: string; logo: string; url: string }[];
   reviewExcerpts: { name: string; initials: string; date: string; quote: string; user: string }[];
-  rules: { title: string; text: string }[];
+  rules: { id: string; title: string; text: string }[];
   texts: Record<string, string>;
   images: Record<string, {src: string; alt: string}>;
   comforts: {icon:string;title:string;text:string}[];
-  services: {icon:string;title:string;text:string;detail:string;className:string}[];
+  services: {id:string;icon:string;title:string;text:string;detail:string;className:string}[];
   photos: {src:string;alt:string}[];
   links: string[][];
 };

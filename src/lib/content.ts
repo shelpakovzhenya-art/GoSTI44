@@ -90,8 +90,8 @@ const collectionAdapters: Record<string, EntryAdapter> = {
       images, amenities: strings(data, "amenities"),
     });
   },
-  faq(content, { data }) {
-    content.rules.push({ title: text(data, "title"), text: text(data, "description") });
+  faq(content, { key, data }) {
+    content.rules.push({ id: key, title: text(data, "title"), text: text(data, "description") });
   },
   rating(content, { data }) {
     content.ratings.push({
@@ -105,9 +105,9 @@ const collectionAdapters: Record<string, EntryAdapter> = {
       quote: text(data, "quote"), user: text(data, "user"),
     });
   },
-  service(content, { data }) {
+  service(content, { key, data }) {
     content.services.push({
-      icon: text(data, "icon"), title: text(data, "title"), text: text(data, "description"),
+      id: key, icon: text(data, "icon"), title: text(data, "title"), text: text(data, "description"),
       detail: text(data, "detail"), className: text(data, "className"),
     });
   },

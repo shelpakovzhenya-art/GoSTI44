@@ -6,7 +6,7 @@
 - HTTP, IP 186.246.50.205 и www перенаправляются на основной HTTPS-адрес.
 - Nginx 80/443 → Next.js 127.0.0.1:3107, systemd `gosti`.
 - CMS: PHP 8.4 FPM, Docker `gosti-php`, loopback9000; внутренний Nginx127.0.0.1:8108. Host PHP8.5 несовместим с закреплённой openspout, не использовать его для artisan.
-- Текущий frontend-релиз: /var/www/gosti/releases/20260909-3; /var/www/gosti/current — переключаемая ссылка. CMS релиза3 ссылается на cms релиза2; релизы1 и2 сохранены и нужны для CMS/storage.
+- Текущий релиз: /var/www/gosti/releases/20260909-4; /var/www/gosti/current — переключаемая ссылка. В релизе4 собственные CMS и vendor; storage ссылается на релиз1. Релизы1–3 сохранены для storage и отката.
 - БД: /var/www/gosti/shared/database.sqlite. Хранилище CMS нового релиза ссылается на cms/storage первого релиза; НЕ удалять первый релиз, пока storage не перенесён отдельно с проверкой. Публичный storage:link сохраняет доступ к тем же загрузкам.
 
 ## Сеть и HTTPS
@@ -40,6 +40,8 @@ location ~ ^/(admin|livewire(?:-[a-z0-9]+)?|api/content|up|storage|css|js|fonts)
 Systemd: /etc/systemd/system/gosti.service, Node .next/standalone/server.js от пользователя gosti. Команды: `systemctl status gosti nginx`, `docker logs gosti-php`.
 
 ## Данные и проверки
+
+Релиз4 добавляет /admin/visual-editor и signed /editor-preview. Сохранение через Livewire, права/CSRF/ревизии на сервере; данные не мигрировались и чужие черновики не публиковались. До переключения сделан pre-release4.sqlite. Typecheck/lint/verify:content/build, 15 PHP-тестов (68 assertions), локальный браузерный цикл правка → черновик → публикация → возврат исходного текста и desktop/mobile прошли. На домене проверены вход, загрузка редактора, выбор/предпросмотр/отмена и сохранение неизменённого текста. Неподписанный preview403; в публичном HTML нет редакторских маркеров и тестового текста.
 
 Релиз3 меняет только CSS строки адреса: сплошной светлый фон, контрастный текст14px (13px mobile), адрес показан и на телефоне, шапка отодвинута ниже. Локальные проверки 320/390px и desktop прошли; контраст11,49:1.
 
