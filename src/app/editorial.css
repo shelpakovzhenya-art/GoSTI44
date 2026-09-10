@@ -135,7 +135,7 @@ h2 em,.muted { font:inherit; color:inherit; letter-spacing:inherit; }
  .gallery-caption { font-size:14px; }.gallery-photo>span { font-size:13px; }.gallery-photo { border-radius:0; }
  .review-card { padding:25px; }.review-card blockquote { font-size:20px; }.review-author strong { font-size:15px; }.review-author>div>span { font-size:12px; }
  .booking-section>.container { padding-inline:0; gap:30px; }.booking-intro { padding-inline:20px; }.booking-intro p { font-size:17px; }
- .booking-box { border-radius:0; padding:28px 20px; }.booking-widget { margin-inline:-20px; }.booking-box h3 { font-size:27px; }.booking-actions>.button,.booking-actions>a { font-size:15px; }.booking-help { font-size:14px; }
+ .booking-box { border-radius:0; padding:28px 20px; }.booking-widget { margin-inline:0; width:100%; min-width:0; max-width:100%; }.booking-box h3 { font-size:27px; }.booking-actions>.button,.booking-actions>a { font-size:15px; }.booking-help { font-size:14px; }
  .faq summary { font-size:16px; }.faq details>p { font-size:15px; padding-left:0; }.faq-number { font-size:12px; }.rules-section>div>p { font-size:16px; }
  .contacts-section { padding:60px 0; }.contact-copy>p { font-size:16px; }.contact-phone { font-size:28px; }.contact-person { font-size:14px; }.location-map { border-radius:0; }.map-caption { padding:20px; }
  .footer-main nav { font-size:14px; }.footer-bottom { font-size:12px; }.mobile-bottom .button { border-radius:8px; font-size:14px; }.mobile-nav { border-radius:12px; }
@@ -146,7 +146,7 @@ h2 em,.muted { font:inherit; color:inherit; letter-spacing:inherit; }
  .hero { min-height:810px; }.hero h1>span { font-size:25px; }.hero p { font-size:16px; }.hero-actions .button { font-size:14px; }
  .company-copy h2 { font-size:32px; }.company-facts { gap:15px; }.company-copy>.button { font-size:13px; padding-inline:13px; }
  .why-features { grid-template-columns:1fr; }.why-features h3 { font-size:16px; }.why-photo { height:340px; }
- .booking-box { padding-inline:20px; }.booking-widget { margin-inline:-20px; }.location-map { width:calc(100% + 40px); margin-inline:-20px; }
+ .booking-box { padding-inline:20px; }.booking-widget { margin-inline:0; width:100%; min-width:0; max-width:100%; }.location-map { width:calc(100% + 40px); margin-inline:-20px; }
  .about-facts { flex-wrap:wrap; gap:19px; }.house-specs { gap:10px; }
 }
 @media(prefers-reduced-motion:reduce) {
@@ -174,4 +174,13 @@ img[data-photo-tone="sauna"] { filter:brightness(1.12) saturate(.64) contrast(.9
  .spa-section:before { background:#28211abf; }
  .booking-section:before { background:#28231fb8; }
  .footer:before { background:#24211dbd; }
+}
+
+/* Keep the external booking module centered inside the mobile content gutters. */
+@media (max-width:760px) {
+  .booking-box-heading { justify-content:center; text-align:center; }
+  .booking-box-heading>div { min-width:0; width:100%; }
+  .booking-actions>* { width:100%; justify-content:center; }
+  .booking-widget iframe { display:block; width:100%; min-width:0; max-width:100%; }
+  .booking-widget p { padding-inline:0; text-align:center; overflow-wrap:anywhere; }
 }

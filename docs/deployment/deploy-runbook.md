@@ -52,3 +52,7 @@ Systemd: /etc/systemd/system/gosti.service, Node .next/standalone/server.js от
 Проверены production build, typecheck/lint, регрессии сборщика и 10 PHP-тестов (40 assertions). Браузером: главная desktop/mobile, вход/выход, показ пароля и список CMS. Внешний HTTPS /admin/login через Ethernet дал200 с проверенным TLS-сертификатом. На текущем компьютере обычный VPN-маршрут всё ещё может зависать; браузерная QA использовала отдельный диагностический маршрут к тому же публичному443, сохраняя домен и проверку сертификата. Это не требование туннеля для других посетителей.
 
 Архитектура и расширение: [technical-architecture](../nextjs/technical-architecture.md).
+
+## Выпуск 10.09.2026
+
+Активен frontend /var/www/gosti/releases/20260910-1, cms — ссылка на20260909-4/cms. Изменён только editorial.css: мобильный iframe бронирования вписан в симметричные отступы; заголовок и пояснения сайта центрированы. Данные CMS не менялись. Проверены320/390px, отсутствие горизонтального переполнения, build/typecheck/lint/verify:content и site/admin200. Откат frontend — на20260909-4. Внутренние стили Bnovo остаются на стороне провайдера.
