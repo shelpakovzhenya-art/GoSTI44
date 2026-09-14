@@ -14,7 +14,7 @@ class SiteContentSeeder extends Seeder
         $sections = json_decode(file_get_contents($root.'sections.json'), true, flags: JSON_THROW_ON_ERROR);
         $collections = json_decode(file_get_contents($root.'collections.json'), true, flags: JSON_THROW_ON_ERROR);
         foreach ($collections['services'] as $index => $service) {
-            $this->entry('service', 'service-'.$service['className'], $service['title'], ['title' => $service['title'], 'description' => $service['text'], 'detail' => $service['detail'], 'icon' => $service['icon'], 'className' => $service['className']], $index);
+            $this->entry('service', 'service-'.$service['className'], $service['title'], ['title' => $service['title'], 'description' => $service['text'], 'detail' => $service['detail'], 'icon' => $service['icon'], 'className' => $service['className'], 'images' => $service['images']], $index);
         }
         $this->entry('section', 'comforts', 'Удобства таунхаусов', ['items' => $collections['comforts']]);
         $this->entry('section', 'photo-gallery', 'Фотогалерея: состав и порядок фото', ['images' => $collections['photos']]);

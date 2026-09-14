@@ -8,6 +8,7 @@ import ts from 'typescript';
 const root=path.resolve(import.meta.dirname,'..');
 const source=await readFile(path.join(root,'content/site.json'),'utf8');
 const initial=JSON.parse(source);
+const collections=JSON.parse(await readFile(path.join(root,'content/collections.json'),'utf8'));
 const page=await readFile(path.join(root,'src/components/landing.tsx'),'utf8');
 const nav=await readFile(path.join(root,'src/components/navigation.tsx'),'utf8');
 const sections=await readFile(path.join(root,'src/components/holiday-sections.tsx'),'utf8');
@@ -32,6 +33,10 @@ for (const rating of initial.ratings) {
   assert(/^[0-5](?:[,.][0-9])?$/.test(rating.rating),`Invalid rating for ${rating.id}`);
   assert(rating.count && new URL(rating.url).protocol==='https:',`Incomplete rating for ${rating.id}`);
   await access(path.join(root,'public',rating.logo));
+}
+for (const service of collections.services) {
+  assert.equal(service.images?.length,1,`Service ${service.className} needs one editorial photograph`);
+  await access(path.join(root,'public',service.images[0].src));
 }
 const quotes=initial.reviewExcerpts.map(item=>item.quote);
 const words=quotes.join(' ').replace(/\[.*?\]/g,'').trim().split(/\s+/).length;
@@ -63,7 +68,7 @@ const empty = assembleContent([]);
 for (const key of ['houses', 'rules', 'ratings', 'reviewExcerpts', 'services', 'links', 'photos', 'comforts']) assert.equal(empty[key].length, 0, `No resurrected ${key}`);
 assert.equal(Object.keys(empty.site).length, 0);
 const first = entry('house', 'new-house', { ...initial.houses[0], name: 'Новый дом', area: '120' });
-const input = [first, entry('house', 'another-house', { ...initial.houses[1], name: 'Другой дом' }), entry('service', 'new-service', { title: 'Новая услуга', description: 'Из CMS' })];
+const input = [first, entry('house', 'another-house', { ...initial.houses[1], name: 'Другой дом' }), entry('service', 'new-service', { title: 'Новая услуга', description: 'Из CMS', detail: 'Подробности', icon: 'Leaf', className: 'comfort', images: [{ src: '/images/lux-living.jpg', alt: 'Гостиная' }] })];
 const before = JSON.stringify(input);
 const result = assembleContent(input);
 assert.equal(result.houses[0].id, 'new-house');
@@ -82,6 +87,7 @@ assert.doesNotThrow(() => assembleContent([entry('constructor', '__proto__', {})
 assert.throws(() => parseContentPayload({ version: 1, entries: [first, first] }), /duplicate/);
 assert.throws(() => parseContentPayload({ version: 1, entries: [{ key: 'broken', kind: 'house', data: null }] }), /object/);
 assert.throws(() => assembleContent([entry('house', 'broken', { ...first.data, images: [] })]), /photograph/);
+assert.throws(() => assembleContent([entry('service', 'broken-service', { title: 'Без фото', description: 'Описание', detail: 'Подробности', icon: 'Leaf', className: 'comfort', images: [] })]), /photograph/);
 assert.equal((await getEntries()).length, 0);
 fetchResult = { ok: false };
 await assert.rejects(getEntries(), /unavailable/);

@@ -14,7 +14,7 @@ export type SiteContent = {
   texts: Record<string, string>;
   images: Record<string, {src: string; alt: string}>;
   comforts: {icon:string;title:string;text:string}[];
-  services: {id:string;icon:string;title:string;text:string;detail:string;className:string}[];
+  services: {id:string;icon:string;title:string;text:string;detail:string;className:string;image:{src:string;alt:string}}[];
   photos: {src:string;alt:string}[];
   links: string[][];
 };

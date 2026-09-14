@@ -106,9 +106,11 @@ const collectionAdapters: Record<string, EntryAdapter> = {
     });
   },
   service(content, { key, data }) {
+    const images = list(data.images, `${key}.images`).map(photo);
+    if (!images.length || !images[0].src) throw new Error(`Service ${key} needs a photograph`);
     content.services.push({
       id: key, icon: text(data, "icon"), title: text(data, "title"), text: text(data, "description"),
-      detail: text(data, "detail"), className: text(data, "className"),
+      detail: text(data, "detail"), className: text(data, "className"), image: images[0],
     });
   },
 };

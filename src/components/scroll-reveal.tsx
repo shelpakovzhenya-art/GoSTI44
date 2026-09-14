@@ -3,8 +3,8 @@
 import { useEffect } from "react";
 
 const selectors = [
-  ".section-heading", ".about-copy", ".about-visual", ".house-card",
-  ".company-copy", ".why-copy", ".why-visual", ".spa-copy", ".spa-visual",
+  ".section-heading", ".about-copy", ".about-editorial-photo", ".house-card",
+  ".company-copy", ".why-heading", ".why-features", ".spa-copy", ".spa-visual",
   ".service-card", ".atmosphere-copy", ".gallery-photo", ".review-card",
   ".host-copy", ".host-photo", ".booking-intro", ".booking-box",
   ".rules-section > div", ".contact-copy", ".location-map", ".footer-main",

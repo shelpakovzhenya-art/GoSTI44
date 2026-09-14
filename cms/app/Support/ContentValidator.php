@@ -28,6 +28,17 @@ final class ContentValidator
         if ($kind === 'faq') {
             $rules = array_merge($rules, ['title' => 'required|string', 'description' => 'required|string']);
         }
+        if ($kind === 'service') {
+            $rules = array_merge($rules, [
+                'title' => 'required|string|max:250',
+                'description' => 'required|string',
+                'detail' => 'required|string',
+                'icon' => 'required|in:House,Trees,ChefHat,Flame,CarFront,KeyRound,Baby,PawPrint,Croissant,Sparkles,Leaf',
+                'className' => 'required|in:breakfast,barbecue,children,comfort',
+                'images' => 'required|array|min:1',
+                'images.*.alt' => 'required|string|max:250',
+            ]);
+        }
         Validator::make($data, $rules)->validate();
         if ($kind === 'page' && preg_match('~^(admin|api|preview|editor-preview|_next|storage|images|brand)(/|$)~', $key)) {
             throw ValidationException::withMessages(['key' => 'Этот путь зарезервирован приложением.']);

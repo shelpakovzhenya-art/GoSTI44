@@ -58,7 +58,7 @@ class ContentEntryForm
                         Select::make('icon')->label('Иконка')->options(['House' => 'Дом', 'Trees' => 'Деревья', 'ChefHat' => 'Кухня', 'Flame' => 'Мангал', 'CarFront' => 'Парковка', 'KeyRound' => 'Ключ', 'Baby' => 'Дети', 'PawPrint' => 'Питомцы', 'Leaf' => 'Лист'])->default('Leaf'),
                     ])->collapsible()->itemLabel(fn (array $state): ?string => $state['title'] ?? 'Удобство'),
                 ]),
-                Tab::make('Фотографии')->visible(fn (Get $get) => $get('kind') === 'house' || ($get('kind') === 'page' && $get('key') !== 'home') || in_array($get('key'), ['site-images', 'photo-gallery']))->schema([
+                Tab::make('Фотографии')->visible(fn (Get $get) => in_array($get('kind'), ['house', 'service']) || ($get('kind') === 'page' && $get('key') !== 'home') || in_array($get('key'), ['site-images', 'photo-gallery']))->schema([
                     Repeater::make('draft.images')->defaultItems(0)->label('Изображения')->schema([
                         TextInput::make('key')->label('Расположение / исходный путь')->helperText('У системных фотографий сохраняйте этот ключ: он связывает фото с местом на сайте.'),
                         Select::make('media_id')->label('Из медиатеки')->options(fn () => Media::query()->pluck('name', 'id'))->searchable()->live()->afterStateUpdated(function (Set $set, $state) {
