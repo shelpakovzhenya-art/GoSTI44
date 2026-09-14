@@ -18,7 +18,7 @@ export async function pageMetadata(key = "home"): Promise<Metadata> {
   const entry = entries.find(item => item.key === key && item.kind === "page");
   const seo = (entry?.data.seo || {}) as Record<string, unknown>;
   const title = String(seo.title || entry?.data.title || "Танжерин — гостевые дома в Костроме");
-  const description = String(seo.description || entry?.data.description || "Три отдельных дома с кухней и верандой в Костроме. Фотографии, удобства и бронирование.");
+  const description = String(seo.description || entry?.data.description || "Один большой дом с тремя самостоятельными таунхаусами в Костроме. Фотографии, удобства и бронирование.");
   const canonical = origin ? String(seo.canonical || `${origin}${key === "home" ? "/" : `/${key}`}`) : undefined;
   return {
     title, description,
@@ -36,6 +36,10 @@ export async function lodgingSchema() {
     name: content.site.name, telephone: content.site.phone, email: content.site.email,
     address: content.site.address,
     ...(origin ? {url: origin, image: `${origin}/images/hero.jpg`, "@id": `${origin}/#lodging`} : {}),
-    sameAs: [content.site.telegram, content.site.vk, content.site.yandex, content.site.gis, content.site.google],
+    sameAs: [...new Set([
+      content.site.telegram,
+      content.site.vk,
+      ...content.ratings.map(rating => rating.url),
+    ].filter(Boolean))],
   };
 }

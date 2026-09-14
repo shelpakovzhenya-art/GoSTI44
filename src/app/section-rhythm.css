@@ -1,225 +1,341 @@
-/* Editorial photo compositions. Keep property photography and atmospheric art separate. */
-:root { --chapter-sage: #e8eee3; --chapter-sand: #f3e8d8; --chapter-cream: #faf7ef; --chapter-dark: #263a30; }
-.trust-section { background: #fffdf7; border-bottom: 1px solid #ded8ca; padding-block: 32px; }
-.about-band { background: #fbfaf7; }
-.about { border: 0; background: transparent; }
-.host-section,.rules-section { background: transparent; }
-.about .eyebrow { color: #526942; }
-.about-facts { border-top: 1px solid #bfcdb6; padding-top: 26px; }
-.about-facts > span { padding-right: 22px; border-right: 1px solid #c5d1bd; }
-.about-facts > span:last-child { border: 0; padding-right: 0; }
-
-.houses-section { background: #f0efe9; padding-block: 72px; }
-.houses-section .eyebrow { color: #876137; }
-.house-card { background: #fffdf8; border-radius: 16px; border: 1px solid #e0d5c3; overflow: hidden; }
-.house-copy { background: #fffdf8; border-top: 3px solid var(--house-accent, #b68845); }
-.house-lime { --house-accent: #789452; }
-.house-lemon { --house-accent: #d7b64b; }
-.house-citrus { --house-accent: #db8a41; }
-.houses-section .house-tags > span { background: #f2eee3; }
-.houses-leaves,.houses-lemons { bottom: 14px; height: 92px; width: 90px; }
-
-.company-section { border: 0; }
-.company-grid { min-height: 540px; }
-.why-section { background: #fffdf7; border-bottom: 1px solid #dddcca; }
-.why-visual { padding-top: 0; }
-.why-photo { border-radius: 16px; }
-.why-caption { padding-top: 20px; }
-.why-features { gap: 0 28px; }
-.why-features article { padding-block: 22px; border-top: 1px solid #dadfd0; }
-.why-features article > svg { color: #68814f; }
-
-.spa-section { background: var(--chapter-dark); border-block: 1px solid #49604b; }
-.spa-section:before { display: block; background: linear-gradient(90deg, #171e1680, #171e16d9); }
-.spa-visual { height: auto; display: grid; grid-template-columns: 1.35fr .75fr; gap: 16px; align-items: end; }
-.spa-visual > img { position: relative !important; inset: auto !important; width: 100% !important; height: 450px !important; object-fit: cover; border-radius: 14px; }
-.spa-seal { position: relative; inset: auto; width: 100%; height: 285px; border: 0; border-radius: 14px; margin: 0; transform: none; }
-.spa-photo-caption { top: 16px; bottom: auto; left: 16px; max-width: calc(62% - 26px); font-size: 10px; padding: 9px; }
-.spa-copy .eyebrow { color: #d4dfbb; }
-.spa-features { border-block: 1px solid #ffffff26; padding-block: 22px; }
-
-.services-section { background: #fbfaf7; border: 0; padding-block: 80px; }
-.services-section .eyebrow { color: #95622e; }
-.service-card { background: #fffbf3; border: 1px solid #e0ceb3; border-radius: 16px; }
-.service-icon { color: #9b6a37; }
-.service-top > span:last-child { color: #a0825d; }
-.service-contact { border-color: #d5bc98; }
-.services-fruit { height: 90px; width: 85px; bottom: 20px; }
-.atmosphere { border: 0; }
-.atmosphere-copy { padding-bottom: 70px; }
-
-#gallery.gallery-band { background: #fbfaf7; border-bottom: 1px solid #dfddd3; }
-.gallery-band .section-heading { border-bottom: 1px solid #ded7c7; padding-bottom: 28px; }
-.gallery-photo { border-radius: 12px; }
-.reviews-section { background: #f0efe9; border: 0; padding-block: 72px; }
-.reviews-section .eyebrow { color: #526942; }
-.review-card { background: #fffef8; border: 1px solid #d5decb; border-radius: 16px; }
-.reviews-leaves { height: 85px; width: 90px; bottom: 18px; }
-.host-band { background: #fffdf7; border-bottom: 1px solid #e5ddce; }
-.host-photo { border-radius: 16px; }
-.host-copy { border-left: 3px solid #d9a464; padding-left: 36px; }
-.booking-section { border: 0; }
-.booking-box { border: 1px solid #efdfc3; box-shadow: 0 16px 40px #0003; }
-.rules-band { background: #fbfaf7; border: 0; }
-.faq { background: #fffdf7; border: 1px solid #ded3c0; border-radius: 16px; padding: 8px 26px; }
-.faq details { border-color: #e4dccd; }
-.faq details:first-child { border-top: 0; }
-.faq details:last-child { border-bottom: 0; }
-.faq-number { color: #957343; }
-.footer { border-top: 1px solid #344939; }
-.footer-main { background: #14261f70; }
-@media (min-width: 761px) {
-  .service-card { display: flex; flex-direction: column; }
-  .service-card > details { margin-top: auto; }
+/* Client theme: one warm canvas, contained property photography and restrained botanicals. */
+:root {
+  --ink:#302f29;
+  --forest:#46513e;
+  --forest-deep:#354035;
+  --muted:#716b60;
+  --paper:#fff9ef;
+  --canvas:#f3e5d1;
+  --surface:#fffaf2;
+  --surface-soft:#f8eddd;
+  --line:#ddcfba;
+  --orange:#ff9f32;
+  --yellow-hover:#ffae4d;
+  --chapter-sand:#f3e5d1;
+  --chapter-cream:#fff9ef;
 }
 
-@media (max-width: 1000px) {
-  .spa-visual > img { height: 380px !important; }
-  .spa-seal { height: 245px; }
-  .host-copy { padding-left: 24px; }
+html,body { max-width:100%; overflow-x:clip; }
+body { background:var(--canvas); color:var(--ink); }
+.section { padding-block:88px; }
+.eyebrow { color:#7a653f; }
+.eyebrow:before { border-radius:50%; }
+
+.button-yellow,.button-dark,.light-link,.house-actions>a,.contact-actions>.button {
+  --button-bg:var(--orange);
+  --button-border:#ef8d21;
+  --button-ink:#2d281f;
+  box-shadow:0 4px 0 #c96d18;
 }
-@media (max-width: 760px) {
-  .about-band,.gallery-band,.host-band,.rules-band { padding-block: 56px; }
-  .about-facts > span { padding-right: 12px; }
-  .houses-section { padding-block: 58px 118px; }
-  .houses-leaves,.houses-lemons { height: 76px; width: 75px; }
-  .house-card { border-radius: 14px; }
-  .why-visual { padding-top: 0; }
-  .why-photo { border-radius: 12px; }
-  .why-features article { padding-block: 18px; }
-  .spa-grid { padding-inline: 20px; }
-  .spa-copy { padding-inline: 0; }
-  .spa-visual { margin: 0; gap: 12px; grid-template-columns: 1.3fr .8fr; }
-  .spa-visual > img { height: 320px !important; }
-  .spa-seal { height: 210px; right: auto; bottom: auto; width: 100%; }
-  .spa-photo-caption { top: 12px; left: 10px; font-size: 9px; max-width: calc(62% - 18px); }
-  .services-section { padding-bottom: 118px; }
-  .services-fruit,.reviews-leaves { height: 75px; width: 75px; }
-  .atmosphere-copy { padding-bottom: 65px; }
-  .gallery-photo { border-radius: 10px; }
-  .reviews-section { padding-bottom: 118px; }
-  .host-copy { padding-left: 20px; }
-  .faq { padding: 4px 18px; }
+.button-outline { --button-bg:#fffaf2; --button-border:#ad9f89; --button-ink:var(--ink); }
+
+/* Every chapter sits on the same warm family of beige tones. */
+.trust-section { background:#f6ead8; border-bottom:1px solid var(--line); padding-block:32px; }
+.about-band { background:#fff8ed; }
+.houses-section { background:#f1e1ca; }
+.company-section { background:#fff8ed; }
+.why-section { background:#f6ead8; }
+.spa-section { background:#fff8ed; color:var(--ink); }
+.services-section { background:#f1e1ca; color:var(--ink); }
+#gallery.gallery-band { background:#f6ead8; }
+.reviews-section { background:#fff8ed; }
+.host-band { background:#f1e1ca; }
+.booking-section { background:#fff8ed; color:var(--ink); }
+.rules-band { background:#f1e1ca; }
+.footer { background:#f6ead8; color:var(--ink); padding-bottom:0; }
+.spa-section:before,.booking-section:before,.footer:before { display:none; }
+.section-backdrop { display:none; }
+
+/* Sparse branches alternate along the outer edge; content remains unobstructed. */
+.botanical-section { position:relative; isolation:isolate; overflow:clip; }
+.botanical-section>.container,.footer .contacts-section,.footer .footer-base { position:relative; z-index:1; }
+.about-band:before,.why-section:after,.reviews-section:before,.rules-band:after,.footer:after {
+  content:"";
+  position:absolute;
+  width:clamp(105px,11vw,170px);
+  height:clamp(155px,18vw,245px);
+  background:url('/brand/citrus-leaves.webp') center/contain no-repeat;
+  opacity:.22;
+  pointer-events:none;
+  z-index:0;
 }
-
-/* The opening story pairs an image with one continuous text column. */
-.about { display: grid; grid-template-columns: 1fr 1.08fr; gap: 0 64px; align-items: start; }
-.about-editorial-photo { position: relative; grid-row: span 2; min-height: 470px; height: 100%; overflow: hidden; border-radius: 12px; }
-.about-editorial-photo img { object-fit: cover; }
-.about > div:nth-child(2) { padding-top: 18px; }
-.about-copy { padding-top: 20px; }
-.about-facts { gap: 20px; padding-top: 20px; margin-top: 26px; }
-.about-facts > span { border: 0; padding-right: 0; }
-.services-editorial { display: grid; grid-template-columns: .85fr 1.4fr; gap: 42px; align-items: stretch; }
-.services-editorial-photo { position: relative; min-height: 490px; overflow: hidden; border-radius: 12px; }
-.services-editorial-photo img { object-fit: cover; }
-.services-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 30px; align-items: stretch; }
-.service-card { padding: 22px 0; border: 0; border-top: 1px solid #d9d6cb; border-radius: 0; background: transparent; }
-.service-top { margin-bottom: 12px; }
-.service-icon { color: #687452; }
-.service-card h3 { min-height: 0; margin: 0; }
-.service-card > p { min-height: 0; margin-block: 12px 16px; }
-.service-card summary { min-width: 0; min-height: 36px; padding: 0; border: 0; border-radius: 0; background: transparent; justify-content: space-between; }
-.service-contact { margin-top: 28px; }
-.review-card { border-radius: 8px; box-shadow: none; }
-.host-copy { border: 0; padding-left: 0; }
-.faq { border: 0; border-radius: 0; padding: 0; background: transparent; }
-.rules-section { padding-block: 0; }
-@media (max-width:1000px) {
- .about { gap: 0 32px; }
- .services-editorial { grid-template-columns: .8fr 1.3fr; gap: 26px; }
- .services-grid { gap: 0 20px; }
+.about-band:before { left:-48px; top:32px; transform:rotate(18deg); }
+.why-section:after { right:-55px; bottom:20px; transform:scaleX(-1) rotate(9deg); }
+.reviews-section:before { left:-62px; bottom:22px; transform:rotate(28deg); }
+.rules-band:after { right:-55px; top:28px; transform:scaleX(-1) rotate(16deg); }
+.footer:after { left:-60px; bottom:76px; transform:rotate(28deg); opacity:.17; }
+.services-section:before {
+  content:"";
+  position:absolute;
+  left:50%;
+  top:20px;
+  width:72px;
+  height:72px;
+  transform:translateX(-50%);
+  background:url('/brand/tangerines.webp') center/contain no-repeat;
+  pointer-events:none;
+  z-index:0;
 }
-@media (max-width:760px) {
- .about { grid-template-columns: 1fr; gap: 0; }
- .about-editorial-photo { grid-row: auto; height: 260px; min-height: 0; margin-bottom: 28px; }
- .about > div:nth-child(2) { padding-top: 0; }
- .about-copy { padding-top: 12px; }
- .houses-section,.reviews-section { padding-block: 56px; }
- .services-section { padding-block: 56px; }
- .services-editorial { grid-template-columns: 1fr; gap: 28px; }
- .services-editorial-photo { height: 290px; min-height: 0; }
- .services-editorial-photo img { object-position: 50% 62%; }
- .services-grid { grid-template-columns: 1fr; gap: 0; }
- .service-card { padding: 22px 0; }
- .service-card details { margin-top: 0; grid-column: 2; }
- .service-top { margin: 0; }
- .host-copy { padding-left: 0; }
- .faq { padding: 0; }
+.services-section>.container { position:relative; z-index:1; }
+
+/* Compact ratings bridge. */
+.trust-section>.container { grid-template-columns:.95fr 2.25fr auto; gap:24px; }
+.trust-more { grid-column:auto; justify-self:end; white-space:nowrap; }
+.rating-card { background:#fffaf2; border-color:var(--line); border-radius:14px; box-shadow:0 7px 22px #765a3520; }
+.map-logo { width:42px; height:42px; border-radius:10px; overflow:hidden; background:#fff; }
+.rating-yandex .map-logo img { width:116px; transform:translate(-50%,-35%); }
+.rating-gis .map-logo img { width:74px; transform:translate(-50%,-50%); }
+.rating-avito .map-logo img { width:40px; height:40px; object-fit:contain; transform:translate(-50%,-50%); }
+.ratings-compact .rating-yandex .map-logo img { width:92px; }
+.ratings-compact .rating-gis .map-logo img { width:60px; }
+.ratings-compact .rating-avito .map-logo img { width:34px; height:34px; }
+
+/* About: a real property image beside a continuous story. */
+.about { grid-template-columns:.9fr 1.1fr; gap:0 64px; align-items:center; }
+.about-editorial-photo { position:relative; grid-row:span 2; min-height:500px; overflow:hidden; border-radius:20px; border:1px solid var(--line); }
+.about-editorial-photo img { object-fit:cover; object-position:50% 65%; }
+.about>div:nth-child(2),.about-copy { padding-top:0; }
+.about-copy>p,.about-facts small { color:var(--muted); }
+.about-facts { gap:22px; border-color:var(--line); }
+.about-facts>span { border:0; padding:0; }
+
+/* Property cards keep photographs prominent and add quiet separation. */
+.houses-section { padding-block:82px; }
+.house-card { background:#fffaf2; border:1px solid #dac8ae; border-radius:18px; overflow:hidden; box-shadow:0 10px 30px #71563316; }
+.house-copy { background:#fffaf2; border-top:3px solid var(--house-accent,#bd8b4c); }
+.house-lime { --house-accent:#83955d; }
+.house-lemon { --house-accent:#d4b047; }
+.house-citrus { --house-accent:#dc8740; }
+.house-tags>span { background:#f4e8d7; }
+
+/* Large-company chapter: text and a contained real photograph. */
+.company-section { padding-block:88px; }
+.company-grid {
+  width:min(1280px,calc(100% - 96px));
+  max-width:1280px;
+  min-height:0;
+  padding:0;
+  display:grid;
+  grid-template-columns:.86fr 1.14fr;
+  align-items:center;
+  gap:64px;
+  overflow:visible;
+  background:transparent;
+  color:var(--ink);
 }
+.company-copy { width:auto; }
+.company-copy h2 { font-size:48px; }
+.company-copy h2 em { color:#7b6540; }
+.company-copy>p { color:var(--muted); font-size:17px; }
+.company-facts>span { color:var(--ink); font-size:14px; }
+.company-facts svg { color:#9a7744; }
+.company-photo { position:relative; inset:auto; min-height:520px; overflow:hidden; border-radius:20px; border:1px solid var(--line); }
+.company-photo>img { object-fit:cover; object-position:60% 58%; }
+.company-photo:after { background:linear-gradient(180deg,transparent 55%,#30281f70); }
+.company-photo-label { top:18px; right:18px; left:18px; justify-content:flex-end; flex-wrap:wrap; }
+.company-photo-label>span { background:#fffaf2eb; color:var(--ink); border:1px solid #fff; border-radius:9px; }
 
-/* Photo backgrounds requested for the complete sections. */
-.about-band,.services-section { position:relative; isolation:isolate; overflow:hidden; background:#27291f; color:#fff; }
-.about-band:before,.services-section:before { content:""; position:absolute; inset:0; z-index:-2; pointer-events:none; background:linear-gradient(90deg,#171b18b8,#171b18d9); }
-.about-band>.section-backdrop,.services-section>.section-backdrop { object-fit:cover; object-position:center; }
-.about { grid-template-columns:1fr 1.08fr; gap:64px; align-items:center; background:transparent; }
-.about > div:nth-child(2),.about-copy { padding-top:0; }
-.about-band .muted,.about-band .eyebrow,.about-copy>p,.about-facts small,.about-facts svg,.services-section .eyebrow,.services-section .section-heading>p,.service-card>p,.service-icon,.service-top>span:last-child { color:#f3f1e5; }
-.about-facts { border-color:#ffffff40; }
-.services-editorial { display:block; }
-.services-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:24px; }
-.service-card { background:#19251e8c; border:1px solid #ffffff40; border-radius:12px; padding:24px; backdrop-filter:blur(8px); }
-.service-card summary,.service-card details>a { color:#fff; }
-.service-card details>p { color:#e9eadf; }
-.service-contact { border-color:#ffffff40; }
-.service-contact .button { color:#26352a; background:#fffdf7; border-color:#ffffff80; }
-@media(max-width:1000px) { .services-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .about { gap:32px; } }
-@media(max-width:760px) { .about { grid-template-columns:1fr; gap:24px; } .services-grid { grid-template-columns:1fr; gap:16px; } .service-card { padding:22px; } .about-band:before,.services-section:before { background:#171b18c7; } }
+/* Important details: reference-style feature tiles with a real veranda photo. */
+.why-section { border-block:1px solid var(--line); }
+.why-grid { grid-template-columns:.82fr 1.18fr; gap:58px; }
+.why-visual { order:-1; padding-top:0; }
+.why-photo { height:590px; border-radius:20px; border:1px solid var(--line); }
+.why-caption { grid-template-columns:1fr; }
+.why-grid h2 { font-size:46px; }
+.why-features { gap:14px; margin-top:30px; }
+.why-features article { min-height:132px; padding:18px; border:1px solid #ddcfba; border-radius:14px; background:#fffaf2b8; }
+.why-features article>svg { color:#7b8a59; }
+.why-features h3 { font-size:16px; }
+.why-features p { font-size:13px; color:var(--muted); }
 
-/* Services: warm beige separation after the photographic SPA section. */
-.services-section { background:#f3e8d8; color:#292e27; }
-.services-section:before { display:none; }
-.services-section .eyebrow { color:#876137; }
-.services-section .section-heading>p,.services-section .service-card>p,.services-section .service-card details>p { color:#5f6259; }
-.services-section .service-card { background:#fffaf2; border-color:#dfd2be; backdrop-filter:none; }
-.services-section .service-icon { color:#687452; }
-.services-section .service-top>span:last-child { color:#8d7859; }
-.services-section .service-card summary,.services-section .service-card details>a { color:#292e27; }
-.services-section .service-contact { border-color:#d5c5ae; }
+/* Bath chapter: both client photographs live inside the beige block. */
+.spa-section { border-bottom:1px solid var(--line); }
+.spa-grid { grid-template-columns:1.04fr .96fr; gap:70px; }
+.spa-visual { height:auto; margin:0; display:grid; grid-template-columns:1.36fr .74fr; gap:14px; align-items:end; }
+.spa-visual>img { position:relative!important; inset:auto!important; width:100%!important; height:470px!important; object-fit:cover; border-radius:18px; border:1px solid var(--line); }
+.spa-seal { position:relative; inset:auto; width:100%; height:300px; margin:0; transform:none; border:1px solid var(--line); border-radius:18px; }
+.spa-photo-caption { top:16px; left:16px; bottom:auto; max-width:calc(65% - 24px); border-radius:8px; background:#40382db0; }
+.spa-copy h2 { font-size:48px; }
+.spa-copy h2 em { color:#7b6540; }
+.spa-copy>p,.spa-details p { color:var(--muted); font-size:16px; }
+.spa-features { border-color:var(--line); }
+.spa-features>span { color:var(--ink); font-size:13px; }
+.spa-features svg { color:#c48729; }
+.spa-features small,.spa-only { color:var(--muted); }
+.spa-details .text-link { --button-bg:#fffaf2; --button-ink:var(--ink); --button-border:#ad9f89; }
 
-.services-section .service-card summary {
- border:1px solid #b9ab94;
- border-radius:8px;
- min-height:46px;
- padding:10px 16px;
- width:100%;
- background:#fffdf7;
+/* Everything for the stay: clear, framed cards and orange actions. */
+.services-section { padding-top:108px; border-bottom:1px solid var(--line); }
+.services-section .section-heading { align-items:center; }
+.services-section .section-heading>p,.service-card>p,.service-card details>p { color:var(--muted); }
+.services-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; }
+.service-card { display:flex; flex-direction:column; min-height:365px; padding:24px; border:1px solid #d8c5aa; border-radius:16px; background:#fffaf2; box-shadow:0 8px 26px #795c3512; }
+.service-card h3 { min-height:58px; }
+.service-card>p { min-height:82px; }
+.service-icon { color:#7b8a59; background:#f2e7d5; }
+.service-card details { margin-top:auto; }
+.service-card summary { width:100%; min-height:46px; padding:10px 15px; border:1px solid #dfa15b; border-radius:9px; background:#fffdf8; color:#71491c; justify-content:space-between; }
+.service-card details>a { border-color:#dfa15b; color:#71491c; }
+.service-contact { border-color:#d4bf9e; background:#ead8bd; }
+.service-contact .button-outline { --button-bg:var(--orange); --button-border:#ef8d21; --button-ink:#2d281f; box-shadow:0 4px 0 #c96d18; }
+
+/* Veranda is an image-and-copy card instead of another full-bleed photograph. */
+.atmosphere {
+  width:min(1280px,calc(100% - 96px));
+  min-height:520px;
+  margin:88px auto;
+  display:grid;
+  grid-template-columns:1.12fr .88fr;
+  place-items:stretch;
+  overflow:hidden;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:#fffaf2;
+  color:var(--ink);
 }
-.services-section .service-card summary:hover { border-color:#947345; background:#f5ecdD; }
+.atmosphere-picture { position:relative; inset:auto; min-height:520px; z-index:0; }
+.atmosphere-picture img { object-fit:cover; object-position:center 55%; }
+.atmosphere-picture:after { background:linear-gradient(90deg,transparent 70%,#fffaf233); }
+.atmosphere-copy { max-width:none; padding:62px 54px; text-align:left; align-self:center; }
+.atmosphere-copy .eyebrow { justify-content:flex-start; color:#7a653f; }
+.atmosphere h2 { font-size:48px; }
+.atmosphere h2 span { color:#7b6540; font:inherit; }
+.atmosphere p { color:var(--muted); font-size:16px; margin:24px 0 28px; }
 
-/* About: restore the standalone photograph alongside the story. */
-.about-band { background:#fbfaf7; color:#292e27; }
-.about-band:before { display:none; }
-.about-band .about { gap:0 64px; align-items:start; }
-.about-band .about>div:nth-child(2) { padding-top:18px; }
-.about-band .about-copy { padding-top:20px; }
-.about-band .eyebrow,.about-band .about-facts svg { color:#687452; }
-.about-band .muted { color:#535a4c; }
-.about-band .about-copy>p,.about-band .about-facts small { color:#5f6259; }
-.about-band .about-facts { border-color:#cbd0c0; }
-@media(max-width:1000px) { .about-band .about { gap:0 32px; } }
-@media(max-width:760px) {
- .about-band .about { gap:0; }
- .about-band .about>div:nth-child(2) { padding-top:0; }
- .about-band .about-copy { padding-top:12px; }
-}
+/* Gallery, reviews and host sit on distinct but related surfaces. */
+.gallery-band { border-block:1px solid var(--line); }
+.gallery-band .section-heading { padding-bottom:26px; border-bottom:1px solid var(--line); }
+.gallery-photo { border-radius:14px; }
+.reviews-section { border-bottom:1px solid var(--line); }
+.review-card { background:#fffaf2; border:1px solid #dacbb6; border-radius:14px; box-shadow:none; }
+.host-photo { border-radius:18px; border:1px solid var(--line); }
+.host-copy p { color:var(--muted); }
 
-/* Centre the Google Maps pin itself, excluding the source image caption. */
-.rating-google .map-logo img { width:146px; height:auto; max-width:none; transform:translate(-50%,-43%); }
-.ratings-compact .rating-google .map-logo img { width:118px; height:auto; transform:translate(-50%,-43%); }
-
-/* Solid, full-width footer below the photographic contacts. */
-.footer { padding-bottom:0; }
-.footer-base { position:relative; background:#20392d; border-top:1px solid #ffffff26; padding-block:12px 8px; }
+/* Booking and contacts stay light; external widgets remain inside their frames. */
+.booking-section>.container { grid-template-columns:.85fr 1.15fr; gap:58px; }
+.booking-intro p { color:var(--muted); font-size:17px; }
+.booking-box { background:#fffaf2; border:1px solid #dbc8ac; border-radius:18px; box-shadow:0 14px 36px #7256331f; }
+.rules-section { padding-block:0; }
+.faq { padding:8px 26px; border:1px solid #d9c6aa; border-radius:16px; background:#fffaf2; }
+.faq details:first-child { border-top:0; }
+.faq details:last-child { border-bottom:0; }
+.contacts-section { padding-block:82px; }
+.contact-copy>p,.contact-person,.directions { color:var(--muted); }
+.contact-address { color:var(--ink)!important; }
+.location-map { border:1px solid #d7c4a7; border-radius:18px; }
+.map-caption { background:#fffaf2; }
+.footer-base { background:#eadbc5; color:var(--ink); border-top:1px solid #d5c1a4; padding-block:12px 8px; }
 .footer-base .footer-main { background:transparent; border-top:0; padding-block:30px; }
-.footer-base .footer-bottom { border-top:1px solid #ffffff26; padding-block:20px; color:#d7dfd4; }
-@media(max-width:760px) { .footer-base { padding-bottom:90px; } }
+.footer-base .footer-bottom { color:#6c665c; border-top:1px solid #cfb998; padding-block:20px; }
+.footer-base .social-icon { color:#455244; background:#fffaf2; border-color:#cdbb9f; }
+.footer-base .back-top { --button-ink:var(--ink); --button-border:#ab9b82; }
 
-/* Footer colour sampled from the supplied reference. */
-.footer-base { background:#fbfaf7; color:#292e27; border-top-color:#ded9ce; }
-.footer-base .brand-lockup,.footer-base .brand-type { color:#292e27; }
-.footer-base .footer-bottom { color:#65685e; border-top-color:#ded9ce; }
-.footer-base .footer-main { border-bottom-color:#ded9ce; }
-.footer-base .social-icon { color:#374b3d; background:#fff; border-color:#d5d6cb; }
-.footer-base .social-link:hover .social-icon { color:#fff; }
-.footer-base .back-top { border-color:#bfc2b5; }
+@media(max-width:1100px) {
+  .trust-section>.container { grid-template-columns:1fr 2fr; }
+  .trust-more { grid-column:1/-1; justify-self:center; }
+  .company-grid { gap:42px; }
+  .why-grid { gap:40px; }
+  .why-photo { height:540px; }
+  .spa-grid { gap:42px; }
+  .services-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .service-card { min-height:330px; }
+}
+
+@media(max-width:760px) {
+  .section { padding-block:58px; }
+  .about-band:before,.why-section:after,.reviews-section:before,.rules-band:after,.footer:after { width:88px; height:130px; opacity:.17; }
+  .about-band:before { left:-42px; top:18px; }
+  .why-section:after { right:-42px; bottom:12px; }
+  .reviews-section:before { left:-42px; bottom:10px; }
+  .rules-band:after { right:-42px; top:12px; }
+  .services-section:before { width:56px; height:56px; top:12px; }
+
+  .trust-section>.container { grid-template-columns:1fr; gap:18px; }
+  .trust-more { grid-column:auto; justify-self:center; }
+  .ratings-compact { grid-template-columns:repeat(3,minmax(0,1fr)); }
+  .ratings-compact .rating-card { padding:12px 5px; }
+
+  .about { grid-template-columns:1fr; gap:26px; }
+  .about-editorial-photo { grid-row:auto; min-height:0; height:300px; margin:0; border-radius:16px; }
+  .about>div:nth-child(2),.about-copy { padding-top:0; }
+  .about-facts { flex-wrap:wrap; }
+
+  .houses-section { padding-block:58px; }
+  .house-card { border-radius:0; border-inline:0; }
+
+  .company-section { padding-block:58px; }
+  .company-grid { width:100%; padding-inline:20px; grid-template-columns:1fr; gap:30px; }
+  .company-copy { width:100%; }
+  .company-copy h2 { font-size:34px; }
+  .company-copy>p { color:var(--muted); font-size:15px; }
+  .company-photo { position:relative; min-height:390px; border-radius:16px; }
+  .company-photo-label { display:none; }
+
+  .why-grid { grid-template-columns:1fr; gap:30px; }
+  .why-visual { order:0; }
+  .why-photo { height:360px; border-radius:0; }
+  .why-caption { margin-inline:20px; }
+  .why-features { grid-template-columns:1fr 1fr; gap:10px; }
+  .why-features article { min-height:148px; padding:15px; flex-direction:column; }
+  .why-features h3 { font-size:14px; }
+  .why-features p { font-size:12px; }
+
+  .spa-grid { grid-template-columns:1fr; gap:34px; padding-inline:20px; }
+  .spa-visual { grid-template-columns:1.28fr .72fr; gap:10px; }
+  .spa-visual>img { height:310px!important; border-radius:14px; }
+  .spa-seal { height:205px; border-radius:14px; right:auto; bottom:auto; }
+  .spa-photo-caption { top:11px; left:11px; max-width:calc(66% - 18px); font-size:8px; }
+  .spa-copy { padding-inline:0; }
+  .spa-copy h2 { font-size:35px; }
+  .spa-features { grid-template-columns:repeat(2,1fr); gap:18px; }
+  .spa-features>span { font-size:12px; }
+
+  .services-section { padding-top:86px; }
+  .services-section>.container { padding-inline:20px; }
+  .services-grid { grid-template-columns:1fr; gap:14px; }
+  .service-card { min-height:0; padding:21px; display:grid; grid-template-columns:52px 1fr; gap:0 14px; }
+  .service-top { grid-row:span 2; display:block; margin:0; }
+  .service-top>span:last-child { display:none; }
+  .service-icon { width:48px; height:48px; }
+  .service-card h3,.service-card>p { min-height:0; }
+  .service-card details { grid-column:1/-1; margin-top:18px; }
+  .service-contact { display:block; padding:22px; }
+  .service-contact>svg { display:none; }
+  .service-contact>a { width:100%; margin:18px 0 0; }
+
+  .atmosphere { width:calc(100% - 40px); min-height:0; margin:58px auto; grid-template-columns:1fr; border-radius:18px; }
+  .atmosphere-picture { min-height:310px; }
+  .atmosphere-picture:after { display:none; }
+  .atmosphere-copy { padding:38px 24px 42px; text-align:center; }
+  .atmosphere-copy .eyebrow { justify-content:center; }
+  .atmosphere h2 { font-size:36px; }
+  .atmosphere p { font-size:15px; }
+  .atmosphere .text-link { margin-inline:auto; }
+
+  .gallery-photo { border-radius:0; }
+  .review-card { border-radius:14px; }
+
+  .booking-section>.container { grid-template-columns:minmax(0,1fr); padding-inline:20px; gap:30px; }
+  .booking-intro { padding-inline:0; text-align:center; }
+  .booking-box { width:100%; min-width:0; padding:26px 20px; border:1px solid #dbc8ac; border-radius:16px; }
+  .booking-box-heading { justify-content:center; text-align:center; }
+  .booking-box-heading>div { min-width:0; width:100%; }
+  .booking-actions>* { width:100%; justify-content:center; }
+  .booking-widget { width:100%; min-width:0; max-width:100%; margin-inline:0; }
+  .booking-widget iframe { display:block; width:100%; min-width:0; max-width:100%; border-radius:10px; }
+  .booking-widget p { padding-inline:0; text-align:center; overflow-wrap:anywhere; }
+
+  .faq { padding:4px 18px; }
+  .contacts-section { padding-block:60px; }
+  .location-map { width:calc(100% + 40px); margin-inline:-20px; border-inline:0; border-radius:0; }
+  .footer-base { padding-bottom:90px; }
+}
+
+@media(max-width:380px) {
+  .why-features { grid-template-columns:1fr; }
+  .why-features article { min-height:0; }
+  .spa-visual>img { height:275px!important; }
+  .spa-seal { height:185px; }
+  .booking-section>.container { padding-inline:16px; }
+  .booking-box { padding-inline:16px; }
+}

@@ -57,7 +57,7 @@ final class ContentValidator
         foreach ($data['fields'] ?? [] as $field) {
             $key = $field['key'] ?? '';
             $value = $field['value'] ?? '';
-            if (in_array($key, ['telegram', 'vk', 'route', 'booking', 'yandex', 'gis', 'google', 'reviewWidget', 'mapWidget'], true)) {
+            if (in_array($key, ['telegram', 'vk', 'route', 'booking', 'yandex', 'gis', 'avito', 'reviewWidget', 'mapWidget'], true)) {
                 Validator::make(['link' => $value], ['link' => 'required|url:https'])->validate();
             }
             if ($key === 'phoneHref') {

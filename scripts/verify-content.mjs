@@ -24,8 +24,15 @@ for(const match of source.matchAll(/src:\s*"(\/images\/[^"']+)/g)) await access(
 for(const anchor of ['about','houses','company','spa','services','gallery','reviews','contacts','booking','rules']) assert(markup.includes(`id="${anchor}"`),`Missing ${anchor}`);
 assert(nav.includes('aria-expanded'));
 assert(!/от \d[\d ]* ?₽/.test(page),'Unconfirmed starting price');
-assert(source.includes('221989406502') && source.includes('70000001031488982') && source.includes('0xba7af5f7778d6ffa'),'Wrong map listing');
-assert(initial.ratings.length===3 && initial.ratings.every(item=>item.rating==='5,0'),'Three verified platform ratings required');
+assert(source.includes('221989406502') && source.includes('70000001031488982') && source.includes('23247c55bfeed02f5abc30847c6ce191'),'Wrong review listing');
+assert.equal(initial.ratings.length,3,'Three verified platform ratings required');
+assert.deepEqual(initial.ratings.map(item=>item.id),['avito','yandex','gis'],'Review platforms must follow the client-approved order');
+assert.equal(new Set(initial.ratings.map(item=>item.id)).size,initial.ratings.length,'Review platform ids must be unique');
+for (const rating of initial.ratings) {
+  assert(/^[0-5](?:[,.][0-9])?$/.test(rating.rating),`Invalid rating for ${rating.id}`);
+  assert(rating.count && new URL(rating.url).protocol==='https:',`Incomplete rating for ${rating.id}`);
+  await access(path.join(root,'public',rating.logo));
+}
 const quotes=initial.reviewExcerpts.map(item=>item.quote);
 const words=quotes.join(' ').replace(/\[.*?\]/g,'').trim().split(/\s+/).length;
 assert(words<=25,`Review excerpt word limit: ${words}`);

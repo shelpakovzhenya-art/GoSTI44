@@ -16,7 +16,7 @@ class SiteContentSeeder extends Seeder
         foreach ($collections['services'] as $index => $service) {
             $this->entry('service', 'service-'.$service['className'], $service['title'], ['title' => $service['title'], 'description' => $service['text'], 'detail' => $service['detail'], 'icon' => $service['icon'], 'className' => $service['className']], $index);
         }
-        $this->entry('section', 'comforts', 'Удобства в каждом доме', ['items' => $collections['comforts']]);
+        $this->entry('section', 'comforts', 'Удобства таунхаусов', ['items' => $collections['comforts']]);
         $this->entry('section', 'photo-gallery', 'Фотогалерея: состав и порядок фото', ['images' => $collections['photos']]);
         $this->entry('menu', 'main-menu', 'Главное меню', ['buttons' => array_map(fn ($link) => ['label' => $link[0], 'href' => '#'.$link[1]], $collections['links'])]);
         foreach ($sections as $section) {
@@ -50,7 +50,7 @@ class SiteContentSeeder extends Seeder
         $this->entry('section', 'site-images', 'Фотографии на сайте: замена во всех блоках', ['images' => $images]);
         $this->entry('page', 'home', 'Главная страница', ['seo' => [
             'title' => 'Танжерин — гостевые дома в Костроме с кухней и верандой',
-            'description' => 'Три отдельных дома в Костроме для семьи или компании до 25 гостей. Кухня, веранда, мангал и парковка. Баня в доме «Лайм». Фотографии, свободные даты и бронирование.',
+            'description' => 'Один большой дом с тремя самостоятельными таунхаусами в Костроме для семьи или компании до 25 гостей. Отдельные входы, кухни, веранды и мангальные зоны. Фотографии, свободные даты и бронирование.',
             'h1' => 'ТАНЖЕРИН', 'noindex' => false,
         ]]);
     }
