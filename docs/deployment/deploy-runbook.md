@@ -6,7 +6,7 @@
 - HTTP, IP 186.246.50.205 и www перенаправляются на основной HTTPS-адрес.
 - Nginx 80/443 → Next.js 127.0.0.1:3107, systemd `gosti`.
 - CMS: PHP 8.4 FPM, Docker `gosti-php`, loopback9000; внутренний Nginx127.0.0.1:8108. Host PHP8.5 несовместим с закреплённой openspout, не использовать его для artisan.
-- Текущий frontend-релиз: `/var/www/gosti/releases/20260916-1`; `/var/www/gosti/current` — переключаемая ссылка. CMS остаётся в `/var/www/gosti/releases/20260915-1/cms`, а её storage — в `/var/www/gosti/releases/20260909-1/cms/storage`.
+- Текущий релиз frontend и CMS: `/var/www/gosti/releases/20260916-5`; `/var/www/gosti/current` — переключаемая ссылка. Постоянное storage остаётся в `/var/www/gosti/releases/20260909-1/cms/storage`.
 - БД: /var/www/gosti/shared/database.sqlite. НЕ удалять релизы `20260915-1` и `20260909-1`, пока CMS и постоянное storage не перенесены отдельно с проверкой. Публичный storage:link сохраняет доступ к тем же загрузкам.
 
 ## Сеть и HTTPS
@@ -45,6 +45,14 @@ Systemd: /etc/systemd/system/gosti.service, Node .next/standalone/server.js от
 Активен `/var/www/gosti/releases/20260916-3`, исходный коммит `6ae83c496e8adf3c3ff659091e13f348c4bebc3b`. Выпуск добавил страницы `/doma/laym`, `/doma/limon`, `/doma/citrus` и `/dlya-bolshoy-kompanii`, а также их поля в CMS. Перед миграцией сохранена база `/var/www/gosti/backups/database-20260916-1951-before-house-landings.sqlite`.
 
 После переключения проверены все пять публичных маршрутов, опубликованные записи API, `/admin`, десять Filament/Livewire assets, CSS/JS Next.js, изображения и `noindex`. Для отката frontend и CMS верните `current` на `/var/www/gosti/releases/20260916-1` и перезапустите `gosti` и `gosti-php`; базу откатывайте только после проверки изменений, внесённых после резервной копии.
+
+## Выпуск путеводителя и терминологии 16.09.2026
+
+Активен `/var/www/gosti/releases/20260916-5`, исходный коммит `7f99de2`. Выпуск добавил `/kostroma`, `/kostroma/gde-poest`, `/kostroma/dostoprimechatelnosti`, поля путеводителя в CMS и `ItemList` JSON-LD. Публичные «таунхаусы» заменены на дома; отдельный блок и пункт меню SPA удалены, баня дома «Лайм» находится среди услуг раздела «Всё для отдыха». Релиз `20260916-5` отличается от проверенного `20260916-4` только фирменным favicon.
+
+Перед миграцией сохранена база `/var/www/gosti/backups/database-20260916-2248-before-kostroma-guides.sqlite`, права `600`; `PRAGMA integrity_check` после выпуска — `ok`. Проверены восемь публичных маршрутов, API CMS, admin login, Next/Filament assets и favicon через TLS-туннель. Browser QA на 320, 390, 768, 1265 и 1440 px не обнаружила переполнения, битых изображений, console/runtime errors или старой терминологии; noindex сохранён.
+
+Для отката к коду до favicon верните `current` на `/var/www/gosti/releases/20260916-4` и перезапустите `gosti` и `gosti-php`. Для полного отката контентной миграции сначала проверьте изменения, внесённые после резервной копии, и восстанавливайте базу отдельно; миграцию вслепую не откатывать.
 
 ## Данные и проверки
 
