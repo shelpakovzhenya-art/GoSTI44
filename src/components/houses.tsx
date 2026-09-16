@@ -4,7 +4,7 @@ import { CmsText, EditableText } from "@/components/cms-context";
 
 import Image from "@/components/cms-image";
 import { useEffect, useRef, useState } from "react";
-import { ArrowUpRight, Bath, BedDouble, Check, ChevronLeft, ChevronRight, CookingPot, House as HouseIcon, Maximize2, Sofa, Users, X } from "lucide-react";
+import { ArrowUpRight, Bath, BedDouble, Check, ChevronLeft, ChevronRight, CookingPot, House as HouseIcon, Maximize2, Sofa, Sparkles, Users, X } from "lucide-react";
 import { HouseEmblem } from "@/components/house-emblem";
 import { type House } from "@/lib/content-types";
 import { useSite } from "@/components/cms-context";
@@ -38,11 +38,17 @@ function AmenityIcon({ label }: { label: string }) {
   return <Check/>;
 }
 
+function HouseFeatureIcon({ tone }: { tone: House["tone"] }) {
+  if (tone === "lime") return <Bath/>;
+  if (tone === "lemon") return <Sparkles/>;
+  return <BedDouble/>;
+}
+
 function HouseCard({house, onSelect}: { house: House; onSelect: () => void }) {
   const [photo, setPhoto] = useState(0);
   return <article className={`house-card house-${house.tone}`}>
-    <div className="house-image"><button className="house-image-open" onClick={onSelect} aria-label={`Посмотреть таунхаус «${house.name}»`}><Image src={house.images[photo].src} alt={house.images[photo].alt} fill sizes="(max-width: 760px) 90vw, (max-width: 1100px) 45vw, 430px"/></button><h3 className="house-image-tag"><HouseEmblem tone={house.tone}/><EditableText id={`field:${house.id}:name`} value={house.name} uppercase/></h3><button className="image-next" onClick={()=>setPhoto(previous=>(previous+1)%house.images.length)} aria-label={`Следующая фотография: ${house.name}`}><ChevronRight size={19}/></button><div className="image-dots" aria-label={`Фотография ${photo+1} из ${house.images.length}`}>{house.images.map((image,i)=><span className={i===photo ? "active" : ""} key={image.src}/>)}</div></div>
-    <div className="house-copy"><span className="house-audience"><EditableText id={`field:${house.id}:label`} value={house.label}/></span><h4 className="house-promise"><EditableText id={`field:${house.id}:title`} value={house.title}/></h4><div className="house-specs"><span><Maximize2 size={15}/>{house.areaApproximate ? "≈ " : ""}{house.area} <CmsText id="houses.009" /></span><span><Users size={15}/><EditableText id={`field:${house.id}:guests`} value={house.guests}/> <CmsText id="houses.010" /></span><span><BedDouble size={15}/>{house.bedrooms} <CmsText id="houses.011" /></span></div><p><EditableText id={`field:${house.id}:description`} value={house.description}/></p><ul className="house-plan" aria-label={`Планировка и удобства таунхауса «${house.name}»`}>{house.amenities.slice(0,5).map(item=><li key={item}><AmenityIcon label={item}/><span>{item}</span></li>)}</ul><div className="house-actions"><button onClick={onSelect}><CmsText id="houses.014" />{" "}<EditableText id={`field:${house.id}:name`} value={house.name} uppercase/> <ArrowUpRight size={19}/></button><a href="#booking"><CmsText id="houses.015" /><ArrowUpRight size={17}/></a></div></div>
+    <div className="house-image"><button className="house-image-open" onClick={onSelect} aria-label={`Посмотреть таунхаус «${house.name}»`}><Image src={house.images[photo].src} alt={house.images[photo].alt} fill sizes="(max-width: 760px) 100vw, (max-width: 1100px) 45vw, 430px"/></button><h3 className="house-image-tag"><HouseEmblem tone={house.tone}/><EditableText id={`field:${house.id}:name`} value={house.name} uppercase/></h3><span className="house-feature-seal" aria-hidden="true"><HouseFeatureIcon tone={house.tone}/></span><button className="image-next" onClick={()=>setPhoto(previous=>(previous+1)%house.images.length)} aria-label={`Следующая фотография: ${house.name}`}><ChevronRight size={19}/></button><div className="image-dots" aria-label={`Фотография ${photo+1} из ${house.images.length}`}>{house.images.map((image,i)=><span className={i===photo ? "active" : ""} key={image.src}/>)}</div></div>
+    <div className="house-copy"><h4 className="house-promise"><EditableText id={`field:${house.id}:title`} value={house.title}/></h4><div className="house-card-meta"><span><EditableText id={`field:${house.id}:guests`} value={house.guests}/> <CmsText id="houses.010" /></span><i aria-hidden="true"/><span>{house.areaApproximate ? "около " : ""}{house.area} <CmsText id="houses.009" /></span></div><p><EditableText id={`field:${house.id}:description`} value={house.description}/></p><ul className="house-plan" aria-label={`Планировка и удобства таунхауса «${house.name}»`}>{house.amenities.slice(0,5).map(item=><li key={item}><AmenityIcon label={item}/><span>{item}</span></li>)}</ul><div className="house-actions"><button onClick={onSelect}><CmsText id="houses.014" />{" "}<EditableText id={`field:${house.id}:name`} value={house.name} uppercase/></button></div></div>
   </article>;
 }
 
