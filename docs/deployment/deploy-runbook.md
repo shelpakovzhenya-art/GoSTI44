@@ -6,8 +6,8 @@
 - HTTP, IP 186.246.50.205 и www перенаправляются на основной HTTPS-адрес.
 - Nginx 80/443 → Next.js 127.0.0.1:3107, systemd `gosti`.
 - CMS: PHP 8.4 FPM, Docker `gosti-php`, loopback9000; внутренний Nginx127.0.0.1:8108. Host PHP8.5 несовместим с закреплённой openspout, не использовать его для artisan.
-- Текущий релиз: `/var/www/gosti/releases/20260914-2`; `/var/www/gosti/current` — переключаемая ссылка. В релизе собственные CMS и vendor; storage ссылается на релиз1. Релиз1 нельзя удалять до переноса постоянного storage.
-- БД: /var/www/gosti/shared/database.sqlite. Хранилище CMS нового релиза ссылается на cms/storage первого релиза; НЕ удалять первый релиз, пока storage не перенесён отдельно с проверкой. Публичный storage:link сохраняет доступ к тем же загрузкам.
+- Текущий frontend-релиз: `/var/www/gosti/releases/20260916-1`; `/var/www/gosti/current` — переключаемая ссылка. CMS остаётся в `/var/www/gosti/releases/20260915-1/cms`, а её storage — в `/var/www/gosti/releases/20260909-1/cms/storage`.
+- БД: /var/www/gosti/shared/database.sqlite. НЕ удалять релизы `20260915-1` и `20260909-1`, пока CMS и постоянное storage не перенесены отдельно с проверкой. Публичный storage:link сохраняет доступ к тем же загрузкам.
 
 ## Сеть и HTTPS
 
@@ -69,3 +69,9 @@ Systemd: /etc/systemd/system/gosti.service, Node .next/standalone/server.js от
 Активен `/var/www/gosti/releases/20260914-2`, исходный коммит `e44e84d`. Преимущества, баня, услуги, бронирование и FAQ собраны в цельные кремовые композиции; услуги используют фотографии из собственных CMS-записей. Растительный декор обрамляет светлые главы и не создаёт горизонтальное переполнение. Миграция `2026_09_14_130000_add_service_editorial_images` применена batch3; целостность SQLite — `ok`, четыре опубликованные услуги имеют изображения.
 
 Перед миграцией сохранены `/var/backups/gosti/pre-release-20260914-2.sqlite` и `/var/backups/gosti/pre-release-20260914-2.env`, права `600`. Проверены candidate на отдельном порту, `nginx -t`, Next/CMS/API/HTTPS, статические assets и отсутствие ошибок в логах. После переключения обнаружено, что Filament assets не вошли в исходный архив; `filament:assets` опубликован из vendor, после чего все 10 CSS/JS URL админки отвечают `200`. Браузерная QA через временный Ethernet-туннель прошла на 1440/390/320 px без горизонтального скролла и console errors; показ/скрытие пароля работает, backend-проверка учётных данных и права панели вернула `AUTH_OK`. Откат frontend — вернуть `/var/www/gosti/current` на `/var/www/gosti/releases/20260914-1` и перезапустить `gosti` и `gosti-php`; базу не откатывать вслепую.
+
+## Выпуск 16.09.2026
+
+Активен `/var/www/gosti/releases/20260916-1`, исходный коммит `b0e89507257b5412e968731e20341a749974f963`. Изменена только frontend-типографика: увеличены вводный текст, заголовки, описания, характеристики и кнопки карточек домов, а также подписи блока большой компании. CMS, опубликованные данные и миграции не менялись; frontend-релиз ссылается на существующую CMS `/var/www/gosti/releases/20260915-1/cms`.
+
+Перед переключением сохранены `/var/backups/gosti/pre-release-20260916-1.sqlite` и `/var/backups/gosti/pre-release-20260916-1.env` с правами `600`. Candidate проверен на `127.0.0.1:3117`, затем ссылка `current` переключена атомарно и `gosti` перезапущен. Проверены `nginx -t`, Next `3107`, CMS `8108`, публичные главная и `/admin/login`, два CSS-ресурса, `X-Robots-Tag: noindex` и meta noindex. Production-проверка на 320, 390, 768, 1024, 1440 и 2560 px не обнаружила горизонтального переполнения, выходящих за экран карточек или кнопок. Откат frontend — вернуть `/var/www/gosti/current` на `/var/www/gosti/releases/20260915-14` и перезапустить `gosti`; БД и CMS откатывать не нужно.
