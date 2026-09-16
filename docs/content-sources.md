@@ -22,7 +22,7 @@
 
 ## Путеводитель по Костроме — 16.09.2026
 
-Карточки `/kostroma/gde-poest` и `/kostroma/dostoprimechatelnosti` сверены с официальными страницами. На сайте не фиксируются часы работы и цены: они меняются, поэтому каждая карточка ведёт к первичному или городскому источнику.
+Карточки шести тематических страниц раздела `/kostroma` сверены с официальными страницами. На сайте не фиксируются часы работы и цены: они меняются, поэтому каждая карточка ведёт к первичному или городскому источнику.
 
 - Городской туристический портал: https://visit-kostroma.ru/ и раздел https://visit-kostroma.ru/kuda-skhodit/dostoprimechatelnosti/ .
 - «Гроза»: https://restorangroza.ru/restaurant и городская карточка https://visit-kostroma.ru/gde-poest/groza/ .
@@ -30,3 +30,15 @@
 - Костромской музей-заповедник: https://kosmuseum.ru/ .
 - Ипатьевский монастырь: https://ipatievsky.cerkov.ru/ .
 - «Костромская слобода», Пожарная каланча, «Причал», Traveler’s Coffee и «Веранда»: соответствующие карточки `visit-kostroma.ru`, сохранённые в `content/pages.json` и редактируемые через CMS.
+
+Дополнительные страницы созданы после проверки спроса в Яндекс Wordstat: методика и числа сохранены в [seo/wordstat-2026-09-16.md](seo/wordstat-2026-09-16.md). Факты для новых карточек сверены по следующим источникам:
+
+- музеи и развлечения Костромы: https://visit-kostroma.ru/kuda-skhodit/razvlecheniya/ ;
+- Музей сыра: https://visit-kostroma.ru/kuda-skhodit/razvlecheniya/muzey-syra/ ;
+- Музей ювелирного искусства: https://visit-kostroma.ru/kuda-skhodit/razvlecheniya/muzey-yuvelirnogo-iskusstva/ ;
+- Музей-усадьба льна и бересты: https://linenmuseum.ru/o_muzee ;
+- Терем Снегурочки: https://teremsnegurochki.ru/ ;
+- Резиденция Снегурочки и парк «Берендеевка»: карточки `visit-kostroma.ru`;
+- Костромской зоопарк: https://zoopark44.ru/ ;
+- маршруты по Костроме: https://visit-kostroma.ru/marshruty/ ;
+- сувениры и туристические бренды: https://visit-kostroma.ru/suveniry/ и https://visit-kostroma.ru/turisticheskie-brendy/ .

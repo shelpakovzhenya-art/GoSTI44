@@ -37,7 +37,7 @@ class ContentEntryForm
                 Tab::make('Содержимое')->schema([
                     Select::make('draft.template')->label('Шаблон страницы')->options(['standard' => 'Обычная текстовая', 'house' => 'Посадочная дома', 'company' => 'Большая компания', 'guide' => 'Путеводитель по Костроме'])->default('standard')->live()->visible(fn (Get $get) => $get('kind') === 'page' && $get('key') !== 'home'),
                     Select::make('draft.houseKey')->label('Какой дом показывает страница')->options(['lime' => 'Лайм', 'lemon' => 'Лимон', 'citrus' => 'Цитрус'])->visible(fn (Get $get) => $get('kind') === 'page' && $get('draft.template') === 'house'),
-                    Select::make('draft.guideType')->label('Тип путеводителя')->options(['overview' => 'Обзор Костромы', 'food' => 'Где поесть', 'sights' => 'Достопримечательности'])->visible(fn (Get $get) => $get('kind') === 'page' && $get('draft.template') === 'guide'),
+                    Select::make('draft.guideType')->label('Тип путеводителя')->options(['overview' => 'Обзор Костромы', 'food' => 'Где поесть', 'sights' => 'Достопримечательности', 'museums' => 'Музеи', 'itinerary' => 'Маршрут на один день', 'family' => 'Кострома с детьми', 'souvenirs' => 'Что привезти'])->visible(fn (Get $get) => $get('kind') === 'page' && $get('draft.template') === 'guide'),
                     TextInput::make('draft.title')->label('Заголовок')->maxLength(250)->visible(fn (Get $get) => in_array($get('kind'), ['page', 'house', 'service', 'faq']) && $get('key') !== 'home'),
                     TextInput::make('draft.eyebrow')->label('Надпись над заголовком')->maxLength(150)->visible(fn (Get $get) => $get('kind') === 'page' && $get('key') !== 'home'),
                     Textarea::make('draft.description')->label('Краткое описание')->rows(3)->visible(fn (Get $get) => in_array($get('kind'), ['page', 'house', 'service', 'faq']) && $get('key') !== 'home'),
@@ -66,6 +66,14 @@ class ContentEntryForm
                         Textarea::make('description')->label('Короткое описание')->required(),
                         TextInput::make('href')->label('Ссылка')->required()->regex('/^(https?:\/\/|\/)[^<>]*$/'),
                     ])->collapsible()->itemLabel(fn (array $state): ?string => $state['title'] ?? 'Место'),
+                    Section::make('Подписи путеводителя')->visible(fn (Get $get) => $get('kind') === 'page' && $get('draft.template') === 'guide')->schema([
+                        TextInput::make('draft.listTitle')->label('Заголовок списка')->maxLength(250),
+                        TextInput::make('draft.sourceLabel')->label('Подпись источников')->maxLength(250),
+                        TextInput::make('draft.noteTitle')->label('Заголовок памятки')->maxLength(250),
+                        Textarea::make('draft.noteText')->label('Текст памятки')->rows(3),
+                        TextInput::make('draft.closingTitle')->label('Заголовок финального блока')->maxLength(250),
+                        Textarea::make('draft.closingText')->label('Текст финального блока')->rows(3),
+                    ])->columns(2),
                 ]),
                 Tab::make('Фотографии')->visible(fn (Get $get) => in_array($get('kind'), ['house', 'service']) || ($get('kind') === 'page' && $get('key') !== 'home') || in_array($get('key'), ['site-images', 'photo-gallery']))->schema([
                     Repeater::make('draft.images')->defaultItems(0)->label('Изображения')->schema([

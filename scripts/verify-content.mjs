@@ -39,11 +39,16 @@ for (const service of collections.services) {
   assert.equal(service.images?.length,1,`Service ${service.className} needs one editorial photograph`);
   await access(path.join(root,'public',service.images[0].src));
 }
-assert.deepEqual(landingPages.map(item=>item.key),['doma/laym','doma/limon','doma/citrus','dlya-bolshoy-kompanii','kostroma','kostroma/gde-poest','kostroma/dostoprimechatelnosti'],'All house, company and Kostroma guide pages required');
+assert.deepEqual(landingPages.map(item=>item.key),['doma/laym','doma/limon','doma/citrus','dlya-bolshoy-kompanii','kostroma','kostroma/gde-poest','kostroma/dostoprimechatelnosti','kostroma/muzei','kostroma/za-odin-den','kostroma/s-detmi','kostroma/chto-privezti'],'All house, company and Kostroma guide pages required');
 for (const landingPage of landingPages) {
   for (const image of landingPage.images || []) await access(path.join(root,'public',image.src));
   assert(landingPage.seo?.title && landingPage.seo?.description && landingPage.seo?.h1,`SEO required for ${landingPage.key}`);
 }
+const guidePages=landingPages.filter(item=>item.template==='guide');
+assert.equal(guidePages.length,7,'Seven distinct Kostroma guides required');
+assert.equal(new Set(guidePages.map(item=>item.seo.h1)).size,guidePages.length,'Guide H1 values must be unique');
+const guideHub=guidePages.find(item=>item.key==='kostroma');
+for (const key of ['gde-poest','dostoprimechatelnosti','muzei','za-odin-den','s-detmi','chto-privezti']) assert(guideHub.guideItems.some(item=>item.href===`/kostroma/${key}`),`Guide hub must link to ${key}`);
 assert.equal(collections.links[0][0],'Дома','The client requested “Дома” in navigation');
 assert.equal(collections.links[1][1],'/dlya-bolshoy-kompanii','Company landing must be linked from the menu');
 assert.equal(collections.links.at(-1)[1],'/kostroma','Kostroma guide must be linked from the menu');

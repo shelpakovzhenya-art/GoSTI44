@@ -3,12 +3,15 @@ import type { ReactNode } from "react";
 import {
   ArrowRight,
   ArrowUpRight,
+  Baby,
   Bath,
   BedDouble,
   Check,
   CookingPot,
+  Gift,
   House as HouseIcon,
   Landmark,
+  Map,
   MapPin,
   MoonStar,
   Sofa,
@@ -142,15 +145,30 @@ function GuideLanding({ page, content }: { page: ContentEntry; content: SiteCont
   const guideType = String(page.data.guideType || "overview");
   const isFood = guideType === "food";
   const isOverview = guideType === "overview";
-  const HeroIcon = isFood ? UtensilsCrossed : Landmark;
+  const guideIcons = {
+    food: UtensilsCrossed,
+    itinerary: Map,
+    family: Baby,
+    souvenirs: Gift,
+    overview: MapPin,
+    museums: Landmark,
+    sights: Landmark,
+  } as const;
+  const HeroIcon = guideIcons[guideType as keyof typeof guideIcons] || Landmark;
+  const listTitle = String(page.data.listTitle || (isOverview ? "Спланируйте поездку" : isFood ? "Где поесть в Костроме" : "Что посмотреть в Костроме"));
+  const sourceLabel = String(page.data.sourceLabel || "Проверено по городскому туристическому порталу");
+  const noteTitle = String(page.data.noteTitle || "Проверьте детали перед выездом");
+  const noteText = String(page.data.noteText || "Режим работы площадок меняется. На карточках оставлены ссылки на официальные страницы, а дорогу от дома можно построить в Яндекс Картах.");
+  const closingTitle = String(page.data.closingTitle || "После прогулки — домой");
+  const closingText = String(page.data.closingText || "Выберите свободные даты и возвращайтесь в тихий дом со своей кухней и верандой.");
   const seo = (page.data.seo || {}) as Record<string, unknown>;
   return <>
     <Navigation subpage/>
     <main id="main" className={`detail-landing guide-landing guide-${guideType}`}>
       <section className="guide-hero botanical-section"><Foliage className="guide-hero-foliage" variant="leaves" eager/><div className="container guide-hero-grid"><div className="guide-hero-copy"><Link className="detail-back" href="/">← Главная</Link><div className="eyebrow">{String(page.data.eyebrow || "КОСТРОМА ДЛЯ ГОСТЕЙ")}</div><span className="guide-emblem"><HeroIcon/></span><h1>{String(seo.h1 || page.data.title || "Кострома")}</h1><p>{String(page.data.description || "")}</p><div className="detail-rich" dangerouslySetInnerHTML={{__html:String(page.data.body || "")}}/><DetailActions page={page} site={content.site}/></div><figure className="guide-hero-photo"><Image src={photos[0]?.src || "/images/hero.jpg"} alt={photos[0]?.alt || "Гостевые дома «Танжерин» в Костроме"} fill priority sizes="(max-width:760px) 100vw, 52vw"/><figcaption><MapPin/> От «Танжерина» удобно начать знакомство с городом</figcaption></figure></div></section>
-      <section className="detail-section guide-list"><div className="container"><div className="detail-section-heading"><h2>{isOverview ? "Спланируйте поездку" : isFood ? "Где поесть в Костроме" : "Что посмотреть в Костроме"}</h2><span className="hand-note">Проверено по городскому туристическому порталу</span></div><div className={`guide-cards${isOverview ? " guide-cards-overview" : ""}`}>{items.map((item, index) => { const external = /^https?:/.test(item.href); const label = external ? "Открыть официальный источник" : "Открыть раздел"; return <article className="guide-card" key={`${item.title}-${index}`}><span className="guide-card-number">0{index + 1}</span><div className="guide-card-icon">{isFood ? <UtensilsCrossed/> : <Landmark/>}</div><h3>{item.title}</h3><strong>{item.meta}</strong><p>{item.description}</p>{external ? <a href={item.href} target="_blank" rel="noreferrer">{label}<ArrowUpRight/></a> : <Link href={item.href}>{label}<ArrowUpRight/></Link>}</article>; })}</div></div></section>
-      <section className="guide-note botanical-section"><div className="container"><MapPin/><div><h2>Маршрут лучше сверить перед выездом</h2><p>Режим работы заведений и площадок меняется. На карточках оставлены ссылки на официальные страницы, а дорогу от дома можно построить в Яндекс Картах.</p></div><a className="detail-button detail-button-secondary" href={content.site.route} target="_blank" rel="noreferrer">Построить маршрут<ArrowUpRight/></a></div></section>
-      <section className="detail-closing guide-closing"><Image src={photos[1]?.src || "/images/veranda.jpg"} alt={photos[1]?.alt || "Веранда гостевого дома «Танжерин»"} fill sizes="100vw"/><div className="detail-closing-shade"/><div className="container detail-closing-copy"><div><h2>После прогулки — домой</h2><p>Выберите свободные даты и возвращайтесь в тихий дом со своей кухней и верандой.</p></div><div className="detail-actions"><Link className="detail-button" href="/#booking">Проверить даты<ArrowUpRight/></Link><Link className="detail-button detail-button-secondary" href="/kostroma">Все подсказки по Костроме<ArrowUpRight/></Link></div></div></section>
+      <section className="detail-section guide-list"><div className="container"><div className="detail-section-heading"><h2>{listTitle}</h2><span className="hand-note">{sourceLabel}</span></div><div className={`guide-cards${isOverview ? " guide-cards-overview" : ""}`}>{items.map((item, index) => { const external = /^https?:/.test(item.href); const label = external ? "Открыть официальный источник" : "Открыть раздел"; return <article className="guide-card" key={`${item.title}-${index}`}><span className="guide-card-number">0{index + 1}</span><div className="guide-card-icon"><HeroIcon/></div><h3>{item.title}</h3><strong>{item.meta}</strong><p>{item.description}</p>{external ? <a href={item.href} target="_blank" rel="noreferrer">{label}<ArrowUpRight/></a> : <Link href={item.href}>{label}<ArrowUpRight/></Link>}</article>; })}</div></div></section>
+      <section className="guide-note botanical-section"><div className="container"><MapPin/><div><h2>{noteTitle}</h2><p>{noteText}</p></div><a className="detail-button detail-button-secondary" href={content.site.route} target="_blank" rel="noreferrer">Построить маршрут<ArrowUpRight/></a></div></section>
+      <section className="detail-closing guide-closing"><Image src={photos[1]?.src || "/images/veranda.jpg"} alt={photos[1]?.alt || "Веранда гостевого дома «Танжерин»"} fill sizes="100vw"/><div className="detail-closing-shade"/><div className="container detail-closing-copy"><div><h2>{closingTitle}</h2><p>{closingText}</p></div><div className="detail-actions"><Link className="detail-button" href="/#booking">Проверить даты<ArrowUpRight/></Link><Link className="detail-button detail-button-secondary" href="/kostroma">Все подсказки по Костроме<ArrowUpRight/></Link></div></div></section>
     </main>
     <DetailFooter content={content}/>
   </>;
