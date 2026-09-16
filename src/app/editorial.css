@@ -55,9 +55,9 @@ h2 em,.muted { font:inherit; color:inherit; letter-spacing:inherit; }
 .houses-section { padding-bottom:135px; }.houses-heading h2 { max-width:670px; }
 .house-card { border:0; border-radius:12px; background:#f0efe8; }
 .house-image { aspect-ratio:1.2; }.house-image-tag { border-radius:5px; font-size:12px; padding:9px 13px; }
-.house-copy { padding:27px; }.house-title h3 { font-weight:700; font-size:32px; }.house-title>span { font:500 15px var(--font-manrope); color:#7a7b71; }
-.house-specs>span { font-size:14px; }.house-promise { font-size:21px; font-weight:650; min-height:60px; }
-.house-copy>p { font-size:15px; line-height:1.7; }.house-tags>span { background:#e3e4da; border-radius:3px; font-size:12px; }
+.house-copy { padding:27px; }.house-audience { font-size:11px; color:#c96817; }
+.house-specs>span { font-size:14px; }.house-promise { font-size:21px; font-weight:650; min-height:78px; }
+.house-copy>p { font-size:15px; line-height:1.65; min-height:74px; }.house-plan { border-color:#d6d6cd; }
 .house-actions>button,.house-actions>a { font-size:14px; min-height:51px; }
 .company-grid { border-radius:0; width:100%; max-width:none; min-height:580px; padding:85px max(48px,calc((100vw - 1280px)/2)); }
 .company-photo:after { background:linear-gradient(90deg,#131c17d9 0%,#17231a9e 47%,#1b25171a 100%); }
