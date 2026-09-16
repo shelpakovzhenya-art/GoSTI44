@@ -23,7 +23,7 @@ for(const file of await readdir(path.join(root,'src/components'))) {
   for(const match of text.matchAll(/href="#([^"{]+)"/g)) assert(markup.includes(`id="${match[1]}"`),`Missing anchor ${match[1]}`);
 }
 for(const match of source.matchAll(/src:\s*"(\/images\/[^"']+)/g)) await access(path.join(root,'public',match[1]));
-for(const anchor of ['about','houses','company','spa','services','gallery','reviews','contacts','booking','rules']) assert(markup.includes(`id="${anchor}"`),`Missing ${anchor}`);
+for(const anchor of ['about','houses','company','services','gallery','reviews','contacts','booking','rules']) assert(markup.includes(`id="${anchor}"`),`Missing ${anchor}`);
 assert(nav.includes('aria-expanded'));
 assert(!/от \d[\d ]* ?₽/.test(page),'Unconfirmed starting price');
 assert(source.includes('221989406502') && source.includes('70000001031488982') && source.includes('23247c55bfeed02f5abc30847c6ce191'),'Wrong review listing');
@@ -39,13 +39,17 @@ for (const service of collections.services) {
   assert.equal(service.images?.length,1,`Service ${service.className} needs one editorial photograph`);
   await access(path.join(root,'public',service.images[0].src));
 }
-assert.deepEqual(landingPages.map(item=>item.key),['doma/laym','doma/limon','doma/citrus','dlya-bolshoy-kompanii'],'All house and company landing pages required');
+assert.deepEqual(landingPages.map(item=>item.key),['doma/laym','doma/limon','doma/citrus','dlya-bolshoy-kompanii','kostroma','kostroma/gde-poest','kostroma/dostoprimechatelnosti'],'All house, company and Kostroma guide pages required');
 for (const landingPage of landingPages) {
   for (const image of landingPage.images || []) await access(path.join(root,'public',image.src));
   assert(landingPage.seo?.title && landingPage.seo?.description && landingPage.seo?.h1,`SEO required for ${landingPage.key}`);
 }
 assert.equal(collections.links[0][0],'Дома','The client requested “Дома” in navigation');
 assert.equal(collections.links[1][1],'/dlya-bolshoy-kompanii','Company landing must be linked from the menu');
+assert.equal(collections.links.at(-1)[1],'/kostroma','Kostroma guide must be linked from the menu');
+assert(collections.services.some(item=>item.className==='bath'),'Bath belongs inside the leisure services section');
+assert(!/таунхаус/iu.test(JSON.stringify({initial,collections,landingPages})),'Public seed content must use “дом”');
+assert(!/SPA|СПА/u.test(JSON.stringify({initial,collections,landingPages})),'Public seed content must call the facility “баня”');
 const quotes=initial.reviewExcerpts.map(item=>item.quote);
 const words=quotes.join(' ').replace(/\[.*?\]/g,'').trim().split(/\s+/).length;
 assert(words<=25,`Review excerpt word limit: ${words}`);
@@ -53,7 +57,7 @@ await access(path.join(root,'public/brand/tangerines.webp'));
 await access(path.join(root,'public/brand/citrus-leaves.webp'));
 await access(path.join(root,'public/brand/lemon-branch.webp'));
 await access(path.join(root,'public/brand/palm-frond.webp'));
-console.log(`Content checks passed: ${Object.keys(manifest.files).length} source assets + 4 brand assets, 10 section anchors, 3 map cards, ${words} quoted words. Browser and build checks remain separate.`);
+console.log(`Content checks passed: ${Object.keys(manifest.files).length} source assets + 4 brand assets, 9 section anchors, 3 map cards, ${words} quoted words. Browser and build checks remain separate.`);
 
 // Exercise the production adapter itself without Next, a server, or fixture fallbacks.
 const adapterSource = await readFile(path.join(root, 'src/lib/content.ts'), 'utf8');

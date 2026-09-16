@@ -266,6 +266,11 @@ dialog::backdrop { background:#0b291fd6; backdrop-filter:blur(6px); }.dialog-inn
   .hero { min-height:940px; }.hero-leaves { left:calc(50% - 960px); width:500px; height:500px; }.hero-citrus { right:calc(50% - 920px); width:460px; height:460px; }
   .houses-leaves { left:calc(50% - 950px); }.houses-lemons { right:calc(50% - 920px); }.why-palm { left:calc(50% - 970px); }.services-fruit { left:calc(50% - 960px); }.reviews-leaves { right:calc(50% - 970px); }
 }
+@media(max-width:1320px) and (min-width:1051px) {
+  .desktop-nav { display:none; }
+  .header .contact-links { margin-left:auto; }
+  .menu-toggle { display:grid; background:transparent; }
+}
 @media(max-width:1250px) {
   .container { width:calc(100% - 64px); }.header { width:calc(100% - 40px); }.header-inner.container { gap:16px; padding-inline:18px; }.desktop-nav { gap:15px; font-size:12px; }.brand-fruit { width:46px; height:46px; }.brand-type { font-size:24px; }.brand-type small { font-size:12px; }.header .contact-links { gap:5px; }.header .social-icon { width:38px; height:38px; }.header .social-link { min-width:38px; }.header-book { padding-inline:16px; }.header-inner>.header-phone { display:none; }
   .trust-section>.container { grid-template-columns:1fr; gap:22px; }.trust-message { display:flex; justify-content:space-between; align-items:center; gap:25px; }.trust-message h2 { max-width:500px; font-size:22px; }.trust-message p { margin-top:0; }.trust-more { display:none; }.ratings-compact .rating-card { padding:17px 22px; }.ratings-compact .rating-brand { font-size:13px; }.ratings-compact .rating-brand small { font-size:11px; }

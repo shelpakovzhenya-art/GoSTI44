@@ -13,14 +13,20 @@ final class ContentValidator
         $rules = ['title' => 'nullable|string|max:250', 'description' => 'nullable|string', 'body' => 'nullable|string', 'images' => 'nullable|array', 'images.*.src' => ['required', 'string', 'regex:/^\/(images|brand|storage)\/[a-zA-Z0-9_\-.\/]+$/'], 'images.*.alt' => 'nullable|string|max:250'];
         if ($kind === 'page') {
             $rules = array_merge($rules, [
-                'template' => 'nullable|in:standard,house,company',
+                'template' => 'nullable|in:standard,house,company,guide',
                 'houseKey' => 'nullable|required_if:template,house|in:lime,lemon,citrus',
+                'guideType' => 'nullable|required_if:template,guide|in:overview,food,sights',
                 'texts' => 'nullable|array',
                 'texts.*.key' => 'required|string|max:100',
                 'texts.*.value' => 'required|string',
                 'buttons' => 'nullable|array',
                 'buttons.*.label' => 'required|string|max:100',
                 'buttons.*.href' => ['required', 'string', 'regex:/^(https?:\/\/|mailto:|tel:|#|\/)[^<>]*$/'],
+                'guideItems' => 'nullable|array',
+                'guideItems.*.title' => 'required|string|max:150',
+                'guideItems.*.meta' => 'required|string|max:250',
+                'guideItems.*.description' => 'required|string|max:1000',
+                'guideItems.*.href' => ['required', 'string', 'regex:/^(https?:\/\/|\/)[^<>]*$/'],
             ]);
         }
         if ($kind === 'house') {
@@ -45,8 +51,8 @@ final class ContentValidator
                 'title' => 'required|string|max:250',
                 'description' => 'required|string',
                 'detail' => 'required|string',
-                'icon' => 'required|in:House,Trees,ChefHat,Flame,CarFront,KeyRound,Baby,PawPrint,Croissant,Sparkles,Leaf',
-                'className' => 'required|in:breakfast,barbecue,children,comfort',
+                'icon' => 'required|in:House,Trees,ChefHat,Flame,CarFront,KeyRound,Baby,PawPrint,Croissant,Sparkles,Leaf,Bath',
+                'className' => 'required|in:breakfast,barbecue,children,comfort,bath',
                 'images' => 'required|array|min:1',
                 'images.*.alt' => 'required|string|max:250',
             ]);

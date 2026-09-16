@@ -18,7 +18,7 @@ export async function pageMetadata(key = "home"): Promise<Metadata> {
   const entry = entries.find(item => item.key === key && item.kind === "page");
   const seo = (entry?.data.seo || {}) as Record<string, unknown>;
   const title = String(seo.title || entry?.data.title || "Танжерин — гостевые дома в Костроме");
-  const description = String(seo.description || entry?.data.description || "Один большой дом с тремя самостоятельными таунхаусами в Костроме. Фотографии, удобства и бронирование.");
+  const description = String(seo.description || entry?.data.description || "Три самостоятельных гостевых дома в Костроме. Фотографии, удобства и бронирование.");
   const canonical = origin ? String(seo.canonical || `${origin}${key === "home" ? "/" : `/${key}`}`) : undefined;
   return {
     title, description,

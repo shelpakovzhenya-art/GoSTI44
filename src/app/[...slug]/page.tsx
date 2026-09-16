@@ -20,8 +20,9 @@ export default async function ContentPage({ params }: Props) {
   if (!page) notFound();
   const content = await getSiteContent();
   const seo = page.data.seo as Record<string, unknown> | undefined;
-  if (page.data.template === "house" || page.data.template === "company") {
-    const schema = { "@context": "https://schema.org", "@type": "WebPage", name: String(seo?.h1 || page.data.title || "Танжерин"), description: String(seo?.description || page.data.description || "") };
+  if (["house", "company", "guide"].includes(String(page.data.template))) {
+    const items = Array.isArray(page.data.guideItems) ? page.data.guideItems : [];
+    const schema = { "@context": "https://schema.org", "@type": "WebPage", name: String(seo?.h1 || page.data.title || "Танжерин"), description: String(seo?.description || page.data.description || ""), ...(page.data.template === "guide" && items.length ? { mainEntity: { "@type": "ItemList", itemListElement: items.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: typeof item === "object" && item && "title" in item ? String(item.title) : "" })) } } : {}) };
     return <ContentProvider content={content}><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema).replace(/</g,"\\u003c")}}/><ContentLanding page={page} content={content}/></ContentProvider>;
   }
   const photos = (Array.isArray(page.data.images) ? page.data.images : []) as { src: string; alt: string; caption?: string }[];

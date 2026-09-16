@@ -35,8 +35,9 @@ class ContentEntryForm
             ])->columns(2),
             Tabs::make('Редактирование')->tabs([
                 Tab::make('Содержимое')->schema([
-                    Select::make('draft.template')->label('Шаблон страницы')->options(['standard' => 'Обычная текстовая', 'house' => 'Посадочная дома', 'company' => 'Большая компания'])->default('standard')->live()->visible(fn (Get $get) => $get('kind') === 'page' && $get('key') !== 'home'),
+                    Select::make('draft.template')->label('Шаблон страницы')->options(['standard' => 'Обычная текстовая', 'house' => 'Посадочная дома', 'company' => 'Большая компания', 'guide' => 'Путеводитель по Костроме'])->default('standard')->live()->visible(fn (Get $get) => $get('kind') === 'page' && $get('key') !== 'home'),
                     Select::make('draft.houseKey')->label('Какой дом показывает страница')->options(['lime' => 'Лайм', 'lemon' => 'Лимон', 'citrus' => 'Цитрус'])->visible(fn (Get $get) => $get('kind') === 'page' && $get('draft.template') === 'house'),
+                    Select::make('draft.guideType')->label('Тип путеводителя')->options(['overview' => 'Обзор Костромы', 'food' => 'Где поесть', 'sights' => 'Достопримечательности'])->visible(fn (Get $get) => $get('kind') === 'page' && $get('draft.template') === 'guide'),
                     TextInput::make('draft.title')->label('Заголовок')->maxLength(250)->visible(fn (Get $get) => in_array($get('kind'), ['page', 'house', 'service', 'faq']) && $get('key') !== 'home'),
                     TextInput::make('draft.eyebrow')->label('Надпись над заголовком')->maxLength(150)->visible(fn (Get $get) => $get('kind') === 'page' && $get('key') !== 'home'),
                     Textarea::make('draft.description')->label('Краткое описание')->rows(3)->visible(fn (Get $get) => in_array($get('kind'), ['page', 'house', 'service', 'faq']) && $get('key') !== 'home'),
@@ -52,13 +53,19 @@ class ContentEntryForm
                         TextInput::make('href')->label('Ссылка')->required()->regex('/^(https?:\/\/|mailto:|tel:|#|\/)[^<>]*$/'),
                     ])->columns(2),
                     Textarea::make('draft.detail')->label('Подробности услуги')->visible(fn (Get $get) => $get('kind') === 'service'),
-                    Select::make('draft.icon')->label('Иконка')->options(['House' => 'Дом', 'Trees' => 'Деревья', 'ChefHat' => 'Кухня', 'Flame' => 'Мангал', 'CarFront' => 'Парковка', 'KeyRound' => 'Ключ', 'Baby' => 'Дети', 'PawPrint' => 'Питомцы', 'Croissant' => 'Завтрак', 'Sparkles' => 'Комфорт', 'Leaf' => 'Лист'])->default('Leaf')->visible(fn (Get $get) => $get('kind') === 'service'),
-                    Select::make('draft.className')->label('Оформление услуги')->options(['breakfast' => 'Завтрак', 'barbecue' => 'Мангал', 'children' => 'Дети', 'comfort' => 'Комфорт'])->default('comfort')->visible(fn (Get $get) => $get('kind') === 'service'),
+                    Select::make('draft.icon')->label('Иконка')->options(['House' => 'Дом', 'Trees' => 'Деревья', 'ChefHat' => 'Кухня', 'Flame' => 'Мангал', 'CarFront' => 'Парковка', 'KeyRound' => 'Ключ', 'Baby' => 'Дети', 'PawPrint' => 'Питомцы', 'Croissant' => 'Завтрак', 'Sparkles' => 'Комфорт', 'Leaf' => 'Лист', 'Bath' => 'Баня'])->default('Leaf')->visible(fn (Get $get) => $get('kind') === 'service'),
+                    Select::make('draft.className')->label('Оформление услуги')->options(['breakfast' => 'Завтрак', 'barbecue' => 'Мангал', 'children' => 'Дети', 'comfort' => 'Комфорт', 'bath' => 'Баня'])->default('comfort')->visible(fn (Get $get) => $get('kind') === 'service'),
                     Repeater::make('draft.items')->label('Удобства')->defaultItems(0)->visible(fn (Get $get) => $get('key') === 'comforts')->schema([
                         TextInput::make('title')->label('Название')->required(),
                         Textarea::make('text')->label('Описание')->required(),
                         Select::make('icon')->label('Иконка')->options(['House' => 'Дом', 'Trees' => 'Деревья', 'ChefHat' => 'Кухня', 'Flame' => 'Мангал', 'CarFront' => 'Парковка', 'KeyRound' => 'Ключ', 'Baby' => 'Дети', 'PawPrint' => 'Питомцы', 'Leaf' => 'Лист'])->default('Leaf'),
                     ])->collapsible()->itemLabel(fn (array $state): ?string => $state['title'] ?? 'Удобство'),
+                    Repeater::make('draft.guideItems')->label('Карточки путеводителя')->defaultItems(0)->visible(fn (Get $get) => $get('kind') === 'page' && $get('draft.template') === 'guide')->schema([
+                        TextInput::make('title')->label('Название')->required(),
+                        TextInput::make('meta')->label('Адрес или формат')->required(),
+                        Textarea::make('description')->label('Короткое описание')->required(),
+                        TextInput::make('href')->label('Ссылка')->required()->regex('/^(https?:\/\/|\/)[^<>]*$/'),
+                    ])->collapsible()->itemLabel(fn (array $state): ?string => $state['title'] ?? 'Место'),
                 ]),
                 Tab::make('Фотографии')->visible(fn (Get $get) => in_array($get('kind'), ['house', 'service']) || ($get('kind') === 'page' && $get('key') !== 'home') || in_array($get('key'), ['site-images', 'photo-gallery']))->schema([
                     Repeater::make('draft.images')->defaultItems(0)->label('Изображения')->schema([

@@ -86,6 +86,8 @@ php artisan test
 
 Бронирование и платежи обслуживает существующий ReservationSteps. Отзывы Яндекс Карт подключены виджетом, рейтинги — проверенный вручную снимок с датой. CMS не синхронизирует наличие домов и оценки карт автоматически.
 
+Публичные посадочные страницы: `/doma/laym`, `/doma/limon`, `/doma/citrus`, `/dlya-bolshoy-kompanii`. Гостевой путеводитель: `/kostroma`, `/kostroma/gde-poest`, `/kostroma/dostoprimechatelnosti`. Все семь страниц получают опубликованный контент и SEO-поля из CMS.
+
 Исходный [Web Kit](https://github.com/dmandrianov/codex-web-kit-nextjs) сохранён вместе с лицензией; его исходное описание находится в [WEB-KIT-README.md](docs/WEB-KIT-README.md).
 
 Служебные GitHub Actions исходного Web Kit архивированы в docs/legacy: они выпускают сам kit, а не сайт. Проверки приложения выполняются командами выше.

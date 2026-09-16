@@ -13,7 +13,7 @@ export default async function Preview({searchParams}:{searchParams:Promise<Recor
   const params=new URLSearchParams({expires:query.expires,signature:query.signature});
   const response=await fetch(`${process.env.CMS_URL.replace(/\/$/,"")}/api/preview/${query.record}?${params}`,{cache:"no-store",headers:{Accept:"application/json"},signal:AbortSignal.timeout(5000)});
   if(response.status===403 || response.status===404)notFound();
-  if(response.status===422)return <main id="main" className="content-page container"><h1>Заполните обязательные поля</h1><p>Вернитесь в админку и сохраните таунхаус с фотографиями и основными характеристиками.</p></main>;
+  if(response.status===422)return <main id="main" className="content-page container"><h1>Заполните обязательные поля</h1><p>Вернитесь в админку и сохраните дом с фотографиями и основными характеристиками.</p></main>;
   if(!response.ok)throw new Error("Preview unavailable");
   const payload=await response.json() as {entries:ContentEntry[];target:string;kind:string};
   const content=assembleContent(parseContentPayload(payload));
