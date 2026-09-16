@@ -11,6 +11,18 @@ final class ContentValidator
     public static function validate(string $kind, array $data, string $key = ''): void
     {
         $rules = ['title' => 'nullable|string|max:250', 'description' => 'nullable|string', 'body' => 'nullable|string', 'images' => 'nullable|array', 'images.*.src' => ['required', 'string', 'regex:/^\/(images|brand|storage)\/[a-zA-Z0-9_\-.\/]+$/'], 'images.*.alt' => 'nullable|string|max:250'];
+        if ($kind === 'page') {
+            $rules = array_merge($rules, [
+                'template' => 'nullable|in:standard,house,company',
+                'houseKey' => 'nullable|required_if:template,house|in:lime,lemon,citrus',
+                'texts' => 'nullable|array',
+                'texts.*.key' => 'required|string|max:100',
+                'texts.*.value' => 'required|string',
+                'buttons' => 'nullable|array',
+                'buttons.*.label' => 'required|string|max:100',
+                'buttons.*.href' => ['required', 'string', 'regex:/^(https?:\/\/|mailto:|tel:|#|\/)[^<>]*$/'],
+            ]);
+        }
         if ($kind === 'house') {
             $rules = array_merge($rules, [
                 'name' => 'required|string|max:100', 'title' => 'required|string|max:250', 'description' => 'required|string',

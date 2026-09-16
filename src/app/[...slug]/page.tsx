@@ -5,6 +5,7 @@ import { getEntries, getSiteContent } from "@/lib/content";
 import { pageMetadata } from "@/lib/seo";
 import { ContentProvider } from "@/components/cms-context";
 import { Brand } from "@/components/brand";
+import { ContentLanding } from "@/components/content-landings";
 
 type Props = { params: Promise<{ slug: string[] }> };
 export async function generateMetadata({ params }: Props) {
@@ -19,6 +20,10 @@ export default async function ContentPage({ params }: Props) {
   if (!page) notFound();
   const content = await getSiteContent();
   const seo = page.data.seo as Record<string, unknown> | undefined;
+  if (page.data.template === "house" || page.data.template === "company") {
+    const schema = { "@context": "https://schema.org", "@type": "WebPage", name: String(seo?.h1 || page.data.title || "Танжерин"), description: String(seo?.description || page.data.description || "") };
+    return <ContentProvider content={content}><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema).replace(/</g,"\\u003c")}}/><ContentLanding page={page} content={content}/></ContentProvider>;
+  }
   const photos = (Array.isArray(page.data.images) ? page.data.images : []) as { src: string; alt: string; caption?: string }[];
   const buttons = (Array.isArray(page.data.buttons) ? page.data.buttons : []) as { label: string; href: string }[];
   return <ContentProvider content={content}>

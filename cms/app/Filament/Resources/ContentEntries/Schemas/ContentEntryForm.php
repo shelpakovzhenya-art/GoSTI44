@@ -35,13 +35,15 @@ class ContentEntryForm
             ])->columns(2),
             Tabs::make('Редактирование')->tabs([
                 Tab::make('Содержимое')->schema([
+                    Select::make('draft.template')->label('Шаблон страницы')->options(['standard' => 'Обычная текстовая', 'house' => 'Посадочная дома', 'company' => 'Большая компания'])->default('standard')->live()->visible(fn (Get $get) => $get('kind') === 'page' && $get('key') !== 'home'),
+                    Select::make('draft.houseKey')->label('Какой дом показывает страница')->options(['lime' => 'Лайм', 'lemon' => 'Лимон', 'citrus' => 'Цитрус'])->visible(fn (Get $get) => $get('kind') === 'page' && $get('draft.template') === 'house'),
                     TextInput::make('draft.title')->label('Заголовок')->maxLength(250)->visible(fn (Get $get) => in_array($get('kind'), ['page', 'house', 'service', 'faq']) && $get('key') !== 'home'),
                     TextInput::make('draft.eyebrow')->label('Надпись над заголовком')->maxLength(150)->visible(fn (Get $get) => $get('kind') === 'page' && $get('key') !== 'home'),
                     Textarea::make('draft.description')->label('Краткое описание')->rows(3)->visible(fn (Get $get) => in_array($get('kind'), ['page', 'house', 'service', 'faq']) && $get('key') !== 'home'),
                     Toggle::make('html_mode')->label('Редактировать HTML')->live()->dehydrated(false)->visible(fn (Get $get) => $get('kind') === 'page' && $get('key') !== 'home'),
                     RichEditor::make('draft.body')->label('Текст — визуальный редактор')->toolbarButtons(['bold', 'italic', 'underline', 'h2', 'h3', 'bulletList', 'orderedList', 'blockquote', 'link', 'undo', 'redo'])->visible(fn (Get $get) => ! $get('html_mode') && $get('kind') === 'page' && $get('key') !== 'home')->live(onBlur: true)->afterStateUpdated(fn (Set $set, $state) => $set('html_source', $state)),
                     CodeEditor::make('html_source')->label('Тот же текст — HTML')->language(Language::Html)->wrap()->visible(fn (Get $get) => (bool) $get('html_mode') && $get('kind') === 'page' && $get('key') !== 'home')->dehydrated(false)->afterStateHydrated(fn (Set $set, Get $get) => $set('html_source', $get('draft.body')))->live(onBlur: true)->afterStateUpdated(fn (Set $set, $state) => $set('draft.body', $state))->helperText('Скрипты и небезопасные атрибуты удаляются при сохранении.'),
-                    Repeater::make('draft.texts')->defaultItems(0)->visible(fn (Get $get) => $get('kind') === 'section')->label('Тексты блока')->schema([
+                    Repeater::make('draft.texts')->defaultItems(0)->visible(fn (Get $get) => $get('kind') === 'section' || ($get('kind') === 'page' && in_array($get('draft.template'), ['house', 'company'])))->label('Тексты блоков страницы')->schema([
                         TextInput::make('key')->label('Ключ')->required()->disabled()->dehydrated(),
                         Textarea::make('value')->label('Текст')->required(),
                     ])->columns(2)->collapsible()->collapsed()->addable(false)->deletable(false)->reorderable(false)->itemLabel(fn (array $state): ?string => Str::limit($state['value'] ?? 'Текст', 85)),

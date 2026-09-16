@@ -13,6 +13,7 @@ class SiteContentSeeder extends Seeder
         $site = json_decode(file_get_contents($root.'site.json'), true, flags: JSON_THROW_ON_ERROR);
         $sections = json_decode(file_get_contents($root.'sections.json'), true, flags: JSON_THROW_ON_ERROR);
         $collections = json_decode(file_get_contents($root.'collections.json'), true, flags: JSON_THROW_ON_ERROR);
+        $pages = json_decode(file_get_contents($root.'pages.json'), true, flags: JSON_THROW_ON_ERROR);
         foreach ($collections['services'] as $index => $service) {
             $this->entry('service', 'service-'.$service['className'], $service['title'], ['title' => $service['title'], 'description' => $service['text'], 'detail' => $service['detail'], 'icon' => $service['icon'], 'className' => $service['className'], 'images' => $service['images']], $index);
         }
@@ -51,8 +52,14 @@ class SiteContentSeeder extends Seeder
         $this->entry('page', 'home', 'Главная страница', ['seo' => [
             'title' => 'Танжерин — гостевые дома в Костроме с кухней и верандой',
             'description' => 'Один большой дом с тремя самостоятельными таунхаусами в Костроме для семьи или компании до 25 гостей. Отдельные входы, кухни, веранды и мангальные зоны. Фотографии, свободные даты и бронирование.',
-            'h1' => 'ТАНЖЕРИН', 'noindex' => false,
+            'h1' => 'Один большой дом', 'noindex' => false,
         ]]);
+        foreach ($pages as $index => $page) {
+            $key = $page['key'];
+            $name = $page['name'];
+            unset($page['key'], $page['name']);
+            $this->entry('page', $key, $name, $page, $index + 1);
+        }
     }
 
     private function entry(string $kind, string $key, string $name, array $data, int $position = 0): void

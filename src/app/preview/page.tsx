@@ -4,6 +4,7 @@ import { assembleContent, parseContentPayload } from "@/lib/content";
 import type { ContentEntry } from "@/lib/content-types";
 import { ContentProvider } from "@/components/cms-context";
 import Landing from "@/components/landing";
+import { ContentLanding } from "@/components/content-landings";
 
 export const metadata: Metadata = {title:"Предпросмотр черновика — Танжерин",robots:{index:false,follow:false},referrer:"no-referrer"};
 export default async function Preview({searchParams}:{searchParams:Promise<Record<string,string|string[]|undefined>>}) {
@@ -17,5 +18,6 @@ export default async function Preview({searchParams}:{searchParams:Promise<Recor
   const payload=await response.json() as {entries:ContentEntry[];target:string;kind:string};
   const content=assembleContent(parseContentPayload(payload));
   const entry=payload.entries.find(item=>item.key===payload.target);
-  return <ContentProvider content={content}><aside className="preview-notice">Предпросмотр сохранённого черновика · сайт для гостей не изменён · ссылка действует 15 минут</aside>{payload.kind==="page"&&payload.target!=="home"?<main id="main" className="content-page container"><h1>{String((entry?.data.seo as Record<string,unknown>|undefined)?.h1||entry?.data.title||"")}</h1><p>{String(entry?.data.description||"")}</p><div className="prose" dangerouslySetInnerHTML={{__html:String(entry?.data.body||"")}}/></main>:<Landing/>}</ContentProvider>;
+  const special = payload.kind === "page" && entry && ["house", "company"].includes(String(entry.data.template));
+  return <ContentProvider content={content}><aside className="preview-notice">Предпросмотр сохранённого черновика · сайт для гостей не изменён · ссылка действует 15 минут</aside>{special?<ContentLanding page={entry} content={content}/>:payload.kind==="page"&&payload.target!=="home"?<main id="main" className="content-page container"><h1>{String((entry?.data.seo as Record<string,unknown>|undefined)?.h1||entry?.data.title||"")}</h1><p>{String(entry?.data.description||"")}</p><div className="prose" dangerouslySetInnerHTML={{__html:String(entry?.data.body||"")}}/></main>:<Landing/>}</ContentProvider>;
 }

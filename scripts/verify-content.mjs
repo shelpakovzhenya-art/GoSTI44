@@ -9,6 +9,7 @@ const root=path.resolve(import.meta.dirname,'..');
 const source=await readFile(path.join(root,'content/site.json'),'utf8');
 const initial=JSON.parse(source);
 const collections=JSON.parse(await readFile(path.join(root,'content/collections.json'),'utf8'));
+const landingPages=JSON.parse(await readFile(path.join(root,'content/pages.json'),'utf8'));
 const page=await readFile(path.join(root,'src/components/landing.tsx'),'utf8');
 const nav=await readFile(path.join(root,'src/components/navigation.tsx'),'utf8');
 const sections=await readFile(path.join(root,'src/components/holiday-sections.tsx'),'utf8');
@@ -38,6 +39,13 @@ for (const service of collections.services) {
   assert.equal(service.images?.length,1,`Service ${service.className} needs one editorial photograph`);
   await access(path.join(root,'public',service.images[0].src));
 }
+assert.deepEqual(landingPages.map(item=>item.key),['doma/laym','doma/limon','doma/citrus','dlya-bolshoy-kompanii'],'All house and company landing pages required');
+for (const landingPage of landingPages) {
+  for (const image of landingPage.images || []) await access(path.join(root,'public',image.src));
+  assert(landingPage.seo?.title && landingPage.seo?.description && landingPage.seo?.h1,`SEO required for ${landingPage.key}`);
+}
+assert.equal(collections.links[0][0],'Дома','The client requested “Дома” in navigation');
+assert.equal(collections.links[1][1],'/dlya-bolshoy-kompanii','Company landing must be linked from the menu');
 const quotes=initial.reviewExcerpts.map(item=>item.quote);
 const words=quotes.join(' ').replace(/\[.*?\]/g,'').trim().split(/\s+/).length;
 assert(words<=25,`Review excerpt word limit: ${words}`);

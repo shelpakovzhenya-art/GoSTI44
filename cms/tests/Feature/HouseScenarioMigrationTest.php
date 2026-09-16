@@ -23,7 +23,7 @@ class HouseScenarioMigrationTest extends TestCase
         $lemon = ContentEntry::query()->where('key', 'lemon')->firstOrFail();
         $citrus = ContentEntry::query()->where('key', 'citrus')->firstOrFail();
 
-        $this->assertSame('Какой таунхаус подойдёт именно вам?', $this->text($landing->published, '030'));
+        $this->assertSame('Какой дом подойдёт именно вам?', $this->text($landing->published, '030'));
         $this->assertSame('Для семьи с детьми', $lime->published['label']);
         $this->assertSame('Собственная баня', $lime->published['feature']);
         $this->assertContains('Собственная баня', $lime->published['amenities']);

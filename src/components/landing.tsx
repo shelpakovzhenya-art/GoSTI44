@@ -24,8 +24,8 @@ export default function Landing() {
 
       <div className="container hero-inner">
         <div className="hero-eyebrow"><span className="little-sun">✳</span> <CmsText id="landing.001" /></div>
-        <h1 id="hero-heading"><CmsText id="landing.002" /><span><CmsText id="landing.003" /></span></h1>
-        <p><CmsText id="landing.004" />{" "}<br className="desktop-break"/> <CmsText id="landing.005" /><br/> <CmsText id="landing.006" />{" "}<br className="desktop-break"/> <CmsText id="landing.007" /></p>
+        <h1 id="hero-heading"><CmsText id="landing.002" />{" "}<span><CmsText id="landing.003" /></span></h1>
+        <p><span><CmsText id="landing.004" />{" "}<CmsText id="landing.005" /></span><span><CmsText id="landing.006" />{" "}<CmsText id="landing.007" /></span></p>
         <div className="hero-actions"><a className="button button-yellow" href="#booking"><CmsText id="landing.008" /><ArrowUpRight size={19}/></a><a className="hero-secondary" href="#houses"><CmsText id="landing.009" /><ArrowUpRight size={18}/></a></div>
         <div className="hero-capacity"><span><Users size={23}/><span><strong><CmsText id="landing.010" /></strong><small><CmsText id="landing.011" /></small></span></span><span><HouseIcon/><span><strong><CmsText id="landing.012" /></strong><small><CmsText id="landing.013" /></small></span></span></div>
         <div className="hero-bottom"><span><MapPin size={17}/> <CmsText id="landing.014" /></span><a href="#about" aria-label="Узнать о Танжерине"><ArrowDown size={20}/></a><span><CmsText id="landing.015" /></span></div>
