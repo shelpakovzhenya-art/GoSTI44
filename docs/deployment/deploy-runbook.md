@@ -6,7 +6,7 @@
 - HTTP, IP 186.246.50.205 и www перенаправляются на основной HTTPS-адрес.
 - Nginx 80/443 → Next.js 127.0.0.1:3107, systemd `gosti`.
 - CMS: PHP 8.4 FPM, Docker `gosti-php`, loopback9000; внутренний Nginx127.0.0.1:8108. Host PHP8.5 несовместим с закреплённой openspout, не использовать его для artisan.
-- Текущий релиз frontend и CMS: `/var/www/gosti/releases/20260916-5`; `/var/www/gosti/current` — переключаемая ссылка. Постоянное storage остаётся в `/var/www/gosti/releases/20260909-1/cms/storage`.
+- Текущий релиз frontend и CMS: `/var/www/gosti/releases/20260917-1`; `/var/www/gosti/current` — переключаемая ссылка. Постоянное storage остаётся в `/var/www/gosti/releases/20260909-1/cms/storage`.
 - БД: /var/www/gosti/shared/database.sqlite. НЕ удалять релизы `20260915-1` и `20260909-1`, пока CMS и постоянное storage не перенесены отдельно с проверкой. Публичный storage:link сохраняет доступ к тем же загрузкам.
 
 ## Сеть и HTTPS
@@ -89,3 +89,11 @@ Systemd: /etc/systemd/system/gosti.service, Node .next/standalone/server.js от
 Активен `/var/www/gosti/releases/20260916-1`, исходный коммит `b0e89507257b5412e968731e20341a749974f963`. Изменена только frontend-типографика: увеличены вводный текст, заголовки, описания, характеристики и кнопки карточек домов, а также подписи блока большой компании. CMS, опубликованные данные и миграции не менялись; frontend-релиз ссылается на существующую CMS `/var/www/gosti/releases/20260915-1/cms`.
 
 Перед переключением сохранены `/var/backups/gosti/pre-release-20260916-1.sqlite` и `/var/backups/gosti/pre-release-20260916-1.env` с правами `600`. Candidate проверен на `127.0.0.1:3117`, затем ссылка `current` переключена атомарно и `gosti` перезапущен. Проверены `nginx -t`, Next `3107`, CMS `8108`, публичные главная и `/admin/login`, два CSS-ресурса, `X-Robots-Tag: noindex` и meta noindex. Production-проверка на 320, 390, 768, 1024, 1440 и 2560 px не обнаружила горизонтального переполнения, выходящих за экран карточек или кнопок. Откат frontend — вернуть `/var/www/gosti/current` на `/var/www/gosti/releases/20260915-14` и перезапустить `gosti`; БД и CMS откатывать не нужно.
+
+## Выпуск путеводителя по Wordstat — 17.09.2026
+
+Активен `/var/www/gosti/releases/20260917-1`, исходный коммит `b86d142`. По данным Яндекс Wordstat добавлены `/kostroma/muzei`, `/kostroma/za-odin-den`, `/kostroma/s-detmi` и `/kostroma/chto-privezti`; `/kostroma/gde-poest` сохранён и усилен, потому что спрос подтверждён. Методика, период, регион, частоты и распределение запросов по URL находятся в `docs/seo/wordstat-2026-09-16.md`.
+
+Перед миграцией сохранена база `/var/www/gosti/backups/database-20260917-before-wordstat-guides.sqlite`, права `600`. Миграция `2026_09_16_223000_add_wordstat_guide_pages` применена batch 8; `PRAGMA integrity_check` — `ok`. Проверены все восемь публичных маршрутов, 44 опубликованные записи API, admin login, 11 CSS/JS/font ресурсов Filament/Livewire, favicon и `X-Robots-Tag: noindex`. Browser QA на 390 и 1440 px не обнаружила горизонтального переполнения, выходящих за экран ссылок, битых изображений и console errors.
+
+Для отката к предыдущему коду верните `current` на `/var/www/gosti/releases/20260916-5` и перезапустите `gosti` и `gosti-php`. Базу не откатывать вслепую: новая структура совместима, а резервную копию использовать только после проверки последующих изменений.

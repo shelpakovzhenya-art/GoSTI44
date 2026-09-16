@@ -67,3 +67,5 @@
 - В CMS доступны тип страницы, заголовки блоков, подпись источников, памятка, финальный CTA и карточки. Миграция публикует семь страниц путеводителя и сохраняет ревизию.
 - Проверены `verify:content`, TypeScript, ESLint, production build и 22 PHP-теста / 269 проверок.
 - Локальный browser QA всех семи страниц: 320, 390, 768 и 1440 px; горизонтального переполнения, обрезанных CTA, битых изображений и console errors нет. Все пятнадцать внешних официальных ссылок отвечают `200`.
+- Production-релиз `/var/www/gosti/releases/20260917-1`: восемь публичных маршрутов, API с 44 опубликованными записями, `/admin/login`, 11 ресурсов Filament/Livewire и favicon отвечают `200`; `X-Robots-Tag: noindex` сохранён.
+- Миграция применена batch 8; `PRAGMA integrity_check` — `ok`. Резервная копия до изменения: `/var/www/gosti/backups/database-20260917-before-wordstat-guides.sqlite`, права `600`.
