@@ -448,7 +448,7 @@ body { background:var(--canvas); color:var(--ink); }
 }
 .houses-heading .eyebrow { justify-content:center; margin-bottom:14px; color:#d17624; }
 .houses-heading h2 { max-width:none; font-size:clamp(44px,4vw,62px); line-height:.98; }
-.houses-heading>p { max-width:760px; margin:16px auto 0; padding:0; color:#5f5b52; font-size:15px; line-height:1.65; }
+.houses-heading>p { max-width:800px; margin:16px auto 0; padding:0; color:#535149; font-size:17px; line-height:1.65; }
 .houses-heading>p br { display:none; }
 .houses-grid { gap:14px; align-items:stretch; }
 .houses-section .house-card {
@@ -488,7 +488,7 @@ body { background:var(--canvas); color:var(--ink); }
   box-shadow:0 7px 20px #35200f2a;
   backdrop-filter:none;
   -webkit-backdrop-filter:none;
-  font-size:13px;
+  font-size:14px;
   letter-spacing:.045em;
 }
 .houses-section .house-image-tag .house-emblem { width:34px; height:34px; }
@@ -528,7 +528,7 @@ body { background:var(--canvas); color:var(--ink); }
   max-width:calc(100% - 55px);
   min-height:61px;
   color:#2e4932;
-  font-size:20px;
+  font-size:23px;
   font-weight:800;
   line-height:1.25;
   letter-spacing:-.035em;
@@ -540,7 +540,7 @@ body { background:var(--canvas); color:var(--ink); }
   gap:8px;
   margin-top:8px;
   color:#46473f;
-  font-size:13px;
+  font-size:14px;
   line-height:1.45;
 }
 .house-card-meta i { width:4px; height:4px; border-radius:50%; background:#a88e6b; }
@@ -548,7 +548,7 @@ body { background:var(--canvas); color:var(--ink); }
   min-height:68px;
   margin-top:12px;
   color:#5f615a;
-  font-size:13px;
+  font-size:15px;
   line-height:1.55;
 }
 .houses-section .house-plan {
@@ -557,8 +557,8 @@ body { background:var(--canvas); color:var(--ink); }
   padding:19px 0 0;
   border-top:0;
 }
-.houses-section .house-plan li { gap:6px; color:#434b3f; font-size:9px; line-height:1.2; }
-.houses-section .house-plan svg { width:21px; height:21px; color:#61764f; }
+.houses-section .house-plan li { gap:7px; color:#3f483b; font-size:11px; line-height:1.25; }
+.houses-section .house-plan svg { width:23px; height:23px; color:#61764f; }
 .houses-section .house-actions { margin-top:18px; padding-top:0; }
 .houses-section .house-actions>button {
   width:100%;
@@ -569,7 +569,7 @@ body { background:var(--canvas); color:var(--ink); }
   background:transparent;
   color:var(--house-accent);
   box-shadow:none;
-  font-size:12px;
+  font-size:14px;
   font-weight:800;
   letter-spacing:.015em;
 }
@@ -598,9 +598,9 @@ body { background:var(--canvas); color:var(--ink); }
 .company-copy h2 { font-size:clamp(39px,3.5vw,54px); line-height:1.02; }
 .company-copy h2 br { display:none; }
 .company-copy h2 em { display:block; margin-top:7px; color:#294333; }
-.company-copy>p { max-width:535px; margin-top:20px; font-size:14px; line-height:1.65; }
+.company-copy>p { max-width:555px; margin-top:20px; font-size:16px; line-height:1.65; }
 .company-facts { gap:24px; margin:24px 0; }
-.company-facts>span { align-items:flex-start; max-width:210px; font-size:12px; line-height:1.45; }
+.company-facts>span { align-items:flex-start; max-width:225px; font-size:14px; line-height:1.45; }
 .company-copy>.button { min-height:52px; padding-inline:22px; border-color:#f0902a; background:#ff8d24; color:#fff; box-shadow:0 5px 0 #cb6715; }
 .company-photo { min-height:420px; border-radius:20px; }
 .company-photo>img { object-position:56% 58%; }
@@ -626,14 +626,14 @@ body { background:var(--canvas); color:var(--ink); }
   backdrop-filter:blur(8px);
 }
 .company-photo-bottom span { display:flex; flex-direction:column; }
-.company-photo-bottom strong { font-size:12px; }
-.company-photo-bottom small { font-size:10px; opacity:.82; }
+.company-photo-bottom strong { font-size:14px; }
+.company-photo-bottom small { font-size:12px; opacity:.84; }
 
 @media(max-width:1100px) and (min-width:761px) {
   .houses-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:11px; }
   .houses-section .house-copy { padding-inline:16px; }
-  .houses-section .house-promise { font-size:17px; }
-  .houses-section .house-copy>p { min-height:83px; font-size:12px; }
+  .houses-section .house-promise { font-size:20px; }
+  .houses-section .house-copy>p { min-height:96px; font-size:14px; }
   .houses-section .house-plan { grid-template-columns:repeat(3,minmax(0,1fr)); }
   .company-grid { gap:32px; padding:32px; }
   .company-photo { min-height:390px; }
@@ -656,7 +656,7 @@ body { background:var(--canvas); color:var(--ink); }
   .houses-heading { margin-bottom:30px; padding-inline:8px; }
   .houses-heading .eyebrow { font-size:9px; }
   .houses-heading h2 { font-size:38px; line-height:1.02; }
-  .houses-heading>p { margin-top:14px; font-size:14px; }
+  .houses-heading>p { margin-top:14px; font-size:16px; }
   .houses-grid { grid-template-columns:minmax(0,1fr); gap:18px; }
   .houses-section .house-card { display:flex; width:100%; border:1px solid #e4d6c2; border-radius:17px; }
   .houses-section .house-image { aspect-ratio:1.45; }
@@ -667,12 +667,12 @@ body { background:var(--canvas); color:var(--ink); }
   .house-feature-seal svg { width:27px; height:27px; }
   .houses-section .image-next { right:12px; bottom:43%; width:40px; height:40px; }
   .houses-section .house-copy { padding:21px 18px 18px; }
-  .houses-section .house-promise { max-width:calc(100% - 48px); min-height:0; font-size:21px; }
-  .house-card-meta { font-size:13px; }
-  .houses-section .house-copy>p { min-height:0; font-size:14px; line-height:1.55; }
+  .houses-section .house-promise { max-width:calc(100% - 48px); min-height:0; font-size:23px; }
+  .house-card-meta { font-size:15px; }
+  .houses-section .house-copy>p { min-height:0; font-size:16px; line-height:1.55; }
   .houses-section .house-plan { grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px 7px; padding-top:20px; margin-top:20px; }
-  .houses-section .house-plan li { font-size:10px; }
-  .houses-section .house-actions>button { min-height:48px; font-size:13px; }
+  .houses-section .house-plan li { font-size:12px; }
+  .houses-section .house-actions>button { min-height:50px; font-size:15px; }
 
   .company-section { padding-block:16px 58px; }
   .company-section:before { opacity:.15; }
@@ -684,14 +684,14 @@ body { background:var(--canvas); color:var(--ink); }
     border-radius:20px;
   }
   .company-copy h2 { font-size:38px; }
-  .company-copy>p { font-size:14px; }
+  .company-copy>p { font-size:16px; }
   .company-facts { display:grid; grid-template-columns:1fr 1fr; gap:15px; }
-  .company-facts>span { max-width:none; font-size:11px; }
-  .company-copy>.button { width:100%; min-height:51px; padding-inline:14px; font-size:12px; }
+  .company-facts>span { max-width:none; font-size:13px; }
+  .company-copy>.button { width:100%; min-height:53px; padding-inline:14px; font-size:14px; }
   .company-photo { min-height:340px; border-radius:15px; }
   .company-photo-label { display:flex; top:13px; right:12px; left:12px; gap:5px; }
-  .company-photo-label>span { min-width:0; flex:1; padding:7px 4px; font-size:9px; }
-  .company-photo-label small { font-size:8px; }
+  .company-photo-label>span { min-width:0; flex:1; padding:7px 4px; font-size:11px; }
+  .company-photo-label small { font-size:10px; }
   .company-photo-bottom { left:12px; right:12px; bottom:12px; justify-content:center; }
 }
 
@@ -699,7 +699,7 @@ body { background:var(--canvas); color:var(--ink); }
   .houses-section>.container { padding-inline:12px; }
   .houses-heading { padding-inline:4px; }
   .houses-heading h2 { font-size:34px; }
-  .houses-section .house-promise { font-size:19px; }
+  .houses-section .house-promise { font-size:21px; }
   .houses-section .house-plan { gap:12px 4px; }
   .company-grid { width:calc(100% - 24px); padding-inline:15px; }
   .company-copy h2 { font-size:34px; }
