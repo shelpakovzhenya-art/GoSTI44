@@ -40,6 +40,12 @@ location ~ ^/(admin|livewire(?:-[a-z0-9]+)?|api/content|up|storage|css|js|fonts)
 
 Systemd: /etc/systemd/system/gosti.service, Node .next/standalone/server.js от пользователя gosti. Команды: `systemctl status gosti nginx`, `docker logs gosti-php`.
 
+## Выпуск посадочных страниц 16.09.2026
+
+Активен `/var/www/gosti/releases/20260916-3`, исходный коммит `6ae83c496e8adf3c3ff659091e13f348c4bebc3b`. Выпуск добавил страницы `/doma/laym`, `/doma/limon`, `/doma/citrus` и `/dlya-bolshoy-kompanii`, а также их поля в CMS. Перед миграцией сохранена база `/var/www/gosti/backups/database-20260916-1951-before-house-landings.sqlite`.
+
+После переключения проверены все пять публичных маршрутов, опубликованные записи API, `/admin`, десять Filament/Livewire assets, CSS/JS Next.js, изображения и `noindex`. Для отката frontend и CMS верните `current` на `/var/www/gosti/releases/20260916-1` и перезапустите `gosti` и `gosti-php`; базу откатывайте только после проверки изменений, внесённых после резервной копии.
+
 ## Данные и проверки
 
 Релиз4 добавляет /admin/visual-editor и signed /editor-preview. Сохранение через Livewire, права/CSRF/ревизии на сервере; данные не мигрировались и чужие черновики не публиковались. До переключения сделан pre-release4.sqlite. Typecheck/lint/verify:content/build, 15 PHP-тестов (68 assertions), локальный браузерный цикл правка → черновик → публикация → возврат исходного текста и desktop/mobile прошли. На домене проверены вход, загрузка редактора, выбор/предпросмотр/отмена и сохранение неизменённого текста. Неподписанный preview403; в публичном HTML нет редакторских маркеров и тестового текста.
