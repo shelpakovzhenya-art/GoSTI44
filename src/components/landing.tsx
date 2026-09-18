@@ -2,7 +2,7 @@
 import { CmsText, EditableText } from "@/components/cms-context";
 
 import Image from "@/components/cms-image";
-import { ArrowDown, ArrowUpRight, ChevronDown, Heart, KeyRound, Mail, MapPin, Phone, Trees, Users } from "lucide-react";
+import { ArrowDown, ArrowUpRight, CalendarDays, ChevronDown, Heart, House, KeyRound, Mail, MapPin, Phone, Trees } from "lucide-react";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { Navigation } from "@/components/navigation";
 import { Ratings, Stars } from "@/components/ratings";
@@ -26,11 +26,14 @@ export default function Landing() {
         <div className="hero-eyebrow"><span className="little-sun">✳</span> <CmsText id="landing.001" /></div>
         <h1 id="hero-heading"><CmsText id="landing.002" />{" "}<span><CmsText id="landing.003" /></span></h1>
         <p><span><CmsText id="landing.004" />{" "}<CmsText id="landing.005" /></span><span><CmsText id="landing.006" />{" "}<CmsText id="landing.007" /></span></p>
-        <div className="hero-actions"><a className="button button-yellow" href="#booking"><CmsText id="landing.008" /><ArrowUpRight size={19}/></a><a className="hero-secondary" href="#houses"><CmsText id="landing.009" /><ArrowUpRight size={18}/></a></div>
-        <div className="hero-capacity"><span><Users size={23}/><span><strong><CmsText id="landing.010" /></strong><small><CmsText id="landing.011" /></small></span></span><span><HouseIcon/><span><strong><CmsText id="landing.012" /></strong><small><CmsText id="landing.013" /></small></span></span></div>
-        <div className="hero-bottom"><span><MapPin size={17}/> <CmsText id="landing.014" /></span><a href="#about" aria-label="Узнать о Танжерине"><ArrowDown size={20}/></a><span><CmsText id="landing.015" /></span></div>
+        <div className="hero-actions"><a className="button button-yellow" href="#booking"><CalendarDays size={20}/><CmsText id="landing.008" /><ArrowUpRight size={19}/></a><a className="hero-secondary" href="#houses"><House size={20}/><CmsText id="landing.009" /></a></div>
       </div>
     </section>
+    <section className="hero-highlights botanical-section" aria-label="Преимущества гостевых домов"><div className="container hero-highlights-grid">
+      <article className="hero-highlight"><div className="hero-highlight-copy"><span className="hero-highlight-icon"><MapPin/></span><h2><CmsText id="landing.079" /></h2><p><CmsText id="landing.080" /><br/><CmsText id="landing.081" /></p></div><div className="hero-highlight-photo"><Image src="/images/hero.jpg" alt="Тихий зелёный двор гостевых домов" fill sizes="(max-width:760px) 34vw, 170px"/></div></article>
+      <article className="hero-highlight"><div className="hero-highlight-copy"><span className="hero-highlight-icon"><House/></span><h2><CmsText id="landing.082" /></h2><p><CmsText id="landing.083" /><br/><CmsText id="landing.084" /></p></div><div className="hero-highlight-photo"><Image src="/images/family.jpg" alt="Кухня-гостиная одного из домов" fill sizes="(max-width:760px) 34vw, 170px"/></div></article>
+      <article className="hero-highlight"><div className="hero-highlight-copy"><span className="hero-highlight-icon"><Trees/></span><h2><CmsText id="landing.085" /></h2><p><CmsText id="landing.086" /><br/><CmsText id="landing.087" /></p></div><div className="hero-highlight-photo"><Image src="/images/veranda.jpg" alt="Крытая веранда со столом" fill sizes="(max-width:760px) 34vw, 170px"/></div></article>
+    </div></section>
     <section className="trust-section botanical-section" aria-label="Рейтинги гостей"><div className="container"><div className="trust-message"><Heart size={23} strokeWidth={1.2}/><h2><CmsText id="landing.016" /></h2><p><CmsText id="landing.017" /></p></div><div className="trust-strip"><Ratings compact/></div><a className="trust-more text-link" href="#reviews"><CmsText id="landing.018" /><ArrowUpRight size={16}/></a></div></section>
     <section className="section about-band botanical-section" id="about"><div className="container about"><div className="about-editorial-photo"><Image src="/images/hero.jpg" alt="Общий сад и территория у гостевых домов «Танжерин»" fill sizes="(max-width:760px) 100vw, 40vw"/></div>
       <div><div className="eyebrow"><CmsText id="landing.019" /></div><h2><CmsText id="landing.020" /><br/><span className="muted"><CmsText id="landing.021" /></span></h2></div>
@@ -51,6 +54,4 @@ export default function Landing() {
     </main><footer className="footer botanical-section"><section className="contacts-section" id="contacts"><div className="container contacts-grid"><div className="contact-copy"><div className="eyebrow"><CmsText id="landing.062" /></div><h2><CmsText id="landing.063" /><br/><CmsText id="landing.064" /></h2><p className="contact-address"><MapPin size={21}/>{site.address}</p><p><CmsText id="landing.065" /><br/><CmsText id="landing.066" /></p><a className="contact-phone" href={site.phoneHref}>{site.phone}</a><span className="contact-person"><CmsText id="landing.067" /></span><a className="contact-email" href={`mailto:${site.email}`}><Mail size={16}/>{site.email}</a><div className="contact-actions"><a className="button button-dark" href={site.phoneHref}><Phone size={17}/> <CmsText id="landing.068" /></a><ContactLinks labels/></div><details className="directions"><summary><CmsText id="landing.069" /><ChevronDown size={16}/></summary><p><CmsText id="landing.070" /></p></details></div><LocationMap/></div></section>
   <div className="footer-base"><div className="container footer-main"><Brand/><nav aria-label="Навигация в подвале"><a href="#houses"><CmsText id="landing.071" /></a><a href="#reviews"><CmsText id="landing.072" /></a><a href="#rules"><CmsText id="landing.073" /></a><a href="#contacts"><CmsText id="landing.074" /></a></nav><div className="footer-socials"><ContactLinks socialOnly/><a href="#top" className="back-top"><CmsText id="landing.075" /><ArrowUpRight size={18}/></a></div></div><div className="container footer-bottom"><span><CmsText id="landing.076" /></span><span><CmsText id="landing.077" /></span><a href={site.booking} target="_blank" rel="noreferrer"><CmsText id="landing.078" /><ArrowUpRight size={13}/></a></div></div></footer></div>;
 }
-
-function HouseIcon(){return <Trees size={25} strokeWidth={1.5}/>;}
 
