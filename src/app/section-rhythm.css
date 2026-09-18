@@ -194,28 +194,88 @@ body { background:var(--canvas); color:var(--ink); }
 .spa-features small,.spa-only { color:var(--muted); }
 .spa-details .text-link { --button-bg:#fffaf2; --button-ink:var(--ink); --button-border:#ad9f89; }
 
-/* Everything for the stay: real property photography leads each concise card. */
+/* Everything for the stay: a wide editorial composition with useful details in view. */
 .services-section { padding-top:106px; border-bottom:1px solid var(--line); background:#fff8ed; }
-.services-section .section-heading { display:block; max-width:860px; margin:0 auto 38px; text-align:center; }
+.services-section>.container { width:min(1360px,calc(100% - 64px)); }
+.services-section .section-heading { display:block; max-width:940px; margin:0 auto 46px; text-align:center; }
 .services-section .section-heading .eyebrow { justify-content:center; }
 .services-section .section-heading h2 { font-size:58px; }
-.services-section .section-heading>p { max-width:620px; margin:16px auto 0; color:var(--muted); }
-.services-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; max-width:1040px; margin-inline:auto; }
-.service-card { min-height:0; padding:0; display:grid; grid-template-rows:220px auto; overflow:hidden; border:1px solid #d8c5aa; border-radius:16px; background:#fffaf2; box-shadow:none; }
+.services-section .section-heading>p { max-width:760px; margin:18px auto 0; color:var(--muted); font-size:17px; line-height:1.75; }
+.services-grid { grid-template-columns:repeat(12,minmax(0,1fr)); gap:24px; max-width:none; margin-inline:auto; align-items:stretch; }
+.service-card { min-height:0; padding:0; display:grid; grid-template-rows:255px auto; overflow:hidden; border:1px solid #d8c5aa; border-radius:14px; background:#fffaf2; box-shadow:none; }
+.service-breakfast,.service-comfort { grid-column:span 7; }
+.service-barbecue,.service-children { grid-column:span 5; }
 .service-media { position:relative; min-height:0; overflow:hidden; border-bottom:1px solid var(--line); background:#eadbc6; }
 .service-media img { object-fit:cover; transition:transform .5s ease; }
-.service-card:hover .service-media img { transform:scale(1.025); }
-.service-body { min-width:0; padding:22px; display:flex; flex-direction:column; }
-.service-top { margin:0 0 9px; }
-.service-card h3 { min-height:0; color:#294333; font-size:29px; line-height:1.05; }
-.service-body>p,.service-card details>p { color:var(--muted); }
-.service-body>p { min-height:0; margin-top:9px; }
+.service-card:hover .service-media img { transform:scale(1.02); }
+.service-body { min-width:0; padding:28px 30px 30px; display:flex; flex-direction:column; }
+.service-top { margin:0 0 14px; }
+.service-top>span:last-child { font-size:12px; letter-spacing:.12em; color:#9a8e7c; }
+.service-card h3 { min-height:0; color:#294333; font-size:34px; line-height:1.05; }
+.service-body>p { min-height:0; color:var(--muted); }
+.service-summary { margin-top:15px; font-size:17px; line-height:1.72; }
+.service-detail { margin-top:20px; padding-top:18px; border-top:1px solid #dfd1bd; font-size:15px; line-height:1.72; }
 .service-icon { width:38px; height:38px; color:#315341; background:transparent; }
-.service-card details { margin-top:20px; }
-.service-card summary { width:100%; min-height:46px; padding:10px 15px; border:1px solid #dfa15b; border-radius:9px; background:#fffdf8; color:#71491c; justify-content:space-between; }
-.service-card details>a { border-color:#dfa15b; color:#71491c; }
-.service-contact { max-width:1040px; margin:24px auto 0; border-color:#d4bf9e; background:#f2e3ce; }
-.service-contact .button-outline { --button-bg:var(--orange); --button-border:#ef8d21; --button-ink:#2d281f; box-shadow:0 4px 0 #c96d18; }
+.service-contact {
+  position:relative;
+  overflow:hidden;
+  display:grid;
+  grid-template-columns:46px minmax(0,1fr) auto;
+  align-items:center;
+  gap:22px;
+  max-width:1040px;
+  margin:30px auto 0;
+  padding:30px 32px;
+  border:1px solid #bfa57c;
+  border-radius:20px;
+  background:linear-gradient(135deg,#f2dfc2 0%,#fff8ed 72%);
+  box-shadow:0 14px 34px rgba(109,81,48,.09),inset 0 0 0 6px rgba(255,250,242,.72);
+}
+.service-contact::before {
+  content:"";
+  position:absolute;
+  inset:9px;
+  z-index:0;
+  border:1px solid #d7c3a3;
+  border-radius:13px;
+  pointer-events:none;
+}
+.service-contact::after {
+  content:"";
+  position:absolute;
+  right:190px;
+  bottom:-112px;
+  z-index:0;
+  width:142px;
+  height:214px;
+  background:url('/brand/sage-berry-branch.png') center/contain no-repeat;
+  opacity:.14;
+  pointer-events:none;
+}
+.service-contact>* { position:relative; z-index:1; }
+.service-contact>svg {
+  box-sizing:border-box;
+  width:46px;
+  height:46px;
+  padding:10px;
+  border:1px solid #bba57f;
+  border-radius:50%;
+  background:rgba(255,250,242,.85);
+  color:#587052;
+}
+.service-contact p { color:#302f29; font-size:14px; line-height:1.75; }
+.service-contact strong { font-weight:600; }
+.service-contact>a { margin-left:0; }
+.service-contact .button-outline {
+  --button-bg:var(--orange);
+  --button-border:#ef8d21;
+  --button-ink:#2d281f;
+  min-height:52px;
+  padding:14px 22px;
+  border-radius:9px;
+  box-shadow:0 4px 0 #c96d18;
+  font-size:15px;
+}
 
 /* Veranda is an image-and-copy card instead of another full-bleed photograph. */
 .atmosphere {
@@ -280,8 +340,13 @@ body { background:var(--canvas); color:var(--ink); }
   .company-grid { gap:42px; }
   .why-features { grid-template-columns:repeat(4,minmax(0,1fr)); }
   .spa-grid { gap:42px; }
-  .services-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
-  .service-media { height:190px; }
+  .services-section>.container { width:calc(100% - 64px); }
+  .services-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+  .service-card { grid-column:auto; grid-template-rows:225px auto; }
+  .service-bath { grid-column:1/-1; }
+  .service-media { height:auto; }
+  .service-body { padding:24px; }
+  .service-card h3 { font-size:30px; }
 }
 
 @media(max-width:760px) {
@@ -358,20 +423,29 @@ body { background:var(--canvas); color:var(--ink); }
   .spa-features>span { font-size:12px; }
 
   .services-section { padding-top:86px; }
-  .services-section>.container { padding-inline:20px; }
+  .services-section>.container { width:100%; padding-inline:20px; }
   .services-section .section-heading h2 { font-size:43px; }
   .services-grid { grid-template-columns:1fr; gap:14px; }
-  .service-card { min-height:0; padding:0; display:grid; grid-template-columns:1fr; grid-template-rows:190px auto; gap:0; }
+  .service-card { grid-column:auto; min-height:0; padding:0; display:grid; grid-template-columns:1fr; grid-template-rows:215px auto; gap:0; }
   .service-media { height:auto; }
-  .service-body { padding:19px; }
+  .service-body { padding:22px; }
   .service-top { display:flex; margin:0 0 8px; }
   .service-top>span:last-child { display:block; }
   .service-icon { width:36px; height:36px; }
-  .service-card h3 { font-size:27px; }
-  .service-card details { margin-top:18px; }
-  .service-contact { display:block; padding:22px; }
-  .service-contact>svg { display:none; }
-  .service-contact>a { width:100%; margin:18px 0 0; }
+  .service-card h3 { font-size:29px; }
+  .service-summary { margin-top:13px; font-size:16px; }
+  .service-detail { margin-top:17px; padding-top:16px; font-size:14px; }
+  .service-contact {
+    grid-template-columns:46px minmax(0,1fr);
+    gap:14px 16px;
+    padding:26px 22px;
+    border-radius:18px;
+  }
+  .service-contact::before { inset:7px; border-radius:12px; }
+  .service-contact::after { right:-32px; bottom:-72px; width:126px; height:190px; }
+  .service-contact>svg { display:block; }
+  .service-contact p { font-size:14px; line-height:1.65; }
+  .service-contact>a { grid-column:1/-1; width:100%; margin:4px 0 0; }
 
   .atmosphere { width:calc(100% - 40px); min-height:0; margin:58px auto; grid-template-columns:1fr; border-radius:18px; }
   .atmosphere-picture { min-height:310px; }
