@@ -3,7 +3,6 @@ import { CmsText, EditableText } from "@/components/cms-context";
 
 import Image from "@/components/cms-image";
 import { ArrowDown, ArrowUpRight, CalendarDays, ChevronDown, Heart, House, KeyRound, Mail, MapPin, Phone, Trees } from "lucide-react";
-import { ScrollReveal } from "@/components/scroll-reveal";
 import { Navigation } from "@/components/navigation";
 import { Ratings, Stars } from "@/components/ratings";
 import { Houses } from "@/components/houses";
@@ -16,7 +15,7 @@ import { Company, ExtraServices, WhyTangerine } from "@/components/holiday-secti
 
 export default function Landing() {
   const {site, houses, reviewExcerpts, rules} = useSite();
-  return <div id="top"><ScrollReveal/><Navigation/><main id="main">
+  return <div id="top"><Navigation/><main id="main">
     <section className="hero" aria-labelledby="hero-heading">
       <Image src="/images/hero.jpg" alt="Большой дом «Танжерин» и зелёный сад с местом для отдыха" fill priority sizes="100vw" className="hero-photo"/>
       <div className="hero-shade"/>

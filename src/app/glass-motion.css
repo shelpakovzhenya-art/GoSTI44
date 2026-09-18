@@ -101,9 +101,6 @@
   .contact-actions .contact-links-labeled .social-icon { width: 44px; height: 44px; }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  [data-enter-pending] { opacity: 0; }
-}
 @media (max-width: 1100px) and (min-width: 761px) {
   .footer-main nav { order: 3; width: 100%; }
 }
@@ -127,7 +124,6 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .header,.header.is-scrolled,.header.menu-open { transition: none; }
-  [data-enter-pending] { opacity: 1; }
 }
 
 /* Compact mobile header: one row with two reachable controls. */
