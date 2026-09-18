@@ -7,24 +7,26 @@
 .header,
 .header.is-scrolled,
 .header.menu-open {
-  background: linear-gradient(115deg, #ffffff36, #ffffff08 46%, #ffffff24);
-  border: 1px solid #ffffffa6;
+  background: linear-gradient(115deg, rgba(255,253,247,.94), rgba(249,247,239,.84) 48%, rgba(255,253,247,.91));
+  border: 1px solid rgba(255,255,255,.94);
   border-radius: 24px;
-  color: #242c24;
-  box-shadow: 0 10px 30px #17231920, inset 0 2px 1px #ffffffb3, inset 1px 0 1px #ffffff80, inset -1px -2px 2px #ffffff70;
-  -webkit-backdrop-filter: blur(3px) saturate(145%) brightness(1.08);
-  backdrop-filter: blur(3px) saturate(145%) brightness(1.08);
+  color: #173b30;
+  box-shadow: 0 13px 34px #1723191f, inset 0 1px 0 #fff, inset 0 -1px 0 #ffffffa8;
+  -webkit-backdrop-filter: blur(22px) saturate(118%);
+  backdrop-filter: blur(22px) saturate(118%);
   transition: top .35s ease, box-shadow .35s ease, background .35s ease;
 }
-.header.is-scrolled { background: linear-gradient(115deg, #ffffff57, #ffffff17 46%, #ffffff38); }
-.header.menu-open { background-color: #f9f7ef35; }
-.header .brand-type,.header .desktop-nav,.header .header-phone { text-shadow: 0 1px 5px #ffffffd9, 0 0 14px #ffffffa6; }
+.header.is-scrolled { background:linear-gradient(115deg,rgba(255,253,247,.98),rgba(249,247,239,.94)); }
+.header.menu-open { background-color:rgba(249,247,239,.98); }
+.header .brand-type,.header .desktop-nav,.header .header-phone { color:#173b30; text-shadow:none; }
+.header .desktop-nav { font-weight:800; }
+.header .desktop-nav a { text-shadow:0 1px 0 #fff; }
 .header:before {
   content: "";
   position: absolute;
   inset: 2px;
   border: 1px solid #ffffff40;
-  background: linear-gradient(175deg, #ffffff32, transparent 32%, transparent 72%, #ffffff12);
+  background: linear-gradient(175deg, #ffffff6e, transparent 34%, transparent 74%, #ffffff24);
   border-radius: 21px;
   pointer-events: none;
 }
@@ -32,8 +34,8 @@
 .header.is-scrolled .social-icon,
 .header.menu-open .social-icon,
 .header .menu-toggle {
-  background: linear-gradient(145deg, #ffffff99, #ffffff26);
-  border-color: #ffffffb3;
+  background:linear-gradient(145deg,#ffffffed,#f3f0e6d9);
+  border-color:#d9dfd7;
   box-shadow: inset 0 1px 0 #fff9, 0 2px 6px #2735250a;
 }
 .header .button.header-book { border-radius: 15px; box-shadow: 0 3px 9px #a9532026, inset 0 1px 0 #ffffff7d; }

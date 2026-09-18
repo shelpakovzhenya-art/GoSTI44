@@ -2,7 +2,7 @@
 import { CmsText, EditableText } from "@/components/cms-context";
 
 import Image from "@/components/cms-image";
-import { ArrowDown, ArrowUpRight, CalendarDays, ChevronDown, Heart, House, KeyRound, Mail, MapPin, Phone, Trees } from "lucide-react";
+import { ArrowDown, ArrowUpRight, CalendarDays, ChevronDown, CookingPot, Heart, House, KeyRound, Mail, MapPin, Phone, Trees } from "lucide-react";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { Navigation } from "@/components/navigation";
 import { Ratings, Stars } from "@/components/ratings";
@@ -32,7 +32,7 @@ export default function Landing() {
     <section className="hero-highlights" aria-label="Преимущества гостевых домов"><div className="container hero-highlights-grid">
       <article className="hero-highlight"><div className="hero-highlight-copy"><span className="hero-highlight-icon"><MapPin/></span><h2><CmsText id="landing.079" /></h2><p><CmsText id="landing.080" /><br/><CmsText id="landing.081" /></p></div><BenefitSketch variant="location"/></article>
       <article className="hero-highlight"><div className="hero-highlight-copy"><span className="hero-highlight-icon"><House/></span><h2><CmsText id="landing.082" /></h2><p><CmsText id="landing.083" /><br/><CmsText id="landing.084" /></p></div><BenefitSketch variant="house"/></article>
-      <article className="hero-highlight"><div className="hero-highlight-copy"><span className="hero-highlight-icon"><Trees/></span><h2><CmsText id="landing.085" /></h2><p><CmsText id="landing.086" /><br/><CmsText id="landing.087" /></p></div><BenefitSketch variant="territory"/></article>
+      <article className="hero-highlight"><div className="hero-highlight-copy"><span className="hero-highlight-icon"><CookingPot/></span><h2><CmsText id="landing.085" /></h2><p><CmsText id="landing.086" /><br/><CmsText id="landing.087" /></p></div><BenefitSketch variant="territory"/></article>
     </div></section>
     <section className="trust-section botanical-section" aria-label="Рейтинги гостей"><div className="container"><div className="trust-message"><Heart size={23} strokeWidth={1.2}/><h2><CmsText id="landing.016" /></h2><p><CmsText id="landing.017" /></p></div><div className="trust-strip"><Ratings compact/></div><a className="trust-more text-link" href="#reviews"><CmsText id="landing.018" /><ArrowUpRight size={16}/></a></div></section>
     <section className="section about-band botanical-section" id="about"><div className="container about"><div className="about-editorial-photo"><Image src="/images/hero.jpg" alt="Общий сад и территория у гостевых домов «Танжерин»" fill sizes="(max-width:760px) 100vw, 40vw"/></div>
@@ -56,8 +56,22 @@ export default function Landing() {
 }
 
 function BenefitSketch({ variant }: { variant: "location" | "house" | "territory" }) {
-  if (variant === "location") return <svg className="hero-highlight-sketch" viewBox="0 0 220 116" aria-hidden="true"><path className="sketch-fill" d="M19 88h184v14H19z"/><path d="M23 88h174M44 87V61l20-15 20 15v26M51 87V67h26v20M103 88V49h37v39M109 49l13-17 13 17M116 88V65h11v23M147 88V57h28v31M153 57l8-13 8 13M25 101c25 7 47 7 68 0m16 0c24 7 48 7 73 0M33 75h10m45 0h11m80 0h13"/></svg>;
-  if (variant === "house") return <svg className="hero-highlight-sketch" viewBox="0 0 220 116" aria-hidden="true"><path className="sketch-fill" d="M70 48h85v55H70z"/><path d="M41 102h146M68 102V49l44-27 44 27v53M82 102V62h60v40M97 102V76h21v26M129 72h14M129 84h14M62 102c-1-15-9-23-17-23s-15 8-16 23m142 0c0-16 8-25 17-25 8 0 14 9 14 25M52 73V51m129 18V46"/></svg>;
-  return <svg className="hero-highlight-sketch" viewBox="0 0 220 116" aria-hidden="true"><path className="sketch-fill" d="M36 78h113v25H36z"/><path d="M18 102h190M39 102V44h107v58M29 44h126M48 44v58m88-58v58M60 80h64M66 80v22m52-22v22M166 102V73h34v29m-30-29 8-18h11l8 18M174 87h22M13 102c0-14 7-23 15-23m130 23c0-13 6-21 13-21"/><path d="M78 44c2-15 10-24 21-24 10 0 19 9 21 24"/></svg>;
+  if (variant === "location") return <svg className="hero-highlight-sketch" viewBox="0 0 260 132" aria-hidden="true">
+    <path className="sketch-wash" d="M28 89c18-12 35-14 52-6 15-20 34-28 55-23 17-10 35-8 54 5 16-4 30 1 42 15v31H28z"/>
+    <path d="M18 108h224M34 108V82l23-15 23 15v26M42 108V87h29v21M90 108V70h31v38M96 70l10-13 9 13M131 108V55h37v53M137 55l12-17 13 17M143 108V79h13v29M180 108V77h30v31M185 77l10-13 10 13"/>
+    <path className="sketch-accent" d="M145 35c-7-6-2-14 4-16 6 2 11 10 4 16zM103 55c-6-5-2-12 4-14 5 2 9 9 3 14zM192 62c-6-5-2-11 4-13 5 2 9 8 3 13z"/>
+    <path d="M149 19V10m-42 31v-7m89 15v-7M23 116c24 7 48 7 71 0m13 0c27 7 54 7 81 0m9 0c15 4 28 4 40 0M49 94h10m47-7h9m82 4h8"/>
+  </svg>;
+  if (variant === "house") return <svg className="hero-highlight-sketch" viewBox="0 0 260 132" aria-hidden="true">
+    <path className="sketch-wash" d="M25 106V73c14-9 25-12 34-8 8-22 20-34 36-35 14-18 31-25 51-18 20 7 31 21 34 42 21-5 39 5 55 29v23z"/>
+    <path className="sketch-accent" d="M85 105V55l45-31 45 31v50z"/>
+    <path d="M15 108h230M80 108V55l50-34 50 34v53M94 108V65h72v43M111 108V82h24v26M145 72h13v13h-13zM102 72h13v13h-13zM130 21v-9M71 108c0-20-8-31-19-31s-20 11-20 31m25-38V45m-8 19-12-9m20 9 11-9m121 53c0-21 9-34 21-34s21 13 21 34m-21-34V43m-8 18-12-9m20 9 12-9M23 116c30 6 59 6 88 0m19 0c34 6 68 6 102 0"/>
+  </svg>;
+  return <svg className="hero-highlight-sketch" viewBox="0 0 260 132" aria-hidden="true">
+    <path className="sketch-wash" d="M20 109V70c18-7 33-6 47 3 16-15 33-19 52-13 19-9 37-6 55 8 20-9 42-2 66 21v20z"/>
+    <path d="M15 109h231M29 109V48h135v61M20 48h153M42 48v61m109-61v61M58 83h76M66 83v26m60-26v26M74 77c3-13 11-21 23-21 11 0 20 8 23 21"/>
+    <path className="sketch-accent" d="M56 48h96v10H56zM178 108V82h31v26z"/>
+    <path d="M173 109V79h41v30m-35-30 8-18h13l8 18m-30 14h31M190 61v-9m8 9v-9M220 108c2-16 11-26 23-26h3M224 82l7-14h17l7 14M229 94h20m-15 14v-9m11 9v-9M22 109c0-14 7-24 16-24m124 24c0-15 7-25 16-25M34 76h-9m11-8-7-7"/>
+  </svg>;
 }
 

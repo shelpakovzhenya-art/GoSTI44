@@ -945,14 +945,15 @@ body { background:var(--canvas); color:var(--ink); }
   width:100%;
   height:auto;
   align-self:center;
-  color:#315b4c;
+  color:#245642;
   fill:none;
   stroke:currentColor;
-  stroke-width:2;
+  stroke-width:1.7;
   stroke-linecap:round;
   stroke-linejoin:round;
 }
-.hero-highlight-sketch .sketch-fill { fill:#e5ede0; stroke:none; }
+.hero-highlight-sketch .sketch-wash { fill:#edf2e9; stroke:none; }
+.hero-highlight-sketch .sketch-accent { fill:#dce7d6; stroke:currentColor; stroke-width:1.35; }
 
 @media(max-width:1180px) and (min-width:761px) {
   .hero-highlights-grid { width:calc(100% - 48px); }
