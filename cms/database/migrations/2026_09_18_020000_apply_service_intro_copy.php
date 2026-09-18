@@ -13,57 +13,32 @@ return new class extends Migration
             return;
         }
 
-        $this->patchTextEntry('landing', [
-            '048' => 'ВАШ КОНТАКТ ПЕРЕД ПОЕЗДКОЙ',
-            '049' => 'Будем знакомы.',
-            '050' => 'Я — Светлана.',
-            '051' => 'Я занимаюсь размещением гостей в «Танжерине». Если не знаете, какой дом выбрать, напишите, сколько вас и когда планируете приехать.',
-            '052' => 'Подскажу по спальным местам, проживанию с детьми и питомцами, бане и купели. Перед приездом объясню, как добраться и заселиться.',
-            '053' => 'Написать Светлане',
-        ]);
-
-        $this->patchTextEntry('holiday-sections', [
-            '040' => 'После бронирования можно заранее согласовать завтрак, мангал,',
-            '041' => 'детские вещи и другие детали поездки. Баня находится в доме «Лайм».',
-        ]);
-    }
-
-    public function down(): void
-    {
-        // Published CMS copy stays editable and is not overwritten on rollback.
-    }
-
-    private function patchTextEntry(string $key, array $texts): void
-    {
-        DB::transaction(function () use ($key, $texts): void {
-            $entry = DB::table('content_entries')->where('key', $key)->lockForUpdate()->first();
+        DB::transaction(function (): void {
+            $entry = DB::table('content_entries')->where('key', 'holiday-sections')->lockForUpdate()->first();
             if (! $entry) {
                 return;
             }
 
+            $texts = [
+                '040' => 'После бронирования можно заранее согласовать завтрак, мангал,',
+                '041' => 'детские вещи и другие детали поездки. Баня находится в доме «Лайм».',
+            ];
             $changes = [];
+
             foreach (['draft', 'published'] as $column) {
                 if ($entry->{$column} === null) {
                     continue;
                 }
 
                 $data = json_decode($entry->{$column}, true, flags: JSON_THROW_ON_ERROR);
-                $found = [];
                 $items = $data['texts'] ?? [];
                 foreach ($items as &$item) {
                     $itemKey = $item['key'] ?? '';
                     if (array_key_exists($itemKey, $texts)) {
                         $item['value'] = $texts[$itemKey];
-                        $found[$itemKey] = true;
                     }
                 }
                 unset($item);
-
-                foreach ($texts as $itemKey => $value) {
-                    if (! isset($found[$itemKey])) {
-                        $items[] = ['key' => $itemKey, 'value' => $value];
-                    }
-                }
                 $data['texts'] = $items;
 
                 ContentValidator::validate($entry->kind, $data, $entry->key);
@@ -92,5 +67,10 @@ return new class extends Migration
             }
             DB::table('content_entries')->where('id', $entry->id)->update($changes);
         });
+    }
+
+    public function down(): void
+    {
+        // Published CMS copy stays editable and is not overwritten on rollback.
     }
 };

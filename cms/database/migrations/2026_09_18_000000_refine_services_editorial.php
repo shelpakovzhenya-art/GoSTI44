@@ -48,12 +48,14 @@ return new class extends Migration
     private function patchTextEntry(string $key, array $texts): void
     {
         $this->patchEntry($key, function (array $data) use ($texts): array {
-            foreach ($data['texts'] ?? [] as &$item) {
+            $items = $data['texts'] ?? [];
+            foreach ($items as &$item) {
                 if (array_key_exists($item['key'] ?? '', $texts)) {
                     $item['value'] = $texts[$item['key']];
                 }
             }
             unset($item);
+            $data['texts'] = $items;
 
             return $data;
         });
