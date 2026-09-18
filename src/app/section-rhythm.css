@@ -990,6 +990,47 @@ body { background:var(--canvas); color:var(--ink); }
   height:74px;
   background-image:url('/brand/tangerines.webp');
 }
+.services-botanicals {
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+}
+.services-botanicals>span {
+  position:absolute;
+  display:block;
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  filter:saturate(.72) contrast(.92);
+}
+.services-bergamot {
+  left:-238px;
+  top:245px;
+  width:300px;
+  height:550px;
+  background-image:url('/brand/bergamot-branch.webp');
+  opacity:.3;
+  transform:rotate(-7deg);
+}
+.services-blossom {
+  right:-220px;
+  top:590px;
+  width:285px;
+  height:530px;
+  background-image:url('/brand/orange-blossom-vine.webp');
+  opacity:.25;
+  transform:rotate(8deg);
+}
+.services-olive {
+  left:-196px;
+  bottom:70px;
+  width:245px;
+  height:490px;
+  background-image:url('/brand/olive-rosemary-sprig.webp');
+  opacity:.2;
+  transform:rotate(9deg);
+}
 .service-contact::after {
   right:168px;
   bottom:-118px;
@@ -1051,4 +1092,31 @@ body { background:var(--canvas); color:var(--ink); }
   .rules-band::before { left:-32px; bottom:18px; }
   .footer::after { left:-36px; bottom:34px; }
   .service-contact::after { right:76px; bottom:-102px; width:82px; height:170px; opacity:.1; }
+  .services-bergamot {
+    left:-40px;
+    top:180px;
+    width:118px;
+    height:220px;
+    opacity:.16;
+  }
+  .services-blossom {
+    right:-42px;
+    top:48%;
+    width:116px;
+    height:230px;
+    opacity:.14;
+  }
+  .services-olive {
+    left:-38px;
+    bottom:120px;
+    width:98px;
+    height:210px;
+    opacity:.13;
+  }
+}
+
+@media(min-width:761px) and (max-width:1500px) {
+  .services-bergamot { left:-72px; width:185px; opacity:.13; }
+  .services-blossom { right:-68px; width:175px; opacity:.12; }
+  .services-olive { left:-58px; width:150px; opacity:.1; }
 }
