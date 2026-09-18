@@ -22,8 +22,8 @@ export function Navigation({ subpage = false }: { subpage?: boolean }) {
     return () => window.removeEventListener("scroll", update);
   }, []);
   return <>
-    <div className={`topline${subpage ? "" : " topline-home"}`}><div className="container topline-inner"><a href={site.route} target="_blank" rel="noreferrer"><MapPin size={16} /> <CmsText id="navigation.001" /></a><span><CmsText id="navigation.002" /></span></div></div>
-    <header className={`header${subpage ? "" : " is-home"}${scrolled || subpage ? " is-scrolled" : ""}${subpage ? " is-subpage" : ""}${open ? " menu-open" : ""}`} onKeyDown={event => { if (event.key === "Escape" && open) { setOpen(false); menuButton.current?.focus(); } }}>
+    <div className="topline"><div className="container topline-inner"><a href={site.route} target="_blank" rel="noreferrer"><MapPin size={16} /> <CmsText id="navigation.001" /></a><span><CmsText id="navigation.002" /></span></div></div>
+    <header className={`header${scrolled || subpage ? " is-scrolled" : ""}${subpage ? " is-subpage" : ""}${open ? " menu-open" : ""}`} onKeyDown={event => { if (event.key === "Escape" && open) { setOpen(false); menuButton.current?.focus(); } }}>
       <div className="container header-inner">
         <Brand href={subpage ? "/" : "#top"}/>
         <nav className="desktop-nav" aria-label="Основная навигация">{links.filter(([,id]) => !["company","about"].includes(id.replace(/^#/,""))).map(([title,id]) => <a key={id} href={resolveHref(id, subpage)}>{title}</a>)}</nav>
