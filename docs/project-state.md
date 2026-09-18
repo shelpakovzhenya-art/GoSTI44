@@ -5,10 +5,10 @@
 ## Production
 
 - Сайт: https://tangerin.a-test.ru/.
-- Активный release: `/var/www/gosti/releases/20260918-10`.
-- Frontend: commit `3eb9ea3`; данные CMS не менялись.
-- CMS: `/var/www/gosti/releases/20260918-10/cms`; база: `/var/www/gosti/shared/database.sqlite`; постоянное storage: `/var/www/gosti/releases/20260909-1/cms/storage`.
-- Предыдущий рабочий release для отката: `/var/www/gosti/releases/20260918-9`.
+- Активный release: `/var/www/gosti/releases/20260918-11`.
+- Frontend: commit `5dc925b`; данные CMS не менялись.
+- CMS: `/var/www/gosti/releases/20260918-11/cms`; база: `/var/www/gosti/shared/database.sqlite`; постоянное storage: `/var/www/gosti/releases/20260909-1/cms/storage`.
+- Предыдущий рабочий release для отката: `/var/www/gosti/releases/20260918-10`.
 - Тестовый домен закрыт от индексации; основной домен заказчик определит позже.
 
 ## Последний результат
@@ -17,6 +17,7 @@
 - Из карточек преимуществ удалены добавленные ранее фотографии и ботанический декор. Вместо них используются три спокойные линейные иллюстрации по темам района, отдельного дома и территории.
 - На 1280 px шапка, навигация и три равные карточки помещаются без обрезки. На 390 px кнопки имеют ширину 350 px, карточки — 358 px; горизонтального скролла нет.
 - Старых `hero-highlight-photo` и `lemon-branch.webp` в production CSS нет.
+- Для восьми карточек блока «Всё необходимое уже здесь» восстановлено отдельное desktop-hover-состояние: подъём на 7 px, тёплая тень и рамка, оранжевая линия, акцент иконки и заголовка. На мобильном эффект не залипает.
 
 ## Рабочая конфигурация
 
