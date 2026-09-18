@@ -299,10 +299,47 @@ body { background:var(--canvas); color:var(--ink); }
 .atmosphere h2 { font-size:48px; }
 .atmosphere h2 span { color:#7b6540; font:inherit; }
 .atmosphere p { color:var(--muted); font-size:16px; margin:24px 0 28px; }
+.atmosphere-jasmine {
+  right:-74px;
+  bottom:-92px;
+  width:330px;
+  height:330px;
+  background:url('/brand/jasmine-arc.webp') center/contain no-repeat;
+  opacity:.18;
+  transform:rotate(4deg);
+}
 
 /* Gallery, reviews and host sit on distinct but related surfaces. */
-.gallery-band { border-block:1px solid var(--line); }
+.gallery-band { position:relative; border-block:1px solid var(--line); overflow:clip; }
 .gallery-band .section-heading { padding-bottom:26px; border-bottom:1px solid var(--line); }
+.gallery-botanical {
+  position:absolute;
+  z-index:0;
+  display:block;
+  pointer-events:none;
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+  filter:saturate(.68) contrast(.9);
+}
+.gallery-resort-leaves {
+  left:-58px;
+  top:58px;
+  width:330px;
+  height:380px;
+  background-image:url('/brand/resort-leaves.webp');
+  opacity:.24;
+  transform:rotate(-5deg);
+}
+.gallery-maidenhair {
+  right:-72px;
+  bottom:12px;
+  width:360px;
+  height:310px;
+  background-image:url('/brand/maidenhair-fern.webp');
+  opacity:.22;
+  transform:rotate(3deg);
+}
 .gallery-photo { border-radius:14px; }
 .reviews-section { border-bottom:1px solid var(--line); }
 .review-card { background:#fffaf2; border:1px solid #dacbb6; border-radius:14px; box-shadow:none; }
@@ -455,6 +492,9 @@ body { background:var(--canvas); color:var(--ink); }
   .atmosphere h2 { font-size:36px; }
   .atmosphere p { font-size:15px; }
   .atmosphere .text-link { margin-inline:auto; }
+  .atmosphere-jasmine { right:-76px; bottom:-80px; width:230px; height:230px; opacity:.14; }
+  .gallery-resort-leaves { left:-48px; top:36px; width:145px; height:190px; opacity:.17; }
+  .gallery-maidenhair { right:-50px; bottom:18px; width:150px; height:135px; opacity:.16; }
 
   .gallery-photo { border-radius:0; }
   .review-card { border-radius:14px; }
