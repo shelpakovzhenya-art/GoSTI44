@@ -1280,3 +1280,98 @@ body { background:var(--canvas); color:var(--ink); }
   .gallery-resort-leaves { left:-54px; width:170px; height:220px; opacity:.23; }
   .gallery-maidenhair { right:-52px; width:175px; height:160px; opacity:.22; }
 }
+
+/* The FAQ and contacts are long chapters, so each edge gets its own plant instead of a repeated branch. */
+.rules-band::before,
+.rules-band::after,
+.footer::before,
+.footer::after {
+  content:"";
+  position:absolute;
+  z-index:0;
+  display:block;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:contain;
+  pointer-events:none;
+}
+
+.rules-band::before {
+  left:clamp(-40px,1vw,20px);
+  top:32px;
+  width:clamp(250px,19vw,365px);
+  height:clamp(390px,34vw,620px);
+  background-image:url('/brand/quince-blossom-branch.webp');
+  opacity:.36;
+  transform:rotate(-3deg);
+}
+
+.rules-band::after {
+  right:clamp(-54px,.5vw,10px);
+  bottom:24px;
+  width:clamp(280px,23vw,440px);
+  height:clamp(205px,19vw,350px);
+  background-image:url('/brand/wild-rose-spray.webp');
+  opacity:.31;
+  transform:rotate(4deg);
+}
+
+.footer::before {
+  left:clamp(-76px,-1vw,-16px);
+  top:68px;
+  width:clamp(300px,24vw,470px);
+  height:clamp(220px,20vw,370px);
+  background-image:url('/brand/fig-branch.webp');
+  opacity:.3;
+  transform:rotate(-5deg);
+}
+
+.footer::after {
+  right:clamp(-58px,.8vw,14px);
+  top:128px;
+  left:auto;
+  bottom:auto;
+  width:clamp(235px,18vw,350px);
+  height:clamp(370px,32vw,590px);
+  background-image:url('/brand/myrtle-cascade.webp');
+  opacity:.32;
+  transform:rotate(2deg);
+}
+
+@media(min-width:761px) and (max-width:1500px) {
+  .rules-band::before { left:-78px; width:265px; opacity:.27; }
+  .rules-band::after { right:-92px; width:300px; opacity:.24; }
+  .footer::before { left:-108px; width:315px; opacity:.24; }
+  .footer::after { right:-88px; width:245px; opacity:.25; }
+}
+
+@media(max-width:760px) {
+  .rules-band::before {
+    left:-66px;
+    top:24px;
+    width:145px;
+    height:230px;
+    opacity:.24;
+  }
+  .rules-band::after {
+    right:-74px;
+    bottom:22px;
+    width:170px;
+    height:126px;
+    opacity:.22;
+  }
+  .footer::before {
+    left:-76px;
+    top:84px;
+    width:180px;
+    height:138px;
+    opacity:.23;
+  }
+  .footer::after {
+    right:-59px;
+    top:360px;
+    width:135px;
+    height:230px;
+    opacity:.23;
+  }
+}
