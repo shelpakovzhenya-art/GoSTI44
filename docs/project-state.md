@@ -3,19 +3,20 @@
 Обновлено 18.09.2026.
 
 - Production: https://tangerin.a-test.ru/.
-- Активный release: `/var/www/gosti/releases/20260918-1`; frontend собран из `01b7016`, CMS-миграции синхронизированы до `0c64bc5`.
-- CMS: `/var/www/gosti/releases/20260918-1/cms`; база: `/var/www/gosti/shared/database.sqlite`; постоянное storage: `/var/www/gosti/releases/20260909-1/cms/storage`.
+- Активный release: `/var/www/gosti/releases/20260918-2`; frontend собран из `b9a3b84`, CMS-миграции синхронизированы до `0c64bc5`.
+- CMS: `/var/www/gosti/releases/20260918-2/cms`; база: `/var/www/gosti/shared/database.sqlite`; постоянное storage: `/var/www/gosti/releases/20260909-1/cms/storage`.
 - Индексация тестового домена отключена через header и meta noindex. Основной домен заказчик определит позже.
 - Путеводитель ранее расширен по фактическому спросу Яндекс Wordstat. Добавлены `/kostroma/muzei`, `/kostroma/za-odin-den`, `/kostroma/s-detmi` и `/kostroma/chto-privezti`; страницы «Где поесть» и «Достопримечательности» сохранены как основные URL своих кластеров без SEO-дублей.
 - В публичных текстах используется «дом»; баня находится в «Всё для отдыха», отдельного SPA и пункта меню нет.
 - Browser QA: все семь страниц путеводителя проверены на 390 и 1440 px; переполнения, выходящих за экран ссылок, битых изображений и console errors нет. Восемь публичных маршрутов, API CMS, admin login, 11 ресурсов Filament/Livewire и favicon отвечают `200`; noindex сохранён.
 - Миграции текущего блока применены batch 9–11; `PRAGMA integrity_check` — `ok`.
 - Резервная копия базы перед текущей миграцией: `/var/www/gosti/backups/database-20260918-before-services.sqlite`, права `600`.
-- Предыдущий release для отката: `/var/www/gosti/releases/20260917-2`.
+- Предыдущий release для отката: `/var/www/gosti/releases/20260918-1`.
 
 - Новый вариант блока «Всё для вашего отдыха» опубликован: контейнер расширен, карточки собраны в журнальную сетку, баня вынесена в широкую горизонтальную карточку, повторяющиеся кнопки убраны, а пояснения показаны сразу. Тексты пяти услуг расширены конкретными условиями.
 - Контактная плашка под карточками приведена к production-стилю: двойной скруглённый контур, кремовый градиент, круглая иконка, растительная подложка и объёмная оранжевая кнопка.
+- Секция «Будем знакомы. Я — Светлана» полностью удалена из React-разметки главной страницы по прямому комментарию клиента.
 - CMS синхронизирована миграциями `2026_09_18_000000_refine_services_editorial`, `2026_09_18_010000_sync_host_and_service_intro` и `2026_09_18_020000_apply_service_intro_copy`. Целостность production-базы: `ok`.
-- Проверка релиза: `verify:content`, TypeScript, ESLint, production build и 22 CMS-теста проходят; public-маршруты, CMS API и `/admin/login` отвечают `200`; `X-Robots-Tag: noindex, nofollow` сохранён. На viewport 390 px карточки и плашка имеют ширину 350 px, горизонтального переполнения и ошибок консоли нет.
+- Проверка релиза: `verify:content`, TypeScript, ESLint, production build и 22 CMS-теста проходят; public-маршруты, CMS API и `/admin/login` отвечают `200`; `X-Robots-Tag: noindex, nofollow` сохранён. На viewport 390 px ширина документа совпадает с viewport, секция Светланы отсутствует, горизонтального переполнения нет.
 
 Следующий шаг: после выбора основного домена обновить `SITE_URL`, canonical, sitemap, сертификат и только после отдельной проверки разрешить индексацию.
