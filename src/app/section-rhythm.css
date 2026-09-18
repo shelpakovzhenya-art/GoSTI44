@@ -77,21 +77,21 @@ body { background:var(--canvas); color:var(--ink); }
   z-index:0;
 }
 .about-band:before { left:-48px; top:28px; transform:rotate(18deg); }
-.about-band:after { --plant-art:url('/brand/lemon-branch.webp'); right:0; bottom:12px; transform:scaleX(-1); opacity:.24; }
+.about-band:after { display:none; }
 .houses-section:after { --plant-art:url('/brand/palm-frond.webp'); right:0; top:34%; transform:scaleX(-1); opacity:.16; }
-.company-section:before { --plant-art:url('/brand/lemon-branch.webp'); left:-64px; bottom:18px; transform:rotate(20deg); opacity:.22; }
+.company-section:before { --plant-art:url('/brand/orange-blossom-sprig.webp'); left:-64px; bottom:18px; transform:rotate(20deg); opacity:.22; }
 .why-section:before { left:-44px; top:22px; transform:rotate(14deg); }
-.why-section:after { --plant-art:url('/brand/lemon-branch.webp'); right:0; bottom:4px; transform:scaleX(-1); opacity:.28; }
+.why-section:after { display:none; }
 .spa-section:before { --plant-art:url('/brand/palm-frond.webp'); display:block; inset:auto auto 16px -54px; transform:rotate(9deg); opacity:.15; }
 .spa-section:after { right:0; top:28px; transform:scaleX(-1); opacity:.22; }
-.services-section:after { --plant-art:url('/brand/lemon-branch.webp'); right:0; top:190px; transform:scaleX(-1); opacity:.27; }
+.services-section:after { display:none; }
 .reviews-section:before { left:-58px; bottom:24px; transform:rotate(24deg); }
 .reviews-section:after { --plant-art:url('/brand/palm-frond.webp'); right:0; top:26px; transform:scaleX(-1); opacity:.15; }
-.host-band:after { --plant-art:url('/brand/lemon-branch.webp'); right:0; bottom:16px; transform:scaleX(-1); opacity:.2; }
+.host-band:after { display:none; }
 .booking-section:before { display:block; inset:auto auto 18px -54px; transform:rotate(20deg); opacity:.22; }
-.booking-section:after { --plant-art:url('/brand/lemon-branch.webp'); right:0; top:20px; transform:scaleX(-1); opacity:.21; }
+.booking-section:after { display:none; }
 .rules-band:before { --plant-art:url('/brand/palm-frond.webp'); left:-48px; bottom:16px; transform:rotate(11deg); opacity:.15; }
-.rules-band:after { --plant-art:url('/brand/lemon-branch.webp'); right:0; top:22px; transform:scaleX(-1); opacity:.28; }
+.rules-band:after { display:none; }
 .footer:after { left:-52px; bottom:58px; transform:rotate(24deg); opacity:.22; }
 .services-section:before {
   content:"";
@@ -540,7 +540,7 @@ body { background:var(--canvas); color:var(--ink); }
   top:8px;
   width:clamp(150px,15vw,230px);
   height:clamp(190px,21vw,310px);
-  background:url('/brand/lemon-branch.webp') center/contain no-repeat;
+  background:url('/brand/lime-sprig.webp') center/contain no-repeat;
   opacity:.34;
   transform:rotate(16deg);
   pointer-events:none;
@@ -874,6 +874,36 @@ body { background:var(--canvas); color:var(--ink); }
   background:linear-gradient(180deg,#f4efe5 0%,var(--paper) 100%);
   overflow:visible;
 }
+.hero-highlights::after,
+.trust-section::before {
+  content:"";
+  position:absolute;
+  z-index:0;
+  display:block;
+  pointer-events:none;
+  background-position:center;
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+.hero-highlights::after {
+  right:-46px;
+  bottom:-34px;
+  width:220px;
+  height:260px;
+  background-image:url('/brand/palm-frond.webp');
+  opacity:.17;
+  transform:rotate(-8deg);
+}
+.trust-section::before {
+  left:-34px;
+  bottom:-46px;
+  width:180px;
+  height:185px;
+  background-image:url('/brand/orange-pair.webp');
+  opacity:.14;
+  transform:rotate(9deg);
+}
+.hero-highlights-grid,.trust-section>.container { position:relative; z-index:1; }
 .hero-highlights-grid {
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
@@ -1103,7 +1133,7 @@ body { background:var(--canvas); color:var(--ink); }
   transform:rotate(-5deg);
 }
 .footer::after {
-  --plant-art:url('/brand/lemon-branch.webp');
+  --plant-art:url('/brand/palm-frond.webp');
   left:-44px;
   bottom:54px;
   opacity:.16;
@@ -1123,6 +1153,8 @@ body { background:var(--canvas); color:var(--ink); }
     height:132px;
     opacity:.16;
   }
+  .hero-highlights::after { right:-42px; bottom:-24px; width:126px; height:154px; opacity:.13; }
+  .trust-section::before { left:-38px; bottom:-28px; width:112px; height:118px; opacity:.12; }
   .about-band::before { left:-34px; top:26px; }
   .houses-section::before { left:-35px; top:24px; }
   .company-section::before { left:-38px; bottom:18px; }

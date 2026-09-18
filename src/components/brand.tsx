@@ -9,7 +9,8 @@ export function Brand({href="#top"}: {href?:string} = {}) {
   </a>;
 }
 
-export function Foliage({className="",fruit=false,variant,eager=false}:{className?:string;fruit?:boolean;variant?:"leaves"|"lemons"|"palm"|"fruit";eager?:boolean}) {
-  const assets = {leaves:"citrus-leaves",lemons:"lemon-branch",palm:"palm-frond",fruit:"tangerines"};
-  return <div className={`foliage ${className}`} aria-hidden="true"><Image src={`/brand/${assets[variant ?? (fruit?"fruit":"leaves")]}.webp`} alt="" fill loading={eager ? "eager" : "lazy"} sizes="(max-width:760px) 200px, 420px"/></div>;
+export function Foliage({className="",fruit=false,variant,eager=false,asset}:{className?:string;fruit?:boolean;variant?:"leaves"|"lemons"|"palm"|"fruit";eager?:boolean;asset?:string}) {
+  const assets = {leaves:"citrus-leaves",lemons:"jasmine-arc",palm:"palm-frond",fruit:"tangerines"};
+  const selectedAsset = asset ?? assets[variant ?? (fruit?"fruit":"leaves")];
+  return <div className={`foliage ${className}`} aria-hidden="true"><Image src={`/brand/${selectedAsset}.webp`} alt="" fill loading={eager ? "eager" : "lazy"} sizes="(max-width:760px) 200px, 420px"/></div>;
 }
