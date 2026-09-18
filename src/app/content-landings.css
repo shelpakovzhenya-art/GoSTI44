@@ -38,3 +38,18 @@
   .detail-other-foliage{right:-70px;top:22px;width:145px;height:175px;opacity:.14}
   .guide-note-foliage{right:-68px;bottom:-58px;width:140px;height:165px;opacity:.13}
 }
+
+/* Keep the distinct accents visible on house, company and Kostroma pages. */
+.detail-intro-foliage{right:-70px;width:300px;height:370px;opacity:.34}
+.detail-gallery-foliage{left:-72px;width:300px;height:355px;opacity:.31}
+.detail-other-foliage{right:-68px;width:285px;height:335px;opacity:.32}
+.guide-note-foliage{right:-56px;width:255px;height:295px;opacity:.3}
+.company-note .detail-other-foliage{opacity:.25}
+
+@media(max-width:760px){
+  .detail-hero-leaves,.company-hero-foliage{right:-82px;width:190px;height:230px;opacity:.42}
+  .detail-intro-foliage{right:-58px;width:170px;height:215px;opacity:.23}
+  .detail-gallery-foliage{left:-56px;width:165px;height:205px;opacity:.22}
+  .detail-other-foliage{right:-58px;width:165px;height:200px;opacity:.22}
+  .guide-note-foliage{right:-54px;width:158px;height:190px;opacity:.21}
+}
