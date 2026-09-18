@@ -2,7 +2,7 @@
 import { CmsText, EditableText } from "@/components/cms-context";
 
 import Image from "@/components/cms-image";
-import { ArrowDown, ArrowUpRight, CalendarDays, ChevronDown, CookingPot, Heart, House, KeyRound, Mail, MapPin, Phone, Trees } from "lucide-react";
+import { ArrowDown, ArrowUpRight, CalendarDays, ChevronDown, Heart, House, KeyRound, Mail, MapPin, Phone, Trees } from "lucide-react";
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { Navigation } from "@/components/navigation";
 import { Ratings, Stars } from "@/components/ratings";
@@ -30,9 +30,9 @@ export default function Landing() {
       </div>
     </section>
     <section className="hero-highlights" aria-label="Преимущества гостевых домов"><div className="container hero-highlights-grid">
-      <article className="hero-highlight"><div className="hero-highlight-copy"><span className="hero-highlight-icon"><MapPin/></span><h2><CmsText id="landing.079" /></h2><p><CmsText id="landing.080" /><br/><CmsText id="landing.081" /></p></div><BenefitSketch variant="location"/></article>
-      <article className="hero-highlight"><div className="hero-highlight-copy"><span className="hero-highlight-icon"><House/></span><h2><CmsText id="landing.082" /></h2><p><CmsText id="landing.083" /><br/><CmsText id="landing.084" /></p></div><BenefitSketch variant="house"/></article>
-      <article className="hero-highlight"><div className="hero-highlight-copy"><span className="hero-highlight-icon"><CookingPot/></span><h2><CmsText id="landing.085" /></h2><p><CmsText id="landing.086" /><br/><CmsText id="landing.087" /></p></div><BenefitSketch variant="territory"/></article>
+      <article className="hero-highlight"><div className="hero-highlight-copy"><span className="hero-highlight-icon"><BenefitGlyph variant="location"/></span><h2><CmsText id="landing.079" /></h2><p><CmsText id="landing.080" /><br/><CmsText id="landing.081" /></p></div><BenefitSketch variant="location"/></article>
+      <article className="hero-highlight"><div className="hero-highlight-copy"><span className="hero-highlight-icon"><BenefitGlyph variant="house"/></span><h2><CmsText id="landing.082" /></h2><p><CmsText id="landing.083" /><br/><CmsText id="landing.084" /></p></div><BenefitSketch variant="house"/></article>
+      <article className="hero-highlight"><div className="hero-highlight-copy"><span className="hero-highlight-icon"><BenefitGlyph variant="territory"/></span><h2><CmsText id="landing.085" /></h2><p><CmsText id="landing.086" /><br/><CmsText id="landing.087" /></p></div><BenefitSketch variant="territory"/></article>
     </div></section>
     <section className="trust-section botanical-section" aria-label="Рейтинги гостей"><div className="container"><div className="trust-message"><Heart size={23} strokeWidth={1.2}/><h2><CmsText id="landing.016" /></h2><p><CmsText id="landing.017" /></p></div><div className="trust-strip"><Ratings compact/></div><a className="trust-more text-link" href="#reviews"><CmsText id="landing.018" /><ArrowUpRight size={16}/></a></div></section>
     <section className="section about-band botanical-section" id="about"><div className="container about"><div className="about-editorial-photo"><Image src="/images/hero.jpg" alt="Общий сад и территория у гостевых домов «Танжерин»" fill sizes="(max-width:760px) 100vw, 40vw"/></div>
@@ -55,23 +55,47 @@ export default function Landing() {
   <div className="footer-base"><div className="container footer-main"><Brand/><nav aria-label="Навигация в подвале"><a href="#houses"><CmsText id="landing.071" /></a><a href="#reviews"><CmsText id="landing.072" /></a><a href="#rules"><CmsText id="landing.073" /></a><a href="#contacts"><CmsText id="landing.074" /></a></nav><div className="footer-socials"><ContactLinks socialOnly/><a href="#top" className="back-top"><CmsText id="landing.075" /><ArrowUpRight size={18}/></a></div></div><div className="container footer-bottom"><span><CmsText id="landing.076" /></span><span><CmsText id="landing.077" /></span><a href={site.booking} target="_blank" rel="noreferrer"><CmsText id="landing.078" /><ArrowUpRight size={13}/></a></div></div></footer></div>;
 }
 
-function BenefitSketch({ variant }: { variant: "location" | "house" | "territory" }) {
-  if (variant === "location") return <svg className="hero-highlight-sketch" viewBox="0 0 260 132" aria-hidden="true">
-    <path className="sketch-wash" d="M28 89c18-12 35-14 52-6 15-20 34-28 55-23 17-10 35-8 54 5 16-4 30 1 42 15v31H28z"/>
-    <path d="M18 108h224M34 108V82l23-15 23 15v26M42 108V87h29v21M90 108V70h31v38M96 70l10-13 9 13M131 108V55h37v53M137 55l12-17 13 17M143 108V79h13v29M180 108V77h30v31M185 77l10-13 10 13"/>
-    <path className="sketch-accent" d="M145 35c-7-6-2-14 4-16 6 2 11 10 4 16zM103 55c-6-5-2-12 4-14 5 2 9 9 3 14zM192 62c-6-5-2-11 4-13 5 2 9 8 3 13z"/>
-    <path d="M149 19V10m-42 31v-7m89 15v-7M23 116c24 7 48 7 71 0m13 0c27 7 54 7 81 0m9 0c15 4 28 4 40 0M49 94h10m47-7h9m82 4h8"/>
+type BenefitVariant = "location" | "house" | "territory";
+
+function BenefitGlyph({ variant }: { variant: BenefitVariant }) {
+  if (variant === "location") return <svg className="hero-highlight-glyph" viewBox="0 0 64 64" aria-hidden="true">
+    <path fillRule="evenodd" d="M32 5C19.85 5 10 14.72 10 26.72 10 43.04 32 59 32 59s22-15.96 22-32.28C54 14.72 44.15 5 32 5Zm0 31.1c5.27 0 9.55-4.21 9.55-9.4 0-5.2-4.28-9.42-9.55-9.42s-9.55 4.22-9.55 9.41c0 5.2 4.28 9.41 9.55 9.41Z"/>
   </svg>;
-  if (variant === "house") return <svg className="hero-highlight-sketch" viewBox="0 0 260 132" aria-hidden="true">
-    <path className="sketch-wash" d="M25 106V73c14-9 25-12 34-8 8-22 20-34 36-35 14-18 31-25 51-18 20 7 31 21 34 42 21-5 39 5 55 29v23z"/>
-    <path className="sketch-accent" d="M85 105V55l45-31 45 31v50z"/>
-    <path d="M15 108h230M80 108V55l50-34 50 34v53M94 108V65h72v43M111 108V82h24v26M145 72h13v13h-13zM102 72h13v13h-13zM130 21v-9M71 108c0-20-8-31-19-31s-20 11-20 31m25-38V45m-8 19-12-9m20 9 11-9m121 53c0-21 9-34 21-34s21 13 21 34m-21-34V43m-8 18-12-9m20 9 12-9M23 116c30 6 59 6 88 0m19 0c34 6 68 6 102 0"/>
+  if (variant === "house") return <svg className="hero-highlight-glyph" viewBox="0 0 64 64" aria-hidden="true">
+    <path fillRule="evenodd" d="M7 31.1 32 8l25 23.1v24.4H39.7V38.2H24.3v17.3H7V31.1Zm8 1.7v14.7h5.2V34.2h23.6v13.3H49V32.8L32 17.2 15 32.8Z"/>
+    <path d="M3.5 29.3 32 3l28.5 26.3-5.4 5L32 13 8.9 34.3l-5.4-5Z"/>
   </svg>;
-  return <svg className="hero-highlight-sketch" viewBox="0 0 260 132" aria-hidden="true">
-    <path className="sketch-wash" d="M20 109V70c18-7 33-6 47 3 16-15 33-19 52-13 19-9 37-6 55 8 20-9 42-2 66 21v20z"/>
-    <path d="M15 109h231M29 109V48h135v61M20 48h153M42 48v61m109-61v61M58 83h76M66 83v26m60-26v26M74 77c3-13 11-21 23-21 11 0 20 8 23 21"/>
-    <path className="sketch-accent" d="M56 48h96v10H56zM178 108V82h31v26z"/>
-    <path d="M173 109V79h41v30m-35-30 8-18h13l8 18m-30 14h31M190 61v-9m8 9v-9M220 108c2-16 11-26 23-26h3M224 82l7-14h17l7 14M229 94h20m-15 14v-9m11 9v-9M22 109c0-14 7-24 16-24m124 24c0-15 7-25 16-25M34 76h-9m11-8-7-7"/>
+  return <svg className="hero-highlight-glyph" viewBox="0 0 64 64" aria-hidden="true">
+    <path d="M8 28h48v5.5c0 11.3-9.4 20.5-21 20.5h-6C17.4 54 8 44.8 8 33.5V28Z"/>
+    <path d="M14 54h9l-5.5 7h-8l4.5-7Zm27 0h9l4.5 7h-8L41 54ZM4 23h56v6H4z"/>
+    <path d="M22.2 22.2c-5.4-4.8-4.3-10.1 1.4-15.4-.4 6.1 7 7.8-1.4 15.4Zm11.2 0c-6.6-5.9-4-12 2.5-18.2-1.3 7.8 7.1 9.8-2.5 18.2Zm10.7 0c-5.4-4.8-4.3-10.1 1.4-15.4-.4 6.1 7 7.8-1.4 15.4Z"/>
+  </svg>;
+}
+
+function BenefitSketch({ variant }: { variant: BenefitVariant }) {
+  if (variant === "location") return <svg className="hero-highlight-sketch" viewBox="0 0 280 142" aria-hidden="true">
+    <path className="sketch-soft" d="M18 109c15-18 31-22 49-14 13-19 29-26 48-19 12-13 27-17 45-11 15-12 34-9 55 7 17-5 32 3 46 24v17H18z"/>
+    <path className="sketch-foliage" d="M24 108c-2-13 4-22 15-28 9 4 13 13 11 28H24Zm198 0c-2-15 4-26 17-33 11 5 16 16 13 33h-30Z"/>
+    <path d="M13 112h254M46 112V91l20-12 20 12v21M52 112V94h28v18M94 112V78h37v34M100 78l13-13 13 13M141 112V60h46v52M148 60l16-18 16 18M155 112V84h18v28M197 112V82h35v30M202 82l13-13 12 13"/>
+    <path className="sketch-gold" d="M160 41c-8-7-3-16 4-20 8 4 12 13 4 20h-8Zm-50 23c-6-6-2-13 4-16 6 3 10 10 4 16h-8Zm101 4c-6-6-2-13 4-16 6 3 10 10 4 16h-8Z"/>
+    <path d="M164 21V10m-50 38v-9m101 13v-9M25 121c30 7 57 7 84 0m12 0c34 8 68 8 101 0m8 0c12 3 23 3 34 0M61 99h11m49-8h9m34 1h10m36 5h12"/>
+  </svg>;
+  if (variant === "house") return <svg className="hero-highlight-sketch" viewBox="0 0 280 142" aria-hidden="true">
+    <path className="sketch-soft" d="M14 112c8-22 21-31 39-27 7-25 20-38 39-39 11-22 28-34 50-35 25 1 42 15 51 42 20-2 34 9 42 32 18-3 28 6 31 27H14Z"/>
+    <path className="sketch-house-fill" d="M91 56 142 22l51 34v56H91z"/>
+    <path d="M18 114h246M84 114V55l58-38 58 38v59M95 58h94v56M106 63h23v21h-23zM155 63h23v21h-23zM106 91h23v17h-23zM155 91h23v17h-23zM133 114V88h20v26M93 55l49-33 49 33M178 32V17h11v23"/>
+    <path className="sketch-foliage" d="M35 114c-1-24 7-40 24-49 15 9 21 25 18 49H35Zm177 0c-2-25 7-42 25-51 16 9 22 26 18 51h-43Z"/>
+    <path d="M59 65v49m-10-30-14-11m24 5 15-13m163-2v51m-10-31-14-12m24 5 15-14M28 122c34 7 68 7 102 0m17 0c35 7 70 7 105 0"/>
+    <path className="sketch-gold" d="M110 66h15v14h-15zm49 0h15v14h-15z"/>
+  </svg>;
+  return <svg className="hero-highlight-sketch" viewBox="0 0 280 142" aria-hidden="true">
+    <path className="sketch-soft" d="M11 114V82c20-11 38-10 55 2 14-17 31-23 52-17 17-12 38-11 61 4 22-9 48 3 78 35v8H11Z"/>
+    <path className="sketch-foliage" d="M22 113c0-24 8-40 24-49 14 9 20 25 18 49H22Z"/>
+    <path d="M13 116h254M89 116V54h105v62M78 54h127M103 54v62m78-62v62M113 88h56M121 88v28m40-28v28M128 82c3-14 12-23 21-23s18 9 21 23"/>
+    <path className="sketch-house-fill" d="M102 54h80v10h-80zM30 101h30v15H30z"/>
+    <path d="M25 116V98h39v18m-32-18 6-20h14l7 20m-25 8h22M45 78V66m-8 12-8-11m16 4 10-12M211 115c2-18 12-29 27-29h13l15 15v14M216 99h44m-36-13 8-14h16l10 14M224 105h37m-29 10v-8m21 8v-8M86 116c0-14-7-24-16-24m126 24c0-17 8-28 19-28"/>
+    <circle cx="231" cy="115" r="4"/><circle cx="253" cy="115" r="4"/>
+    <path className="sketch-gold" d="M38 82h14l5 16H33z"/>
   </svg>;
 }
 
