@@ -1171,160 +1171,98 @@ body { background:var(--canvas); color:var(--ink); }
   .services-olive { left:-58px; width:150px; opacity:.1; }
 }
 
-/* Fuller botanical framing: every neighbouring chapter uses a different composition. */
+/* One unique botanical composition per chapter. Aliased copies and mirrored repeats stay disabled. */
 .hero-highlights::before,
 .hero-highlights::after,
-.trust-section::before,
 .about-band::after,
 .houses-section::after,
 .company-section::after,
 .why-section::after,
 .reviews-section::after,
 .booking-section::after,
+.rules-band::before,
 .rules-band::after,
-.footer::before {
+.footer::before,
+.footer::after,
+.services-section::before,
+.service-contact::after {
+  display:none;
+}
+
+.trust-section::before {
   content:"";
   position:absolute;
   display:block;
+  left:-34px;
+  bottom:-54px;
   z-index:0;
-  pointer-events:none;
-  background-position:center;
-  background-size:contain;
-  background-repeat:no-repeat;
-  filter:saturate(.88) contrast(.96);
-}
-.hero-highlights::before {
-  left:-64px;
-  top:20px;
-  width:250px;
-  height:300px;
-  background-image:url('/brand/jasmine-arc.webp');
+  width:190px;
+  height:210px;
+  background:url('/brand/orange-pair.webp') center/contain no-repeat;
   opacity:.34;
+  pointer-events:none;
   transform:rotate(7deg);
 }
-.hero-highlights::after {
-  right:-34px;
-  bottom:-20px;
-  width:210px;
-  height:210px;
-  background-image:url('/brand/orange-pair.webp');
-  opacity:.42;
-  transform:rotate(-9deg);
+.about-band::before {
+  --plant-art:url('/brand/tangerine-branch.webp');
+  width:clamp(180px,17vw,270px);
+  height:clamp(235px,25vw,365px);
+  opacity:.34;
 }
-.trust-section::before {
-  left:-42px;
-  bottom:-62px;
-  width:210px;
-  height:270px;
-  background-image:url('/brand/palm-frond.webp');
-  opacity:.29;
-  transform:rotate(13deg);
+.houses-section::before {
+  width:clamp(180px,17vw,270px);
+  height:clamp(235px,25vw,365px);
+  background-image:url('/brand/lime-sprig.webp');
+  opacity:.36;
 }
-.about-band::before { opacity:.34; }
-.about-band::after {
-  right:-78px;
-  bottom:-48px;
-  width:350px;
-  height:320px;
-  background-image:url('/brand/maidenhair-fern.webp');
-  opacity:.29;
-  transform:rotate(-5deg);
+.company-section::before {
+  --plant-art:url('/brand/orange-blossom-vine.webp');
+  width:clamp(180px,17vw,270px);
+  height:clamp(235px,25vw,365px);
+  opacity:.32;
 }
-.houses-section::before { width:clamp(180px,17vw,270px); height:clamp(235px,25vw,365px); opacity:.36; }
-.houses-section::after {
-  right:-72px;
-  bottom:-56px;
-  width:330px;
-  height:390px;
-  background-image:url('/brand/citrus-leaves.webp');
+.why-section::before {
+  --plant-art:url('/brand/lemon-bloom-tall.webp');
+  width:clamp(175px,16vw,260px);
+  height:clamp(225px,24vw,350px);
   opacity:.3;
-  transform:scaleX(-1) rotate(-5deg);
-}
-.company-section::before { width:clamp(180px,17vw,270px); height:clamp(235px,25vw,365px); opacity:.32; }
-.company-section::after {
-  right:-105px;
-  top:116px;
-  width:360px;
-  height:430px;
-  background-image:url('/brand/resort-leaves.webp');
-  opacity:.25;
-  transform:rotate(4deg);
-}
-.why-section::before { width:clamp(175px,16vw,260px); height:clamp(225px,24vw,350px); opacity:.3; }
-.why-section::after {
-  right:-52px;
-  bottom:-42px;
-  width:250px;
-  height:410px;
-  background-image:url('/brand/lemon-bloom-tall.webp');
-  opacity:.31;
-  transform:rotate(4deg);
 }
 .services-bergamot { left:-64px; width:225px; opacity:.28; }
-.services-blossom { right:-62px; width:220px; opacity:.26; }
+.services-blossom {
+  right:-62px;
+  width:220px;
+  background-image:url('/brand/orange-blossom-sprig.webp');
+  opacity:.26;
+}
 .services-olive { left:-48px; width:190px; opacity:.23; }
 .atmosphere-jasmine { width:380px; height:380px; right:-82px; bottom:-94px; opacity:.3; }
 .gallery-resort-leaves { width:370px; height:420px; opacity:.31; }
 .gallery-maidenhair { width:390px; height:340px; opacity:.29; }
-.reviews-section::before { width:clamp(175px,17vw,270px); height:clamp(230px,25vw,365px); opacity:.33; }
-.reviews-section::after {
-  right:-66px;
-  top:74px;
-  width:260px;
-  height:320px;
-  background-image:url('/brand/jasmine-arc.webp');
-  opacity:.26;
-  transform:scaleX(-1) rotate(-5deg);
+.reviews-section::before {
+  --plant-art:url('/brand/kumquat-sprig.webp');
+  width:clamp(175px,17vw,270px);
+  height:clamp(230px,25vw,365px);
+  opacity:.33;
 }
-.booking-section::before { width:clamp(180px,18vw,280px); height:clamp(235px,26vw,380px); opacity:.27; }
-.booking-section::after {
-  right:-76px;
-  top:52px;
-  width:300px;
-  height:370px;
-  background-image:url('/brand/orange-blossom-sprig.webp');
-  opacity:.29;
-  transform:rotate(8deg);
-}
-.rules-band::before { width:clamp(165px,16vw,245px); height:clamp(210px,23vw,330px); opacity:.29; }
-.rules-band::after {
-  right:-82px;
-  bottom:-54px;
-  width:340px;
-  height:300px;
-  background-image:url('/brand/maidenhair-fern.webp');
-  opacity:.26;
-  transform:rotate(5deg);
-}
-.footer::after { width:240px; height:340px; opacity:.25; }
-.footer::before {
-  right:-78px;
-  top:28px;
-  width:300px;
-  height:340px;
-  background-image:url('/brand/tangerine-branch.webp');
+.booking-section::before {
+  --plant-art:url('/brand/palm-frond.webp');
+  width:clamp(180px,18vw,280px);
+  height:clamp(235px,26vw,380px);
   opacity:.27;
-  transform:rotate(-6deg);
 }
 
 @media(max-width:760px) {
-  .hero-highlights::before { left:-38px; top:32px; width:132px; height:170px; opacity:.25; }
-  .hero-highlights::after { right:-26px; bottom:-10px; width:118px; height:118px; opacity:.32; }
-  .trust-section::before { left:-34px; bottom:-38px; width:122px; height:158px; opacity:.22; }
-  .about-band::before,.houses-section::before,.company-section::before,.why-section::before,.reviews-section::before,.booking-section::before,.rules-band::before,.footer::after { width:118px; height:160px; opacity:.23; }
-  .about-band::after,.houses-section::after,.company-section::after,.why-section::after,.reviews-section::after,.booking-section::after,.rules-band::after,.footer::before { width:138px; height:180px; opacity:.2; }
-  .about-band::after { right:-46px; bottom:-18px; }
-  .houses-section::after { right:-48px; bottom:-24px; }
-  .company-section::after { right:-62px; top:90px; }
-  .why-section::after { right:-40px; bottom:-24px; width:120px; height:205px; opacity:.23; }
+  .trust-section::before { left:-30px; bottom:-32px; width:108px; height:122px; opacity:.25; }
+  .about-band::before,
+  .houses-section::before,
+  .company-section::before,
+  .why-section::before,
+  .reviews-section::before,
+  .booking-section::before { width:118px; height:160px; opacity:.23; }
   .services-bergamot { left:-36px; width:132px; opacity:.23; }
   .services-blossom { right:-38px; width:130px; opacity:.21; }
   .services-olive { left:-34px; width:112px; opacity:.2; }
   .atmosphere-jasmine { right:-52px; bottom:-58px; width:210px; height:210px; opacity:.23; }
   .gallery-resort-leaves { left:-54px; width:170px; height:220px; opacity:.23; }
   .gallery-maidenhair { right:-52px; width:175px; height:160px; opacity:.22; }
-  .reviews-section::after { right:-48px; top:44px; }
-  .booking-section::after { right:-52px; top:46px; }
-  .rules-band::after { right:-54px; bottom:-24px; }
-  .footer::before { right:-48px; top:28px; }
 }
