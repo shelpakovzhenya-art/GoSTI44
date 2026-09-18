@@ -941,3 +941,114 @@ body { background:var(--canvas); color:var(--ink); }
   .hero-highlight h2 { font-size:17px; }
   .hero-highlight p { font-size:12px; }
 }
+
+/* Each chapter gets its own botanical silhouette. Repeated mirrored branches are removed. */
+.about-band::after,
+.houses-section::after,
+.why-section::after,
+.services-section::after,
+.reviews-section::after,
+.booking-section::after,
+.rules-band::after {
+  display:none;
+}
+
+.about-band::before {
+  --plant-art:url('/brand/tangerine-branch.webp');
+  left:-38px;
+  top:44px;
+  width:clamp(150px,15vw,230px);
+  height:clamp(205px,23vw,330px);
+  opacity:.24;
+  transform:rotate(-7deg);
+}
+.houses-section::before {
+  left:-36px;
+  top:42px;
+  width:clamp(145px,14vw,215px);
+  height:clamp(190px,22vw,305px);
+  background-image:url('/brand/lime-sprig.webp');
+  opacity:.25;
+  transform:rotate(4deg);
+}
+.company-section::before {
+  --plant-art:url('/brand/orange-blossom-sprig.webp');
+  left:-42px;
+  bottom:26px;
+  opacity:.22;
+  transform:rotate(8deg);
+}
+.why-section::before {
+  --plant-art:url('/brand/citrus-leaves.webp');
+  left:-38px;
+  top:24px;
+  opacity:.2;
+  transform:rotate(-5deg);
+}
+.services-section::before {
+  width:74px;
+  height:74px;
+  background-image:url('/brand/tangerines.webp');
+}
+.service-contact::after {
+  right:168px;
+  bottom:-118px;
+  width:118px;
+  height:220px;
+  background-image:url('/brand/lemon-bloom-tall.webp');
+  opacity:.13;
+}
+.reviews-section::before {
+  --plant-art:url('/brand/kumquat-sprig.webp');
+  left:-44px;
+  bottom:24px;
+  opacity:.22;
+  transform:rotate(6deg);
+}
+.booking-section::before {
+  --plant-art:url('/brand/tropical-palm.webp');
+  display:block;
+  inset:auto auto 20px -40px;
+  opacity:.15;
+  transform:rotate(3deg);
+}
+.rules-band::before {
+  --plant-art:url('/brand/orange-pair.webp');
+  left:-30px;
+  bottom:24px;
+  width:clamp(135px,13vw,200px);
+  height:clamp(170px,19vw,265px);
+  opacity:.17;
+  transform:rotate(-5deg);
+}
+.footer::after {
+  --plant-art:url('/brand/lemon-branch.webp');
+  left:-44px;
+  bottom:54px;
+  opacity:.16;
+  transform:rotate(9deg);
+}
+
+@media(max-width:760px) {
+  .about-band::before,
+  .houses-section::before,
+  .company-section::before,
+  .why-section::before,
+  .reviews-section::before,
+  .booking-section::before,
+  .rules-band::before,
+  .footer::after {
+    width:96px;
+    height:132px;
+    opacity:.16;
+  }
+  .about-band::before { left:-34px; top:26px; }
+  .houses-section::before { left:-35px; top:24px; }
+  .company-section::before { left:-38px; bottom:18px; }
+  .why-section::before { left:-38px; top:14px; }
+  .reviews-section::before { left:-38px; bottom:18px; }
+  .booking-section::before { left:-36px; bottom:16px; }
+  .rules-band::before { left:-32px; bottom:18px; }
+  .footer::after { left:-36px; bottom:34px; }
+  .service-contact::after { right:76px; bottom:-102px; width:82px; height:170px; opacity:.1; }
+}
