@@ -6,6 +6,7 @@ import "./editorial.css";
 import "./glass-motion.css";
 import "./section-rhythm.css";
 import "./content-landings.css";
+import "../../docs/production-hotfixes/2026-09-28-client-logo.css";
 
 const manrope = Manrope({ subsets: ["latin", "cyrillic"], variable: "--font-manrope", display: "swap" });
 const cormorant = Cormorant_Garamond({ subsets: ["latin", "cyrillic"], weight: ["500", "600"], variable: "--font-brand", display: "swap" });
