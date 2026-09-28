@@ -1,0 +1,1232 @@
+[
+  {
+    "index": 0,
+    "url": "https://tangerin.ru/doma/laym",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(1)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 0,
+    "subject": "до 7 гостейв одном доме",
+    "width": 48,
+    "height": 45.93
+  },
+  {
+    "index": 1,
+    "url": "https://tangerin.ru/doma/laym",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(2)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 1,
+    "subject": "2 спальнидля личного пространства",
+    "width": 48,
+    "height": 44.86
+  },
+  {
+    "index": 2,
+    "url": "https://tangerin.ru/doma/laym",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(3)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 2,
+    "subject": "2 санузлавнутри дома",
+    "width": 48,
+    "height": 47.06
+  },
+  {
+    "index": 3,
+    "url": "https://tangerin.ru/doma/laym",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(4)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 3,
+    "subject": "67 м²площадь дома",
+    "width": 48,
+    "height": 45.93
+  },
+  {
+    "index": 4,
+    "url": "https://tangerin.ru/doma/laym",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(1)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 4,
+    "subject": "Две спальниМожно удобно разместить родителей и детей.",
+    "width": 48,
+    "height": 45.07
+  },
+  {
+    "index": 5,
+    "url": "https://tangerin.ru/doma/laym",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(2)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 5,
+    "subject": "Кухня-столоваяПосуда и техника для самостоятельных завтраков и ужинов.",
+    "width": 48,
+    "height": 46.83
+  },
+  {
+    "index": 6,
+    "url": "https://tangerin.ru/doma/laym",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(3)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 6,
+    "subject": "Своя верандаОтдельное место для отдыха рядом с домом.",
+    "width": 48,
+    "height": 43.22
+  },
+  {
+    "index": 7,
+    "url": "https://tangerin.ru/doma/limon",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(1)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 7,
+    "subject": "до 9 гостейв одном доме",
+    "width": 48,
+    "height": 44.06
+  },
+  {
+    "index": 8,
+    "url": "https://tangerin.ru/doma/limon",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(2)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 8,
+    "subject": "2 спальнидля личного пространства",
+    "width": 48,
+    "height": 43.64
+  },
+  {
+    "index": 9,
+    "url": "https://tangerin.ru/doma/limon",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(3)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 9,
+    "subject": "2 санузлавнутри дома",
+    "width": 48,
+    "height": 43.64
+  },
+  {
+    "index": 10,
+    "url": "https://tangerin.ru/doma/limon",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(4)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 10,
+    "subject": "≈ 100 м²площадь дома",
+    "width": 48,
+    "height": 43.64
+  },
+  {
+    "index": 11,
+    "url": "https://tangerin.ru/doma/limon",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(1)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 11,
+    "subject": "Две спальниОтдельные комнаты для семьи или двух пар.",
+    "width": 48,
+    "height": 43.64
+  },
+  {
+    "index": 12,
+    "url": "https://tangerin.ru/doma/limon",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(2)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 12,
+    "subject": "ГостинаяОбщее пространство, где можно собраться вместе.",
+    "width": 48,
+    "height": 40.98
+  },
+  {
+    "index": 13,
+    "url": "https://tangerin.ru/doma/limon",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(3)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 13,
+    "subject": "Два санузлаУдобно, когда в доме живёт большая семья.",
+    "width": 48,
+    "height": 42.17
+  },
+  {
+    "index": 14,
+    "url": "https://tangerin.ru/doma/citrus",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(1)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 14,
+    "subject": "до 10 гостейв одном доме",
+    "width": 48,
+    "height": 41.57
+  },
+  {
+    "index": 15,
+    "url": "https://tangerin.ru/doma/citrus",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(2)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 15,
+    "subject": "4 спальнидля личного пространства",
+    "width": 48,
+    "height": 41.57
+  },
+  {
+    "index": 16,
+    "url": "https://tangerin.ru/doma/citrus",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(3)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 16,
+    "subject": "3 санузлавнутри дома",
+    "width": 48,
+    "height": 41.57
+  },
+  {
+    "index": 17,
+    "url": "https://tangerin.ru/doma/citrus",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(4)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 17,
+    "subject": "97 м²площадь дома",
+    "width": 48,
+    "height": 41.57
+  },
+  {
+    "index": 18,
+    "url": "https://tangerin.ru/doma/citrus",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(1)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 18,
+    "subject": "До 10 гостейСамый вместительный из трёх домов.",
+    "width": 48,
+    "height": 38.81
+  },
+  {
+    "index": 19,
+    "url": "https://tangerin.ru/doma/citrus",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(2)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 19,
+    "subject": "Четыре спальниБольше личного пространства для большой компании.",
+    "width": 48,
+    "height": 37.56
+  },
+  {
+    "index": 20,
+    "url": "https://tangerin.ru/doma/citrus",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(3)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 20,
+    "subject": "Три санузлаКомфортно для совместной поездки несколькими семьями.",
+    "width": 48,
+    "height": 40.16
+  },
+  {
+    "index": 21,
+    "url": "https://tangerin.ru/dlya-bolshoy-kompanii",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(1)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 21,
+    "subject": "Подбор размещенияс учётом состава компании",
+    "width": 48,
+    "height": 39.0
+  },
+  {
+    "index": 22,
+    "url": "https://tangerin.ru/dlya-bolshoy-kompanii",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(2)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 22,
+    "subject": "Отдельные спальни и кухнив каждом доме",
+    "width": 48,
+    "height": 39.0
+  },
+  {
+    "index": 23,
+    "url": "https://tangerin.ru/dlya-bolshoy-kompanii",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(3)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 23,
+    "subject": "Все дома рядомудобно для общей поездки",
+    "width": 48,
+    "height": 37.54
+  },
+  {
+    "index": 24,
+    "url": "https://tangerin.ru/dlya-bolshoy-kompanii",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(3)>div:nth-of-type(2)>div:nth-of-type(1)>article:nth-of-type(1)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 24,
+    "subject": "Больше личного пространстваНе нужно всем жить в одном общем доме.",
+    "width": 48,
+    "height": 42.06
+  },
+  {
+    "index": 25,
+    "url": "https://tangerin.ru/dlya-bolshoy-kompanii",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(3)>div:nth-of-type(2)>div:nth-of-type(1)>article:nth-of-type(2)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 25,
+    "subject": "Несколько кухонь и санузловОсобенно удобно утром и при проживании нескольких семей.",
+    "width": 48,
+    "height": 42.0
+  },
+  {
+    "index": 26,
+    "url": "https://tangerin.ru/dlya-bolshoy-kompanii",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(5)>div:nth-of-type(2)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 26,
+    "subject": "Для семейных и дружеских поездокТАНЖЕРИН подходит для совместных поездок и семейных встреч.\nМы сохраняем спокойную атмосферу и не ориентируемся на шумные вечеринки с громкой музыкой.Хорошие люди всегда рядом ♡",
+    "width": 56,
+    "height": 48.77
+  },
+  {
+    "index": 27,
+    "url": "https://tangerin.ru/kostroma",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 27,
+    "subject": "← ГлавнаяПОДСКАЗКИ ГОСТЯМ «ТАНЖЕРИНА»Что посмотреть, куда сходить и где поесть в КостромеМаршрут на один день, музеи, поездка с детьми, рестораны, главные места города и идеи подарков.Выберите то, что подходит вашей поездке. Для первого знакомства пригодится маршрут на один день, с детьми лучше заранее сверить программу и бронирование, а музеи удобно распределить по районам города.Маршрут на один деньКострома с детьми",
+    "width": 48,
+    "height": 42.26
+  },
+  {
+    "index": 28,
+    "url": "https://tangerin.ru/kostroma",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>figure:nth-of-type(1)>figcaption:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 28,
+    "subject": "От «Танжерина» удобно начать знакомство с городом",
+    "width": 48,
+    "height": 42.26
+  },
+  {
+    "index": 29,
+    "url": "https://tangerin.ru/kostroma",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(1)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 29,
+    "subject": "01Достопримечательности КостромыИСТОРИЧЕСКИЙ ЦЕНТР · ВОЛГА · ИПАТЬЕВСКИЙ МОНАСТЫРЬГлавные места города с адресами и официальными ссылками.Открыть раздел",
+    "width": 48,
+    "height": 43.18
+  },
+  {
+    "index": 30,
+    "url": "https://tangerin.ru/kostroma",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(2)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 30,
+    "subject": "02Музеи КостромыСЫР · ДЕРЕВЯННОЕ ЗОДЧЕСТВО · РЕМЁСЛАПодборка музеев для знакомства с историей, сыроварением, льном и ювелирным делом.Открыть раздел",
+    "width": 48,
+    "height": 39.27
+  },
+  {
+    "index": 31,
+    "url": "https://tangerin.ru/kostroma",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(3)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 31,
+    "subject": "03Кострома за один деньГОТОВЫЙ МАРШРУТ · САМОСТОЯТЕЛЬНОПоследовательный план от Сусанинской площади до Ипатьевского монастыря.Открыть раздел",
+    "width": 48,
+    "height": 39.73
+  },
+  {
+    "index": 32,
+    "url": "https://tangerin.ru/kostroma",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(4)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 32,
+    "subject": "04Кострома с детьмиСНЕГУРОЧКА · ЗООПАРК · МУЗЕИМеста, для которых семейной поездке стоит заранее выбрать время.Открыть раздел",
+    "width": 48,
+    "height": 39.73
+  },
+  {
+    "index": 33,
+    "url": "https://tangerin.ru/kostroma",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(5)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 33,
+    "subject": "05Где поесть в КостромеРЕСТОРАНЫ · КАФЕ · КОФЕПять заведений в центре и у Волги с официальными карточками.Открыть раздел",
+    "width": 48,
+    "height": 39.46
+  },
+  {
+    "index": 34,
+    "url": "https://tangerin.ru/kostroma",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(6)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 34,
+    "subject": "06Что привезти из КостромыСЫР · ЛЁН · ЧЁРНАЯ СОЛЬ · РЕМЁСЛАКороткая памятка по местным продуктам и подаркам.Открыть раздел",
+    "width": 48,
+    "height": 36.34
+  },
+  {
+    "index": 35,
+    "url": "https://tangerin.ru/kostroma",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(3)>div:nth-of-type(2)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 35,
+    "subject": "Соберите маршрут под свои датыУ музеев, заведений и площадок меняются расписание и правила посещения. Откройте официальный источник перед поездкой и проверьте нужную дату.Построить маршрут",
+    "width": 58,
+    "height": 47.45
+  },
+  {
+    "index": 36,
+    "url": "https://tangerin.ru/kostroma/gde-poest",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 36,
+    "subject": "← ГлавнаяГАСТРОНОМИЧЕСКАЯ КОСТРОМАГде поесть в Костроме: рестораны и кафеПять ресторанов и кофеен в центре и у Волги: для завтрака, семейного обеда, кофе и спокойного ужина.Мы собрали разные по формату места и оставили ссылки на официальные страницы. Перед визитом проверьте часы работы и возможность бронирования: эти данные меняются.Посмотреть достопримечательностиВыбрать даты проживания",
+    "width": 48,
+    "height": 35.33
+  },
+  {
+    "index": 37,
+    "url": "https://tangerin.ru/kostroma/gde-poest",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>figure:nth-of-type(1)>figcaption:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 37,
+    "subject": "От «Танжерина» удобно начать знакомство с городом",
+    "width": 48,
+    "height": 37.6
+  },
+  {
+    "index": 38,
+    "url": "https://tangerin.ru/kostroma/gde-poest",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(1)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 38,
+    "subject": "01ГрозаПРОСПЕКТ МИРА, 4Б · РУССКАЯ И АВТОРСКАЯ КУХНЯРесторан в историческом центре для спокойного завтрака, обеда или ужина. Стол на вечер лучше бронировать заранее.Открыть официальный источник",
+    "width": 48,
+    "height": 36.69
+  },
+  {
+    "index": 39,
+    "url": "https://tangerin.ru/kostroma/gde-poest",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(2)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 39,
+    "subject": "02СыроварПРОСПЕКТ МИРА, 4 · СЕМЕЙНЫЙ РЕСТОРАНДва этажа, открытая кухня и детские комнаты. Удобный вариант для семейной поездки и знакомства с костромской сырной темой.Открыть официальный источник",
+    "width": 48,
+    "height": 36.69
+  },
+  {
+    "index": 40,
+    "url": "https://tangerin.ru/kostroma/gde-poest",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(3)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 40,
+    "subject": "03ПричалУЛИЦА 1 МАЯ, 14/2 · РУССКАЯ КУХНЯКафе у Волги для обеда во время прогулки по набережной. На туристическом портале указаны парковка и возможность взять еду с собой.Открыть официальный источник",
+    "width": 48,
+    "height": 39.09
+  },
+  {
+    "index": 41,
+    "url": "https://tangerin.ru/kostroma/gde-poest",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(4)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 1,
+    "tile": 41,
+    "subject": "04Traveler’s CoffeeСОВЕТСКАЯ УЛИЦА, 17 · КОФЕ И ЗАВТРАКИГородская кофейня в центре: можно зайти утром или сделать короткую остановку между музеями и прогулкой.Открыть официальный источник",
+    "width": 48,
+    "height": 36.52
+  },
+  {
+    "index": 42,
+    "url": "https://tangerin.ru/kostroma/gde-poest",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(5)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 0,
+    "subject": "05ВерандаСОВЕТСКАЯ УЛИЦА, 12А · КОФЕЙНЯНебольшая кофейня с авторским форматом в центре города. Подходит для короткой остановки и кофе навынос.Открыть официальный источник",
+    "width": 48,
+    "height": 50.5
+  },
+  {
+    "index": 43,
+    "url": "https://tangerin.ru/kostroma/gde-poest",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(3)>div:nth-of-type(2)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 1,
+    "subject": "Проверьте столик перед поездкойНа вечер и выходные стол лучше бронировать заранее. Актуальные часы, меню и контакты смотрите по ссылке в карточке заведения.Построить маршрут",
+    "width": 58,
+    "height": 66.37
+  },
+  {
+    "index": 44,
+    "url": "https://tangerin.ru/kostroma/dostoprimechatelnosti",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 2,
+    "subject": "← ГлавнаяЗОЛОТОЕ КОЛЬЦО · ПРОГУЛКА НА ДЕНЬГлавные достопримечательности КостромыГлавные места города: исторический центр, Волга, Ипатьевский монастырь и музей деревянного зодчества.Исторический центр удобно смотреть пешком. Ипатьевский монастырь и «Костромская слобода» находятся рядом друг с другом, поэтому их разумно объединить в отдельную поездку.Маршрут на один деньПосмотреть, где поесть",
+    "width": 48,
+    "height": 59.53
+  },
+  {
+    "index": 45,
+    "url": "https://tangerin.ru/kostroma/dostoprimechatelnosti",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>figure:nth-of-type(1)>figcaption:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 3,
+    "subject": "От «Танжерина» удобно начать знакомство с городом",
+    "width": 48,
+    "height": 56.08
+  },
+  {
+    "index": 46,
+    "url": "https://tangerin.ru/kostroma/dostoprimechatelnosti",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(1)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 4,
+    "subject": "01Сусанинская площадь и Торговые рядыИСТОРИЧЕСКИЙ ЦЕНТР · ПЕШИЙ МАРШРУТНачните прогулку с главной площади, пройдите через торговые ряды и спускайтесь по Молочной горе к Волге.Открыть официальный источник",
+    "width": 48,
+    "height": 51.48
+  },
+  {
+    "index": 47,
+    "url": "https://tangerin.ru/kostroma/dostoprimechatelnosti",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(2)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 5,
+    "subject": "02Пожарная каланчаУЛИЦА СИМАНОВСКОГО, 1/2Один из самых узнаваемых символов Костромы и часть ансамбля Сусанинской площади. Внутри работает музейная площадка.Открыть официальный источник",
+    "width": 48,
+    "height": 58.13
+  },
+  {
+    "index": 48,
+    "url": "https://tangerin.ru/kostroma/dostoprimechatelnosti",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(3)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 6,
+    "subject": "03Набережная ВолгиМОЛОЧНАЯ ГОРА · БЕСЕДКА ОСТРОВСКОГОМаршрут для неспешной прогулки с видами на Волгу. Удобно продолжить его по центральным улицам или совместить с обедом у воды.Открыть официальный источник",
+    "width": 48,
+    "height": 44.67
+  },
+  {
+    "index": 49,
+    "url": "https://tangerin.ru/kostroma/dostoprimechatelnosti",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(4)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 7,
+    "subject": "04Ипатьевский монастырьУЛИЦА ПРОСВЕЩЕНИЯ, 1Исторический монастырский ансамбль у места впадения реки Костромы в Волгу. На осмотр территории и музея лучше оставить несколько часов.Открыть официальный источник",
+    "width": 48,
+    "height": 46.03
+  },
+  {
+    "index": 50,
+    "url": "https://tangerin.ru/kostroma/dostoprimechatelnosti",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(5)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 8,
+    "subject": "05Костромская слободаМУЗЕЙ ПОД ОТКРЫТЫМ НЕБОМПодлинные деревянные постройки XVIII–XX веков у стен Ипатьевского монастыря. Удобно посетить в один день с монастырём.Открыть официальный источник",
+    "width": 48,
+    "height": 49.58
+  },
+  {
+    "index": 51,
+    "url": "https://tangerin.ru/kostroma/dostoprimechatelnosti",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(3)>div:nth-of-type(2)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 9,
+    "subject": "Центр — пешком, второй берег — на машинеДля Сусанинской площади, Торговых рядов и набережной удобна пешая прогулка. На Ипатьевскую сторону заложите отдельное время и проверьте режим площадок.Построить маршрут",
+    "width": 58,
+    "height": 53.71
+  },
+  {
+    "index": 52,
+    "url": "https://tangerin.ru/kostroma/muzei",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 10,
+    "subject": "← ГлавнаяКУДА СХОДИТЬ В КОСТРОМЕМузеи Костромы: пять разных тем для поездкиПять музеев о сыре, деревянном зодчестве, льне, ювелирном деле и истории Костромского края.Часть музеев находится в центре, а «Костромская слобода» — рядом с Ипатьевским монастырём. Не пытайтесь вместить всё в один день: выберите две-три темы и заранее проверьте расписание.Маршрут на один деньВыбрать даты проживания",
+    "width": 48,
+    "height": 46.52
+  },
+  {
+    "index": 53,
+    "url": "https://tangerin.ru/kostroma/muzei",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>figure:nth-of-type(1)>figcaption:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 11,
+    "subject": "От «Танжерина» удобно начать знакомство с городом",
+    "width": 48,
+    "height": 49.82
+  },
+  {
+    "index": 54,
+    "url": "https://tangerin.ru/kostroma/muzei",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(1)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 12,
+    "subject": "01Музей сыраУЛИЦА ЧАЙКОВСКОГО, 19История костромского сыроварения, экскурсии и дегустационные программы. Время посещения лучше выбрать заранее.Открыть официальный источник",
+    "width": 48,
+    "height": 47.05
+  },
+  {
+    "index": 55,
+    "url": "https://tangerin.ru/kostroma/muzei",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(2)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 13,
+    "subject": "02Костромская слободаМУЗЕЙ ДЕРЕВЯННОГО ЗОДЧЕСТВАМузей под открытым небом рядом с Ипатьевским монастырём. Эти два места удобно объединить в одну поездку.Открыть официальный источник",
+    "width": 48,
+    "height": 49.5
+  },
+  {
+    "index": 56,
+    "url": "https://tangerin.ru/kostroma/muzei",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(3)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 14,
+    "subject": "03Музей ювелирного искусстваСОВЕТСКАЯ УЛИЦА, 7Экспозиция о развитии ювелирного дела в Костромском крае и работах местных мастеров.Открыть официальный источник",
+    "width": 48,
+    "height": 50.55
+  },
+  {
+    "index": 57,
+    "url": "https://tangerin.ru/kostroma/muzei",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(4)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 15,
+    "subject": "04Музей-усадьба льна и берестыУЛИЦА ТЕРЕШКОВОЙ, 38Два местных ремесла в одном музее: обработка льна и работа с берестой. На сайте есть актуальные условия посещения.Открыть официальный источник",
+    "width": 48,
+    "height": 49.5
+  },
+  {
+    "index": 58,
+    "url": "https://tangerin.ru/kostroma/muzei",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(5)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 16,
+    "subject": "05Костромской музей-заповедникНЕСКОЛЬКО ПЛОЩАДОК В ЦЕНТРЕИстория края, искусство и городские экспозиции на нескольких площадках. Выберите нужный музей на официальном сайте.Открыть официальный источник",
+    "width": 48,
+    "height": 47.28
+  },
+  {
+    "index": 59,
+    "url": "https://tangerin.ru/kostroma/muzei",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(3)>div:nth-of-type(2)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 17,
+    "subject": "Сверьте выходные и сеансыУ частных и государственных музеев разные выходные, а экскурсии и дегустации могут идти по сеансам. Проверьте дату на официальном сайте.Построить маршрут",
+    "width": 58,
+    "height": 61.74
+  },
+  {
+    "index": 60,
+    "url": "https://tangerin.ru/kostroma/za-odin-den",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 18,
+    "subject": "← ГлавнаяСАМОСТОЯТЕЛЬНЫЙ МАРШРУТКострома за один день: самостоятельный маршрутГотовая последовательность: исторический центр, Волга, обед и Ипатьевская сторона города.Маршрут рассчитан на первый приезд без гонки по всем музеям. Начните в центре, пройдите к Волге, а после обеда переезжайте к Ипатьевскому монастырю и «Костромской слободе».Где поесть по путиВыбрать даты проживания",
+    "width": 48,
+    "height": 41.74
+  },
+  {
+    "index": 61,
+    "url": "https://tangerin.ru/kostroma/za-odin-den",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>figure:nth-of-type(1)>figcaption:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 19,
+    "subject": "От «Танжерина» удобно начать знакомство с городом",
+    "width": 48,
+    "height": 46.71
+  },
+  {
+    "index": 62,
+    "url": "https://tangerin.ru/kostroma/za-odin-den",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(1)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 20,
+    "subject": "01Сусанинская площадьУТРО · ИСТОРИЧЕСКИЙ ЦЕНТРНачните с главной площади и Пожарной каланчи. Отсюда удобно продолжить маршрут пешком.Открыть официальный источник",
+    "width": 48,
+    "height": 44.77
+  },
+  {
+    "index": 63,
+    "url": "https://tangerin.ru/kostroma/za-odin-den",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(2)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 21,
+    "subject": "02Торговые ряды и Молочная гораПОЗДНЕЕ УТРО · ПЕШКОМПройдите через старые торговые ряды и спускайтесь к Волге по Молочной горе.Открыть официальный источник",
+    "width": 48,
+    "height": 45.47
+  },
+  {
+    "index": 64,
+    "url": "https://tangerin.ru/kostroma/za-odin-den",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(3)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 22,
+    "subject": "03Набережная и беседка ОстровскогоДЕНЬ · ВОЛГАОставьте время на набережную и вид на Волгу, затем возвращайтесь в центр на обед.Открыть официальный источник",
+    "width": 48,
+    "height": 44.77
+  },
+  {
+    "index": 65,
+    "url": "https://tangerin.ru/kostroma/za-odin-den",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(4)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 23,
+    "subject": "04Обед в центреРЕСТОРАНЫ · КАФЕ · КОФЕЙНИВыберите заведение рядом с маршрутом и заранее проверьте столик на нужное время.Открыть раздел",
+    "width": 48,
+    "height": 45.0
+  },
+  {
+    "index": 66,
+    "url": "https://tangerin.ru/kostroma/za-odin-den",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(5)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 24,
+    "subject": "05Ипатьевский монастырьПОСЛЕ ОБЕДА · ДРУГОЙ БЕРЕГДо монастыря удобнее доехать. На осмотр территории и музейных экспозиций заложите отдельное время.Открыть официальный источник",
+    "width": 48,
+    "height": 39.88
+  },
+  {
+    "index": 67,
+    "url": "https://tangerin.ru/kostroma/za-odin-den",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(6)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 25,
+    "subject": "06Костромская слободаФИНАЛ МАРШРУТА · МУЗЕЙ ПОД ОТКРЫТЫМ НЕБОММузей расположен рядом с монастырём, поэтому две точки удобно смотреть в одной части дня.Открыть официальный источник",
+    "width": 48,
+    "height": 41.68
+  },
+  {
+    "index": 68,
+    "url": "https://tangerin.ru/kostroma/za-odin-den",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(3)>div:nth-of-type(2)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 26,
+    "subject": "Не привязывайтесь к минутамПогода, очереди и музейные сеансы меняют темп. Если день короткий, оставьте Ипатьевский монастырь и «Костромскую слободу» на отдельное утро.Построить маршрут",
+    "width": 58,
+    "height": 53.68
+  },
+  {
+    "index": 69,
+    "url": "https://tangerin.ru/kostroma/s-detmi",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 27,
+    "subject": "← ГлавнаяСЕМЕЙНАЯ ПОЕЗДКАКуда сходить в Костроме с детьмиСнегурочка, зоопарк, сыр, парк и музей под открытым небом — пять идей для разных дней и погоды.Семейную программу удобнее собирать из двух-трёх мест в день. Для Терема Снегурочки и музейных программ может потребоваться предварительная запись, поэтому сначала проверьте даты.Посмотреть музеиВыбрать семейный дом",
+    "width": 48,
+    "height": 40.93
+  },
+  {
+    "index": 70,
+    "url": "https://tangerin.ru/kostroma/s-detmi",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>figure:nth-of-type(1)>figcaption:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 28,
+    "subject": "От «Танжерина» удобно начать знакомство с городом",
+    "width": 48,
+    "height": 42.41
+  },
+  {
+    "index": 71,
+    "url": "https://tangerin.ru/kostroma/s-detmi",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(1)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 29,
+    "subject": "01Терем СнегурочкиЛАГЕРНАЯ УЛИЦА, 38, КОРПУС 2Интерактивные программы и ледяная комната. На официальном сайте просят бронировать посещение заранее.Открыть официальный источник",
+    "width": 48,
+    "height": 41.18
+  },
+  {
+    "index": 72,
+    "url": "https://tangerin.ru/kostroma/s-detmi",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(2)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 30,
+    "subject": "02Резиденция СнегурочкиУЛИЦА СИМАНОВСКОГО, 11Сказочная площадка в центре города с программами и мастерскими. Перед визитом проверьте рабочие дни.Открыть официальный источник",
+    "width": 48,
+    "height": 38.99
+  },
+  {
+    "index": 73,
+    "url": "https://tangerin.ru/kostroma/s-detmi",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(3)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 31,
+    "subject": "03Костромской зоопаркУЛИЦА ЛЕНИНА, 175Большая прогулочная площадка в Посадском лесу. Актуальный режим и правила смотрите на сайте зоопарка.Открыть официальный источник",
+    "width": 48,
+    "height": 43.9
+  },
+  {
+    "index": 74,
+    "url": "https://tangerin.ru/kostroma/s-detmi",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(4)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 32,
+    "subject": "04Музей сыраУЛИЦА ЧАЙКОВСКОГО, 19Музейная программа о сыроварении с интерактивными элементами. Сеанс и формат посещения лучше выбрать заранее.Открыть официальный источник",
+    "width": 48,
+    "height": 47.18
+  },
+  {
+    "index": 75,
+    "url": "https://tangerin.ru/kostroma/s-detmi",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(5)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 33,
+    "subject": "05Парк «Берендеевка»УЛИЦА ЛЕНИНА · ПРУДЫ И ЛЕСВариант для прогулки без музейного расписания. Подходит, если хочется провести часть дня на воздухе.Открыть официальный источник",
+    "width": 48,
+    "height": 44.52
+  },
+  {
+    "index": 76,
+    "url": "https://tangerin.ru/kostroma/s-detmi",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(6)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 34,
+    "subject": "06Костромская слободаМУЗЕЙ ПОД ОТКРЫТЫМ НЕБОМДеревянные дома и хозяйственные постройки можно осматривать во время прогулки по территории.Открыть официальный источник",
+    "width": 48,
+    "height": 46.2
+  },
+  {
+    "index": 77,
+    "url": "https://tangerin.ru/kostroma/s-detmi",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(3)>div:nth-of-type(2)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 35,
+    "subject": "Запланируйте паузыРасписание и возрастные ограничения программ могут меняться. Проверьте условия на официальной странице и не ставьте несколько длинных экскурсий подряд.Построить маршрут",
+    "width": 58,
+    "height": 54.39
+  },
+  {
+    "index": 78,
+    "url": "https://tangerin.ru/kostroma/chto-privezti",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 36,
+    "subject": "← ГлавнаяМЕСТНЫЕ ПРОДУКТЫ И РЕМЁСЛАЧто привезти из Костромы в подарокСыр, чёрная соль, лён, ювелирные изделия и петровская игрушка — короткий список без случайных сувениров.За местными продуктами удобно зайти в центре, а изделия мастеров лучше выбирать там, где можно узнать происхождение вещи. Для продуктов проверьте упаковку и условия хранения перед дорогой.Посмотреть музеиВыбрать даты проживания",
+    "width": 48,
+    "height": 56.08
+  },
+  {
+    "index": 79,
+    "url": "https://tangerin.ru/kostroma/chto-privezti",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(2)>figure:nth-of-type(1)>figcaption:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 37,
+    "subject": "От «Танжерина» удобно начать знакомство с городом",
+    "width": 48,
+    "height": 53.6
+  },
+  {
+    "index": 80,
+    "url": "https://tangerin.ru/kostroma/chto-privezti",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(1)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 38,
+    "subject": "01Костромской сырГЛАВНЫЙ ГАСТРОНОМИЧЕСКИЙ СУВЕНИРНа городском портале советуют искать местные сорта и подарочные наборы. Перед дорогой проверьте упаковку и хранение.Открыть официальный источник",
+    "width": 48,
+    "height": 53.07
+  },
+  {
+    "index": 81,
+    "url": "https://tangerin.ru/kostroma/chto-privezti",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(2)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 39,
+    "subject": "02Чёрная сольМЕСТНЫЙ ПРОДУКТТрадиционный костромской продукт, который удобно везти в закрытой заводской упаковке.Открыть официальный источник",
+    "width": 48,
+    "height": 58.02
+  },
+  {
+    "index": 82,
+    "url": "https://tangerin.ru/kostroma/chto-privezti",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(3)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 40,
+    "subject": "03Изделия изо льнаТЕКСТИЛЬ И ОДЕЖДАСкатерти, полотенца, одежда и домашний текстиль связаны с давней льняной традицией региона.Открыть официальный источник",
+    "width": 48,
+    "height": 50.29
+  },
+  {
+    "index": 83,
+    "url": "https://tangerin.ru/kostroma/chto-privezti",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(4)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 2,
+    "tile": 41,
+    "subject": "04Ювелирные изделияКРАСНОСЕЛЬСКАЯ ШКОЛА МАСТЕРОВКостромской край известен ювелирным производством. Покупайте у официального продавца и сохраняйте документы.Открыть официальный источник",
+    "width": 48,
+    "height": 58.49
+  },
+  {
+    "index": 84,
+    "url": "https://tangerin.ru/kostroma/chto-privezti",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>article:nth-of-type(5)>div:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 0,
+    "subject": "05Петровская игрушкаГЛИНЯНЫЙ НАРОДНЫЙ ПРОМЫСЕЛНебольшой подарок, связанный с местной ремесленной традицией и ручной работой.Открыть официальный источник",
+    "width": 48,
+    "height": 48.25
+  },
+  {
+    "index": 85,
+    "url": "https://tangerin.ru/kostroma/chto-privezti",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(3)>div:nth-of-type(2)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 1,
+    "subject": "Покупайте с расчётом на дорогуДля сыра и других продуктов уточните срок годности и условия перевозки. Для ювелирных изделий сохраняйте документы продавца.Построить маршрут",
+    "width": 58,
+    "height": 58.6
+  },
+  {
+    "index": 86,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(4)>div:nth-of-type(1)>div:nth-of-type(4)>div:nth-of-type(1)>article:nth-of-type(3)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 2,
+    "subject": "Заботу в деталяхКогда нужные мелочи уже предусмотрены.",
+    "width": 48,
+    "height": 48.25
+  },
+  {
+    "index": 87,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(5)>div:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(1)>div:nth-of-type(1)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 3,
+    "subject": "ЛАЙМ",
+    "width": 54,
+    "height": 59.16
+  },
+  {
+    "index": 88,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(5)>div:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(1)>div:nth-of-type(2)>ul:nth-of-type(1)>li:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 4,
+    "subject": "2 спальни",
+    "width": 34,
+    "height": 33.32
+  },
+  {
+    "index": 89,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(5)>div:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(1)>div:nth-of-type(2)>ul:nth-of-type(1)>li:nth-of-type(2)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 5,
+    "subject": "Кухня-столовая",
+    "width": 34,
+    "height": 32.5
+  },
+  {
+    "index": 90,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(5)>div:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(1)>div:nth-of-type(2)>ul:nth-of-type(1)>li:nth-of-type(3)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 6,
+    "subject": "2 санузла",
+    "width": 34,
+    "height": 34.18
+  },
+  {
+    "index": 91,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(5)>div:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(1)>div:nth-of-type(2)>ul:nth-of-type(1)>li:nth-of-type(4)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 7,
+    "subject": "Веранда",
+    "width": 34,
+    "height": 33.65
+  },
+  {
+    "index": 92,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(5)>div:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(1)>div:nth-of-type(2)>ul:nth-of-type(1)>li:nth-of-type(5)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 8,
+    "subject": "Баня",
+    "width": 34,
+    "height": 36.42
+  },
+  {
+    "index": 93,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(5)>div:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(2)>div:nth-of-type(1)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 9,
+    "subject": "ЛИМОН",
+    "width": 54,
+    "height": 54.84
+  },
+  {
+    "index": 94,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(5)>div:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(2)>div:nth-of-type(2)>ul:nth-of-type(1)>li:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 10,
+    "subject": "2 спальни",
+    "width": 34,
+    "height": 32.82
+  },
+  {
+    "index": 95,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(5)>div:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(2)>div:nth-of-type(2)>ul:nth-of-type(1)>li:nth-of-type(2)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 11,
+    "subject": "Гостиная",
+    "width": 34,
+    "height": 33.65
+  },
+  {
+    "index": 96,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(5)>div:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(2)>div:nth-of-type(2)>ul:nth-of-type(1)>li:nth-of-type(3)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 12,
+    "subject": "Кухня-столовая",
+    "width": 34,
+    "height": 31.19
+  },
+  {
+    "index": 97,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(5)>div:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(2)>div:nth-of-type(2)>ul:nth-of-type(1)>li:nth-of-type(4)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 13,
+    "subject": "2 санузла",
+    "width": 34,
+    "height": 36.25
+  },
+  {
+    "index": 98,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(5)>div:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(2)>div:nth-of-type(2)>ul:nth-of-type(1)>li:nth-of-type(5)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 14,
+    "subject": "Джакузи",
+    "width": 34,
+    "height": 33.47
+  },
+  {
+    "index": 99,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(5)>div:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(3)>div:nth-of-type(1)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 15,
+    "subject": "ЦИТРУС",
+    "width": 54,
+    "height": 53.43
+  },
+  {
+    "index": 100,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(5)>div:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(3)>div:nth-of-type(2)>ul:nth-of-type(1)>li:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 16,
+    "subject": "4 спальни",
+    "width": 34,
+    "height": 33.82
+  },
+  {
+    "index": 101,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(5)>div:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(3)>div:nth-of-type(2)>ul:nth-of-type(1)>li:nth-of-type(2)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 17,
+    "subject": "Отдельные кровати",
+    "width": 34,
+    "height": 32.13
+  },
+  {
+    "index": 102,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(5)>div:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(3)>div:nth-of-type(2)>ul:nth-of-type(1)>li:nth-of-type(3)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 18,
+    "subject": "3 санузла",
+    "width": 34,
+    "height": 32.82
+  },
+  {
+    "index": 103,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(5)>div:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(3)>div:nth-of-type(2)>ul:nth-of-type(1)>li:nth-of-type(4)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 19,
+    "subject": "Кухня-столовая",
+    "width": 34,
+    "height": 35.84
+  },
+  {
+    "index": 104,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(5)>div:nth-of-type(1)>div:nth-of-type(2)>article:nth-of-type(3)>div:nth-of-type(2)>ul:nth-of-type(1)>li:nth-of-type(5)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 20,
+    "subject": "Веранда",
+    "width": 34,
+    "height": 34.18
+  },
+  {
+    "index": 105,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(7)>div:nth-of-type(1)>div:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(2)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 21,
+    "subject": "Wi‑Fi",
+    "width": 48,
+    "height": 48.75
+  },
+  {
+    "index": 106,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(7)>div:nth-of-type(1)>div:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(2)>span:nth-of-type(2)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 22,
+    "subject": "Рабочее место",
+    "width": 48,
+    "height": 47.76
+  },
+  {
+    "index": 107,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(7)>div:nth-of-type(1)>div:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(2)>span:nth-of-type(3)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 23,
+    "subject": "Своя кухня",
+    "width": 48,
+    "height": 48.5
+  },
+  {
+    "index": 108,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(7)>div:nth-of-type(1)>div:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(2)>span:nth-of-type(4)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 24,
+    "subject": "Тихий район",
+    "width": 48,
+    "height": 43.89
+  },
+  {
+    "index": 109,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(7)>div:nth-of-type(1)>div:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(2)>span:nth-of-type(5)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 25,
+    "subject": "Парковка",
+    "width": 48,
+    "height": 47.75
+  },
+  {
+    "index": 110,
+    "url": "https://tangerin.ru/",
+    "selector": "body>div:nth-of-type(2)>main:nth-of-type(1)>section:nth-of-type(7)>div:nth-of-type(1)>div:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(2)>span:nth-of-type(6)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 26,
+    "subject": "Бесконтактное заселение",
+    "width": 48,
+    "height": 53.86
+  },
+  {
+    "index": 118,
+    "url": "https://tangerin.ru/dlya-komandirovochnyh",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(1)>span:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 27,
+    "subject": "Одна из гостиных\n«Танжерина»",
+    "width": 48,
+    "height": 47.03
+  },
+  {
+    "index": 119,
+    "url": "https://tangerin.ru/dlya-komandirovochnyh",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(1)>ul:nth-of-type(1)>li:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 28,
+    "subject": "Тихий район\nКостромы",
+    "width": 48,
+    "height": 46.32
+  },
+  {
+    "index": 120,
+    "url": "https://tangerin.ru/dlya-komandirovochnyh",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(1)>ul:nth-of-type(1)>li:nth-of-type(2)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 29,
+    "subject": "Интернет\nв доме",
+    "width": 48,
+    "height": 48.0
+  },
+  {
+    "index": 121,
+    "url": "https://tangerin.ru/dlya-komandirovochnyh",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(1)>ul:nth-of-type(1)>li:nth-of-type(3)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 30,
+    "subject": "Заезд\nпо инструкции",
+    "width": 48,
+    "height": 44.91
+  },
+  {
+    "index": 122,
+    "url": "https://tangerin.ru/dlya-komandirovochnyh",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(1)>div:nth-of-type(2)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 31,
+    "subject": "Приезжайте сами\nили с коллегами",
+    "width": 48,
+    "height": 49.3
+  },
+  {
+    "index": 123,
+    "url": "https://tangerin.ru/dlya-komandirovochnyh",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(1)>article:nth-of-type(1)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 32,
+    "subject": "Выбор дома«Лайм», «Лимон» и «Цитрус» отличаются планировкой и спальными местами. Перед бронированием посмотрите фотографии и состав комнат.",
+    "width": 48,
+    "height": 46.76
+  },
+  {
+    "index": 124,
+    "url": "https://tangerin.ru/dlya-komandirovochnyh",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(1)>article:nth-of-type(2)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 33,
+    "subject": "Wi-Fi для работыВ домах есть Wi-Fi. Если для работы важны скорость соединения и видеосвязь, уточните параметры интернета до бронирования.",
+    "width": 48,
+    "height": 44.29
+  },
+  {
+    "index": 125,
+    "url": "https://tangerin.ru/dlya-komandirovochnyh",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(1)>article:nth-of-type(3)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 34,
+    "subject": "Кухня в домеЗавтрак и ужин можно приготовить самостоятельно. Своя кухня удобна при раннем выезде или позднем возвращении с работы.",
+    "width": 48,
+    "height": 46.74
+  },
+  {
+    "index": 126,
+    "url": "https://tangerin.ru/dlya-komandirovochnyh",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(1)>article:nth-of-type(4)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 35,
+    "subject": "Поездка на машинеАвтомобиль можно оставить на территории. До приезда уточните время заезда и получите инструкции по заселению.",
+    "width": 48,
+    "height": 43.13
+  },
+  {
+    "index": 127,
+    "url": "https://tangerin.ru/dlya-komandirovochnyh",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(1)>article:nth-of-type(5)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 36,
+    "subject": "Оплата и документыДо оплаты сообщите, какие отчётные документы нужны вашей организации. Состав документов и способ оплаты уточните у нас.",
+    "width": 48,
+    "height": 47.29
+  },
+  {
+    "index": 128,
+    "url": "https://tangerin.ru/dlya-komandirovochnyh",
+    "selector": "body>main:nth-of-type(1)>section:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(2)>div:nth-of-type(3)>svg:nth-of-type(1)",
+    "sheet": 3,
+    "tile": 37,
+    "subject": "Есть вопросы по размещению?\nНапишите нам",
+    "width": 48,
+    "height": 52.96
+  },
+  {
+    "index": 130,
+    "url": "https://tangerin.ru/dlya-bolshoy-kompanii",
+    "selector": "main svg.lucide-moon-star",
+    "sheet": 3,
+    "tile": 40,
+    "subject": "Можно отдыхать в разном ритме",
+    "width": 48,
+    "height": 50.23
+  }
+]
