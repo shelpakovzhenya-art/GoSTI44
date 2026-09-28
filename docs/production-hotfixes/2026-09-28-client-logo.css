@@ -1,0 +1,53 @@
+/* Client-supplied mark and lettering are shown from the original transparent PNG. */
+.brand-lockup {
+  display: flex !important;
+  align-items: center;
+  gap: 0 !important;
+  flex: 0 0 auto;
+  width: 245px;
+  height: 56px;
+  overflow: hidden;
+  align-self: start;
+}
+.brand-lockup > .brand-fruit,
+.brand-lockup > .brand-type { display: none !important; }
+.brand-lockup::before,
+.brand-lockup::after {
+  content: "";
+  display: block;
+  flex: none;
+  background-image: url("/brand/client-logo-20260928.png");
+  background-repeat: no-repeat;
+}
+.brand-lockup::before {
+  width: 70px;
+  height: 56px;
+  background-size: 110px 110px;
+  background-position: center -12px;
+}
+.brand-lockup::after {
+  width: 175px;
+  height: 56px;
+  background-size: 235px 235px;
+  background-position: center -151px;
+}
+.footer-main .brand-lockup { flex: 0 0 auto; }
+@media (max-width: 700px) {
+  .header-inner .brand-lockup {
+    flex-basis: 160px;
+    width: 160px;
+    height: 38px;
+  }
+  .header-inner .brand-lockup::before {
+    width: 46px;
+    height: 38px;
+    background-size: 74px 74px;
+    background-position: center -8px;
+  }
+  .header-inner .brand-lockup::after {
+    width: 114px;
+    height: 38px;
+    background-size: 157px 157px;
+    background-position: center -101px;
+  }
+}
