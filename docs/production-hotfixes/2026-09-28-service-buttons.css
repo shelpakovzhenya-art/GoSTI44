@@ -1,0 +1,12 @@
+/* Scoped disclosure controls for homepage service cards. */
+#services .service-conditions{border-top:0;padding-top:4px;width:100%}
+#services .service-conditions>summary{box-sizing:border-box;display:flex!important;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:64px;padding:12px 14px!important;margin:0;border:1px solid #d8c3a3!important;border-radius:10px!important;background:#f1e3cd!important;color:#294b39!important;font-family:inherit;font-size:14px!important;font-weight:600;line-height:1.35;text-align:left;list-style:none;box-shadow:none!important;cursor:pointer;transition:background .18s,border-color .18s}
+#services .service-conditions>summary::-webkit-details-marker{display:none}
+#services .service-conditions>summary::marker{content:""}
+#services .service-conditions>summary::after{content:"";display:block;flex:0 0 7px;width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);margin:-4px 2px 0 0;transition:transform .18s}
+#services .service-conditions>summary:hover{background:#e9d7b9!important;border-color:#bea47f!important}
+#services .service-conditions[open]>summary{background:#e9d7b9!important;border-color:#bea47f!important}
+#services .service-conditions[open]>summary::after{transform:rotate(225deg);margin-top:4px}
+#services .service-conditions>summary:focus-visible{outline:2px solid #376448!important;outline-offset:3px}
+#services .service-conditions>p{padding:2px 2px 0}
+@media(prefers-reduced-motion:reduce){#services .service-conditions>summary,#services .service-conditions>summary::after{transition:none}}
