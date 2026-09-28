@@ -1,35 +1,43 @@
-/* Client-supplied mark and lettering are shown from the original transparent PNG. */
+/* Keep the client's illustration, but render the wordmark as readable HTML text. */
 .brand-lockup {
   display: flex !important;
   align-items: center;
-  gap: 0 !important;
+  gap: 5px !important;
   flex: 0 0 auto;
   width: 245px;
   height: 56px;
   overflow: hidden;
   align-self: start;
 }
-.brand-lockup > .brand-fruit,
-.brand-lockup > .brand-type { display: none !important; }
-.brand-lockup::before,
-.brand-lockup::after {
+.brand-lockup > .brand-fruit { display: none !important; }
+.brand-lockup > .brand-type {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  color: #85512f !important;
+  font: 500 27px/1 Georgia, serif !important;
+  letter-spacing: .015em !important;
+  white-space: nowrap;
+}
+.brand-lockup > .brand-type small {
+  display: block;
+  margin-top: 3px !important;
+  color: #483421 !important;
+  font: 500 12px/1.1 Georgia, serif !important;
+  letter-spacing: 0 !important;
+  white-space: nowrap;
+}
+.brand-lockup::after { display: none !important; }
+.brand-lockup::before {
   content: "";
   display: block;
   flex: none;
   background-image: url("/brand/client-logo-20260928.png");
   background-repeat: no-repeat;
-}
-.brand-lockup::before {
-  width: 70px;
+  width: 66px;
   height: 56px;
   background-size: 110px 110px;
   background-position: center -12px;
-}
-.brand-lockup::after {
-  width: 175px;
-  height: 56px;
-  background-size: 235px 235px;
-  background-position: center -151px;
 }
 .footer-main .brand-lockup { flex: 0 0 auto; }
 @media (max-width: 700px) {
@@ -37,17 +45,19 @@
     flex-basis: 160px;
     width: 160px;
     height: 38px;
+    gap: 3px !important;
   }
   .header-inner .brand-lockup::before {
-    width: 46px;
+    width: 43px;
     height: 38px;
     background-size: 74px 74px;
     background-position: center -8px;
   }
-  .header-inner .brand-lockup::after {
-    width: 114px;
-    height: 38px;
-    background-size: 157px 157px;
-    background-position: center -101px;
+  .header-inner .brand-lockup > .brand-type {
+    font-size: 17px !important;
+  }
+  .header-inner .brand-lockup > .brand-type small {
+    font-size: 10px !important;
+    margin-top: 2px !important;
   }
 }
