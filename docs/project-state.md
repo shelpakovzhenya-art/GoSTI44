@@ -18,6 +18,8 @@
 
 Сквозной футер на всех 14 страницах: [выпуск](production-hotfixes/2026-09-28-shared-footer.md).
 
+Блоки компании и услуг сокращены, добавлены переходы к условиям: [отчёт по комментариям](production-hotfixes/2026-09-28-compact-services.md).
+
 ## Следующий кодовый выпуск
 
 28.09: опубликована `/vse-dlya-otdyha`, обновлено меню, убраны упоминания Светланы. [Отчёт и ограничения](production-hotfixes/2026-09-28-leisure-report.md), [runtime и откат](production-hotfixes/2026-09-28-leisure-release.md).

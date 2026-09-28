@@ -1,0 +1,21 @@
+
+/* Compact homepage service navigation; preserve all botanical elements. */
+#services .section-heading{margin-bottom:26px;align-items:end}
+#services .section-heading h2 br,#services .section-heading h2 em:empty,#company h2 em:empty{display:none}
+#services .services-grid{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:16px!important}
+#services .service-card{display:flex!important;flex-direction:column!important;grid-column:auto!important;min-height:0!important;background:#fff6e7!important;border:1px solid #e1cdb0;border-radius:18px;overflow:hidden;box-shadow:none}
+#services .service-media{order:2!important;position:relative!important;width:100%!important;height:130px!important;min-height:0!important;aspect-ratio:auto!important;flex:none}
+#services .service-body{padding:20px 18px!important;display:flex!important;flex-direction:column!important;flex:1;gap:0;min-height:0!important}
+#services .service-top{margin-bottom:10px!important;min-height:0!important}
+#services .service-top>span:last-child{display:none}
+#services .service-icon{width:48px;height:48px}
+#services .service-icon svg{width:48px;height:48px;display:block}
+#services .service-body h3{font-size:24px!important;line-height:1.2!important;margin:0 0 12px!important}
+#services .service-summary{font-size:15px!important;line-height:1.55!important;margin:0 0 16px!important;color:#565649}
+#services a.service-detail{display:block!important;position:relative;z-index:2;margin:auto 0 0!important;padding:12px 0 0!important;border-top:1px solid #dec9aa;font-size:14px!important;line-height:1.4!important;font-weight:600;color:#254c37;text-decoration:none;min-height:38px}
+#services a.service-detail:hover{text-decoration:underline;text-underline-offset:4px;color:#a95010}
+#services a.service-detail:focus-visible{outline:2px solid #a95010;outline-offset:4px}
+#services .service-contact{margin-top:22px!important}
+@media(max-width:1100px){#services .services-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(max-width:700px){#services .services-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}#services .service-body{padding:16px 14px!important}#services .service-body h3{font-size:22px!important}#services .service-media{height:110px!important}}
+@media(max-width:420px){#services .services-grid{grid-template-columns:1fr!important}#services .service-media{height:130px!important}#services .service-body{padding:18px!important}}
