@@ -1,0 +1,43 @@
+/* Applied as overrides in the production CSS; integrate with the current release source before rebuilding. */
+#comfort,
+#company .company-facts,
+#company .company-photo-label,
+#company .company-photo-bottom,
+#company .company-actions > .button {
+  display: none !important;
+}
+
+#company { padding-bottom: 56px !important; }
+#company .company-actions { margin-top: 24px; }
+#company .company-photo { height: 360px !important; min-height: 360px !important; }
+#company .company-actions .text-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 54px;
+  padding: 13px 24px;
+  border: 1px solid #dd8327;
+  border-radius: 10px;
+  background: #ff9f32;
+  color: #20382d;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 0 #c8741f;
+  transition: transform .2s, box-shadow .2s, background .2s;
+}
+#company .company-actions .text-link:hover {
+  transform: translateY(-2px);
+  background: #ffb04f;
+  box-shadow: 0 6px 0 #c8741f;
+}
+#company .company-actions .text-link:focus-visible {
+  outline: 3px solid #244e38;
+  outline-offset: 3px;
+}
+@media (max-width: 760px) {
+  #company { padding-bottom: 48px !important; }
+  #company .company-photo { height: 260px !important; min-height: 260px !important; }
+  #company .company-actions .text-link { width: 100%; }
+}
