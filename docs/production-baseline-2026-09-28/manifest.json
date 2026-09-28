@@ -1,0 +1,522 @@
+{
+  "captured_at_utc": "2026-09-28T07:35:24.219032+00:00",
+  "source": "https://tangerin.ru",
+  "method": "public HTTPS only; no local source files or server mutations",
+  "homepage_headers": {
+    "Server": "nginx/1.28.3 (Ubuntu)",
+    "Content-Type": "text/html; charset=utf-8",
+    "Cache-Control": "private, no-cache, no-store, max-age=0, must-revalidate",
+    "Strict-Transport-Security": "max-age=86400",
+    "X-Robots-Tag": null
+  },
+  "routes": [
+    {
+      "path": "/doma/laym",
+      "status": 200,
+      "final_url": "https://tangerin.ru/doma/laym",
+      "html_sha256": "fefe9f27aef1864be28f8bff56d1907e6b5b3f4493bbbcb8bbaafdbbaed6437d",
+      "html_bytes": 115907,
+      "title": "Дом «Лайм» в Костроме до 7 гостей — Танжерин",
+      "description": "Дом «Лайм» в Костроме: 67 м², 2 спальни, кухня-столовая, 2 санузла, веранда, мангальная зона и собственная баня. Фото и бронирование.",
+      "canonical": "https://tangerin.ru/doma/laym",
+      "robots_meta": "index, follow",
+      "x_robots_tag": null,
+      "h1": "Дом «Лайм» для семьи до 7 гостей",
+      "h2": [
+        "Собственная баня прямо в доме",
+        "Что есть в «Лайме»",
+        "Посмотрите комнаты и баню",
+        "Сравните с другими домами",
+        "Подойдёт ли вам «Лайм»?"
+      ],
+      "jsonld_types": [
+        "WebSite",
+        "LodgingBusiness",
+        "WebPage",
+        "House"
+      ]
+    },
+    {
+      "path": "/doma/limon",
+      "status": 200,
+      "final_url": "https://tangerin.ru/doma/limon",
+      "html_sha256": "a79db313c05490388470d67ff593fb191c5aa3c4ca5ee5bd51a075649851d9d1",
+      "html_bytes": 114014,
+      "title": "Дом «Лимон» в Костроме до 9 гостей — Танжерин",
+      "description": "Дом «Лимон» в Костроме: около 100 м², 2 спальни, гостиная, кухня-столовая, 2 санузла, джакузи, веранда и мангальная зона.",
+      "canonical": "https://tangerin.ru/doma/limon",
+      "robots_meta": "index, follow",
+      "x_robots_tag": null,
+      "h1": "Дом «Лимон» для семьи и компании до 9 гостей",
+      "h2": [
+        "Больше места для общей поездки",
+        "Что есть в «Лимоне»",
+        "Посмотрите кухню, гостиную и спальни",
+        "Сравните с другими домами",
+        "Планируете поездку в «Лимон»?"
+      ],
+      "jsonld_types": [
+        "WebSite",
+        "LodgingBusiness",
+        "WebPage",
+        "House"
+      ]
+    },
+    {
+      "path": "/doma/citrus",
+      "status": 200,
+      "final_url": "https://tangerin.ru/doma/citrus",
+      "html_sha256": "63d1332e90728feae6a7e8504155e697355286b6bfacd8761c712521669b7cd0",
+      "html_bytes": 114190,
+      "title": "Дом «Цитрус» в Костроме до 10 гостей — Танжерин",
+      "description": "Дом «Цитрус» в Костроме: 97 м², 4 спальни, 3 санузла, кухня-столовая, веранда и мангальная зона. Фото и бронирование.",
+      "canonical": "https://tangerin.ru/doma/citrus",
+      "robots_meta": "index, follow",
+      "x_robots_tag": null,
+      "h1": "Дом «Цитрус» с четырьмя спальнями до 10 гостей",
+      "h2": [
+        "Четыре отдельные спальни",
+        "Что есть в «Цитрусе»",
+        "Посмотрите комнаты и кухню-столовую",
+        "Сравните с другими домами",
+        "Нужно разместить до 10 гостей?"
+      ],
+      "jsonld_types": [
+        "WebSite",
+        "LodgingBusiness",
+        "WebPage",
+        "House"
+      ]
+    },
+    {
+      "path": "/dlya-bolshoy-kompanii",
+      "status": 200,
+      "final_url": "https://tangerin.ru/dlya-bolshoy-kompanii",
+      "html_sha256": "c288a130a5b30a321406bf2bb915a54eaae51e294ed9a2c75ff282dae494326d",
+      "html_bytes": 113805,
+      "title": "Дома для большой компании до 25 гостей в Костроме — Танжерин",
+      "description": "Три отдельных дома рядом для компании до 25 гостей в Костроме. Свои спальни, кухни, санузлы и веранды, общая территория. Фото и бронирование.",
+      "canonical": "https://tangerin.ru/dlya-bolshoy-kompanii",
+      "robots_meta": "index, follow",
+      "x_robots_tag": null,
+      "h1": "До 25 гостей —\nв трёх таунхаусах рядом",
+      "h2": [
+        "Как можно разместиться",
+        "Почему три таунхауса удобнее одного большого дома",
+        "Три таунхауса для вашей компании",
+        "Для семейных и дружеских поездок",
+        "Нужно разместить 12–25 гостей?"
+      ],
+      "jsonld_types": [
+        "WebSite",
+        "LodgingBusiness",
+        "WebPage"
+      ]
+    },
+    {
+      "path": "/kostroma",
+      "status": 200,
+      "final_url": "https://tangerin.ru/kostroma",
+      "html_sha256": "82625e66e782b145e6393bd431d03be9aa1c91c1c68494d167f4a94134d62f83",
+      "html_bytes": 90936,
+      "title": "Куда сходить в Костроме: маршруты, музеи и еда — Танжерин",
+      "description": "Путеводитель по Костроме для гостей: достопримечательности, маршрут на один день, музеи, поездка с детьми, рестораны и местные подарки.",
+      "canonical": "https://tangerin.ru/kostroma",
+      "robots_meta": "index, follow",
+      "x_robots_tag": null,
+      "h1": "Что посмотреть, куда сходить и где поесть в Костроме",
+      "h2": [
+        "Выберите план на поездку",
+        "Соберите маршрут под свои даты",
+        "Остановитесь в Костроме на несколько дней"
+      ],
+      "jsonld_types": [
+        "WebSite",
+        "LodgingBusiness",
+        "WebPage"
+      ]
+    },
+    {
+      "path": "/kostroma/gde-poest",
+      "status": 200,
+      "final_url": "https://tangerin.ru/kostroma/gde-poest",
+      "html_sha256": "c873e40817cc3f223bf6afc6f799d4c24457e7cdbc86774468651f621971866f",
+      "html_bytes": 89951,
+      "title": "Рестораны и кафе Костромы: где поесть — Танжерин",
+      "description": "Где вкусно поесть в Костроме: рестораны и кофейни в центре и у Волги, адреса и официальные ссылки. Подборка для гостей «Танжерина».",
+      "canonical": "https://tangerin.ru/kostroma/gde-poest",
+      "robots_meta": "index, follow",
+      "x_robots_tag": null,
+      "h1": "Где поесть в Костроме: рестораны и кафе",
+      "h2": [
+        "Рестораны и кафе Костромы",
+        "Проверьте столик перед поездкой",
+        "Завтрак можно приготовить и дома"
+      ],
+      "jsonld_types": [
+        "WebSite",
+        "LodgingBusiness",
+        "WebPage"
+      ]
+    },
+    {
+      "path": "/kostroma/dostoprimechatelnosti",
+      "status": 200,
+      "final_url": "https://tangerin.ru/kostroma/dostoprimechatelnosti",
+      "html_sha256": "49976daa2bfab63b0cbef7fd022ff7e1a153a0bcb02a871c8118ec1c05358658",
+      "html_bytes": 92757,
+      "title": "Достопримечательности Костромы: что посмотреть — Танжерин",
+      "description": "Главные достопримечательности Костромы: Сусанинская площадь, Пожарная каланча, набережная, Ипатьевский монастырь и Костромская слобода.",
+      "canonical": "https://tangerin.ru/kostroma/dostoprimechatelnosti",
+      "robots_meta": "index, follow",
+      "x_robots_tag": null,
+      "h1": "Главные достопримечательности Костромы",
+      "h2": [
+        "Главные места Костромы",
+        "Центр — пешком, второй берег — на машине",
+        "После прогулки — в тихий дом"
+      ],
+      "jsonld_types": [
+        "WebSite",
+        "LodgingBusiness",
+        "WebPage"
+      ]
+    },
+    {
+      "path": "/kostroma/muzei",
+      "status": 200,
+      "final_url": "https://tangerin.ru/kostroma/muzei",
+      "html_sha256": "3526f910781dd78b20101384be4e939def4e473fe3025b4ede3d2d1ee5d3b4b9",
+      "html_bytes": 91656,
+      "title": "Музеи Костромы: куда сходить и что выбрать — Танжерин",
+      "description": "Музеи Костромы для поездки: музей сыра, Костромская слобода, музей ювелирного искусства, музей льна и бересты и музей-заповедник.",
+      "canonical": "https://tangerin.ru/kostroma/muzei",
+      "robots_meta": "index, follow",
+      "x_robots_tag": null,
+      "h1": "Музеи Костромы: пять разных тем для поездки",
+      "h2": [
+        "Какие музеи посетить в Костроме",
+        "Сверьте выходные и сеансы",
+        "Оставьте время на спокойный вечер"
+      ],
+      "jsonld_types": [
+        "WebSite",
+        "LodgingBusiness",
+        "WebPage"
+      ]
+    },
+    {
+      "path": "/kostroma/za-odin-den",
+      "status": 200,
+      "final_url": "https://tangerin.ru/kostroma/za-odin-den",
+      "html_sha256": "35a475a9f2a2e814d8ea71a3e12974a28626364af5f65f16a16c0ce9e8f8a120",
+      "html_bytes": 95012,
+      "title": "Кострома за один день: что посмотреть самостоятельно — Танжерин",
+      "description": "Что посмотреть в Костроме за один день самостоятельно: готовый маршрут через Сусанинскую площадь, набережную, Ипатьевский монастырь и Костромскую слободу.",
+      "canonical": "https://tangerin.ru/kostroma/za-odin-den",
+      "robots_meta": "index, follow",
+      "x_robots_tag": null,
+      "h1": "Кострома за один день: самостоятельный маршрут",
+      "h2": [
+        "Маршрут по Костроме на один день",
+        "Не привязывайтесь к минутам",
+        "Одного дня хватит для знакомства"
+      ],
+      "jsonld_types": [
+        "WebSite",
+        "LodgingBusiness",
+        "WebPage"
+      ]
+    },
+    {
+      "path": "/kostroma/s-detmi",
+      "status": 200,
+      "final_url": "https://tangerin.ru/kostroma/s-detmi",
+      "html_sha256": "b10dce0559cec2b96bc7854693bc60aac6dce374445f3cca6878e6b0c1d97873",
+      "html_bytes": 93964,
+      "title": "Куда сходить в Костроме с детьми — Танжерин",
+      "description": "Кострома с детьми: Терем и Резиденция Снегурочки, зоопарк, музей сыра, парк Берендеевка и Костромская слобода с официальными ссылками.",
+      "canonical": "https://tangerin.ru/kostroma/s-detmi",
+      "robots_meta": "index, follow",
+      "x_robots_tag": null,
+      "h1": "Куда сходить в Костроме с детьми",
+      "h2": [
+        "Куда сходить в Костроме с детьми",
+        "Запланируйте паузы",
+        "Семье нужен свой ритм"
+      ],
+      "jsonld_types": [
+        "WebSite",
+        "LodgingBusiness",
+        "WebPage"
+      ]
+    },
+    {
+      "path": "/kostroma/chto-privezti",
+      "status": 200,
+      "final_url": "https://tangerin.ru/kostroma/chto-privezti",
+      "html_sha256": "263c35841784c606e0cf41cfff80261351342f01d59d51c56d76f36f086f1796",
+      "html_bytes": 89799,
+      "title": "Что привезти из Костромы в подарок — Танжерин",
+      "description": "Что привезти из Костромы: сыр, чёрная соль, изделия из льна, ювелирные украшения и петровская игрушка. Официальные источники и советы.",
+      "canonical": "https://tangerin.ru/kostroma/chto-privezti",
+      "robots_meta": "index, follow",
+      "x_robots_tag": null,
+      "h1": "Что привезти из Костромы в подарок",
+      "h2": [
+        "Пять идей для подарка из Костромы",
+        "Покупайте с расчётом на дорогу",
+        "Подарки собраны — пора отдыхать"
+      ],
+      "jsonld_types": [
+        "WebSite",
+        "LodgingBusiness",
+        "WebPage"
+      ]
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "final_url": "https://tangerin.ru/",
+      "html_sha256": "a4e00b62b9e1b49107d04ec7a91c405107c87db55fc778ba797718bdf37e3417",
+      "html_bytes": 136900,
+      "title": "Танжерин — гостевые дома в Костроме с кухней и верандой",
+      "description": "Три самостоятельных гостевых дома в Костроме для семьи или компании до 25 гостей. Отдельные входы, кухни, веранды и мангальные зоны. Фотографии, свободные даты и бронирование.",
+      "canonical": "https://tangerin.ru",
+      "robots_meta": "index, follow",
+      "x_robots_tag": null,
+      "h1": "Три просторных таунхауса в Костроме",
+      "h2": [
+        "Тихий район Костромы",
+        "Отдельный дом",
+        "Территория",
+        "Оценки наших гостей",
+        "Место, куда приятно возвращаться",
+        "Какой дом подойдёт именно вам?",
+        "Три дома для компании до 25 человек",
+        "Удобно остановиться по работе",
+        "Почему три гостевых дома удобнее одного большого дома",
+        "Всё важное для комфортного отдыха",
+        "Своя веранда и мангал у каждого дома",
+        "Дома, комнаты и территория",
+        "Кострома остаётся в воспоминаниях",
+        "Что пишут о проживании",
+        "Проверьте свободные даты и стоимость",
+        "Перед бронированием",
+        "Как добраться до «Танжерина»"
+      ],
+      "jsonld_types": [
+        "WebSite",
+        "LodgingBusiness",
+        "WebPage"
+      ]
+    },
+    {
+      "path": "/dlya-komandirovochnyh",
+      "status": 200,
+      "final_url": "https://tangerin.ru/dlya-komandirovochnyh",
+      "html_sha256": "d3ef13e17b3297185bd1673f7053377f1664af61f13b7cc66c47344bbfa16df9",
+      "html_bytes": 78089,
+      "title": "Для командировочных в Кострому — Танжерин",
+      "description": "Здесь можно продуктивно работать, комфортно отдыхать и чувствовать себя как дома, даже вдали от дома.",
+      "canonical": "https://tangerin.ru/dlya-komandirovochnyh",
+      "robots_meta": "index, follow",
+      "x_robots_tag": null,
+      "h1": "Приезжайте\nпо работе",
+      "h2": [
+        "ВСЁ, ЧТО НУЖНО ДЛЯ ДЕЛОВОЙ ПОЕЗДКИ"
+      ],
+      "jsonld_types": [
+        "WebSite",
+        "LodgingBusiness",
+        "WebPage"
+      ]
+    }
+  ],
+  "homepage_css_assets": [
+    {
+      "path": "/_next/static/chunks/1m2h_ruasisho.css",
+      "sha256": "2ae0ce4af6e284fde5ce3dd39720aa5392f3f04e93b6eb74994f3d55f3f7e0af",
+      "bytes": 87361
+    },
+    {
+      "path": "/_next/static/chunks/0qngy2cpw7p-b.css",
+      "sha256": "71f05a64772577891fccafe2c3134ffbdc7e6eb9738d1e39826c53f9e3a4580c",
+      "bytes": 114361
+    },
+    {
+      "path": "/_next/static/chunks/41mq18v_u98u9.css",
+      "sha256": "cc4f7993b06c849dae2fac43d6a53115908a86b4d63c4499e627a36b052e3ed0",
+      "bytes": 17630
+    }
+  ],
+  "render_checks": [
+    {
+      "path": "/",
+      "viewport": "desktop",
+      "status": 200,
+      "inner_width": 1440,
+      "document_width": 1440,
+      "document_height": 13605,
+      "h1": "Три просторных таунхауса в Костроме",
+      "pending_reveal": 0
+    },
+    {
+      "path": "/doma/laym",
+      "viewport": "desktop",
+      "status": 200,
+      "inner_width": 1440,
+      "document_width": 1440,
+      "document_height": 4299,
+      "h1": "Дом «Лайм» для семьи до 7 гостей",
+      "pending_reveal": 0
+    },
+    {
+      "path": "/doma/limon",
+      "viewport": "desktop",
+      "status": 200,
+      "inner_width": 1440,
+      "document_width": 1440,
+      "document_height": 4368,
+      "h1": "Дом «Лимон» для семьи и компании до 9 гостей",
+      "pending_reveal": 0
+    },
+    {
+      "path": "/doma/citrus",
+      "viewport": "desktop",
+      "status": 200,
+      "inner_width": 1440,
+      "document_width": 1440,
+      "document_height": 4318,
+      "h1": "Дом «Цитрус» с четырьмя спальнями до 10 гостей",
+      "pending_reveal": 0
+    },
+    {
+      "path": "/dlya-bolshoy-kompanii",
+      "viewport": "desktop",
+      "status": 200,
+      "inner_width": 1440,
+      "document_width": 1440,
+      "document_height": 3137,
+      "h1": "До 25 гостей —\nв трёх таунхаусах рядом",
+      "pending_reveal": 0
+    },
+    {
+      "path": "/dlya-komandirovochnyh",
+      "viewport": "desktop",
+      "status": 200,
+      "inner_width": 1440,
+      "document_width": 1440,
+      "document_height": 1977,
+      "h1": "Приезжайте\nпо работе",
+      "pending_reveal": 0
+    },
+    {
+      "path": "/kostroma",
+      "viewport": "desktop",
+      "status": 200,
+      "inner_width": 1440,
+      "document_width": 1440,
+      "document_height": 3577,
+      "h1": "Что посмотреть, куда сходить и где поесть в Костроме",
+      "pending_reveal": 0
+    },
+    {
+      "path": "/kostroma/dostoprimechatelnosti",
+      "viewport": "desktop",
+      "status": 200,
+      "inner_width": 1440,
+      "document_width": 1440,
+      "document_height": 3322,
+      "h1": "Главные достопримечательности Костромы",
+      "pending_reveal": 0
+    },
+    {
+      "path": "/",
+      "viewport": "mobile",
+      "status": 200,
+      "inner_width": 390,
+      "document_width": 390,
+      "document_height": 20047,
+      "h1": "Три просторных таунхауса в Костроме",
+      "pending_reveal": 0
+    },
+    {
+      "path": "/doma/laym",
+      "viewport": "mobile",
+      "status": 200,
+      "inner_width": 390,
+      "document_width": 390,
+      "document_height": 6347,
+      "h1": "Дом «Лайм» для семьи до 7 гостей",
+      "pending_reveal": 0
+    },
+    {
+      "path": "/doma/limon",
+      "viewport": "mobile",
+      "status": 200,
+      "inner_width": 390,
+      "document_width": 390,
+      "document_height": 5985,
+      "h1": "Дом «Лимон» для семьи и компании до 9 гостей",
+      "pending_reveal": 0
+    },
+    {
+      "path": "/doma/citrus",
+      "viewport": "mobile",
+      "status": 200,
+      "inner_width": 390,
+      "document_width": 390,
+      "document_height": 6157,
+      "h1": "Дом «Цитрус» с четырьмя спальнями до 10 гостей",
+      "pending_reveal": 0
+    },
+    {
+      "path": "/dlya-bolshoy-kompanii",
+      "viewport": "mobile",
+      "status": 200,
+      "inner_width": 390,
+      "document_width": 390,
+      "document_height": 5577,
+      "h1": "До 25 гостей —\nв трёх таунхаусах рядом",
+      "pending_reveal": 0
+    },
+    {
+      "path": "/dlya-komandirovochnyh",
+      "viewport": "mobile",
+      "status": 200,
+      "inner_width": 390,
+      "document_width": 390,
+      "document_height": 2969,
+      "h1": "Приезжайте\nпо работе",
+      "pending_reveal": 0
+    },
+    {
+      "path": "/kostroma",
+      "viewport": "mobile",
+      "status": 200,
+      "inner_width": 390,
+      "document_width": 390,
+      "document_height": 5636,
+      "h1": "Что посмотреть, куда сходить и где поесть в Костроме",
+      "pending_reveal": 0
+    },
+    {
+      "path": "/kostroma/dostoprimechatelnosti",
+      "viewport": "mobile",
+      "status": 200,
+      "inner_width": 390,
+      "document_width": 390,
+      "document_height": 5608,
+      "h1": "Главные достопримечательности Костромы",
+      "pending_reveal": 0
+    }
+  ],
+  "public_cms": {
+    "captured_at_utc": "2026-09-28T07:38:22.444585+00:00",
+    "sha256": "b0cfb77600f2e0cd9d788a77f695e6c390c0819d421d493f14946f898faa5f37",
+    "bytes": 179739,
+    "version": 1,
+    "entries": 45
+  }
+}
