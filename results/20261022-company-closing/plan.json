@@ -1,0 +1,56 @@
+{
+  "productionRoot": "/var/www/gosti/releases/20260925-2/.next/standalone",
+  "backup": "/var/www/gosti/backups/20261022-company-closing",
+  "runtimeBefore": {
+    "files": 1842,
+    "links": 0,
+    "bytes": 256346623,
+    "treeSha256": "fdcf6c501c173f93146a0984d08d7201adfd824fcc1e1074ff4f4d9c89273814"
+  },
+  "runtimeAfter": {
+    "files": 1843,
+    "links": 0,
+    "bytes": 257066322,
+    "treeSha256": "13349aea1bf01532ce42f48c6556c5dc16d2ba46062fb25e87b16c32b662b988"
+  },
+  "publishedAPI": "e97404f761da45937652cf659334e030b0302cc8105824c8af12a5ca8a94c817",
+  "guards": [
+    {
+      "path": ".next/static/chunks/1m2h-booking-bath-20261022.css",
+      "sha256": "6fe239e6a486a79dfe38dc5082d26d6a48e05e419edbd865ce11028536c1595f"
+    }
+  ],
+  "additions": [
+    {
+      "path": ".next/static/chunks/1m2h-company-closing-20261022.css",
+      "sha256": "7116a0e81bd636c1f983899e23d9b5d534705c80ca7c54dd57dd102fe3058c40"
+    }
+  ],
+  "replacements": [
+    {
+      "path": ".next/server/app/page_client-reference-manifest.js",
+      "beforeSha256": "57813245cb16195e7acfda189345b904fe3de1f95d17c3d633e77d96ecc53736",
+      "afterSha256": "ca7761bfc7bd6b80ade1ae572888e9aa69cf38e80dfe1afcbefec38636a138b4"
+    },
+    {
+      "path": ".next/server/app/[...slug]/page_client-reference-manifest.js",
+      "beforeSha256": "fb81b602de980237717a33825a4ddb5850f78363c818c7920a531b47da79ee46",
+      "afterSha256": "5aaddc06424cd7fed5f4778d7d4a08eb07a37301aa378a17d280026b7e16a1ec"
+    },
+    {
+      "path": ".next/server/app/preview/page_client-reference-manifest.js",
+      "beforeSha256": "7463cc1a0a9f95d8625cb9b3bb6be3c3e6c2c63c43c604afbdbb19f00a22b7af",
+      "afterSha256": "89ea8ef919b9683d63d14f4e457fc753df27572526a273aa3ea76476de48fd92"
+    },
+    {
+      "path": ".next/server/app/editor-preview/page_client-reference-manifest.js",
+      "beforeSha256": "2d86abb0a032992dfb1c04feefda089b97385cdf5dbe85438367018d2cb96c3d",
+      "afterSha256": "100bb156f12f067b89c4aab1159ee3571728d21461b665bc6956e0576ca9d5de"
+    },
+    {
+      "path": ".next/server/app/_not-found/page_client-reference-manifest.js",
+      "beforeSha256": "b808b4b6e9608d910889ae7ac8d0e8afadfe0377166cfcf234fe0621174aa605",
+      "afterSha256": "0b80bd9f9ede222e1e94d93030fa771ca97898b88c94d7c713ce98d4abb79e01"
+    }
+  ]
+}

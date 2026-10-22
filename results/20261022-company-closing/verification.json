@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-22",
+  "origin": "https://tangerin.ru/dlya-bolshoy-kompanii",
+  "textAfter": "Напишите нам количество гостей и даты поездки — поможем подобрать размещение.",
+  "baseline": [
+    {
+      "width": 1920,
+      "height": 320.6875
+    },
+    {
+      "width": 390,
+      "height": 386.6875
+    },
+    {
+      "width": 320,
+      "height": 436.28125
+    }
+  ],
+  "after": [
+    {
+      "width": 1920,
+      "height": 142.390625,
+      "headingFont": 32,
+      "bodyFont": 17,
+      "layout": "grid",
+      "contacts": 4,
+      "contactSize": 48,
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "height": 142.390625,
+      "headingFont": 32,
+      "bodyFont": 17,
+      "layout": "grid",
+      "contacts": 4,
+      "contactSize": 48,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "height": 185.46875,
+      "headingFont": 32,
+      "bodyFont": 17,
+      "layout": "grid",
+      "contacts": 4,
+      "contactSize": 48,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "height": 231.875,
+      "headingFont": 32,
+      "bodyFont": 17,
+      "layout": "block",
+      "contacts": 4,
+      "contactSize": 48,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "height": 315.96875,
+      "headingFont": 28,
+      "bodyFont": 16,
+      "layout": "block",
+      "contacts": 4,
+      "contactSize": 48,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "height": 365.5625,
+      "headingFont": 28,
+      "bodyFont": 16,
+      "layout": "block",
+      "contacts": 4,
+      "contactSize": 48,
+      "overflow": false
+    }
+  ],
+  "heroCTAReachedPanelWithoutURLHash": true,
+  "footerBookingButtonReady": true,
+  "CMSRows": 59,
+  "changedEntries": [
+    "dlya-bolshoy-kompanii"
+  ],
+  "other58RowsUnchanged": true,
+  "onlyBodiesChanged": true,
+  "otherDraftFieldsPreserved": true,
+  "revisionsAdded": 2,
+  "databaseIntegrity": "ok",
+  "runtime": {
+    "files": 1843,
+    "links": 0,
+    "bytes": 257066322,
+    "treeSha256": "13349aea1bf01532ce42f48c6556c5dc16d2ba46062fb25e87b16c32b662b988"
+  },
+  "localRuntimeMatchesServer": true,
+  "publishedApiSha256": "0194df3fa50a5783dddca826ec54203d9cc39a71b62e727184288d563b055bc3",
+  "publicAPIOnlyExpectedBodyChanged": true
+}
