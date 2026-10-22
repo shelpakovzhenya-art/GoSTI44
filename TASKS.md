@@ -5,3 +5,5 @@
 Для обычных последовательных задач достаточно отдельного чата. Для одновременных правок одного репозитория нужна отдельная рабочая копия Git.
 
 - [x] github-sync-20261022: подключён существующий GitHub-вход; контекст и правила синхронизации сохранены в https://github.com/shelpakovzhenya-art/GoSTI44 (`orca/workspace/gosti44`). Исходники/материалы сохраняются отдельно по GITHUB_SYNC.md.
+
+- [x] readiness-check-20261022: подтверждены13 групп ТЗ и последние комментарии клиента. Read-only проверка: API совпал с последним снимком; условия на https://tangerin.ru/dlya-komandirovochnyh после коллег, отмеченная пара фото на https://tangerin.ru/dlya-bolshoy-kompanii удалена; обе страницы200,5 страниц услуг и посуточное SEO питомцев сохранены. Production не изменялся. Передача владельцев GSC/Вебмастера — отдельное незавершённое действие. Предыдущие полные QA: source/changes/20261021-tz-recheck/REPORT.md и source/changes/20261021-business-followup/REPORT.md.
