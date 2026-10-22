@@ -1,0 +1,56 @@
+{
+  "productionRoot": "/var/www/gosti/releases/20260925-2/.next/standalone",
+  "backup": "/var/www/gosti/backups/20261022-contacts-spacing",
+  "runtimeBefore": {
+    "files": 1843,
+    "links": 0,
+    "bytes": 257066322,
+    "treeSha256": "13349aea1bf01532ce42f48c6556c5dc16d2ba46062fb25e87b16c32b662b988"
+  },
+  "runtimeAfter": {
+    "files": 1844,
+    "links": 0,
+    "bytes": 257788753,
+    "treeSha256": "497837c40e42501607efbb7be87e4521328e6d8dcdfc7ee839aae0284d9ffbd7"
+  },
+  "publishedAPI": "0194df3fa50a5783dddca826ec54203d9cc39a71b62e727184288d563b055bc3",
+  "guards": [
+    {
+      "path": ".next/static/chunks/1m2h-company-closing-20261022.css",
+      "sha256": "7116a0e81bd636c1f983899e23d9b5d534705c80ca7c54dd57dd102fe3058c40"
+    }
+  ],
+  "additions": [
+    {
+      "path": ".next/static/chunks/1m2h-contacts-spacing-20261022.css",
+      "sha256": "95576c3659b6afaae9ab574beddfc3b82abc796b69ec2ec28f25ce5c2cfb161e"
+    }
+  ],
+  "replacements": [
+    {
+      "path": ".next/server/app/page_client-reference-manifest.js",
+      "beforeSha256": "ca7761bfc7bd6b80ade1ae572888e9aa69cf38e80dfe1afcbefec38636a138b4",
+      "afterSha256": "140863256d5b45f616a1d6072f5729b91a7ac7145b07866e1bf223af8a4b9630"
+    },
+    {
+      "path": ".next/server/app/[...slug]/page_client-reference-manifest.js",
+      "beforeSha256": "5aaddc06424cd7fed5f4778d7d4a08eb07a37301aa378a17d280026b7e16a1ec",
+      "afterSha256": "3f49f74f32e1b5151cfcf6fa6b92fe2b31dbc84522adfba52a9961529f8a43f5"
+    },
+    {
+      "path": ".next/server/app/preview/page_client-reference-manifest.js",
+      "beforeSha256": "89ea8ef919b9683d63d14f4e457fc753df27572526a273aa3ea76476de48fd92",
+      "afterSha256": "ddceab8f421450f89215709726924962c986cadad049c48a45238a6aacfa3fe9"
+    },
+    {
+      "path": ".next/server/app/editor-preview/page_client-reference-manifest.js",
+      "beforeSha256": "100bb156f12f067b89c4aab1159ee3571728d21461b665bc6956e0576ca9d5de",
+      "afterSha256": "4afd6a82db29299957a555eab7d498c87257a239eb7f7c8fb32fd748f8b3084c"
+    },
+    {
+      "path": ".next/server/app/_not-found/page_client-reference-manifest.js",
+      "beforeSha256": "0b80bd9f9ede222e1e94d93030fa771ca97898b88c94d7c713ce98d4abb79e01",
+      "afterSha256": "423057b788bc24fd82929819d050ac51662747c99b5394e34717c10bddba1ab2"
+    }
+  ]
+}

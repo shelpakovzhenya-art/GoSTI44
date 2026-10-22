@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-22",
+  "origin": "https://tangerin.ru/kontakty",
+  "publishedApiSha256": "0194df3fa50a5783dddca826ec54203d9cc39a71b62e727184288d563b055bc3",
+  "CMSRows": 59,
+  "allCMSRowsUnchanged": true,
+  "revisionsAdded": 0,
+  "databaseIntegrity": "ok",
+  "service": "active",
+  "runtime": {
+    "files": 1844,
+    "links": 0,
+    "bytes": 257788753,
+    "treeSha256": "497837c40e42501607efbb7be87e4521328e6d8dcdfc7ee839aae0284d9ffbd7"
+  },
+  "localRuntimeMatchesServer": true,
+  "baseline": [
+    {
+      "width": 1366,
+      "headingToContactsGap": 72.40625,
+      "contactGridHeight": 233.640625,
+      "gapToDirections": 40,
+      "h1ToDirections": 459.640625
+    },
+    {
+      "width": 390,
+      "headingToContactsGap": 22,
+      "contactGridHeight": 432.53125,
+      "gapToDirections": 32,
+      "h1ToDirections": 581.921875
+    },
+    {
+      "width": 320,
+      "headingToContactsGap": 22,
+      "contactGridHeight": 559.71875,
+      "gapToDirections": 32,
+      "h1ToDirections": 750.90625
+    }
+  ],
+  "after": [
+    {
+      "width": 1366,
+      "headingToContactsGap": 20,
+      "contactGridHeight": 197.640625,
+      "gapToDirections": 24,
+      "h1ToDirections": 347.234375,
+      "h1Font": 48,
+      "bodyFont": 18,
+      "socialLinks": 3,
+      "socialIconSize": 48,
+      "socialsOnOneRow": true,
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "headingToContactsGap": 20,
+      "contactGridHeight": 197.640625,
+      "gapToDirections": 24,
+      "h1ToDirections": 347.234375,
+      "h1Font": 48,
+      "bodyFont": 18,
+      "socialLinks": 3,
+      "socialIconSize": 48,
+      "socialsOnOneRow": true,
+      "overflow": false
+    },
+    {
+      "width": 900,
+      "headingToContactsGap": 20,
+      "contactGridHeight": 372.8125,
+      "gapToDirections": 24,
+      "h1ToDirections": 522.40625,
+      "h1Font": 48,
+      "bodyFont": 18,
+      "socialLinks": 3,
+      "socialIconSize": 48,
+      "socialsOnOneRow": true,
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "headingToContactsGap": 20,
+      "contactGridHeight": 372.8125,
+      "gapToDirections": 24,
+      "h1ToDirections": 522.40625,
+      "h1Font": 48,
+      "bodyFont": 18,
+      "socialLinks": 3,
+      "socialIconSize": 48,
+      "socialsOnOneRow": true,
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "headingToContactsGap": 16,
+      "contactGridHeight": 376.53125,
+      "gapToDirections": 20,
+      "h1ToDirections": 499.921875,
+      "h1Font": 38,
+      "bodyFont": 16,
+      "socialLinks": 3,
+      "socialIconSize": 48,
+      "socialsOnOneRow": true,
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "headingToContactsGap": 16,
+      "contactGridHeight": 402.125,
+      "gapToDirections": 20,
+      "h1ToDirections": 567.3125,
+      "h1Font": 38,
+      "bodyFont": 16,
+      "socialLinks": 3,
+      "socialIconSize": 48,
+      "socialsOnOneRow": true,
+      "overflow": false
+    }
+  ],
+  "visualViews": [
+    1366,
+    390,
+    320
+  ],
+  "phoneHref": "tel:+79109535855",
+  "emailHref": "mailto:sudja2000@list.ru",
+  "mapMarkupAndConsentGateUnchanged": true,
+  "footerBookingButtonReady": true,
+  "testReservationSubmitted": false
+}

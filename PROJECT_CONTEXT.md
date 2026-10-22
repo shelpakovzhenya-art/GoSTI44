@@ -32,3 +32,5 @@
 22.10.2026: Авито —2 текущих значения/3 SSR href указывают на не найденный по сообщению клиента профиль. Прямое открытие заблокировано site-safety; замена ожидает публичный URL/объявление клиента. Production без изменений по этой задаче. `results/20261022-avito-link/README.md`.
 
 22.10.2026: closing большой компании — текст после дат заменён, блок321→142px desktop/387→316px mobile;6 ширин,4 контакта/CTA/Bnovo проверены.1 body/2 ревизии и CSS+5 manifests. `results/20261022-company-closing/README.md`; активный CSS и SHA в CURRENT_CONTEXT.md.
+
+22.10.2026: контакты уплотнены — H1→контакты72→20px,3 соцсети в ряд даже320px;6 ширин/Bnovo проверены, контент/API/CMS без изменений. CSS+5 manifests; `results/20261022-contacts-spacing/README.md`, текущие CSS/SHA в CURRENT_CONTEXT.md.
