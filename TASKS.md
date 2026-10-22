@@ -23,3 +23,5 @@
 - [x] contacts-spacing-20261022: отступ H1→контакты72→20px, карточки/секции уплотнены;320px три соцсети в ряд.6 ширин320–1366 без overflow, тексты/телефон/email/карта и Bnovo сохранены. CSS+5 manifests,59 CMS-строк/API неизменны,0 ревизий. Доказательства: results/20261022-contacts-spacing/README.md.
 
 - [x] footer-booking-cta-20261022: повторный оранжевый CTA удалён из общего футера; форма/UID/контакты сохранены.23 SSR200, завтраки1366/390 и главная/SPA→Лайм: Bnovo виден, overflow/errors нет.1 CMS body/2 ревизии,58 других строк и runtime без изменений. Результат: results/20261022-footer-booking-cta/README.md.
+
+- [x] footer-booking-cleanup-20261022: убраны оставшийся footer-пункт «Проверить даты» и helper из footer/главной.23 SSR200, формы1366/390 видны, overflow нет;2 записи/4 ревизии,57 других строк/runtime сохранены. На холодной главной отмечен hydration warning418 без установленной причины, на завтраках чисто; подробности results/20261022-footer-booking-cleanup/README.md.

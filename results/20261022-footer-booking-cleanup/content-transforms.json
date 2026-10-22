@@ -1,0 +1,31 @@
+{
+  "edits": [
+    {
+      "key": "site-footer",
+      "kind": "section",
+      "transforms": [
+        {
+          "before": "<li><a href=\"/#booking\">Проверить даты</a></li>",
+          "after": ""
+        },
+        {
+          "before": "<p>Укажите даты и число гостей — форма покажет доступные варианты.</p>",
+          "after": ""
+        }
+      ],
+      "textTransforms": []
+    },
+    {
+      "key": "landing",
+      "kind": "section",
+      "transforms": [],
+      "textTransforms": [
+        {
+          "key": "057",
+          "before": "Укажите даты и число гостей — форма покажет доступные варианты.",
+          "after": ""
+        }
+      ]
+    }
+  ]
+}

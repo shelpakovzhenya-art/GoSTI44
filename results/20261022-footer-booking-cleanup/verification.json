@@ -1,0 +1,18 @@
+{
+  "runtime": {
+    "files": 1844,
+    "links": 0,
+    "bytes": 257788753,
+    "treeSha256": "497837c40e42501607efbb7be87e4521328e6d8dcdfc7ee839aae0284d9ffbd7"
+  },
+  "CMSRows": 59,
+  "changedEntries": [
+    "landing",
+    "site-footer"
+  ],
+  "other57RowsUnchanged": true,
+  "onlyTargetFieldsInPublishedAndDraft": true,
+  "draftFieldsPreserved": true,
+  "revisionsAdded": 4,
+  "databaseIntegrity": "ok"
+}
