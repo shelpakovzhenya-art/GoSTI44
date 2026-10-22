@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-22",
+  "origin": "https://tangerin.ru/dlya-bolshoy-kompanii",
+  "productionChanged": false,
+  "publishedApiMatchesVerifiedSnapshot": true,
+  "publishedApiSha256": "0194df3fa50a5783dddca826ec54203d9cc39a71b62e727184288d563b055bc3",
+  "servedCSS": "1m2h-company-closing-20261022.css",
+  "htmlCacheControl": "private, no-cache, no-store, max-age=0, must-revalidate",
+  "currentText": "Напишите нам количество гостей и даты поездки — поможем подобрать размещение.",
+  "oldTextAbsent": true,
+  "viewports": [
+    {
+      "width": 1366,
+      "panelHeight": 142.390625,
+      "gapBeforeBooking": 93,
+      "contacts": 4,
+      "layout": "grid",
+      "overflow": false
+    },
+    {
+      "width": 1280,
+      "panelHeight": 142.390625,
+      "gapBeforeBooking": 93,
+      "contacts": 4,
+      "layout": "grid",
+      "overflow": false
+    },
+    {
+      "width": 1093,
+      "panelHeight": 147.078125,
+      "gapBeforeBooking": 93,
+      "contacts": 4,
+      "layout": "grid",
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "panelHeight": 185.46875,
+      "gapBeforeBooking": 93,
+      "contacts": 4,
+      "layout": "grid",
+      "overflow": false
+    }
+  ],
+  "freshPageVisuallyInspected": true,
+  "bookingFormVisible": true,
+  "finding": "Client images show the previous sentence and stacked desktop layout; current production serves the previously deployed compact panel. Reload the already-open page; stale-tab/cache mechanism not independently reproduced."
+}
