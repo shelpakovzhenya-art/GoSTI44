@@ -1,0 +1,11 @@
+{
+  "/[...slug]/page": "/[...slug]",
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/editor-preview/page": "/editor-preview",
+  "/llms.txt/route": "/llms.txt",
+  "/page": "/",
+  "/preview/page": "/preview",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml"
+}

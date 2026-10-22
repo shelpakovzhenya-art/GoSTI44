@@ -1,0 +1,8 @@
+User-Agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/
+Disallow: /livewire/
+Disallow: /up
+
+Sitemap: https://tangerin.ru/sitemap.xml
