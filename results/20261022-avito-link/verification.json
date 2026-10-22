@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-22",
+  "origin": "https://tangerin.ru/",
+  "publishedApiSha256": "e97404f761da45937652cf659334e030b0302cc8105824c8af12a5ca8a94c817",
+  "configuredAvitoLinks": [
+    {
+      "field": "rating-avito.url",
+      "url": "https://www.avito.ru/user/23247c55bfeed02f5abc30847c6ce191/profile?src=sharing"
+    },
+    {
+      "field": "site-settings.fields[14].value",
+      "url": "https://www.avito.ru/user/23247c55bfeed02f5abc30847c6ce191/profile?src=sharing"
+    }
+  ],
+  "homeSSRAvitoHrefs": [
+    "https://www.avito.ru/user/23247c55bfeed02f5abc30847c6ce191/profile?src=sharing",
+    "https://www.avito.ru/user/23247c55bfeed02f5abc30847c6ce191/profile?src=sharing",
+    "https://www.avito.ru/user/23247c55bfeed02f5abc30847c6ce191/profile?src=sharing"
+  ],
+  "clientReportedDestinationError": "Пользователь не найден",
+  "directDestinationVerification": "Browser site-safety policy blocked avito.ru; no workaround attempted",
+  "replacementURLKnown": false,
+  "productionChanged": false,
+  "nextStep": "Await client public profile URL or an active listing; then update both existing fields with guards and verify site links"
+}
