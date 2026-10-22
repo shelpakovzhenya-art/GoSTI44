@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-22",
+  "urls": [
+    "https://tangerin.ru/dlya-komandirovochnyh",
+    "https://tangerin.ru/vse-dlya-otdyha/s-detmi"
+  ],
+  "views": 10,
+  "widths": [
+    1920,
+    1440,
+    768,
+    390,
+    320
+  ],
+  "JSPageErrors": 0,
+  "horizontalOverflow": false,
+  "interactiveChecks": [
+    {
+      "width": 1440,
+      "page": "business",
+      "conditionsCTAToContact": true,
+      "hashHidden": true,
+      "bookingLoaded": true,
+      "noSubmission": true
+    },
+    {
+      "width": 1440,
+      "page": "children",
+      "bookingLoaded": true,
+      "redundantFooterCTAHidden": true,
+      "backToServicesWorks": true,
+      "noSubmission": true
+    },
+    {
+      "width": 390,
+      "page": "business",
+      "conditionsCTAToContact": true,
+      "hashHidden": true,
+      "bookingLoaded": true,
+      "noSubmission": true
+    },
+    {
+      "width": 390,
+      "page": "children",
+      "bookingLoaded": true,
+      "redundantFooterCTAHidden": true,
+      "backToServicesWorks": true,
+      "noSubmission": true
+    }
+  ],
+  "CMSRowsUnchangedOutsideTargets": 57,
+  "publishedAndDraftOnlyBodyFields": true,
+  "revisionsAdded": 4,
+  "runtime": {
+    "files": 1839,
+    "links": 0,
+    "bytes": 255506096,
+    "treeSha256": "499a6b6552f6b15286b1cdd63ba2470b9106b81a5b109de5b1a66e3ad0867673"
+  },
+  "metrics": [
+    {
+      "page": "dlya-komandirovochnyh",
+      "width": 1920,
+      "heightBefore": 1603.75,
+      "heightAfter": 1424.703125,
+      "conditionsBefore": 262.46875,
+      "conditionsAfter": 147.421875
+    },
+    {
+      "page": "vse-dlya-otdyha/s-detmi",
+      "width": 1920,
+      "heightBefore": 1372.53125,
+      "heightAfter": 1316.1875,
+      "conditionsBefore": null,
+      "conditionsAfter": null
+    },
+    {
+      "page": "dlya-komandirovochnyh",
+      "width": 1440,
+      "heightBefore": 1603.75,
+      "heightAfter": 1424.703125,
+      "conditionsBefore": 262.46875,
+      "conditionsAfter": 147.421875
+    },
+    {
+      "page": "vse-dlya-otdyha/s-detmi",
+      "width": 1440,
+      "heightBefore": 1372.53125,
+      "heightAfter": 1316.1875,
+      "conditionsBefore": null,
+      "conditionsAfter": null
+    },
+    {
+      "page": "dlya-komandirovochnyh",
+      "width": 768,
+      "heightBefore": 2089.953125,
+      "heightAfter": 1875.578125,
+      "conditionsBefore": 287.5625,
+      "conditionsAfter": 194.78125
+    },
+    {
+      "page": "vse-dlya-otdyha/s-detmi",
+      "width": 768,
+      "heightBefore": 1508.140625,
+      "heightAfter": 1425.453125,
+      "conditionsBefore": null,
+      "conditionsAfter": null
+    },
+    {
+      "page": "dlya-komandirovochnyh",
+      "width": 390,
+      "heightBefore": 2971.375,
+      "heightAfter": 2517.828125,
+      "conditionsBefore": 501.15625,
+      "conditionsAfter": 275.09375
+    },
+    {
+      "page": "vse-dlya-otdyha/s-detmi",
+      "width": 390,
+      "heightBefore": 2024.546875,
+      "heightAfter": 1879.359375,
+      "conditionsBefore": null,
+      "conditionsAfter": null
+    },
+    {
+      "page": "dlya-komandirovochnyh",
+      "width": 320,
+      "heightBefore": 3517.421875,
+      "heightAfter": 2949.859375,
+      "conditionsBefore": 539.15625,
+      "conditionsAfter": 321.78125
+    },
+    {
+      "page": "vse-dlya-otdyha/s-detmi",
+      "width": 320,
+      "heightBefore": 2092.34375,
+      "heightAfter": 1922.359375,
+      "conditionsBefore": null,
+      "conditionsAfter": null
+    }
+  ]
+}
