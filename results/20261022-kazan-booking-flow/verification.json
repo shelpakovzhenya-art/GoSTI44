@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-22",
+  "origin": "https://tangerin.ru/vse-dlya-otdyha/mangalnaya-zona",
+  "cmsRows": 59,
+  "changedEntries": [
+    "vse-dlya-otdyha/mangalnaya-zona"
+  ],
+  "other58RowsUnchanged": true,
+  "onlyBodyInPublishedAndDraftChanged": true,
+  "otherDraftFieldsPreserved": true,
+  "revisionsAdded": 2,
+  "databaseIntegrity": "ok",
+  "runtimeUnchanged": {
+    "files": 1842,
+    "links": 0,
+    "bytes": 256346623,
+    "treeSha256": "fdcf6c501c173f93146a0984d08d7201adfd824fcc1e1074ff4f4d9c89273814"
+  },
+  "publishedApiSha256": "e97404f761da45937652cf659334e030b0302cc8105824c8af12a5ca8a94c817",
+  "publicAPIChangeLimitedToExpectedBody": true,
+  "browser": [
+    {
+      "width": 1920,
+      "kazanInKit": [
+        "Казан (по запросу)"
+      ],
+      "bottom": "Единоразовая оплата на весь период проживания. Вариант можно выбрать на месте при заезде.",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "kazanInKit": [
+        "Казан (по запросу)"
+      ],
+      "bottom": "Единоразовая оплата на весь период проживания. Вариант можно выбрать на месте при заезде.",
+      "overflow": false
+    }
+  ],
+  "bnovo": {
+    "status": "configuration and existing channel verified read-only",
+    "sharedModuleApprovedByUser": true,
+    "moduleUIDMatchesSite": true,
+    "moduleConnected": true,
+    "moduleEnabled": true,
+    "propertyContactMatchesSite": true,
+    "existingModuleBookingObserved": true,
+    "newTestOrderSubmitted": false,
+    "newTestOrderReceiptVerified": false,
+    "actualNotificationDeliveryVerified": false,
+    "BnovoSettingsChanged": false,
+    "otherSiteChanged": false,
+    "displayedAccessExpiryWarning": "2026-10-26"
+  }
+}

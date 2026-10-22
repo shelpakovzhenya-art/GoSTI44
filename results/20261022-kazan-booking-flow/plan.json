@@ -1,0 +1,17 @@
+{
+  "productionRoot": "/var/www/gosti/releases/20260925-2/.next/standalone",
+  "backup": "/var/www/gosti/backups/20261022-kazan-booking-flow",
+  "publishedAPI": "47f9a3dd8c0980fac0e4e603e551c294dd6bd1d8b7116853aa14653cc2c55810",
+  "runtimeBefore": {
+    "files": 1842,
+    "links": 0,
+    "bytes": 256346623,
+    "treeSha256": "fdcf6c501c173f93146a0984d08d7201adfd824fcc1e1074ff4f4d9c89273814"
+  },
+  "runtimeAfter": {
+    "files": 1842,
+    "links": 0,
+    "bytes": 256346623,
+    "treeSha256": "fdcf6c501c173f93146a0984d08d7201adfd824fcc1e1074ff4f4d9c89273814"
+  }
+}
