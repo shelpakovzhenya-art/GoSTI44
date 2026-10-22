@@ -1,0 +1,25 @@
+{
+  "changedPublicEntries": [
+    "doma/limon"
+  ],
+  "other57PublicEntriesUnchanged": true,
+  "publishedApiSha256": "2c311fae04410f21ac2979017626dcd3cd7944acf1af90fe057cd2e8f88aae7b",
+  "capacityPreserved": 9,
+  "checks": [
+    {
+      "route": "/doma/limon",
+      "status": 200,
+      "kitchenCard": "Кухня-столовая Односпальный раскладной диван"
+    },
+    {
+      "route": "/doma/laym",
+      "status": 200,
+      "kitchenCard": "Кухня-столовая Двуспальный раскладной диван"
+    },
+    {
+      "route": "/doma/citrus",
+      "status": 200,
+      "kitchenCard": "Кухня-столовая Двуспальный раскладной диван"
+    }
+  ]
+}

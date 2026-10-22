@@ -1,0 +1,17 @@
+{
+  "productionRoot": "/var/www/gosti/releases/20260925-2/.next/standalone",
+  "backup": "/var/www/gosti/backups/20261022-limon-sofa",
+  "publishedAPI": "79183775b112099ec9b6535f9a5e77b5d12e422382545e9c539af94a645bb8c8",
+  "runtimeBefore": {
+    "files": 1844,
+    "links": 0,
+    "bytes": 257788753,
+    "treeSha256": "497837c40e42501607efbb7be87e4521328e6d8dcdfc7ee839aae0284d9ffbd7"
+  },
+  "runtimeAfter": {
+    "files": 1844,
+    "links": 0,
+    "bytes": 257788753,
+    "treeSha256": "497837c40e42501607efbb7be87e4521328e6d8dcdfc7ee839aae0284d9ffbd7"
+  }
+}
