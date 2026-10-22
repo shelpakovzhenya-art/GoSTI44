@@ -21,3 +21,5 @@
 - [x] company-recheck-20261022: read-only проверка новых снимков — в них прежний текст/оформление; свежий production/API/CSS актуальны. Дополнительно4 ноутбучных размера1024–1366:142–185px,4 контакта/форма без overflow. Production не менялся. Результат: results/20261022-company-recheck/README.md.
 
 - [x] contacts-spacing-20261022: отступ H1→контакты72→20px, карточки/секции уплотнены;320px три соцсети в ряд.6 ширин320–1366 без overflow, тексты/телефон/email/карта и Bnovo сохранены. CSS+5 manifests,59 CMS-строк/API неизменны,0 ревизий. Доказательства: results/20261022-contacts-spacing/README.md.
+
+- [x] footer-booking-cta-20261022: повторный оранжевый CTA удалён из общего футера; форма/UID/контакты сохранены.23 SSR200, завтраки1366/390 и главная/SPA→Лайм: Bnovo виден, overflow/errors нет.1 CMS body/2 ревизии,58 других строк и runtime без изменений. Результат: results/20261022-footer-booking-cta/README.md.

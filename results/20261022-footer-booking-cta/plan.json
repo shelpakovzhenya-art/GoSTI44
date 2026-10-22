@@ -1,0 +1,17 @@
+{
+  "productionRoot": "/var/www/gosti/releases/20260925-2/.next/standalone",
+  "backup": "/var/www/gosti/backups/20261022-footer-booking-cta",
+  "publishedAPI": "0194df3fa50a5783dddca826ec54203d9cc39a71b62e727184288d563b055bc3",
+  "runtimeBefore": {
+    "files": 1844,
+    "links": 0,
+    "bytes": 257788753,
+    "treeSha256": "497837c40e42501607efbb7be87e4521328e6d8dcdfc7ee839aae0284d9ffbd7"
+  },
+  "runtimeAfter": {
+    "files": 1844,
+    "links": 0,
+    "bytes": 257788753,
+    "treeSha256": "497837c40e42501607efbb7be87e4521328e6d8dcdfc7ee839aae0284d9ffbd7"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "key": "site-footer",
+  "kind": "section",
+  "transforms": [
+    {
+      "before": "<a class=\"site-footer-book\" href=\"/#booking\">Проверить даты ↗</a>",
+      "after": ""
+    }
+  ]
+}

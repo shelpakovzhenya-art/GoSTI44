@@ -1,0 +1,195 @@
+{
+  "pages": 23,
+  "changedPublicEntries": [
+    "site-footer"
+  ],
+  "publishedApiSha256": "3c7419a86bbd123f5aa78f01a50b21087d1c435f8db2edec51f0b4ee47cef8c9",
+  "removedCTAOnAllPages": true,
+  "bookingAndUIDPreserved": true,
+  "checks": [
+    {
+      "route": "/doma/laym",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/doma/limon",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/doma/citrus",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/dlya-bolshoy-kompanii",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/kostroma",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/kostroma/gde-poest",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/kostroma/dostoprimechatelnosti",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/kostroma/muzei",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/kostroma/za-odin-den",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/kostroma/s-detmi",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/kostroma/chto-privezti",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 2
+    },
+    {
+      "route": "/vse-dlya-otdyha",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/dlya-komandirovochnyh",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/soglasie-na-obrabotku-personalnyh-dannyh",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/usloviya-bronirovaniya",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/politika-obrabotki-personalnyh-dannyh",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/kontakty",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/vse-dlya-otdyha/zavtraki",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/vse-dlya-otdyha/banya-i-kupel",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/vse-dlya-otdyha/mangalnaya-zona",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/vse-dlya-otdyha/s-detmi",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    },
+    {
+      "route": "/vse-dlya-otdyha/s-pitomcami",
+      "status": 200,
+      "removedCTA": 0,
+      "footer": 1,
+      "booking": 1,
+      "uidLink": 1
+    }
+  ]
+}
