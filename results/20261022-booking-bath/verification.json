@@ -1,0 +1,720 @@
+{
+  "origin": "https://tangerin.ru/",
+  "date": "2026-10-22",
+  "server": {
+    "runtime": {
+      "files": 1842,
+      "links": 0,
+      "bytes": 256346623,
+      "treeSha256": "fdcf6c501c173f93146a0984d08d7201adfd824fcc1e1074ff4f4d9c89273814"
+    },
+    "CMSRows": 59,
+    "allCMSRowsUnchanged": true,
+    "revisionsAdded": 0,
+    "publishedApiSha256": "47f9a3dd8c0980fac0e4e603e551c294dd6bd1d8b7116853aa14653cc2c55810",
+    "databaseIntegrity": "ok",
+    "gosti": "active"
+  },
+  "localRuntimeTreeSha256": "fdcf6c501c173f93146a0984d08d7201adfd824fcc1e1074ff4f4d9c89273814",
+  "bookingScenarios": [
+    {
+      "key": "doma/laym",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "doma/limon",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "doma/citrus",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "dlya-bolshoy-kompanii",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "kostroma",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "kostroma/gde-poest",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "kostroma/dostoprimechatelnosti",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "kostroma/muzei",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "kostroma/za-odin-den",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "kostroma/s-detmi",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "kostroma/chto-privezti",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "home",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": true,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "vse-dlya-otdyha",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "dlya-komandirovochnyh",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "soglasie-na-obrabotku-personalnyh-dannyh",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "usloviya-bronirovaniya",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "politika-obrabotki-personalnyh-dannyh",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "kontakty",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "vse-dlya-otdyha/zavtraki",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "vse-dlya-otdyha/banya-i-kupel",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "vse-dlya-otdyha/mangalnaya-zona",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "vse-dlya-otdyha/s-detmi",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "vse-dlya-otdyha/s-pitomcami",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "spa-home-to-business",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "sameDocument": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "spa-home-to-laym",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "sameDocument": true,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "return-home-from-laym",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": true,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "spa-home-to-limon",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "sameDocument": true,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "return-home-from-limon",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": true,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "spa-home-to-citrus",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": false,
+      "sameDocument": true,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "return-home-from-citrus",
+      "width": 1440,
+      "ready": true,
+      "footerHidden": true,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "doma/laym",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "doma/limon",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "doma/citrus",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "dlya-bolshoy-kompanii",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "kostroma",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "kostroma/gde-poest",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "kostroma/dostoprimechatelnosti",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "kostroma/muzei",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "kostroma/za-odin-den",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "kostroma/s-detmi",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "kostroma/chto-privezti",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "home",
+      "width": 390,
+      "ready": true,
+      "footerHidden": true,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "vse-dlya-otdyha",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "dlya-komandirovochnyh",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "soglasie-na-obrabotku-personalnyh-dannyh",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "usloviya-bronirovaniya",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "politika-obrabotki-personalnyh-dannyh",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "kontakty",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "vse-dlya-otdyha/zavtraki",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "vse-dlya-otdyha/banya-i-kupel",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "vse-dlya-otdyha/mangalnaya-zona",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "vse-dlya-otdyha/s-detmi",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "vse-dlya-otdyha/s-pitomcami",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "spa-home-to-business",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "sameDocument": false,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "spa-home-to-laym",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "sameDocument": true,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "return-home-from-laym",
+      "width": 390,
+      "ready": true,
+      "footerHidden": true,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "spa-home-to-limon",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "sameDocument": true,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "return-home-from-limon",
+      "width": 390,
+      "ready": true,
+      "footerHidden": true,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "spa-home-to-citrus",
+      "width": 390,
+      "ready": true,
+      "footerHidden": false,
+      "sameDocument": true,
+      "errors": [],
+      "visibleForms": 1
+    },
+    {
+      "key": "return-home-from-citrus",
+      "width": 390,
+      "ready": true,
+      "footerHidden": true,
+      "errors": [],
+      "visibleForms": 1
+    }
+  ],
+  "controls": [
+    {
+      "route": "/",
+      "width": 1440,
+      "guestDropdownOpened": true,
+      "outsideClickClosed": true,
+      "errors": []
+    },
+    {
+      "route": "/dlya-komandirovochnyh",
+      "width": 1440,
+      "guestDropdownOpened": true,
+      "outsideClickClosed": true,
+      "errors": []
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "guestDropdownOpened": true,
+      "outsideClickClosed": true,
+      "errors": []
+    },
+    {
+      "route": "/dlya-komandirovochnyh",
+      "width": 390,
+      "guestDropdownOpened": true,
+      "outsideClickClosed": true,
+      "errors": []
+    }
+  ],
+  "bath": [
+    {
+      "width": 1440,
+      "prices": [
+        {
+          "text": "7 700 ₽",
+          "font": 24,
+          "y": -200.109375,
+          "height": 31.1875
+        },
+        {
+          "text": "Стоимость по запросу",
+          "font": 24,
+          "y": -200.109375,
+          "height": 31.1875
+        }
+      ],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "prices": [
+        {
+          "text": "7 700 ₽",
+          "font": 24,
+          "y": -218.28125,
+          "height": 31.1875
+        },
+        {
+          "text": "Стоимость по запросу",
+          "font": 24,
+          "y": -218.28125,
+          "height": 31.1875
+        }
+      ],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "prices": [
+        {
+          "text": "7 700 ₽",
+          "font": 24,
+          "y": -789.90625,
+          "height": 31.1875
+        },
+        {
+          "text": "Стоимость по запросу",
+          "font": 24,
+          "y": -162.734375,
+          "height": 31.1875
+        }
+      ],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "prices": [
+        {
+          "text": "7 700 ₽",
+          "font": 22,
+          "y": -701.15625,
+          "height": 28.59375
+        },
+        {
+          "text": "Стоимость по запросу",
+          "font": 22,
+          "y": -108.515625,
+          "height": 28.59375
+        }
+      ],
+      "overflow": false,
+      "errors": []
+    },
+    {
+      "width": 320,
+      "prices": [
+        {
+          "text": "7 700 ₽",
+          "font": 22,
+          "y": -841.5625,
+          "height": 28.59375
+        },
+        {
+          "text": "Стоимость по запросу",
+          "font": 22,
+          "y": -168.265625,
+          "height": 28.59375
+        }
+      ],
+      "overflow": false,
+      "errors": []
+    }
+  ],
+  "timingBefore": [
+    {
+      "route": "/",
+      "width": 1440,
+      "arrivedMs": 1802,
+      "sdkRequestMs": 2800,
+      "readyMs": 3290,
+      "waitAfterArrivalMs": 1488,
+      "sdkStartedBeforeArrival": false,
+      "submitButtonVisible": true
+    },
+    {
+      "route": "/dlya-komandirovochnyh",
+      "width": 1440,
+      "arrivedMs": 1801,
+      "sdkRequestMs": 2042,
+      "readyMs": 2680,
+      "waitAfterArrivalMs": 879,
+      "sdkStartedBeforeArrival": false,
+      "submitButtonVisible": true
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "arrivedMs": 1803,
+      "sdkRequestMs": 2697,
+      "readyMs": 3314,
+      "waitAfterArrivalMs": 1511,
+      "sdkStartedBeforeArrival": false,
+      "submitButtonVisible": true
+    },
+    {
+      "route": "/dlya-komandirovochnyh",
+      "width": 390,
+      "arrivedMs": 1941,
+      "sdkRequestMs": 2455,
+      "readyMs": 2873,
+      "waitAfterArrivalMs": 932,
+      "sdkStartedBeforeArrival": false,
+      "submitButtonVisible": true
+    }
+  ],
+  "timingAfter": [
+    {
+      "route": "/",
+      "width": 1440,
+      "arrivedMs": 1800,
+      "sdkRequestMs": 1627,
+      "readyMs": 2713,
+      "waitAfterArrivalMs": 913,
+      "sdkStartedBeforeArrival": true,
+      "submitButtonVisible": true
+    },
+    {
+      "route": "/dlya-komandirovochnyh",
+      "width": 1440,
+      "arrivedMs": 1805,
+      "sdkRequestMs": 1485,
+      "readyMs": 1860,
+      "waitAfterArrivalMs": 55,
+      "sdkStartedBeforeArrival": true,
+      "submitButtonVisible": true
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "arrivedMs": 1800,
+      "sdkRequestMs": 1507,
+      "readyMs": 2375,
+      "waitAfterArrivalMs": 575,
+      "sdkStartedBeforeArrival": true,
+      "submitButtonVisible": true
+    },
+    {
+      "route": "/dlya-komandirovochnyh",
+      "width": 390,
+      "arrivedMs": 1816,
+      "sdkRequestMs": 1466,
+      "readyMs": 1857,
+      "waitAfterArrivalMs": 41,
+      "sdkStartedBeforeArrival": true,
+      "submitButtonVisible": true
+    }
+  ]
+}

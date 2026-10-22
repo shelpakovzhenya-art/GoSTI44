@@ -1,0 +1,89 @@
+{
+  "productionRoot": "/var/www/gosti/releases/20260925-2/.next/standalone",
+  "backup": "/var/www/gosti/backups/20261022-booking-bath",
+  "runtimeBefore": {
+    "files": 1839,
+    "links": 0,
+    "bytes": 255506096,
+    "treeSha256": "499a6b6552f6b15286b1cdd63ba2470b9106b81a5b109de5b1a66e3ad0867673"
+  },
+  "runtimeAfter": {
+    "files": 1842,
+    "links": 0,
+    "bytes": 256346623,
+    "treeSha256": "fdcf6c501c173f93146a0984d08d7201adfd824fcc1e1074ff4f4d9c89273814"
+  },
+  "publishedAPI": "47f9a3dd8c0980fac0e4e603e551c294dd6bd1d8b7116853aa14653cc2c55810",
+  "assets": [
+    {
+      "original": "1m2h-compact-pages-20261022.css",
+      "name": "1m2h-booking-bath-20261022.css",
+      "type": "text/css"
+    },
+    {
+      "original": "3cltmr-service-pages-task13-20261020.js",
+      "name": "3cltmr-booking-20261022.js",
+      "type": "text/javascript"
+    },
+    {
+      "original": "1iyslc2xp3jm8-prices-task12-20261020.js",
+      "name": "1iyslc2xp3jm8-booking-20261022.js",
+      "type": "text/javascript"
+    }
+  ],
+  "guards": [
+    {
+      "path": ".next/static/chunks/1m2h-compact-pages-20261022.css",
+      "sha256": "298ab60a9c94bd0a081dffbcffbaf4a3af55523ea55fa417dd07e39b47f2780c"
+    },
+    {
+      "path": ".next/static/chunks/3cltmr-service-pages-task13-20261020.js",
+      "sha256": "f7dd8151c840f8596f016e165bb821cacfabf332a2135b6ba9a9d88e0876b900"
+    },
+    {
+      "path": ".next/static/chunks/1iyslc2xp3jm8-prices-task12-20261020.js",
+      "sha256": "212a4490384b04809e8537a732a93f6824543919ca0770b286c91f2ebb663dfa"
+    }
+  ],
+  "additions": [
+    {
+      "path": ".next/static/chunks/1m2h-booking-bath-20261022.css",
+      "sha256": "6fe239e6a486a79dfe38dc5082d26d6a48e05e419edbd865ce11028536c1595f"
+    },
+    {
+      "path": ".next/static/chunks/3cltmr-booking-20261022.js",
+      "sha256": "acc590f4e43bdab4f5f7c2c36766bcf2cba19dbd11c2bf0a2e372d497ef25f01"
+    },
+    {
+      "path": ".next/static/chunks/1iyslc2xp3jm8-booking-20261022.js",
+      "sha256": "47c8c85107f3a8f8dd3e901a8d9aa7e19d9749796506f505d9b6b1fce73e6228"
+    }
+  ],
+  "replacements": [
+    {
+      "path": ".next/server/app/page_client-reference-manifest.js",
+      "beforeSha256": "007b74ada5a513521ae0124bb668159cb06e5515e3f56b39e7af2617fd1824c4",
+      "afterSha256": "57813245cb16195e7acfda189345b904fe3de1f95d17c3d633e77d96ecc53736"
+    },
+    {
+      "path": ".next/server/app/[...slug]/page_client-reference-manifest.js",
+      "beforeSha256": "8d6462dfc64230c355f559f2db8355d272e94a90616990eabfe01b83ffe4a430",
+      "afterSha256": "fb81b602de980237717a33825a4ddb5850f78363c818c7920a531b47da79ee46"
+    },
+    {
+      "path": ".next/server/app/preview/page_client-reference-manifest.js",
+      "beforeSha256": "0dd976181cab164973b50a1c3d8d968e588dfcd665651bd5fda2a7adc4c7bffb",
+      "afterSha256": "7463cc1a0a9f95d8625cb9b3bb6be3c3e6c2c63c43c604afbdbb19f00a22b7af"
+    },
+    {
+      "path": ".next/server/app/editor-preview/page_client-reference-manifest.js",
+      "beforeSha256": "578c67e46d2fafa75302664dfdaa139197374ff0ee3aca0f9e404577bfe94d44",
+      "afterSha256": "2d86abb0a032992dfb1c04feefda089b97385cdf5dbe85438367018d2cb96c3d"
+    },
+    {
+      "path": ".next/server/app/_not-found/page_client-reference-manifest.js",
+      "beforeSha256": "c02a413905e0f9aaa2e91c159ac5d3dcd74ff064f02f924f8b930e3158aac661",
+      "afterSha256": "b808b4b6e9608d910889ae7ac8d0e8afadfe0377166cfcf234fe0621174aa605"
+    }
+  ]
+}

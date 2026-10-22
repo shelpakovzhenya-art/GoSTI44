@@ -1,0 +1,107 @@
+--- live-home-effect-before.js
++++ live-home-effect-after.js
+@@ -1,63 +1,69 @@
+   (0,N.useEffect)(()=>{
++    // Bnovo.open registers a document click callback for its iframe but exposes no destroy API.
++// Own those synchronous registrations so a detached React widget cannot receive clicks.
++(()=>{
++  if(window.__tangerinOpenBooking)return;
++  const cleanups=new Map();
++  window.__tangerinOpenBooking=(host,options)=>{
++    cleanups.get(host)?.();
++    const registered=[],add=document.addEventListener;
++    document.addEventListener=function(type,listener,settings){
++      if(this===document&&type==='click'&&typeof listener==='function'){
++        const guarded=function(event){
++          if(host.isConnected&&host.querySelector('iframe')?.contentWindow)listener.call(this,event);
++        };
++        registered.push({type,listener:guarded,settings});
++        return add.call(this,type,guarded,settings);
++      }
++      return add.call(this,type,listener,settings);
++    };
++    try{window.Bnovo_Widget.open(host.id,options);}finally{document.addEventListener=add;}
++    const cleanup=()=>{
++      for(const item of registered)document.removeEventListener(item.type,item.listener,item.settings);
++      registered.length=0;cleanups.delete(host);
++    };
++    cleanups.set(host,cleanup);
++    return cleanup;
++  };
++  new MutationObserver(()=>{
++    for(const [host,cleanup]of cleanups)if(!host.isConnected)cleanup();
++  }).observe(document.documentElement,{childList:true,subtree:true});
++})();
+ 
+-    let stopped=false;
+-
++    let stopped=false,mounting=false,cleanupBooking;
+     const host=document.getElementById("_bn_widget_");
+-
+     if(!host)return;
+-
+     const uid=new URL(s.booking).pathname.split("/").filter(Boolean).pop();
+-
+     if(!/^[0-9a-f-]{36}$/i.test(uid))return;
+-
+     const mount=()=>{
+-
+-      if(stopped||host.querySelector("iframe"))return;
+-
+-      window.Bnovo_Widget.init(()=>window.Bnovo_Widget.open("_bn_widget_",{
+-
++      if(stopped||!host.isConnected||host.querySelector("iframe")||mounting)return;
++      mounting=true;
++      window.Bnovo_Widget.init(()=>{
++        if(stopped||!host.isConnected){mounting=false;return;}
++        cleanupBooking=window.__tangerinOpenBooking(host,{
+         type:"vertical",uid,lang:"ru",width:"100%",width_mobile:"100%",
+-
+         background:"#FFFDF8",background_mobile:"#FFFDF8",bg_alpha:"0",bg_alpha_mobile:"0",
+-
+         padding:"0",padding_mobile:"0",border_radius:"8",without_title:"on",
+-
+         button_font_size:"16",button_height:"48",font_type:"inter",
+-
+         title_color:"#234B3A",title_color_mobile:"#234B3A",title_size:"22",title_size_mobile:"22",
+-
+         inp_color:"#234B3A",inp_bordhover:"#234B3A",inp_bordcolor:"#9BA99E",inp_alpha:"100",
+-
+         btn_background:"#FF972F",btn_background_over:"#EF8620",btn_textcolor:"#234B3A",btn_textover:"#234B3A",
+-
+         btn_bordcolor:"#FF972F",btn_bordhover:"#EF8620",min_age:"0",max_age:"17",adults_default:"2",
+-
+         dates_preset:"on",dfrom_today:"on",dto_nextday:"on",switch_mobiles_width:"800"
+-
+-      }));
+-
++      });
+       const frame=host.querySelector("iframe");
+-
+       if(frame)frame.title="Выбор дат и гостей — Bnovo";
+-
++      });
+     };
+-
+     const load=()=>{
+-
++      if(stopped||!host.isConnected||host.querySelector("iframe"))return;
+       if(window.Bnovo_Widget){mount();return;}
+-
+       let script=document.querySelector("script[data-tangerin-bnovo]");
+-
+       if(!script){script=document.createElement("script");script.src="https://widget.reservationsteps.ru/js/bnovo.js";script.async=true;script.dataset.tangerinBnovo="true";document.head.append(script);}
+-
+       script.addEventListener("load",mount,{once:true});
+-
+     };
+-
+     let observer=new IntersectionObserver(entries=>{if(entries.some(x=>x.isIntersecting)){observer.disconnect();load();}},{rootMargin:"300px"});
+-
+     observer.observe(host);
+-
+-    return ()=>{stopped=true;observer.disconnect();};
+-
++    const idle="requestIdleCallback"in window?requestIdleCallback(load,{timeout:250}):setTimeout(load,100);
++    return ()=>{stopped=true;observer.disconnect();cleanupBooking?.();if("cancelIdleCallback"in window)cancelIdleCallback(idle);else clearTimeout(idle);};
+   },[s.booking]);

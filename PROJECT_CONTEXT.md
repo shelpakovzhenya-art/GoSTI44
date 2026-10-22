@@ -24,3 +24,5 @@
 ## GitHub — 22.10.2026
 
 Репозиторий: https://github.com/shelpakovzhenya-art/GoSTI44; контекст/задачи: ветка `orca/workspace/gosti44`. Снимки исходников: `orca/source/gosti44`; действующая локальная папка `C:\Users\della\OneDrive\Документы\New project\GoSTI44-production-20261020`.  После каждой задачи обязательны содержательный commit/push и проверка удалённого SHA; инструкции и команды — в GITHUB_SYNC.md.
+
+22.10.2026: Bnovo загружается до прокрутки, исправлены исчезновение формы на SPA-переходах и обработчики удалённого iframe; баня24/22px.60 сценариев/23 страницы и5 ширин, CMS/API сохранены. Код/проверка: `results/20261022-booking-bath/README.md`; текущий полный handoff — CURRENT_CONTEXT.md.
