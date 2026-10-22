@@ -12,3 +12,11 @@
 **source/** открывает существующие материалы проекта. Перед изменением кода агент проверит вложенные инструкции и актуальную рабочую копию.
 
 Большие старые чаты остаются историей. Новые чаты работают по конкретной задаче с общим контекстом проекта.
+
+<!-- GITHUB_SYNC:BEGIN -->
+## GitHub
+
+- [Правила синхронизации](GITHUB_SYNC.md).
+- [Контекст на GitHub](https://github.com/shelpakovzhenya-art/GoSTI44/tree/orca%2Fworkspace%2Fgosti44).
+- [Исходники](https://github.com/shelpakovzhenya-art/GoSTI44/tree/orca%2Fsource%2Fgosti44).
+<!-- GITHUB_SYNC:END -->
