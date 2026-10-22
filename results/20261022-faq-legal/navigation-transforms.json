@@ -1,0 +1,26 @@
+{
+  "clientSource": ".next/static/chunks/3cltmr-booking-20261022.js",
+  "clientResult": ".next/static/chunks/3cltmr-faq-menu-v2-20261022.js",
+  "serverFiles": [
+    ".next/server/chunks/ssr/_1dhd4r3._.js",
+    ".next/server/chunks/ssr/_1nl3cbl._.js"
+  ],
+  "transforms": [
+    {
+      "before": ".slice(4,12)",
+      "after": ".slice(4,13)"
+    },
+    {
+      "before": "[4,12,\"009\"],[12,16,\"010\"]",
+      "after": "[4,13,\"009\"],[13,17,\"010\"]"
+    },
+    {
+      "before": ".slice(4,13).map(([r,n])=>(0,t.jsx)(\"a\",{href:d(n,e),children:r},n))",
+      "after": ".slice(4,13).map(([r,n])=>(0,t.jsx)(\"a\",{href:d(n,e),onClick:event=>event.currentTarget.closest(\"details\")?.removeAttribute(\"open\"),children:r},n))"
+    },
+    {
+      "before": ".slice(4,13).map(([c,d])=>(0,b.jsx)(\"a\",{href:l(d,a),children:c},d))",
+      "after": ".slice(4,13).map(([c,d])=>(0,b.jsx)(\"a\",{href:l(d,a),onClick:event=>event.currentTarget.closest(\"details\")?.removeAttribute(\"open\"),children:c},d))"
+    }
+  ]
+}

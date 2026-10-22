@@ -1,0 +1,222 @@
+{
+  "pages": 23,
+  "changedPublicEntries": [
+    "main-menu",
+    "landing",
+    "site-footer"
+  ],
+  "FAQAnswersAndLegalDocumentsPreserved": true,
+  "limonFixPreserved": true,
+  "activeAssetReferencesVerified": true,
+  "assetSHAsVerified": true,
+  "publishedApiSha256": "a80718c5a00ae44d1e108646f37055bd8f491160b5bfc6ddf84faee0f93fe792",
+  "checks": [
+    {
+      "route": "/doma/laym",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/doma/limon",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/doma/citrus",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/dlya-bolshoy-kompanii",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/kostroma",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/kostroma/gde-poest",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/kostroma/dostoprimechatelnosti",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/kostroma/muzei",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/kostroma/za-odin-den",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/kostroma/s-detmi",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/kostroma/chto-privezti",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/vse-dlya-otdyha",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/dlya-komandirovochnyh",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/soglasie-na-obrabotku-personalnyh-dannyh",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/usloviya-bronirovaniya",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/politika-obrabotki-personalnyh-dannyh",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/kontakty",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/vse-dlya-otdyha/zavtraki",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/vse-dlya-otdyha/banya-i-kupel",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/vse-dlya-otdyha/mangalnaya-zona",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/vse-dlya-otdyha/s-detmi",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    },
+    {
+      "route": "/vse-dlya-otdyha/s-pitomcami",
+      "status": 200,
+      "legalCards": 1,
+      "oldFAQLabel": false,
+      "legalFAQRemoved": true,
+      "documentLinksPreserved": true,
+      "bookingHost": 1
+    }
+  ]
+}

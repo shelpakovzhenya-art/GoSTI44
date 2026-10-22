@@ -1,0 +1,108 @@
+{
+  "widths": [
+    {
+      "documentLinks": 3,
+      "faqRows": 6,
+      "faqTitle": "Частые вопросы",
+      "legalColumns": "589px 589px",
+      "legalFAQ": false,
+      "overflow": false,
+      "photoLoaded": true,
+      "width": 1920
+    },
+    {
+      "documentLinks": 3,
+      "faqRows": 6,
+      "faqTitle": "Частые вопросы",
+      "legalColumns": "589px 589px",
+      "legalFAQ": false,
+      "overflow": false,
+      "photoLoaded": true,
+      "width": 1366
+    },
+    {
+      "documentLinks": 3,
+      "faqRows": 6,
+      "faqTitle": "Частые вопросы",
+      "legalColumns": "461.5px 461.5px",
+      "legalFAQ": false,
+      "overflow": false,
+      "photoLoaded": true,
+      "width": 1024
+    },
+    {
+      "documentLinks": 3,
+      "faqRows": 6,
+      "faqTitle": "Частые вопросы",
+      "legalColumns": "333.5px 333.5px",
+      "legalFAQ": false,
+      "overflow": false,
+      "photoLoaded": true,
+      "width": 768
+    },
+    {
+      "documentLinks": 3,
+      "faqRows": 6,
+      "faqTitle": "Частые вопросы",
+      "legalColumns": "343px",
+      "legalFAQ": false,
+      "overflow": false,
+      "photoLoaded": true,
+      "width": 390
+    },
+    {
+      "documentLinks": 3,
+      "faqRows": 6,
+      "faqTitle": "Частые вопросы",
+      "legalColumns": "273px",
+      "legalFAQ": false,
+      "overflow": false,
+      "photoLoaded": true,
+      "width": 320
+    }
+  ],
+  "faqToggleChecks": [
+    {
+      "index": 0,
+      "opened": true,
+      "textVisible": true
+    },
+    {
+      "index": 1,
+      "opened": true,
+      "textVisible": true
+    },
+    {
+      "index": 2,
+      "opened": true,
+      "textVisible": true
+    },
+    {
+      "index": 3,
+      "opened": true,
+      "textVisible": true
+    },
+    {
+      "index": 4,
+      "opened": true,
+      "textVisible": true
+    },
+    {
+      "index": 5,
+      "opened": true,
+      "textVisible": true
+    }
+  ],
+  "interactions": {
+    "desktopMenuSamePage": true,
+    "desktopMenuFromLimon": true,
+    "mobileMenuFromBreakfastFooter": true,
+    "menuLayer": 2000,
+    "cookieSettingsOpened": true,
+    "privacyDocumentOpened": true,
+    "breakfastFooterBnovoVisible": true,
+    "cleanURL": true,
+    "desktopMenuAboveBooking": true
+  },
+  "errorCodes": []
+}

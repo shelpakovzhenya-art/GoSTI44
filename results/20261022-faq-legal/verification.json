@@ -1,0 +1,21 @@
+{
+  "runtime": {
+    "files": 1847,
+    "links": 0,
+    "bytes": 259336291,
+    "treeSha256": "4df9886b8e1fe44d276ecdc294c46bb4c014390cef4df9d111fb5eae4f56fe57"
+  },
+  "runtimeFilesChanged": 10,
+  "CMSRows": 59,
+  "changedEntries": [
+    "landing",
+    "main-menu",
+    "site-footer"
+  ],
+  "other56RowsUnchanged": true,
+  "onlyTargetFieldsChanged": true,
+  "draftFieldsPreserved": true,
+  "FAQAnswersAndLegalDocumentsUnchanged": true,
+  "revisionsAdded": 6,
+  "databaseIntegrity": "ok"
+}

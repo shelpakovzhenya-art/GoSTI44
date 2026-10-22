@@ -1,0 +1,78 @@
+{
+  "productionRoot": "/var/www/gosti/releases/20260925-2/.next/standalone",
+  "backup": "/var/www/gosti/backups/20261022-faq-legal",
+  "runtimeBefore": {
+    "files": 1844,
+    "links": 0,
+    "bytes": 257788753,
+    "treeSha256": "497837c40e42501607efbb7be87e4521328e6d8dcdfc7ee839aae0284d9ffbd7"
+  },
+  "runtimeAfter": {
+    "files": 1847,
+    "links": 0,
+    "bytes": 259336291,
+    "treeSha256": "4df9886b8e1fe44d276ecdc294c46bb4c014390cef4df9d111fb5eae4f56fe57"
+  },
+  "publishedAPI": "2c311fae04410f21ac2979017626dcd3cd7944acf1af90fe057cd2e8f88aae7b",
+  "guards": [
+    {
+      "path": ".next/static/chunks/1m2h-contacts-spacing-20261022.css",
+      "sha256": "95576c3659b6afaae9ab574beddfc3b82abc796b69ec2ec28f25ce5c2cfb161e"
+    },
+    {
+      "path": ".next/static/chunks/3cltmr-booking-20261022.js",
+      "sha256": "acc590f4e43bdab4f5f7c2c36766bcf2cba19dbd11c2bf0a2e372d497ef25f01"
+    }
+  ],
+  "additions": [
+    {
+      "path": ".next/static/chunks/1m2h-faq-legal-v4-20261022.css",
+      "sha256": "9aea719dd5809b19017ea0eaf3e787d5ba1499fb1d67fd10f8a82e3e608d1f5a"
+    },
+    {
+      "path": ".next/static/chunks/1m2h-faq-legal-v3-20261022.css",
+      "sha256": "950b933e153f622538c3de7a206b7337abd49a0d5beeef270081474098653625"
+    },
+    {
+      "path": ".next/static/chunks/3cltmr-faq-menu-v2-20261022.js",
+      "sha256": "b83ed3efcb18a80d82e1d96b6e09002e8314e6accbe784f713093511f3f36e47"
+    }
+  ],
+  "replacements": [
+    {
+      "path": ".next/server/chunks/ssr/_1dhd4r3._.js",
+      "beforeSha256": "fdb2eac11c219ef128733ae72256b94217097c3fb43ae4516649bb3b1cc688ef",
+      "afterSha256": "311b9d45bce8d8e2ad83c1a892a0b1c9fa87506fb7b275d917773dc5154ac390"
+    },
+    {
+      "path": ".next/server/chunks/ssr/_1nl3cbl._.js",
+      "beforeSha256": "777a600f63c00c35570480e53fc975f25f80d8e1ce9cc11861c9cf098af4ebc1",
+      "afterSha256": "a1f6ed7433e0b8339a54558a75e6f24101e08301ecd5008746cd81b343231e1e"
+    },
+    {
+      "path": ".next/server/app/page_client-reference-manifest.js",
+      "beforeSha256": "140863256d5b45f616a1d6072f5729b91a7ac7145b07866e1bf223af8a4b9630",
+      "afterSha256": "c783febd24ec876bb62c252df3f9e3520364738e55c407ab715c696f76adf622"
+    },
+    {
+      "path": ".next/server/app/[...slug]/page_client-reference-manifest.js",
+      "beforeSha256": "3f49f74f32e1b5151cfcf6fa6b92fe2b31dbc84522adfba52a9961529f8a43f5",
+      "afterSha256": "3682d8e628982480eeab5825f4939703e97ac23de418e36a0f6333c99a7b6219"
+    },
+    {
+      "path": ".next/server/app/preview/page_client-reference-manifest.js",
+      "beforeSha256": "ddceab8f421450f89215709726924962c986cadad049c48a45238a6aacfa3fe9",
+      "afterSha256": "cc987dbdc5565dd9e0226bc6d92157689f4bf2fb538ae899285d01f41023ff8d"
+    },
+    {
+      "path": ".next/server/app/editor-preview/page_client-reference-manifest.js",
+      "beforeSha256": "4afd6a82db29299957a555eab7d498c87257a239eb7f7c8fb32fd748f8b3084c",
+      "afterSha256": "c81aa0fdec9d5bf046267c3849b7ec0b18cc24ad080f4b1e0ba08f8ad4933c53"
+    },
+    {
+      "path": ".next/server/app/_not-found/page_client-reference-manifest.js",
+      "beforeSha256": "423057b788bc24fd82929819d050ac51662747c99b5394e34717c10bddba1ab2",
+      "afterSha256": "847dab729a9e178a7d9e1863428ee1ea21651c9ac79082c5d81994930eac7d2a"
+    }
+  ]
+}
