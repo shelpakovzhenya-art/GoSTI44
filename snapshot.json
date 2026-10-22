@@ -1,0 +1,115 @@
+{
+  "capturedAt": "2026-10-20T06:59:41.965Z",
+  "origin": "https://tangerin.ru/",
+  "server": "186.246.50.205",
+  "runtimePath": "/var/www/gosti/releases/20260925-2/.next/standalone",
+  "cmsPath": "/var/www/gosti/releases/20260921-1/cms",
+  "buildId": "tJtBqcAbvF7nCF-rhFlgs",
+  "runtime": {
+    "files": 1838,
+    "links": 0,
+    "bytes": 254794086,
+    "treeSha256": "a23e2c3d549865c441d0dfa95ef77155615aae3206a398f7055f9ac35b6d8e2b"
+  },
+  "runtimeServerHashVerified": true,
+  "cmsSource": {
+    "files": 152,
+    "links": 0,
+    "bytes": 5122250,
+    "treeSha256": "a8a359613dbffccfabc8d1d0984ee287111966d7b7cb065ae19b0d60b593b8e5"
+  },
+  "cmsServerHashVerified": true,
+  "publishedApiSha256": "c86463a7006ebce7217b687655a476cc27b654701bcf0cb4b0ecb2c1d75c509c",
+  "publishedEntries": 58,
+  "publishedPages": 23,
+  "routeViewports": 34,
+  "sourceReferenceCommit": "930afc5",
+  "sourceReferenceDate": "2026-09-28",
+  "editableSourceParityConfirmed": false,
+  "productionModified": true,
+  "nginxSha256": "8cd189546b14687ac2a94371120d5fbd71bc72afac056dedbfa3863eaabf634f",
+  "serviceSha256": "a633100b6525476e861595a2ac03ee38a8705a023d019691fbc6c760e25cc46a",
+  "exclusions": [
+    "CMS .env and credentials",
+    "database/users/sessions/private storage",
+    "dependency/build caches outside active runtime"
+  ],
+  "runtimeBeforeButtonChange": {
+    "files": 1821,
+    "links": 0,
+    "bytes": 247060075,
+    "treeSha256": "7533718dc63794300ef016acf45a6ca28236d9549e552180d497ac03e44d91d7"
+  },
+  "productionModifiedDuringBaseline": false,
+  "updatedAt": "2026-10-21T07:40:16.286554+00:00",
+  "latestChange": {
+    "date": "2026-10-21",
+    "task": "business-followup",
+    "runtimeFiles": 6,
+    "cmsFiles": 0,
+    "files": 6,
+    "backup": "/var/www/gosti/backups/20261021-business-followup",
+    "evidence": "changes/20261021-business-followup/REPORT.md"
+  },
+  "latestContentChange": {
+    "date": "2026-10-21",
+    "task": "business-followup",
+    "fields": [
+      "dlya-komandirovochnyh.body: special conditions moved after colleagues and restyled",
+      "dlya-bolshoy-kompanii.body: marked 2-image closing gallery removed"
+    ],
+    "backup": "/var/www/gosti/backups/20261021-business-followup",
+    "evidence": "changes/20261021-business-followup/content-verification.json"
+  },
+  "ownershipTransfer": {
+    "status": "partial",
+    "gscRecipient": "sudja2000@list.ru",
+    "gscRecipientRole": "delegated owner",
+    "currentGscRole": "verified owner; downgrade pending recipient verification",
+    "webmasterRecipient": "sudja2000.gagarina@yandex.ru",
+    "webmasterRecipientRole": "edit; ownership pending personal verification",
+    "metrikaCounter": "113673596",
+    "metrikaStatus": "transferred to sudja2000.gagarina@yandex.ru; current account editor retention selected; guest access and new owner verified",
+    "evidence": "changes/20261020-ownership-transfer/REPORT.md",
+    "metrikaRecipient": "sudja2000.gagarina@yandex.ru"
+  },
+  "latestPageVerification": {
+    "urls": [
+      "https://tangerin.ru/dlya-komandirovochnyh",
+      "https://tangerin.ru/dlya-bolshoy-kompanii"
+    ],
+    "widths": [
+      1920,
+      1440,
+      768,
+      390,
+      320
+    ],
+    "views": 10,
+    "navigationScenarios": 2,
+    "evidence": "changes/20261021-business-followup/after-verification.json"
+  },
+  "lastVerifiedAt": "2026-10-21T07:40:16.286554+00:00",
+  "clientRevisionTasks": {
+    "total": 13,
+    "completed": 13,
+    "register": "changes/20261020-client-tz/TASKS.md"
+  },
+  "cmsTotalEntries": 59,
+  "unpublishedEntries": 1,
+  "unpublishedEntriesVerifiedPreserved": true,
+  "cmsCountEvidence": "changes/20261020-client-tz/task13/cms-counts-final-20261021.json",
+  "latestRequirementsAudit": {
+    "date": "2026-10-21",
+    "source": "changes/20261020-client-tz/source/client-revisions.docx",
+    "tasks": 13,
+    "criteriaPassed": 69,
+    "criteriaTotal": 69,
+    "pagesHTTP": 23,
+    "browserViews": 30,
+    "interactiveScenarios": 12,
+    "additionalBrowserChecks": 2,
+    "report": "changes/20261021-tz-recheck/REPORT.md",
+    "errorFoundAndCorrected": "Pet metadata incorrectly said per stay; corrected to per day as original Word and visible rates."
+  }
+}

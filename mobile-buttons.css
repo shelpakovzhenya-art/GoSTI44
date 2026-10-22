@@ -1,0 +1,64 @@
+/* 2026-10-20: compact mobile hero and fixed booking buttons. */
+@media (max-width: 760px) {
+  .hero .hero-actions > .button,
+  .hero .hero-actions > .hero-secondary {
+    width: min(100%, 290px);
+    max-width: 290px;
+    min-height: 46px;
+    padding: 11px 16px;
+    gap: 8px;
+    font-size: 14px !important;
+    line-height: 1.35;
+    white-space: nowrap;
+  }
+  .hero .hero-actions > .hero-secondary {
+    width: min(100%, 248px);
+    max-width: 248px;
+  }
+  .hero .hero-actions > .button svg,
+  .hero .hero-actions > .hero-secondary svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+  .mobile-bottom {
+    justify-content: center;
+  }
+  .mobile-bottom > .button {
+    flex: 0 1 250px;
+    max-width: 250px;
+    min-height: 44px;
+    height: 44px;
+    padding: 10px 16px;
+    gap: 10px;
+    font-size: 14px !important;
+    line-height: 1.3;
+  }
+}
+/* The production palette owns important button typography in this layer. */
+@layer clientPalette {
+  @media (max-width: 760px) {
+    .hero .hero-actions > .button,
+    .mobile-bottom > .button {
+      font-size: 14px !important;
+    }
+  }
+  @media (max-width: 360px) {
+    .hero .hero-actions > .button {
+      font-size: 13px !important;
+    }
+  }
+}
+@media (max-width: 360px) {
+  .hero .hero-actions > .button,
+  .hero .hero-actions > .hero-secondary {
+    padding-inline: 10px;
+    gap: 6px;
+    font-size: 13px !important;
+  }
+  .hero .hero-actions > .button svg,
+  .hero .hero-actions > .hero-secondary svg {
+    width: 14px;
+    height: 14px;
+  }
+}

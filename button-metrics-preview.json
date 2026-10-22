@@ -1,0 +1,984 @@
+[
+  {
+    "viewport": 320,
+    "overflow": false,
+    "elements": [
+      {
+        "tag": "DIV",
+        "class": "mobile-bottom",
+        "text": "Выбрать даты",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 0,
+        "width": 320,
+        "height": 67,
+        "font": "17px",
+        "padding": "10px 18px",
+        "gap": "12px",
+        "columns": "none",
+        "radius": "0px",
+        "textLines": [],
+        "fontRules": []
+      },
+      {
+        "tag": "A",
+        "class": "",
+        "text": "",
+        "inlineStyle": null,
+        "display": "grid",
+        "x": 18,
+        "width": 46,
+        "height": 46,
+        "font": "17px",
+        "padding": "0px",
+        "gap": "normal",
+        "columns": "44px",
+        "radius": "50%",
+        "textLines": [],
+        "fontRules": []
+      },
+      {
+        "tag": "A",
+        "class": "button button-yellow",
+        "text": "Выбрать даты",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 76,
+        "width": 226,
+        "height": 44,
+        "font": "14px",
+        "padding": "10px 16px",
+        "gap": "10px",
+        "columns": "none",
+        "radius": "12px",
+        "textLines": [
+          [
+            {
+              "x": 127.234375,
+              "width": 95.53125,
+              "height": 19
+            }
+          ]
+        ],
+        "fontRules": [
+          "body :is(.button, .rs-button, .oct-button, .detail-button, .about-reference-button, .hr-primary, .hr-secondary, .house-actions a, .site-footer-book) { font-family: var(--client-sans) !important; font-size: 16px !important; font-weight: 600 !important; line-height: 1.4 !important; border-radius: 12px !important; box-shadow: none !important; text-shadow: none !important; }",
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ".mobile-bottom > .button { flex: 1 1 0%; min-height: 46px; padding: 11px 20px; font-size: 13px; }",
+          ".button, .text-link, .hero-secondary { min-height: 50px; padding: 13px 20px; font-size: 13px; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }",
+          ".mobile-bottom .button { border-radius: 8px; font-size: 14px; }",
+          ".mobile-bottom > .button { flex: 0 1 250px; max-width: 250px; min-height: 44px; height: 44px; padding: 10px 16px; gap: 10px; line-height: 1.3; font-size: 14px !important; }",
+          ".hero .hero-actions > .button, .mobile-bottom > .button { font-size: 14px !important; }"
+        ]
+      },
+      {
+        "tag": "A",
+        "class": "button button-yellow",
+        "text": "Проверить даты и стоимость",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 32,
+        "width": 256,
+        "height": 46,
+        "font": "13px",
+        "padding": "11px 10px",
+        "gap": "6px",
+        "columns": "none",
+        "radius": "12px",
+        "textLines": [
+          [
+            {
+              "x": 67.484375,
+              "width": 185.03125,
+              "height": 18
+            }
+          ]
+        ],
+        "fontRules": [
+          "body :is(.button, .rs-button, .oct-button, .detail-button, .about-reference-button, .hr-primary, .hr-secondary, .house-actions a, .site-footer-book) { font-family: var(--client-sans) !important; font-size: 16px !important; font-weight: 600 !important; line-height: 1.4 !important; border-radius: 12px !important; box-shadow: none !important; text-shadow: none !important; }",
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ".button, .text-link, .hero-secondary { min-height: 50px; padding: 13px 20px; font-size: 13px; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { gap: 12px; width: 100%; max-width: 360px; min-height: 53px; padding: 14px 17px; font-size: 12px; }",
+          ".hero-actions .button { gap: 7px; padding-inline: 13px; font-size: 11px; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { min-height: 54px; padding: 14px 17px; font-size: 15px; }",
+          ".hero-actions .button { font-size: 14px; }",
+          ".hero .hero-actions > .button, .hero .hero-actions > .hero-secondary { width: min(100%, 290px); max-width: 290px; min-height: 46px; padding: 11px 16px; gap: 8px; line-height: 1.35; white-space: nowrap; font-size: 14px !important; }",
+          ".hero .hero-actions > .button, .mobile-bottom > .button { font-size: 14px !important; }",
+          ".hero .hero-actions > .button { font-size: 13px !important; }",
+          ".hero .hero-actions > .button, .hero .hero-actions > .hero-secondary { padding-inline: 10px; gap: 6px; font-size: 13px !important; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { justify-content: center; width: 100%; min-height: 55px; padding: 14px 17px; font-size: 15px; }"
+        ]
+      },
+      {
+        "tag": "A",
+        "class": "hero-secondary",
+        "text": "Сравнить дома",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 36,
+        "width": 248,
+        "height": 46,
+        "font": "13px",
+        "padding": "11px 10px",
+        "gap": "6px",
+        "columns": "none",
+        "radius": "11px",
+        "textLines": [
+          [
+            {
+              "x": 120.78125,
+              "width": 98.4375,
+              "height": 18
+            }
+          ]
+        ],
+        "fontRules": [
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ".button, .text-link, .hero-secondary { min-height: 50px; padding: 13px 20px; font-size: 13px; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { gap: 12px; width: 100%; max-width: 360px; min-height: 53px; padding: 14px 17px; font-size: 12px; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { min-height: 54px; padding: 14px 17px; font-size: 15px; }",
+          ".hero .hero-actions > .button, .hero .hero-actions > .hero-secondary { width: min(100%, 290px); max-width: 290px; min-height: 46px; padding: 11px 16px; gap: 8px; line-height: 1.35; white-space: nowrap; font-size: 14px !important; }",
+          ".hero .hero-actions > .button, .hero .hero-actions > .hero-secondary { padding-inline: 10px; gap: 6px; font-size: 13px !important; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { justify-content: center; width: 100%; min-height: 55px; padding: 14px 17px; font-size: 15px; }"
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 360,
+    "overflow": false,
+    "elements": [
+      {
+        "tag": "DIV",
+        "class": "mobile-bottom",
+        "text": "Выбрать даты",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 0,
+        "width": 360,
+        "height": 67,
+        "font": "17px",
+        "padding": "10px 18px",
+        "gap": "12px",
+        "columns": "none",
+        "radius": "0px",
+        "textLines": [],
+        "fontRules": []
+      },
+      {
+        "tag": "A",
+        "class": "",
+        "text": "",
+        "inlineStyle": null,
+        "display": "grid",
+        "x": 26,
+        "width": 46,
+        "height": 46,
+        "font": "17px",
+        "padding": "0px",
+        "gap": "normal",
+        "columns": "44px",
+        "radius": "50%",
+        "textLines": [],
+        "fontRules": []
+      },
+      {
+        "tag": "A",
+        "class": "button button-yellow",
+        "text": "Выбрать даты",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 84,
+        "width": 250,
+        "height": 44,
+        "font": "14px",
+        "padding": "10px 16px",
+        "gap": "10px",
+        "columns": "none",
+        "radius": "12px",
+        "textLines": [
+          [
+            {
+              "x": 147.234375,
+              "width": 95.53125,
+              "height": 19
+            }
+          ]
+        ],
+        "fontRules": [
+          "body :is(.button, .rs-button, .oct-button, .detail-button, .about-reference-button, .hr-primary, .hr-secondary, .house-actions a, .site-footer-book) { font-family: var(--client-sans) !important; font-size: 16px !important; font-weight: 600 !important; line-height: 1.4 !important; border-radius: 12px !important; box-shadow: none !important; text-shadow: none !important; }",
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ".mobile-bottom > .button { flex: 1 1 0%; min-height: 46px; padding: 11px 20px; font-size: 13px; }",
+          ".button, .text-link, .hero-secondary { min-height: 50px; padding: 13px 20px; font-size: 13px; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }",
+          ".mobile-bottom .button { border-radius: 8px; font-size: 14px; }",
+          ".mobile-bottom > .button { flex: 0 1 250px; max-width: 250px; min-height: 44px; height: 44px; padding: 10px 16px; gap: 10px; line-height: 1.3; font-size: 14px !important; }",
+          ".hero .hero-actions > .button, .mobile-bottom > .button { font-size: 14px !important; }"
+        ]
+      },
+      {
+        "tag": "A",
+        "class": "button button-yellow",
+        "text": "Проверить даты и стоимость",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 35,
+        "width": 290,
+        "height": 46,
+        "font": "13px",
+        "padding": "11px 10px",
+        "gap": "6px",
+        "columns": "none",
+        "radius": "12px",
+        "textLines": [
+          [
+            {
+              "x": 87.484375,
+              "width": 185.03125,
+              "height": 18
+            }
+          ]
+        ],
+        "fontRules": [
+          "body :is(.button, .rs-button, .oct-button, .detail-button, .about-reference-button, .hr-primary, .hr-secondary, .house-actions a, .site-footer-book) { font-family: var(--client-sans) !important; font-size: 16px !important; font-weight: 600 !important; line-height: 1.4 !important; border-radius: 12px !important; box-shadow: none !important; text-shadow: none !important; }",
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ".button, .text-link, .hero-secondary { min-height: 50px; padding: 13px 20px; font-size: 13px; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { gap: 12px; width: 100%; max-width: 360px; min-height: 53px; padding: 14px 17px; font-size: 12px; }",
+          ".hero-actions .button { gap: 7px; padding-inline: 13px; font-size: 11px; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { min-height: 54px; padding: 14px 17px; font-size: 15px; }",
+          ".hero-actions .button { font-size: 14px; }",
+          ".hero .hero-actions > .button, .hero .hero-actions > .hero-secondary { width: min(100%, 290px); max-width: 290px; min-height: 46px; padding: 11px 16px; gap: 8px; line-height: 1.35; white-space: nowrap; font-size: 14px !important; }",
+          ".hero .hero-actions > .button, .mobile-bottom > .button { font-size: 14px !important; }",
+          ".hero .hero-actions > .button { font-size: 13px !important; }",
+          ".hero .hero-actions > .button, .hero .hero-actions > .hero-secondary { padding-inline: 10px; gap: 6px; font-size: 13px !important; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { justify-content: center; width: 100%; min-height: 55px; padding: 14px 17px; font-size: 15px; }"
+        ]
+      },
+      {
+        "tag": "A",
+        "class": "hero-secondary",
+        "text": "Сравнить дома",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 56,
+        "width": 248,
+        "height": 46,
+        "font": "13px",
+        "padding": "11px 10px",
+        "gap": "6px",
+        "columns": "none",
+        "radius": "11px",
+        "textLines": [
+          [
+            {
+              "x": 140.78125,
+              "width": 98.4375,
+              "height": 18
+            }
+          ]
+        ],
+        "fontRules": [
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ".button, .text-link, .hero-secondary { min-height: 50px; padding: 13px 20px; font-size: 13px; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { gap: 12px; width: 100%; max-width: 360px; min-height: 53px; padding: 14px 17px; font-size: 12px; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { min-height: 54px; padding: 14px 17px; font-size: 15px; }",
+          ".hero .hero-actions > .button, .hero .hero-actions > .hero-secondary { width: min(100%, 290px); max-width: 290px; min-height: 46px; padding: 11px 16px; gap: 8px; line-height: 1.35; white-space: nowrap; font-size: 14px !important; }",
+          ".hero .hero-actions > .button, .hero .hero-actions > .hero-secondary { padding-inline: 10px; gap: 6px; font-size: 13px !important; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { justify-content: center; width: 100%; min-height: 55px; padding: 14px 17px; font-size: 15px; }"
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 390,
+    "overflow": false,
+    "elements": [
+      {
+        "tag": "DIV",
+        "class": "mobile-bottom",
+        "text": "Выбрать даты",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 0,
+        "width": 390,
+        "height": 67,
+        "font": "17px",
+        "padding": "10px 18px",
+        "gap": "12px",
+        "columns": "none",
+        "radius": "0px",
+        "textLines": [],
+        "fontRules": []
+      },
+      {
+        "tag": "A",
+        "class": "",
+        "text": "",
+        "inlineStyle": null,
+        "display": "grid",
+        "x": 41,
+        "width": 46,
+        "height": 46,
+        "font": "17px",
+        "padding": "0px",
+        "gap": "normal",
+        "columns": "44px",
+        "radius": "50%",
+        "textLines": [],
+        "fontRules": []
+      },
+      {
+        "tag": "A",
+        "class": "button button-yellow",
+        "text": "Выбрать даты",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 99,
+        "width": 250,
+        "height": 44,
+        "font": "14px",
+        "padding": "10px 16px",
+        "gap": "10px",
+        "columns": "none",
+        "radius": "12px",
+        "textLines": [
+          [
+            {
+              "x": 162.234375,
+              "width": 95.53125,
+              "height": 19
+            }
+          ]
+        ],
+        "fontRules": [
+          "body :is(.button, .rs-button, .oct-button, .detail-button, .about-reference-button, .hr-primary, .hr-secondary, .house-actions a, .site-footer-book) { font-family: var(--client-sans) !important; font-size: 16px !important; font-weight: 600 !important; line-height: 1.4 !important; border-radius: 12px !important; box-shadow: none !important; text-shadow: none !important; }",
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ".mobile-bottom > .button { flex: 1 1 0%; min-height: 46px; padding: 11px 20px; font-size: 13px; }",
+          ".button, .text-link, .hero-secondary { min-height: 50px; padding: 13px 20px; font-size: 13px; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }",
+          ".mobile-bottom .button { border-radius: 8px; font-size: 14px; }",
+          ".mobile-bottom > .button { flex: 0 1 250px; max-width: 250px; min-height: 44px; height: 44px; padding: 10px 16px; gap: 10px; line-height: 1.3; font-size: 14px !important; }",
+          ".hero .hero-actions > .button, .mobile-bottom > .button { font-size: 14px !important; }"
+        ]
+      },
+      {
+        "tag": "A",
+        "class": "button button-yellow",
+        "text": "Проверить даты и стоимость",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 50,
+        "width": 290,
+        "height": 46,
+        "font": "14px",
+        "padding": "11px 16px",
+        "gap": "8px",
+        "columns": "none",
+        "radius": "12px",
+        "textLines": [
+          [
+            {
+              "x": 95.359375,
+              "width": 199.265625,
+              "height": 19
+            }
+          ]
+        ],
+        "fontRules": [
+          "body :is(.button, .rs-button, .oct-button, .detail-button, .about-reference-button, .hr-primary, .hr-secondary, .house-actions a, .site-footer-book) { font-family: var(--client-sans) !important; font-size: 16px !important; font-weight: 600 !important; line-height: 1.4 !important; border-radius: 12px !important; box-shadow: none !important; text-shadow: none !important; }",
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ".button, .text-link, .hero-secondary { min-height: 50px; padding: 13px 20px; font-size: 13px; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { gap: 12px; width: 100%; max-width: 360px; min-height: 53px; padding: 14px 17px; font-size: 12px; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { min-height: 54px; padding: 14px 17px; font-size: 15px; }",
+          ".hero .hero-actions > .button, .hero .hero-actions > .hero-secondary { width: min(100%, 290px); max-width: 290px; min-height: 46px; padding: 11px 16px; gap: 8px; line-height: 1.35; white-space: nowrap; font-size: 14px !important; }",
+          ".hero .hero-actions > .button, .mobile-bottom > .button { font-size: 14px !important; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { justify-content: center; width: 100%; min-height: 55px; padding: 14px 17px; font-size: 15px; }"
+        ]
+      },
+      {
+        "tag": "A",
+        "class": "hero-secondary",
+        "text": "Сравнить дома",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 71,
+        "width": 248,
+        "height": 46,
+        "font": "14px",
+        "padding": "11px 16px",
+        "gap": "8px",
+        "columns": "none",
+        "radius": "11px",
+        "textLines": [
+          [
+            {
+              "x": 153.984375,
+              "width": 106.015625,
+              "height": 19
+            }
+          ]
+        ],
+        "fontRules": [
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ".button, .text-link, .hero-secondary { min-height: 50px; padding: 13px 20px; font-size: 13px; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { gap: 12px; width: 100%; max-width: 360px; min-height: 53px; padding: 14px 17px; font-size: 12px; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { min-height: 54px; padding: 14px 17px; font-size: 15px; }",
+          ".hero .hero-actions > .button, .hero .hero-actions > .hero-secondary { width: min(100%, 290px); max-width: 290px; min-height: 46px; padding: 11px 16px; gap: 8px; line-height: 1.35; white-space: nowrap; font-size: 14px !important; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { justify-content: center; width: 100%; min-height: 55px; padding: 14px 17px; font-size: 15px; }"
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 430,
+    "overflow": false,
+    "elements": [
+      {
+        "tag": "DIV",
+        "class": "mobile-bottom",
+        "text": "Выбрать даты",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 0,
+        "width": 430,
+        "height": 67,
+        "font": "17px",
+        "padding": "10px 18px",
+        "gap": "12px",
+        "columns": "none",
+        "radius": "0px",
+        "textLines": [],
+        "fontRules": []
+      },
+      {
+        "tag": "A",
+        "class": "",
+        "text": "",
+        "inlineStyle": null,
+        "display": "grid",
+        "x": 61,
+        "width": 46,
+        "height": 46,
+        "font": "17px",
+        "padding": "0px",
+        "gap": "normal",
+        "columns": "44px",
+        "radius": "50%",
+        "textLines": [],
+        "fontRules": []
+      },
+      {
+        "tag": "A",
+        "class": "button button-yellow",
+        "text": "Выбрать даты",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 119,
+        "width": 250,
+        "height": 44,
+        "font": "14px",
+        "padding": "10px 16px",
+        "gap": "10px",
+        "columns": "none",
+        "radius": "12px",
+        "textLines": [
+          [
+            {
+              "x": 182.234375,
+              "width": 95.53125,
+              "height": 19
+            }
+          ]
+        ],
+        "fontRules": [
+          "body :is(.button, .rs-button, .oct-button, .detail-button, .about-reference-button, .hr-primary, .hr-secondary, .house-actions a, .site-footer-book) { font-family: var(--client-sans) !important; font-size: 16px !important; font-weight: 600 !important; line-height: 1.4 !important; border-radius: 12px !important; box-shadow: none !important; text-shadow: none !important; }",
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ".mobile-bottom > .button { flex: 1 1 0%; min-height: 46px; padding: 11px 20px; font-size: 13px; }",
+          ".button, .text-link, .hero-secondary { min-height: 50px; padding: 13px 20px; font-size: 13px; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }",
+          ".mobile-bottom .button { border-radius: 8px; font-size: 14px; }",
+          ".mobile-bottom > .button { flex: 0 1 250px; max-width: 250px; min-height: 44px; height: 44px; padding: 10px 16px; gap: 10px; line-height: 1.3; font-size: 14px !important; }",
+          ".hero .hero-actions > .button, .mobile-bottom > .button { font-size: 14px !important; }"
+        ]
+      },
+      {
+        "tag": "A",
+        "class": "button button-yellow",
+        "text": "Проверить даты и стоимость",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 70,
+        "width": 290,
+        "height": 46,
+        "font": "14px",
+        "padding": "11px 16px",
+        "gap": "8px",
+        "columns": "none",
+        "radius": "12px",
+        "textLines": [
+          [
+            {
+              "x": 115.359375,
+              "width": 199.265625,
+              "height": 19
+            }
+          ]
+        ],
+        "fontRules": [
+          "body :is(.button, .rs-button, .oct-button, .detail-button, .about-reference-button, .hr-primary, .hr-secondary, .house-actions a, .site-footer-book) { font-family: var(--client-sans) !important; font-size: 16px !important; font-weight: 600 !important; line-height: 1.4 !important; border-radius: 12px !important; box-shadow: none !important; text-shadow: none !important; }",
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ".button, .text-link, .hero-secondary { min-height: 50px; padding: 13px 20px; font-size: 13px; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { gap: 12px; width: 100%; max-width: 360px; min-height: 53px; padding: 14px 17px; font-size: 12px; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { min-height: 54px; padding: 14px 17px; font-size: 15px; }",
+          ".hero .hero-actions > .button, .hero .hero-actions > .hero-secondary { width: min(100%, 290px); max-width: 290px; min-height: 46px; padding: 11px 16px; gap: 8px; line-height: 1.35; white-space: nowrap; font-size: 14px !important; }",
+          ".hero .hero-actions > .button, .mobile-bottom > .button { font-size: 14px !important; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { justify-content: center; width: 100%; min-height: 55px; padding: 14px 17px; font-size: 15px; }"
+        ]
+      },
+      {
+        "tag": "A",
+        "class": "hero-secondary",
+        "text": "Сравнить дома",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 91,
+        "width": 248,
+        "height": 46,
+        "font": "14px",
+        "padding": "11px 16px",
+        "gap": "8px",
+        "columns": "none",
+        "radius": "11px",
+        "textLines": [
+          [
+            {
+              "x": 173.984375,
+              "width": 106.015625,
+              "height": 19
+            }
+          ]
+        ],
+        "fontRules": [
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ".button, .text-link, .hero-secondary { min-height: 50px; padding: 13px 20px; font-size: 13px; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { gap: 12px; width: 100%; max-width: 360px; min-height: 53px; padding: 14px 17px; font-size: 12px; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { min-height: 54px; padding: 14px 17px; font-size: 15px; }",
+          ".hero .hero-actions > .button, .hero .hero-actions > .hero-secondary { width: min(100%, 290px); max-width: 290px; min-height: 46px; padding: 11px 16px; gap: 8px; line-height: 1.35; white-space: nowrap; font-size: 14px !important; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { justify-content: center; width: 100%; min-height: 55px; padding: 14px 17px; font-size: 15px; }"
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 550,
+    "overflow": false,
+    "elements": [
+      {
+        "tag": "DIV",
+        "class": "mobile-bottom",
+        "text": "Выбрать даты",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 0,
+        "width": 550,
+        "height": 67,
+        "font": "17px",
+        "padding": "10px 18px",
+        "gap": "12px",
+        "columns": "none",
+        "radius": "0px",
+        "textLines": [],
+        "fontRules": []
+      },
+      {
+        "tag": "A",
+        "class": "",
+        "text": "",
+        "inlineStyle": null,
+        "display": "grid",
+        "x": 121,
+        "width": 46,
+        "height": 46,
+        "font": "17px",
+        "padding": "0px",
+        "gap": "normal",
+        "columns": "44px",
+        "radius": "50%",
+        "textLines": [],
+        "fontRules": []
+      },
+      {
+        "tag": "A",
+        "class": "button button-yellow",
+        "text": "Выбрать даты",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 179,
+        "width": 250,
+        "height": 44,
+        "font": "14px",
+        "padding": "10px 16px",
+        "gap": "10px",
+        "columns": "none",
+        "radius": "12px",
+        "textLines": [
+          [
+            {
+              "x": 242.234375,
+              "width": 95.53125,
+              "height": 19
+            }
+          ]
+        ],
+        "fontRules": [
+          "body :is(.button, .rs-button, .oct-button, .detail-button, .about-reference-button, .hr-primary, .hr-secondary, .house-actions a, .site-footer-book) { font-family: var(--client-sans) !important; font-size: 16px !important; font-weight: 600 !important; line-height: 1.4 !important; border-radius: 12px !important; box-shadow: none !important; text-shadow: none !important; }",
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ".mobile-bottom > .button { flex: 1 1 0%; min-height: 46px; padding: 11px 20px; font-size: 13px; }",
+          ".button, .text-link, .hero-secondary { min-height: 50px; padding: 13px 20px; font-size: 13px; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }",
+          ".mobile-bottom .button { border-radius: 8px; font-size: 14px; }",
+          ".mobile-bottom > .button { flex: 0 1 250px; max-width: 250px; min-height: 44px; height: 44px; padding: 10px 16px; gap: 10px; line-height: 1.3; font-size: 14px !important; }",
+          ".hero .hero-actions > .button, .mobile-bottom > .button { font-size: 14px !important; }"
+        ]
+      },
+      {
+        "tag": "A",
+        "class": "button button-yellow",
+        "text": "Проверить даты и стоимость",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 130,
+        "width": 290,
+        "height": 46,
+        "font": "14px",
+        "padding": "11px 16px",
+        "gap": "8px",
+        "columns": "none",
+        "radius": "12px",
+        "textLines": [
+          [
+            {
+              "x": 175.359375,
+              "width": 199.265625,
+              "height": 19
+            }
+          ]
+        ],
+        "fontRules": [
+          "body :is(.button, .rs-button, .oct-button, .detail-button, .about-reference-button, .hr-primary, .hr-secondary, .house-actions a, .site-footer-book) { font-family: var(--client-sans) !important; font-size: 16px !important; font-weight: 600 !important; line-height: 1.4 !important; border-radius: 12px !important; box-shadow: none !important; text-shadow: none !important; }",
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ".button, .text-link, .hero-secondary { min-height: 50px; padding: 13px 20px; font-size: 13px; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { gap: 12px; width: 100%; max-width: 360px; min-height: 53px; padding: 14px 17px; font-size: 12px; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { min-height: 54px; padding: 14px 17px; font-size: 15px; }",
+          ".hero .hero-actions > .button, .hero .hero-actions > .hero-secondary { width: min(100%, 290px); max-width: 290px; min-height: 46px; padding: 11px 16px; gap: 8px; line-height: 1.35; white-space: nowrap; font-size: 14px !important; }",
+          ".hero .hero-actions > .button, .mobile-bottom > .button { font-size: 14px !important; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { justify-content: center; width: 100%; min-height: 55px; padding: 14px 17px; font-size: 15px; }"
+        ]
+      },
+      {
+        "tag": "A",
+        "class": "hero-secondary",
+        "text": "Сравнить дома",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 151,
+        "width": 248,
+        "height": 46,
+        "font": "14px",
+        "padding": "11px 16px",
+        "gap": "8px",
+        "columns": "none",
+        "radius": "11px",
+        "textLines": [
+          [
+            {
+              "x": 233.984375,
+              "width": 106.015625,
+              "height": 19
+            }
+          ]
+        ],
+        "fontRules": [
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ".button, .text-link, .hero-secondary { min-height: 50px; padding: 13px 20px; font-size: 13px; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { gap: 12px; width: 100%; max-width: 360px; min-height: 53px; padding: 14px 17px; font-size: 12px; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { min-height: 54px; padding: 14px 17px; font-size: 15px; }",
+          ".hero .hero-actions > .button, .hero .hero-actions > .hero-secondary { width: min(100%, 290px); max-width: 290px; min-height: 46px; padding: 11px 16px; gap: 8px; line-height: 1.35; white-space: nowrap; font-size: 14px !important; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { justify-content: center; width: 100%; min-height: 55px; padding: 14px 17px; font-size: 15px; }"
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 760,
+    "overflow": false,
+    "elements": [
+      {
+        "tag": "DIV",
+        "class": "mobile-bottom",
+        "text": "Выбрать даты",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 0,
+        "width": 760,
+        "height": 67,
+        "font": "17px",
+        "padding": "10px 18px",
+        "gap": "12px",
+        "columns": "none",
+        "radius": "0px",
+        "textLines": [],
+        "fontRules": []
+      },
+      {
+        "tag": "A",
+        "class": "",
+        "text": "",
+        "inlineStyle": null,
+        "display": "grid",
+        "x": 226,
+        "width": 46,
+        "height": 46,
+        "font": "17px",
+        "padding": "0px",
+        "gap": "normal",
+        "columns": "44px",
+        "radius": "50%",
+        "textLines": [],
+        "fontRules": []
+      },
+      {
+        "tag": "A",
+        "class": "button button-yellow",
+        "text": "Выбрать даты",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 284,
+        "width": 250,
+        "height": 44,
+        "font": "14px",
+        "padding": "10px 16px",
+        "gap": "10px",
+        "columns": "none",
+        "radius": "12px",
+        "textLines": [
+          [
+            {
+              "x": 347.234375,
+              "width": 95.53125,
+              "height": 19
+            }
+          ]
+        ],
+        "fontRules": [
+          "body :is(.button, .rs-button, .oct-button, .detail-button, .about-reference-button, .hr-primary, .hr-secondary, .house-actions a, .site-footer-book) { font-family: var(--client-sans) !important; font-size: 16px !important; font-weight: 600 !important; line-height: 1.4 !important; border-radius: 12px !important; box-shadow: none !important; text-shadow: none !important; }",
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ".mobile-bottom > .button { flex: 1 1 0%; min-height: 46px; padding: 11px 20px; font-size: 13px; }",
+          ".button, .text-link, .hero-secondary { min-height: 50px; padding: 13px 20px; font-size: 13px; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }",
+          ".mobile-bottom .button { border-radius: 8px; font-size: 14px; }",
+          ".mobile-bottom > .button { flex: 0 1 250px; max-width: 250px; min-height: 44px; height: 44px; padding: 10px 16px; gap: 10px; line-height: 1.3; font-size: 14px !important; }",
+          ".hero .hero-actions > .button, .mobile-bottom > .button { font-size: 14px !important; }"
+        ]
+      },
+      {
+        "tag": "A",
+        "class": "button button-yellow",
+        "text": "Проверить даты и стоимость",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 235,
+        "width": 290,
+        "height": 46,
+        "font": "14px",
+        "padding": "11px 16px",
+        "gap": "8px",
+        "columns": "none",
+        "radius": "12px",
+        "textLines": [
+          [
+            {
+              "x": 280.359375,
+              "width": 199.265625,
+              "height": 19
+            }
+          ]
+        ],
+        "fontRules": [
+          "body :is(.button, .rs-button, .oct-button, .detail-button, .about-reference-button, .hr-primary, .hr-secondary, .house-actions a, .site-footer-book) { font-family: var(--client-sans) !important; font-size: 16px !important; font-weight: 600 !important; line-height: 1.4 !important; border-radius: 12px !important; box-shadow: none !important; text-shadow: none !important; }",
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ".button, .text-link, .hero-secondary { min-height: 50px; padding: 13px 20px; font-size: 13px; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { gap: 12px; width: 100%; max-width: 360px; min-height: 53px; padding: 14px 17px; font-size: 12px; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { min-height: 54px; padding: 14px 17px; font-size: 15px; }",
+          ".hero .hero-actions > .button, .hero .hero-actions > .hero-secondary { width: min(100%, 290px); max-width: 290px; min-height: 46px; padding: 11px 16px; gap: 8px; line-height: 1.35; white-space: nowrap; font-size: 14px !important; }",
+          ".hero .hero-actions > .button, .mobile-bottom > .button { font-size: 14px !important; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { justify-content: center; width: 100%; min-height: 55px; padding: 14px 17px; font-size: 15px; }"
+        ]
+      },
+      {
+        "tag": "A",
+        "class": "hero-secondary",
+        "text": "Сравнить дома",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 256,
+        "width": 248,
+        "height": 46,
+        "font": "14px",
+        "padding": "11px 16px",
+        "gap": "8px",
+        "columns": "none",
+        "radius": "11px",
+        "textLines": [
+          [
+            {
+              "x": 338.984375,
+              "width": 106.015625,
+              "height": 19
+            }
+          ]
+        ],
+        "fontRules": [
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ".button, .text-link, .hero-secondary { min-height: 50px; padding: 13px 20px; font-size: 13px; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { gap: 12px; width: 100%; max-width: 360px; min-height: 53px; padding: 14px 17px; font-size: 12px; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { min-height: 54px; padding: 14px 17px; font-size: 15px; }",
+          ".hero .hero-actions > .button, .hero .hero-actions > .hero-secondary { width: min(100%, 290px); max-width: 290px; min-height: 46px; padding: 11px 16px; gap: 8px; line-height: 1.35; white-space: nowrap; font-size: 14px !important; }",
+          ".hero-actions .button, .hero-actions .hero-secondary { justify-content: center; width: 100%; min-height: 55px; padding: 14px 17px; font-size: 15px; }"
+        ]
+      }
+    ]
+  },
+  {
+    "viewport": 1440,
+    "overflow": false,
+    "elements": [
+      {
+        "tag": "DIV",
+        "class": "mobile-bottom",
+        "text": "Выбрать даты",
+        "inlineStyle": null,
+        "display": "none",
+        "x": 0,
+        "width": 0,
+        "height": 0,
+        "font": "17px",
+        "padding": "0px",
+        "gap": "normal",
+        "columns": "none",
+        "radius": "0px",
+        "textLines": [],
+        "fontRules": []
+      },
+      {
+        "tag": "A",
+        "class": "",
+        "text": "",
+        "inlineStyle": null,
+        "display": "inline",
+        "x": 0,
+        "width": 0,
+        "height": 0,
+        "font": "17px",
+        "padding": "0px",
+        "gap": "normal",
+        "columns": "none",
+        "radius": "0px",
+        "textLines": [],
+        "fontRules": []
+      },
+      {
+        "tag": "A",
+        "class": "button button-yellow",
+        "text": "Выбрать даты",
+        "inlineStyle": null,
+        "display": "inline-flex",
+        "x": 0,
+        "width": 0,
+        "height": 0,
+        "font": "16px",
+        "padding": "14px 22px",
+        "gap": "14px",
+        "columns": "none",
+        "radius": "12px",
+        "textLines": [
+          []
+        ],
+        "fontRules": [
+          "body :is(.button, .rs-button, .oct-button, .detail-button, .about-reference-button, .hr-primary, .hr-secondary, .house-actions a, .site-footer-book) { font-family: var(--client-sans) !important; font-size: 16px !important; font-weight: 600 !important; line-height: 1.4 !important; border-radius: 12px !important; box-shadow: none !important; text-shadow: none !important; }",
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }"
+        ]
+      },
+      {
+        "tag": "A",
+        "class": "button button-yellow",
+        "text": "Проверить даты и стоимость",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 444.34375,
+        "width": 341.734375,
+        "height": 58,
+        "font": "16px",
+        "padding": "16px 24px",
+        "gap": "14px",
+        "columns": "none",
+        "radius": "12px",
+        "textLines": [
+          [
+            {
+              "x": 501.34375,
+              "width": 227.734375,
+              "height": 22
+            }
+          ]
+        ],
+        "fontRules": [
+          "body :is(.button, .rs-button, .oct-button, .detail-button, .about-reference-button, .hr-primary, .hr-secondary, .house-actions a, .site-footer-book) { font-family: var(--client-sans) !important; font-size: 16px !important; font-weight: 600 !important; line-height: 1.4 !important; border-radius: 12px !important; box-shadow: none !important; text-shadow: none !important; }",
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }"
+        ]
+      },
+      {
+        "tag": "A",
+        "class": "hero-secondary",
+        "text": "Сравнить дома",
+        "inlineStyle": null,
+        "display": "flex",
+        "x": 800.078125,
+        "width": 195.578125,
+        "height": 58,
+        "font": "15px",
+        "padding": "16px 24px",
+        "gap": "14px",
+        "columns": "none",
+        "radius": "11px",
+        "textLines": [
+          [
+            {
+              "x": 857.078125,
+              "width": 113.578125,
+              "height": 21
+            }
+          ]
+        ],
+        "fontRules": [
+          ".button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top { --button-bg: transparent; --button-ink: var(--ink); --button-border: #b4c5b9; border: 1.5px solid var(--button-border); background: var(--button-bg); min-height: 50px; color: var(--button-ink); text-align: center; isolation: isolate; border-radius: 999px; justify-content: center; align-items: center; gap: 14px; padding: 13px 23px; font-size: 14px; font-weight: 750; line-height: 1.5; transition: transform 0.2s, box-shadow 0.2s, background 0.2s, border-color 0.2s; display: inline-flex; position: relative; }",
+          ":is(.button, .text-link, .hero-secondary, .house-actions > button, .house-actions > a, .service-card summary, .service-card details > a, .review-card > a, .booking-actions > a, .map-direct, .back-top) { --button-bg: #fff; --button-border: #aaa99d; --button-ink: #282d27; border-width: 1px; border-radius: 9px; min-height: 52px; padding: 14px 22px; font-size: 15px; font-weight: 700; transition: background 0.25s, transform 0.25s, box-shadow 0.25s, border-color 0.25s; overflow: hidden; }"
+        ]
+      }
+    ]
+  }
+]
