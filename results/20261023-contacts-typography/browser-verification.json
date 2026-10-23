@@ -1,0 +1,148 @@
+{
+  "origin": "https://tangerin.ru/kontakty",
+  "viewports": [
+    {
+      "contactLinks": [
+        "tel:+79109535855",
+        "mailto:sudja2000@list.ru",
+        "https://t.me/gostevoidom44",
+        "https://vk.com/gostevoidom44",
+        "https://max.ru/u/f9LHodD0cOLXSID0Ocv6uG76ss7VM6BBntzGcai5vuGBIaZz2qVXt6_Gi3w"
+      ],
+      "fontFamilies": [
+        "Manrope, \"Manrope Fallback\", Arial, sans-serif",
+        "\"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif"
+      ],
+      "overflow": false,
+      "sizes": [
+        "16px",
+        "32px",
+        "24px"
+      ],
+      "socials": [
+        {
+          "iconWidth": 48,
+          "y": 564.359375
+        },
+        {
+          "iconWidth": 48,
+          "y": 564.359375
+        },
+        {
+          "iconWidth": 48,
+          "y": 564.359375
+        }
+      ],
+      "width": 320
+    },
+    {
+      "contactLinks": [
+        "tel:+79109535855",
+        "mailto:sudja2000@list.ru",
+        "https://t.me/gostevoidom44",
+        "https://vk.com/gostevoidom44",
+        "https://max.ru/u/f9LHodD0cOLXSID0Ocv6uG76ss7VM6BBntzGcai5vuGBIaZz2qVXt6_Gi3w"
+      ],
+      "fontFamilies": [
+        "Manrope, \"Manrope Fallback\", Arial, sans-serif",
+        "\"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif"
+      ],
+      "overflow": false,
+      "sizes": [
+        "16px",
+        "32px",
+        "24px"
+      ],
+      "socials": [
+        {
+          "iconWidth": 48,
+          "y": 514.765625
+        },
+        {
+          "iconWidth": 48,
+          "y": 514.765625
+        },
+        {
+          "iconWidth": 48,
+          "y": 514.765625
+        }
+      ],
+      "width": 390
+    },
+    {
+      "contactLinks": [
+        "tel:+79109535855",
+        "mailto:sudja2000@list.ru",
+        "https://t.me/gostevoidom44",
+        "https://vk.com/gostevoidom44",
+        "https://max.ru/u/f9LHodD0cOLXSID0Ocv6uG76ss7VM6BBntzGcai5vuGBIaZz2qVXt6_Gi3w"
+      ],
+      "fontFamilies": [
+        "Manrope, \"Manrope Fallback\", Arial, sans-serif",
+        "\"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif"
+      ],
+      "overflow": false,
+      "sizes": [
+        "18px",
+        "40px",
+        "28px"
+      ],
+      "socials": [
+        {
+          "iconWidth": 48,
+          "y": 617.828125
+        },
+        {
+          "iconWidth": 48,
+          "y": 617.828125
+        },
+        {
+          "iconWidth": 48,
+          "y": 617.828125
+        }
+      ],
+      "width": 768
+    },
+    {
+      "contactLinks": [
+        "tel:+79109535855",
+        "mailto:sudja2000@list.ru",
+        "https://t.me/gostevoidom44",
+        "https://vk.com/gostevoidom44",
+        "https://max.ru/u/f9LHodD0cOLXSID0Ocv6uG76ss7VM6BBntzGcai5vuGBIaZz2qVXt6_Gi3w"
+      ],
+      "fontFamilies": [
+        "Manrope, \"Manrope Fallback\", Arial, sans-serif",
+        "\"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif"
+      ],
+      "overflow": false,
+      "sizes": [
+        "18px",
+        "40px",
+        "28px"
+      ],
+      "socials": [
+        {
+          "iconWidth": 48,
+          "y": 439.15625
+        },
+        {
+          "iconWidth": 48,
+          "y": 439.15625
+        },
+        {
+          "iconWidth": 48,
+          "y": 439.15625
+        }
+      ],
+      "width": 1366
+    }
+  ],
+  "bookingFieldsVisible": [
+    "Заезд",
+    "Выезд",
+    "Количество гостей",
+    "Показать наличие"
+  ],
+  "errorLogs": []
+}

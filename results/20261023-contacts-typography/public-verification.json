@@ -1,0 +1,123 @@
+{
+  "pages": 23,
+  "publishedEntriesUnchanged": true,
+  "publishedApiSha256": "a80718c5a00ae44d1e108646f37055bd8f491160b5bfc6ddf84faee0f93fe792",
+  "assetSHAsVerified": true,
+  "checks": [
+    {
+      "route": "/doma/laym",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/doma/limon",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/doma/citrus",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/dlya-bolshoy-kompanii",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/kostroma",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/kostroma/gde-poest",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/kostroma/dostoprimechatelnosti",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/kostroma/muzei",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/kostroma/za-odin-den",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/kostroma/s-detmi",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/kostroma/chto-privezti",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/vse-dlya-otdyha",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/dlya-komandirovochnyh",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/soglasie-na-obrabotku-personalnyh-dannyh",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/usloviya-bronirovaniya",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/politika-obrabotki-personalnyh-dannyh",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/kontakty",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/vse-dlya-otdyha/zavtraki",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/vse-dlya-otdyha/banya-i-kupel",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/vse-dlya-otdyha/mangalnaya-zona",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/vse-dlya-otdyha/s-detmi",
+      "status": 200,
+      "activeCSS": true
+    },
+    {
+      "route": "/vse-dlya-otdyha/s-pitomcami",
+      "status": 200,
+      "activeCSS": true
+    }
+  ]
+}

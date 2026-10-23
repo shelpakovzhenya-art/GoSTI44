@@ -1,0 +1,14 @@
+{
+  "runtime": {
+    "files": 1848,
+    "links": 0,
+    "bytes": 260078502,
+    "treeSha256": "20b450cdbe746fc8efcc20903bdbb80301ad6df5931800183e3f9b0b81490717"
+  },
+  "CMSRows": 59,
+  "allCMSRowsUnchanged": true,
+  "revisionsAdded": 0,
+  "publishedApiSha256": "a80718c5a00ae44d1e108646f37055bd8f491160b5bfc6ddf84faee0f93fe792",
+  "databaseIntegrity": "ok",
+  "gosti": "active"
+}

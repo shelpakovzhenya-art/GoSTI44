@@ -1,0 +1,44 @@
+/* Contacts: two families, three sizes at each breakpoint, consistent weights.
+   Keep the page layout, contact actions and shared header/footer unchanged. */
+@layer clientPalette {
+  CONTACTS_SCOPE {
+    --rc-type-title: 40px;
+    --rc-type-section: 28px;
+    --rc-type-body: 18px;
+  }
+  CONTACTS_SCOPE :is(h1, h2) {
+    font-family: var(--site-heading-font) !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
+    letter-spacing: -.02em !important;
+    line-height: 1.2 !important;
+  }
+  CONTACTS_SCOPE h1 { font-size: var(--rc-type-title) !important; }
+  CONTACTS_SCOPE h2 { font-size: var(--rc-type-section) !important; }
+  CONTACTS_SCOPE :is(h3, p, a, li, strong, .rc-breadcrumb) {
+    font-family: var(--font-manrope), Arial, sans-serif !important;
+    font-size: var(--rc-type-body) !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    letter-spacing: normal !important;
+    line-height: 1.55 !important;
+  }
+  CONTACTS_SCOPE :is(h3, strong, .rc-phone) { font-weight: 600 !important; }
+  CONTACTS_SCOPE .rs-eyebrow { letter-spacing: .06em !important; }
+  CONTACTS_SCOPE .rc-transport strong {
+    font-size: var(--rc-type-section) !important;
+    line-height: 1.2 !important;
+  }
+  CONTACTS_SCOPE .rc-route-steps li::before {
+    font-family: var(--font-manrope), Arial, sans-serif !important;
+    font-size: var(--rc-type-body) !important;
+    font-weight: 600 !important;
+  }
+  @media (max-width: 640px) {
+    CONTACTS_SCOPE {
+      --rc-type-title: 32px;
+      --rc-type-section: 24px;
+      --rc-type-body: 16px;
+    }
+  }
+}
