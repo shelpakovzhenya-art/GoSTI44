@@ -33,4 +33,5 @@
 - [x] faq-legal-20261022: FAQ→«Частые вопросы», оформление по референсу, меню21 пункт/FAQ вне правовых ссылок; legal2 карточки. Исправлено перекрытие меню Bnovo.23 SSR200,6 ширин/ответы/keyboard/меню/cookies/документ/Bnovo;3 записи/6 ревизий,56 других строк сохранены.10 runtime-файлов, SDK/CMS-code/ответы/документы прежние. Результат: results/20261022-faq-legal/README.md.
 
 - [x] contacts-typography-20261023: контакты приведены к2 семействам/3 размерам (32/24/16px mobile,40/28/18px desktop); адрес/телефон/email/подписи едины. Production320/390/768/1366 без overflow/errors,3 соцсети в ряд, Bnovo готов;23 SSR200. CSS+5 manifests,59 CMS-строк/API неизменны,0 ревизий. Результат: results/20261023-contacts-typography/README.md.
-`n- [ ] avito-link-20261026: получен URL https://www.avito.ru/brands/i88220667; два старых значения подтверждены по live API. Ожидается вход пользователя в открытую админку Chrome: SSH-ключи отклонены, сессии CMS нет. Production пока не менялся. results/20261026-avito-link/README.md.
+
+- [ ] avito-link-20261026: получен URL https://www.avito.ru/brands/i88220667; два старых значения подтверждены по live API. Ожидается вход пользователя в открытую админку Chrome: SSH-ключи отклонены, сессии CMS нет. Production пока не менялся. results/20261026-avito-link/README.md.
