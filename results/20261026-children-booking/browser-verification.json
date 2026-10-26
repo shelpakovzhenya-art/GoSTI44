@@ -1,0 +1,45 @@
+{
+  "browser": "Chrome extension",
+  "childrenWidths": [
+    320,
+    390,
+    768,
+    1024,
+    1366
+  ],
+  "childrenCards": 2,
+  "childrenContactLinks": 4,
+  "overflow": false,
+  "footerIntroHeight": 79,
+  "homeTopBeforeBenefits": true,
+  "mobile390FieldY": {
+    "top": [
+      0,
+      64,
+      128
+    ],
+    "bottom": [
+      0,
+      64,
+      128
+    ]
+  },
+  "desktop1366FieldY": {
+    "top": [
+      0,
+      0,
+      0
+    ],
+    "bottom": [
+      0,
+      0,
+      0
+    ]
+  },
+  "resizeBothDirectionsVerified": true,
+  "guestPopupBothFormsVerified": true,
+  "topCalendarVerified": true,
+  "repeatedSpaNavigationVerified": true,
+  "finalProductionErrors": [],
+  "noBookingsSubmitted": true
+}

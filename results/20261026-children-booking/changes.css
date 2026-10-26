@@ -1,0 +1,74 @@
+@layer clientPalette {
+/* Children: composition follows the supplied reference; existing photos retained. */
+CHILD .oct-hero {display:grid!important;grid-template-columns:1fr 1.12fr!important;gap:0!important;align-items:stretch!important;margin:0 0 24px!important;padding:0!important;min-height:0!important;overflow:hidden;border-radius:16px}
+CHILD #sc-hero-copy-children {padding:36px 28px!important;display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:flex-start!important;max-width:none!important;min-height:0!important}
+CHILD #sc-hero-copy-children h1 {font:500 clamp(38px,4.5vw,62px)/1.03 var(--font-brand),Georgia,serif!important;margin:12px 0 20px!important;max-width:420px!important}
+CHILD #sc-hero-copy-children>p:not(.oct-eyebrow) {font:400 17px/1.55 Manrope,sans-serif!important;margin:0!important;max-width:450px!important}
+CHILD .children-hero-media {display:block!important;width:auto!important;min-height:360px!important;margin:0!important}
+CHILD .children-hero-media img {width:100%!important;height:100%!important;max-height:none!important;object-fit:cover!important;border-radius:0!important;display:block!important}
+CHILD>h2 {font:500 clamp(29px,3.3vw,44px)/1.12 var(--font-brand),Georgia,serif!important;text-align:left!important;margin:22px 0 18px!important}
+CHILD .oct-grid {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:24px!important;margin:0!important;align-items:stretch!important}
+CHILD .oct-card {display:flex!important;flex-direction:column!important;overflow:hidden!important;border-radius:12px!important;background:#fffdf8!important;padding:0!important;margin:0!important}
+CHILD .oct-card>.oct-photo {width:100%!important;height:250px!important;object-fit:cover!important;object-position:center!important;border-radius:0!important;margin:0!important}
+CHILD .oct-card-copy {padding:20px 24px 24px!important;margin:0!important}
+CHILD .oct-icon-heading {display:flex!important;align-items:center!important;gap:12px!important;font:500 30px/1.15 var(--font-brand),Georgia,serif!important;margin:0 0 14px!important}
+CHILD .oct-icon-heading img {width:42px!important;height:42px!important;padding:9px!important;border-radius:50%!important;background:#edf0e4!important}
+CHILD .oct-price {font:600 30px/1.2 Manrope,sans-serif!important;color:#df7f39!important;margin:0 0 8px!important}
+CHILD .oct-card-copy p:not(.oct-price),CHILD .oct-list li {font:400 15px/1.55 Manrope,sans-serif!important;margin:0 0 4px!important}
+CHILD .oct-list {display:grid!important;grid-template-columns:1.3fr .7fr!important;gap:3px 16px!important;margin:0 0 12px!important;padding-left:18px!important;list-style:disc!important}
+CHILD .oct-list li {display:list-item!important;padding:0!important;background:none!important;border:0!important}
+CHILD .oct-list li::before {content:none!important}
+CHILD .children-request {position:relative!important;overflow:hidden!important;border-radius:14px!important;margin:24px 0 0!important;padding:28px 32px!important;background:#edf0df!important;min-height:225px!important}
+CHILD .children-request-copy {position:relative;z-index:1;max-width:76%}
+CHILD .children-request h2 {font:500 36px/1.12 var(--font-brand),Georgia,serif!important;margin:0 0 14px!important}
+CHILD .children-request p {font:400 16px/1.5 Manrope,sans-serif!important;margin:0 0 8px!important;max-width:690px!important}
+CHILD .children-request .children-contact-label {font-weight:600!important}
+CHILD .children-request .contact-four {display:flex!important;gap:12px!important;justify-content:flex-start!important;margin:12px 0 0!important}
+CHILD .children-request .contact-four-button {width:48px!important;height:48px!important;min-height:48px!important;border-radius:50%!important;background:#fffdf8!important}
+CHILD .children-request-decoration {position:absolute!important;right:-24px!important;bottom:-45px!important;width:250px!important;height:290px!important;object-fit:contain!important;pointer-events:none!important}
+CHILD .rs-back-bottom {margin:16px 0 0!important}
+/* Full-width booking fields: use Bnovo's own horizontal layout. */
+SCOPE .booking-section,html:root body .footer-booking#footer-booking {padding:24px 0!important;min-height:0!important;margin:0!important}
+SCOPE .booking-section>.container,html:root body .footer-booking#footer-booking {display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:14px!important;align-items:start!important}
+SCOPE .booking-section>.container {padding:16px 20px!important}
+SCOPE .booking-section .booking-intro {padding:0!important;margin:0!important;max-width:none!important;text-align:left!important}
+SCOPE .booking-section .booking-intro .eyebrow {margin:0 0 6px!important}
+SCOPE .booking-section .booking-intro h2,html:root body .footer-booking#footer-booking h2 {font:500 32px/1.15 var(--font-brand),Georgia,serif!important;margin:0!important;max-width:none!important}
+SCOPE .booking-section .booking-intro h2 br {display:none!important}
+SCOPE .booking-section .booking-intro h2 br::after {content:' '}
+SCOPE .booking-section .booking-intro p:empty {display:none!important}
+SCOPE .bnovo-booking-box {display:grid!important;grid-template-columns:max-content minmax(0,1fr)!important;gap:10px 18px!important;padding:0!important;border:0!important;min-height:0!important;margin:0!important;background:transparent!important}
+SCOPE .bnovo-booking-box .booking-box-heading {display:none!important}
+SCOPE .bnovo-search-form {grid-column:1/-1!important;width:100%!important;min-height:48px!important;margin:0!important;padding:0!important}
+SCOPE .bnovo-booking-box .booking-actions {margin:0!important;padding:0!important;align-self:center!important}
+SCOPE .bnovo-booking-box .booking-actions a {min-height:40px!important;padding:8px 14px!important;font-size:14px!important}
+SCOPE .bnovo-booking-box .booking-help {font:400 15px/1.4 Manrope,sans-serif!important;align-self:center!important;margin:0!important;padding:0!important}
+html:root body .footer-booking#footer-booking .footer-booking-form {width:100%!important;padding:0!important;min-height:80px!important;border:0!important}
+html:root body .footer-booking#footer-booking #_bn_widget_footer_ {min-height:48px!important}
+html:root body .footer-booking#footer-booking .eyebrow {margin:0 0 6px!important}
+html:root body .footer-booking#footer-booking[hidden] {display:none!important}
+SCOPE #booking-top {background:#fbf5e9!important;border-bottom:1px solid #e8ddcb!important}
+/* Only a compact logo at the top of the footer. */
+html:root body footer.site-footer {padding-top:16px!important}
+html:root body footer.site-footer .site-footer-intro {display:flex!important;align-items:center!important;min-height:0!important;padding:12px 0!important;margin:0!important;gap:0!important}
+html:root body footer.site-footer .site-footer-intro .brand-lockup {width:240px!important;max-width:100%!important;min-height:54px!important;height:54px!important;margin:0!important;background-size:contain!important}
+html:root body footer.site-footer .site-footer-links {padding-top:20px!important;margin-top:0!important;row-gap:16px!important}
+@media(max-width:700px) {
+ CHILD .oct-hero {grid-template-columns:1fr!important}
+ CHILD #sc-hero-copy-children {padding:22px 18px!important}
+ CHILD #sc-hero-copy-children h1 {font-size:40px!important;max-width:300px!important}
+ CHILD #sc-hero-copy-children>p:not(.oct-eyebrow) {font-size:16px!important}
+ CHILD .children-hero-media {min-height:0!important;height:240px!important}
+ CHILD .oct-grid {grid-template-columns:1fr!important;gap:18px!important}
+ CHILD .oct-card>.oct-photo {height:210px!important}
+ CHILD .oct-card-copy {padding:18px!important}
+ CHILD .oct-icon-heading {font-size:28px!important}
+ CHILD .children-request {padding:22px 18px!important}
+ CHILD .children-request-copy {max-width:100%!important}
+ CHILD .children-request h2 {font-size:30px!important}
+ CHILD .children-request-decoration {opacity:.16!important;width:180px!important;right:-45px!important}
+ SCOPE .booking-section .booking-intro h2,html:root body .footer-booking#footer-booking h2 {font-size:28px!important}
+ SCOPE .bnovo-booking-box {grid-template-columns:1fr!important;gap:10px!important}
+ SCOPE .booking-section {padding:20px 0!important}
+}
+}
