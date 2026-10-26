@@ -45,3 +45,5 @@
 - [x] children-booking-design-20261026: блок бронирования вписан в референс, заголовок слева/форма2×2, отступы/мобильная компоновка/календарь/гости/SPA проверены. https://tangerin.ru/vse-dlya-otdyha/s-detmi#footer-booking .7 runtime-путей, CMS/API неизменны. results/20261026-children-booking-design/README.md.
 
 - [x] client-recheck-20261026: повторно сверены сегодняшние комментарии на production,23 HTTP200, карточки/Авито/3 сравнения/футер/виджеты/дети подтверждены. Визуальная приёмка возможна с оговорками: не точная копия референса, повторно зарегистрирован React418 без видимого сбоя; Авито-профиль/PMS-заказ не проверялись. results/20261026-client-recheck/README.md. Production без изменений.
+
+- [x] react-hydration-20261026: исправлена гонка вставки Яндекс iframe до React commit. Старый порядок воспроизведён lifecycle-тестом; новый проходит8 сценариев, повторные загрузки/SPA/карта/отзывы/Bnovo/390/23 HTTP200 проверены без новых ошибок. https://tangerin.ru/ и https://tangerin.ru/vse-dlya-otdyha/s-detmi .7 runtime-путей, CMS/API неизменны. results/20261026-react-hydration/README.md.
