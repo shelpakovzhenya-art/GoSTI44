@@ -97,3 +97,7 @@ FAQ переименован, оформлен по референсу; новы
 ## Контакты — типографика23.10.2026
 
 По замечанию клиента устранён разнобой размеров/начертаний в #rs-contacts:2 семейства (Cormorant H1/H2, Manrope остальное),3 размера32/24/16px mobile и40/28/18px desktop; H3/телефон полужирным основным текстом. Только CSS+5 manifests; все59 CMS-строк/API сохранены,0 ревизий. Preview/production320/390/768/1366:2 семейства/3 размера, соцсети48px в ряд, overflow/errors нет, Bnovo готов;23 SSR200 и SHA проверены. Резерв `/var/www/gosti/backups/20261023-contacts-typography`; отчёт `changes/20261023-contacts-typography/REPORT.md`. Runtime1848файлов/260078502байта, treeSHA20b450cdbe746fc8efcc20903bdbb80301ad6df5931800183e3f9b0b81490717; локальная копия сверена.
+
+## Авито26.10.2026 — ожидается вход
+Получена замена https://www.avito.ru/brands/i88220667. Live API подтверждает прежние rating-avito.url и site-settings.fields[key=avito].value. SSH-доступ отклонён; Chrome /admin/login без сессии, запрошен локальный вход пользователя. Production не изменён. Далее заменить оба URL с сохранением прочих draft-полей, опубликовать и проверить API/исходящие ссылки. Отчёт Orca: results/20261026-avito-link/README.md.
+
