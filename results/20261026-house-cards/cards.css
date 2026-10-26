@@ -1,0 +1,55 @@
+/* Client review 2026-10-26: compact actions and unbroken house area. */
+@layer clientPalette {
+html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #houses .house-card .house-actions {
+  align-items: center !important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #houses .house-card .house-actions > a {
+  box-sizing: border-box !important;
+  height: 44px !important;
+  min-height: 44px !important;
+  padding: 6px 10px !important;
+  font: 600 13px/1.2 Manrope, sans-serif !important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #houses .house-card .house-book {
+  white-space: nowrap !important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #houses .house-card .house-plan {
+  grid-template-columns: max-content minmax(0, 1fr) !important;
+  column-gap: 12px !important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #houses .house-card .house-plan > li,
+html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #houses .house-card .house-plan > li > span {
+  font: 400 13px/1.35 Manrope, sans-serif !important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #houses .house-card .house-plan > li:first-child > span {
+  white-space: nowrap !important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main) #main#main .hr-compare-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+@media (max-width: 700px) {
+  html:root body:has(#main):has(#main):has(#main):has(#main) #main#main .hr-compare-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+@media (max-width: 360px) {
+  html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #houses .house-card .house-plan {
+    column-gap: 8px !important;
+  }
+  html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #houses .house-card .house-plan > li,
+  html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #houses .house-card .house-plan > li > span {
+    font-size: 12px !important;
+    gap: 5px !important;
+  }
+  html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #houses .house-card .house-plan .house-amenity-icon {
+    width: 20px !important;
+    height: 20px !important;
+    flex-basis: 20px !important;
+    padding: 3px !important;
+  }
+  html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #houses .house-card .house-actions > a {
+    padding: 6px !important;
+    font-size: 12px !important;
+  }
+}
+}

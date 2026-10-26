@@ -1,0 +1,42 @@
+{
+  "tool": "Chrome extension",
+  "catalogWidths": [
+    320,
+    390,
+    768,
+    1024,
+    1366,
+    1920
+  ],
+  "cardsPerWidth": 3,
+  "allButtonHeights": 44,
+  "allAreaLabelsSingleLine": true,
+  "allAreaAndButtonTextFits": true,
+  "pageOverflow": false,
+  "comparisonRoutes": [
+    "/doma/laym",
+    "/doma/limon",
+    "/doma/citrus"
+  ],
+  "comparisonWidths": [
+    320,
+    390,
+    1366
+  ],
+  "comparisonLinksPerPage": 2,
+  "currentHouseExcluded": true,
+  "comparisonColumns": {
+    "mobile": 1,
+    "desktop": 2
+  },
+  "bookingButtonScrollVerified": true,
+  "bookingTopAfterClick": 119.953125,
+  "bookingWidgetHeight": 260,
+  "catalogToLimeNavigationVerified": true,
+  "finalErrorLog": [],
+  "screenshotsVisuallyInspected": [
+    "catalog desktop1366",
+    "catalog mobile390",
+    "comparison citrus1366"
+  ]
+}

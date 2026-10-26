@@ -34,4 +34,6 @@
 
 - [x] contacts-typography-20261023: контакты приведены к2 семействам/3 размерам (32/24/16px mobile,40/28/18px desktop); адрес/телефон/email/подписи едины. Production320/390/768/1366 без overflow/errors,3 соцсети в ряд, Bnovo готов;23 SSR200. CSS+5 manifests,59 CMS-строк/API неизменны,0 ревизий. Результат: results/20261023-contacts-typography/README.md.
 
-- [x] avito-link-20261026: ??????????? https://www.avito.ru/brands/i88220667 ? ???? ?????????? published/draft. 3 href ??????? ? API ?????????; 57 ?????? ??????? ?????????, 4 ???????, backup. results/20261026-avito-link/README.md.
+- [x] avito-link-20261026: опубликован https://www.avito.ru/brands/i88220667 в двух настройках published/draft. API/3 href главной проверены;57 других строк сохранены,4 ревизии. results/20261026-avito-link/README.md.
+
+- [x] house-cards-20261026: кнопки каталога44px, площадь без переноса, сравнение каждого дома показывает только2 других.6 ширин/3 дома/23 SSR200/бронирование проверены.3 CMS-строки/6 ревизий,56 других строк сохранены; CSS+5 manifests. results/20261026-house-cards/README.md.
