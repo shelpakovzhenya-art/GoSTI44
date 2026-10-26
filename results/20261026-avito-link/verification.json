@@ -1,0 +1,37 @@
+{
+  "changedEntries": [
+    "rating-avito",
+    "site-settings"
+  ],
+  "newUrl": "https://www.avito.ru/brands/i88220667",
+  "otherRowsUnchanged": 57,
+  "otherDraftFieldsPreserved": true,
+  "revisionsAdded": 4,
+  "backup": "/var/www/gosti/backups/20261026-avito-link",
+  "databaseIntegrity": "ok",
+  "publicApiVerified": true,
+  "apiSha256": "2e2342554abbba6097e887b87b79dbe4db434d553d355ac6af44374e19ab665d",
+  "pages": [
+    {
+      "route": "/",
+      "status": 200,
+      "avitoHrefCount": 3,
+      "oldUrlAbsent": true,
+      "newUrlInPageData": true
+    },
+    {
+      "route": "/kontakty",
+      "status": 200,
+      "avitoHrefCount": 0,
+      "oldUrlAbsent": true,
+      "newUrlInPageData": true
+    },
+    {
+      "route": "/doma/limon",
+      "status": 200,
+      "avitoHrefCount": 0,
+      "oldUrlAbsent": true,
+      "newUrlInPageData": true
+    }
+  ]
+}

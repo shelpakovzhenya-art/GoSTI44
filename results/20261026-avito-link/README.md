@@ -1,9 +1,9 @@
-﻿# Avito replacement — 2026-10-26
+# Avito link updated ? 2026-10-26
 
-Requested destination: https://www.avito.ru/brands/i88220667
+Published https://www.avito.ru/brands/i88220667 in both `rating-avito.url` and `site-settings.fields[key=avito].value`, in published and draft data.
 
-Live https://tangerin.ru/api/content still contains the old profile URL in `rating-avito.data.url` and the `avito` item of `site-settings.data.fields`. Both must be updated; preserve all other published and draft values.
+Verification: public API contains both new values; https://tangerin.ru/ returns HTTP 200 with all three Avito hrefs pointing to the new URL. https://tangerin.ru/kontakty and https://tangerin.ru/doma/limon return HTTP 200 with new settings in page data and no old profile URL (these pages have no Avito hrefs).
 
-Publication pending authentication: available SSH keys were rejected by the server. Chrome opened https://tangerin.ru/admin/login and showed an unauthenticated login form. User asked to log in locally; no credentials requested in chat. Production has not been changed.
+Exactly two CMS records changed; other 57 records and unrelated draft fields preserved, four revisions added, SQLite integrity ok. No runtime files changed. Backup: `/var/www/gosti/backups/20261026-avito-link/database.sqlite`. Rollback should restore only the two URL fields from backup and add revisions, preserving later edits; do not restore the entire database over later changes.
 
-Next: after login, inspect both current CMS entries and draft differences, change only the two URL values, publish, verify public API plus homepage/contact/footer outgoing links. Record actual outcome before marking complete.
+Server authentication succeeded using user-provided credentials; no credentials persisted in task artifacts. Destination profile content itself was not verified. `apply.py` records the guarded transformation; `verification.json` records checks. Local public API snapshot refreshed.
