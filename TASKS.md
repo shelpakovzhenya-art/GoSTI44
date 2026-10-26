@@ -41,3 +41,5 @@
 - [x] children-booking-footer-20261026: страница с детьми по референсу; компактный футер; горизонтальный Bnovo desktop/все поля mobile и второй виджет перед преимуществами.2 CMS/4 ревизии,57 других записей сохранены;23 SSR200/адаптивность/календарь/гости/SPA проверены. https://tangerin.ru/vse-dlya-otdyha/s-detmi и https://tangerin.ru/#booking-top . results/20261026-children-booking/README.md.
 
 - [x] children-reference-correction-20261026: исправлены hero/отступы/плашка цены/список3+2/цитрусовый декор, убраны лишние back-строки. https://tangerin.ru/vse-dlya-otdyha/s-detmi .4 ширины/Bnovo/HTTP/SHA проверены; CMS/API без изменений. results/20261026-children-reference/README.md.
+
+- [x] children-booking-design-20261026: блок бронирования вписан в референс, заголовок слева/форма2×2, отступы/мобильная компоновка/календарь/гости/SPA проверены. https://tangerin.ru/vse-dlya-otdyha/s-detmi#footer-booking .7 runtime-путей, CMS/API неизменны. results/20261026-children-booking-design/README.md.

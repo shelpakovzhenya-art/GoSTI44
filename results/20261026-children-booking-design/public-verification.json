@@ -1,0 +1,34 @@
+{
+  "publicApiUnchanged": true,
+  "assetHashesVerified": true,
+  "pages": [
+    {
+      "route": "/vse-dlya-otdyha/s-detmi",
+      "status": 200
+    },
+    {
+      "route": "/",
+      "status": 200
+    },
+    {
+      "route": "/vse-dlya-otdyha/zavtraki",
+      "status": 200
+    }
+  ],
+  "previewWidths": [
+    320,
+    390,
+    768,
+    1366
+  ],
+  "productionWidths": [
+    320,
+    390,
+    1366
+  ],
+  "overflow": false,
+  "bookingInputs": 3,
+  "calendarAndGuests": true,
+  "spaChildrenBreakfastChildren": true,
+  "productionBrowserErrors": []
+}

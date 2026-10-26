@@ -1,0 +1,27 @@
+/* Children page only: align the closing booking panel with the reference. */
+@layer clientPalette {
+html:root body:has(#sc-uniform-copy-children):has(#main):has(#main) footer.site-footer {border-top:0!important;padding-top:0!important;}
+html:root body:has(#sc-uniform-copy-children):has(#main):has(#main) #footer-booking#footer-booking {
+ display:grid!important;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)!important;
+ align-items:center!important;gap:40px!important;padding:32px 36px!important;
+ min-height:0!important;margin:0 0 32px!important;
+ background:#fff8ed!important;border:1px solid #e9dcc7!important;border-radius:12px!important;
+ box-shadow:none!important;overflow:visible!important;
+}
+html:root body:has(#sc-uniform-copy-children):has(#main):has(#main) #footer-booking#footer-booking > div {min-width:0!important;margin:0!important;padding:0!important;}
+html:root body:has(#sc-uniform-copy-children):has(#main):has(#main) #footer-booking#footer-booking .eyebrow {margin:0 0 12px!important;font-size:12px!important;letter-spacing:.13em!important;}
+html:root body:has(#sc-uniform-copy-children):has(#main):has(#main) #footer-booking#footer-booking h2 {max-width:390px!important;margin:0!important;font-size:36px!important;line-height:1.08!important;text-wrap:balance!important;}
+html:root body:has(#sc-uniform-copy-children):has(#main):has(#main) #footer-booking#footer-booking .footer-booking-form {background:#fffdf8!important;padding:16px 16px 26px!important;border-radius:8px!important;}
+html:root body:has(#sc-uniform-copy-children):has(#main):has(#main) #footer-booking#footer-booking [id="_bn_widget_footer_"] {min-height:112px!important;}
+html:root body:has(#sc-uniform-copy-children):has(#main):has(#main) #footer-booking#footer-booking iframe {max-width:100%!important;}
+@media(max-width:900px){
+ html:root body:has(#sc-uniform-copy-children):has(#main):has(#main) #footer-booking#footer-booking {gap:24px!important;padding:24px!important;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)!important;}
+ html:root body:has(#sc-uniform-copy-children):has(#main):has(#main) #footer-booking#footer-booking h2 {font-size:30px!important;}
+ html:root body:has(#sc-uniform-copy-children):has(#main):has(#main) #footer-booking#footer-booking .footer-booking-form {padding:12px 12px 24px!important;}
+}
+@media(max-width:700px){
+ html:root body:has(#sc-uniform-copy-children):has(#main):has(#main) #footer-booking#footer-booking {grid-template-columns:minmax(0,1fr)!important;gap:20px!important;padding:22px 16px!important;margin:0 0 24px!important;}
+ html:root body:has(#sc-uniform-copy-children):has(#main):has(#main) #footer-booking#footer-booking h2 {font-size:30px!important;max-width:360px!important;}
+ html:root body:has(#sc-uniform-copy-children):has(#main):has(#main) #footer-booking#footer-booking .footer-booking-form {padding:0 0 16px!important;background:transparent!important;}
+}
+}
