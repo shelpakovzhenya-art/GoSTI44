@@ -39,3 +39,5 @@
 - [x] house-cards-20261026: кнопки каталога44px, площадь без переноса, сравнение каждого дома показывает только2 других.6 ширин/3 дома/23 SSR200/бронирование проверены.3 CMS-строки/6 ревизий,56 других строк сохранены; CSS+5 manifests. results/20261026-house-cards/README.md.
 
 - [x] children-booking-footer-20261026: страница с детьми по референсу; компактный футер; горизонтальный Bnovo desktop/все поля mobile и второй виджет перед преимуществами.2 CMS/4 ревизии,57 других записей сохранены;23 SSR200/адаптивность/календарь/гости/SPA проверены. https://tangerin.ru/vse-dlya-otdyha/s-detmi и https://tangerin.ru/#booking-top . results/20261026-children-booking/README.md.
+
+- [x] children-reference-correction-20261026: исправлены hero/отступы/плашка цены/список3+2/цитрусовый декор, убраны лишние back-строки. https://tangerin.ru/vse-dlya-otdyha/s-detmi .4 ширины/Bnovo/HTTP/SHA проверены; CMS/API без изменений. results/20261026-children-reference/README.md.

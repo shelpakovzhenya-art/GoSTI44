@@ -1,0 +1,34 @@
+{
+  "publicApiUnchanged": true,
+  "cssShaVerified": true,
+  "pages": [
+    {
+      "route": "/vse-dlya-otdyha/s-detmi",
+      "status": 200
+    },
+    {
+      "route": "/",
+      "status": 200
+    },
+    {
+      "route": "/vse-dlya-otdyha/zavtraki",
+      "status": 200
+    }
+  ],
+  "browserWidths": [
+    320,
+    390,
+    768,
+    1366
+  ],
+  "overflow": false,
+  "priceNoteTransparent": true,
+  "priceNotePadding": 0,
+  "freeListColumns": [
+    3,
+    2
+  ],
+  "contactLinks": 4,
+  "bookingInputs": 3,
+  "productionBrowserErrors": []
+}
