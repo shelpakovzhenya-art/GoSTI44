@@ -1,0 +1,388 @@
+[
+  {
+    "back": {
+      "display": "block",
+      "gridArea": "auto",
+      "height": 58.59375,
+      "margin": "18px 0px 0px",
+      "minHeight": "0px",
+      "padding": "12px 0px 0px",
+      "width": 1200,
+      "x": 75.5,
+      "y": 1150.84375
+    },
+    "booking": {
+      "display": "grid",
+      "gridArea": "auto",
+      "height": 206.296875,
+      "margin": "0px",
+      "minHeight": "0px",
+      "padding": "24px 0px",
+      "width": 1200,
+      "x": 75.5,
+      "y": 1250.4375
+    },
+    "breadcrumb": {
+      "display": "flex",
+      "gridArea": "auto",
+      "height": 28,
+      "margin": "0px 0px 14px",
+      "minHeight": "0px",
+      "padding": "0px",
+      "width": 1200,
+      "x": 75.5,
+      "y": 138
+    },
+    "card": {
+      "display": "grid",
+      "gridArea": "auto",
+      "height": 527.875,
+      "margin": "0px",
+      "minHeight": "auto",
+      "padding": "22px",
+      "width": 1200,
+      "x": 75.5,
+      "y": 395.984375
+    },
+    "closing": {
+      "display": "block",
+      "gridArea": "auto",
+      "height": 186.984375,
+      "margin": "20px 0px",
+      "minHeight": "0px",
+      "padding": "16px 0px",
+      "width": 1200,
+      "x": 75.5,
+      "y": 943.859375
+    },
+    "contactLinks": [
+      "https://t.me/gostevoidom44",
+      "https://vk.com/gostevoidom44",
+      "https://max.ru/u/f9LHodD0cOLXSID0Ocv6uG76ss7VM6BBntzGcai5vuGBIaZz2qVXt6_Gi3w",
+      "tel:+79109535855"
+    ],
+    "details": {
+      "display": "block",
+      "gridArea": "auto",
+      "height": 313.375,
+      "margin": "0px",
+      "minHeight": "auto",
+      "padding": "0px",
+      "width": 519.078125,
+      "x": 733.40625,
+      "y": 552.984375
+    },
+    "fields": [
+      {
+        "height": 48,
+        "id": "from",
+        "width": 318.71875,
+        "y": 0
+      },
+      {
+        "height": 48,
+        "id": "to",
+        "width": 318.71875,
+        "y": 0
+      },
+      {
+        "height": 48,
+        "id": "guests_count",
+        "width": 318.71875,
+        "y": 0
+      },
+      {
+        "height": 48,
+        "id": "",
+        "width": 193.84375,
+        "y": 0
+      }
+    ],
+    "frame": {
+      "display": "block",
+      "gridArea": "auto",
+      "height": 48,
+      "margin": "0px",
+      "minHeight": "0px",
+      "padding": "0px",
+      "width": 1198,
+      "x": 76.5,
+      "y": 1351.734375
+    },
+    "heading": {
+      "display": "block",
+      "gridArea": "auto",
+      "height": 102.390625,
+      "margin": "18px 50px 24px",
+      "minHeight": "0px",
+      "padding": "0px",
+      "width": 1100,
+      "x": 125.5,
+      "y": 269.59375
+    },
+    "main": {
+      "display": "block",
+      "gridArea": "auto",
+      "height": 1225.4375,
+      "margin": "0px 75.5px",
+      "minHeight": "585px",
+      "padding": "138px 0px 16px",
+      "width": 1200,
+      "x": 75.5,
+      "y": 0
+    },
+    "mode": "bnovo m-hor",
+    "overflow": 0,
+    "photo": {
+      "display": "block",
+      "gridArea": "2 / auto / 4",
+      "height": 347.875,
+      "margin": "0px",
+      "minHeight": "auto",
+      "padding": "0px",
+      "width": 622.90625,
+      "x": 98.5,
+      "y": 552.984375
+    },
+    "photoImage": {
+      "display": "block",
+      "gridArea": "auto",
+      "height": 240,
+      "margin": "0px",
+      "minHeight": "0px",
+      "padding": "0px",
+      "width": 622.90625,
+      "x": 98.5,
+      "y": 606.921875
+    },
+    "photos": [
+      {
+        "ready": true,
+        "src": "/images/lime-sauna-20261002.webp"
+      },
+      {
+        "ready": true,
+        "src": "/media/client-revisions-20261014/bath-relax.webp"
+      }
+    ],
+    "priceHead": {
+      "display": "flex",
+      "gridArea": "auto / 1 / auto / -1",
+      "height": 122,
+      "margin": "0px",
+      "minHeight": "122px",
+      "padding": "0px",
+      "width": 1153.984375,
+      "x": 98.5,
+      "y": 418.984375
+    },
+    "topBack": {
+      "display": "inline-flex",
+      "gridArea": "auto",
+      "height": 45.59375,
+      "margin": "8px 0px 18px",
+      "minHeight": "44px",
+      "padding": "10px 0px",
+      "width": 217.328125,
+      "x": 75.5,
+      "y": 188
+    },
+    "viewport": {
+      "height": 900,
+      "width": 1366
+    }
+  },
+  {
+    "back": {
+      "display": "block",
+      "gridArea": "auto",
+      "height": 58.59375,
+      "margin": "18px 0px 0px",
+      "minHeight": "0px",
+      "padding": "12px 0px 0px",
+      "width": 343,
+      "x": 16,
+      "y": 1383.984375
+    },
+    "booking": {
+      "display": "grid",
+      "gridArea": "auto",
+      "height": 393.875,
+      "margin": "0px",
+      "minHeight": "0px",
+      "padding": "24px 0px",
+      "width": 343,
+      "x": 16,
+      "y": 1475.578125
+    },
+    "breadcrumb": {
+      "display": "flex",
+      "gridArea": "auto",
+      "height": 28,
+      "margin": "0px 0px 12px",
+      "minHeight": "0px",
+      "padding": "0px",
+      "width": 343,
+      "x": 16,
+      "y": 108
+    },
+    "card": {
+      "display": "grid",
+      "gridArea": "auto",
+      "height": 722.640625,
+      "margin": "0px",
+      "minHeight": "auto",
+      "padding": "18px",
+      "width": 343,
+      "x": 16,
+      "y": 386.375
+    },
+    "closing": {
+      "display": "block",
+      "gridArea": "auto",
+      "height": 234.96875,
+      "margin": "20px 0px",
+      "minHeight": "0px",
+      "padding": "16px 0px",
+      "width": 343,
+      "x": 16,
+      "y": 1129.015625
+    },
+    "contactLinks": [
+      "https://t.me/gostevoidom44",
+      "https://vk.com/gostevoidom44",
+      "https://max.ru/u/f9LHodD0cOLXSID0Ocv6uG76ss7VM6BBntzGcai5vuGBIaZz2qVXt6_Gi3w",
+      "tel:+79109535855"
+    ],
+    "details": {
+      "display": "block",
+      "gridArea": "auto",
+      "height": 292.578125,
+      "margin": "0px",
+      "minHeight": "auto",
+      "padding": "0px",
+      "width": 305,
+      "x": 35,
+      "y": 740.4375
+    },
+    "fields": [
+      {
+        "height": 48,
+        "id": "from",
+        "width": 341,
+        "y": 0
+      },
+      {
+        "height": 48,
+        "id": "to",
+        "width": 341,
+        "y": 64
+      },
+      {
+        "height": 48,
+        "id": "guests_count",
+        "width": 341,
+        "y": 128
+      },
+      {
+        "height": 48,
+        "id": "",
+        "width": 341,
+        "y": 192
+      }
+    ],
+    "frame": {
+      "display": "block",
+      "gridArea": "auto",
+      "height": 240,
+      "margin": "0px",
+      "minHeight": "0px",
+      "padding": "0px",
+      "width": 341,
+      "x": 17,
+      "y": 1604.453125
+    },
+    "heading": {
+      "display": "block",
+      "gridArea": "auto",
+      "height": 132.78125,
+      "margin": "18px 0px 24px",
+      "minHeight": "0px",
+      "padding": "0px",
+      "width": 343,
+      "x": 16,
+      "y": 229.59375
+    },
+    "main": {
+      "display": "block",
+      "gridArea": "auto",
+      "height": 1454.578125,
+      "margin": "0px 16px",
+      "minHeight": "585px",
+      "padding": "108px 0px 12px",
+      "width": 343,
+      "x": 16,
+      "y": 0
+    },
+    "mode": "bnovo m-vert",
+    "overflow": 0,
+    "photo": {
+      "display": "block",
+      "gridArea": "auto",
+      "height": 210,
+      "margin": "0px",
+      "minHeight": "auto",
+      "padding": "0px",
+      "width": 305,
+      "x": 35,
+      "y": 518.4375
+    },
+    "photoImage": {
+      "display": "block",
+      "gridArea": "auto",
+      "height": 210,
+      "margin": "0px",
+      "minHeight": "0px",
+      "padding": "0px",
+      "width": 305,
+      "x": 35,
+      "y": 518.4375
+    },
+    "photos": [
+      {
+        "ready": true,
+        "src": "/images/lime-sauna-20261002.webp"
+      },
+      {
+        "ready": true,
+        "src": "/media/client-revisions-20261014/bath-relax.webp"
+      }
+    ],
+    "priceHead": {
+      "display": "flex",
+      "gridArea": "auto / 1 / auto / -1",
+      "height": 101.0625,
+      "margin": "0px",
+      "minHeight": "auto",
+      "padding": "0px",
+      "width": 305,
+      "x": 35,
+      "y": 405.375
+    },
+    "topBack": {
+      "display": "inline-flex",
+      "gridArea": "auto",
+      "height": 45.59375,
+      "margin": "4px 0px 14px",
+      "minHeight": "44px",
+      "padding": "10px 0px",
+      "width": 215.328125,
+      "x": 16,
+      "y": 152
+    },
+    "viewport": {
+      "height": 900,
+      "width": 390
+    }
+  }
+]

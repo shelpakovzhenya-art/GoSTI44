@@ -1,0 +1,15 @@
+{
+  "changedEntries": [],
+  "createdEntries": [],
+  "unchangedRows": 64,
+  "revisionsAdded": 0,
+  "databaseIntegrity": "ok",
+  "runtimeFilesChanged": 6,
+  "runtime": {
+    "files": 1871,
+    "links": 0,
+    "bytes": 268448019,
+    "treeSha256": "7a0bf4d84f5a72fa599a13fa140867620ac21baf900b04eee352c1042d27b56f"
+  },
+  "backup": "/var/www/gosti/backups/20261028-bath-spacing"
+}

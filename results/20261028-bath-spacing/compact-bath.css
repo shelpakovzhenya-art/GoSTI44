@@ -1,0 +1,167 @@
+/* Compact only the bath page. Preserve shared booking code and other services. */
+@layer clientPalette {
+html:root body:has(#sc-uniform-copy-bath) #main#main#main#main {
+ padding-top:132px!important;
+ padding-bottom:8px!important;
+ min-height:0!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath {
+ margin:0!important;
+ padding:0!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath > .rs-services-back {
+ display:none!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #sc-path-bath {
+ margin:0 0 12px!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-heading {
+ margin:0 0 18px!important;
+ padding:0!important;
+ min-height:0!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-heading h1 {
+ font-size:44px!important;
+ line-height:1.08!important;
+ margin:0 0 8px!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-heading p {
+ margin:0!important;
+ font-size:17px!important;
+ line-height:1.5!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-card {
+ display:grid!important;
+ grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)!important;
+ grid-template-areas:'photo head' 'photo details' 'note note'!important;
+ grid-template-rows:auto auto auto!important;
+ align-items:start!important;
+ padding:20px!important;
+ gap:16px 24px!important;
+ min-height:0!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .bath-option-head {
+ grid-area:head!important;
+ display:flex!important;
+ flex-direction:row!important;
+ align-items:baseline!important;
+ flex-wrap:wrap!important;
+ justify-content:flex-start!important;
+ gap:6px 14px!important;
+ min-height:0!important;
+ margin:0!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .bath-option-head h2 {
+ flex-basis:100%!important;
+ font-size:28px!important;
+ line-height:1.1!important;
+ margin:0!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .bath-option-head .oct-price {
+ font-size:24px!important;
+ line-height:1.3!important;
+ margin:0!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .bath-duration {
+ font-size:15px!important;
+ margin:0!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-main {
+ grid-area:photo!important;
+ align-self:stretch!important;
+ height:280px!important;
+ min-height:0!important;
+ aspect-ratio:auto!important;
+ position:relative!important;
+ overflow:hidden!important;
+ margin:0!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-main img {
+ height:100%!important;
+ width:100%!important;
+ position:absolute!important;
+ inset:0!important;
+ object-fit:cover!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-main span {
+ position:absolute!important;
+ left:12px!important;
+ bottom:10px!important;
+ z-index:2!important;
+ display:block!important;
+ color:#fff!important;
+ text-shadow:0 1px 4px #000!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-bottom {
+ grid-area:details!important;
+ display:grid!important;
+ grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+ gap:16px!important;
+ align-items:start!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-photo:not(.client-bath-main) {
+ margin:0!important;
+ min-width:0!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-photo:not(.client-bath-main) img {
+ height:180px!important;
+ object-fit:cover!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-bottom h3 {
+ font-size:18px!important;
+ line-height:1.3!important;
+ margin:0 0 8px!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-bottom .oct-list {
+ font-size:16px!important;
+ line-height:1.5!important;
+ gap:4px!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .bath-preparation-note {
+ grid-area:note!important;
+ margin:0!important;
+ font-size:15px!important;
+ line-height:1.5!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking {
+ padding:12px 0!important;
+ margin:16px 0!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking h2 {
+ font-size:28px!important;
+ margin:0 0 8px!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking p {
+ margin:0 0 12px!important;
+ font-size:17px!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .rs-back-bottom {
+ margin:0!important;
+ padding:0!important;
+}
+html:root body:has(#sc-uniform-copy-bath) footer.site-footer #footer-booking#footer-booking#footer-booking#footer-booking {
+ padding:18px 0!important;
+ margin:8px 0 24px!important;
+ gap:12px!important;
+}
+html:root body:has(#sc-uniform-copy-bath) footer.site-footer #footer-booking#footer-booking#footer-booking#footer-booking h2 {
+ font-size:28px!important;
+ line-height:1.15!important;
+ margin:0!important;
+}
+@media(min-width:701px) and (max-width:1100px) {
+ html:root body:has(#sc-uniform-copy-bath) #main#main#main#main {padding-top:142px!important;}
+}
+@media(max-width:700px) {
+ html:root body:has(#sc-uniform-copy-bath) #main#main#main#main {padding-top:98px!important;}
+ html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-heading h1 {font-size:36px!important;}
+ html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-heading p {font-size:16px!important;}
+ html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-card {grid-template-columns:minmax(0,1fr)!important;grid-template-areas:'head' 'photo' 'details' 'note'!important;grid-template-rows:auto auto auto auto!important;padding:16px!important;gap:14px!important;}
+ html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-main {height:210px!important;min-height:0!important;}
+ html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-photo:not(.client-bath-main) img {height:150px!important;}
+ html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-bottom {gap:12px!important;}
+ html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking h2 {font-size:26px!important;}
+ html:root body:has(#main):has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking p {font-size:16px!important;}
+ html:root body:has(#sc-uniform-copy-bath) footer.site-footer #footer-booking#footer-booking#footer-booking#footer-booking h2 {font-size:26px!important;}
+}
+}
