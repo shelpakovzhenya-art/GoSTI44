@@ -1,0 +1,21 @@
+{
+  "changedEntries": [
+    "usloviya-bronirovaniya",
+    "soglasie-na-obrabotku-personalnyh-dannyh",
+    "pravila-prozhivaniya",
+    "politika-obrabotki-personalnyh-dannyh",
+    "dogovor-oferta"
+  ],
+  "createdEntries": [],
+  "unchangedRows": 59,
+  "revisionsAdded": 10,
+  "databaseIntegrity": "ok",
+  "runtimeFilesChanged": 3,
+  "runtime": {
+    "files": 1868,
+    "links": 0,
+    "bytes": 266084606,
+    "treeSha256": "9fc0741071d2754a2ce30a81e96a07cdf3037741ce07567d4cc6823d77e3cb73"
+  },
+  "backup": "/var/www/gosti/backups/20261028-document-parity"
+}

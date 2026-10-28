@@ -1,0 +1,30 @@
+[
+  {
+    "file": "soglasie-na-obrabotku-personalnyh-dannyh.docx",
+    "onlyDeclaredTextRunsChanged": {
+      "word/document.xml": 1
+    },
+    "allStylesAndMediaPreserved": true,
+    "originalSha256": "2320d03c9adea7e20f54e9aa9a1374f1b55feb8c70e03200fbcf7ca9fc528f05",
+    "publishedCopySha256": "18fb8a924e54b94acc46ebf94b7deb7b3ccea034e448ce4d513ad68607937d6c"
+  },
+  {
+    "file": "pravila-prozhivaniya.docx",
+    "onlyDeclaredTextRunsChanged": {
+      "word/document.xml": 2
+    },
+    "allStylesAndMediaPreserved": true,
+    "originalSha256": "203a4619e4e81e822739400ce18ebab1757f815da22a7915820e4391104e3e72",
+    "publishedCopySha256": "c7f85dc1c8be6fc4ae376512befd7db61ac7076fd3b9f0a7b8358ccc7c140ae5"
+  },
+  {
+    "file": "dogovor-oferta.docx",
+    "onlyDeclaredTextRunsChanged": {
+      "word/document.xml": 1,
+      "word/footer1.xml": 1
+    },
+    "allStylesAndMediaPreserved": true,
+    "originalSha256": "aa6f0b83809e50a872427eceae14a4703ffee91249769c39f5dead3cb5a1d2a5",
+    "publishedCopySha256": "4f95500efe8e76b5f1c99883851c1944b47cd18cd9899b5d0d2939835e490cf7"
+  }
+]

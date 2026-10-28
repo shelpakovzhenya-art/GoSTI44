@@ -1,0 +1,249 @@
+{
+  "allMandatoryContentChecksPassed": true,
+  "faqExact": 9,
+  "documents": [
+    {
+      "url": "https://tangerin.ru/usloviya-bronirovaniya",
+      "paragraphs": 24,
+      "htmlAndDownloadExact": true,
+      "downloadSha256": "e8f3fb13944d345f4c7e5e72fd69703767c732040ac1e88736aedf310c4d526a"
+    },
+    {
+      "url": "https://tangerin.ru/soglasie-na-obrabotku-personalnyh-dannyh",
+      "paragraphs": 18,
+      "htmlAndDownloadExact": true,
+      "downloadSha256": "18fb8a924e54b94acc46ebf94b7deb7b3ccea034e448ce4d513ad68607937d6c"
+    },
+    {
+      "url": "https://tangerin.ru/pravila-prozhivaniya",
+      "paragraphs": 50,
+      "htmlAndDownloadExact": true,
+      "downloadSha256": "c7f85dc1c8be6fc4ae376512befd7db61ac7076fd3b9f0a7b8358ccc7c140ae5"
+    },
+    {
+      "url": "https://tangerin.ru/politika-obrabotki-personalnyh-dannyh",
+      "paragraphs": 37,
+      "htmlAndDownloadExact": true,
+      "downloadSha256": "6d54584d7709725b6297c53f242a054d56345b8f81086677b5f5b212abf4885e"
+    },
+    {
+      "url": "https://tangerin.ru/dogovor-oferta",
+      "paragraphs": 55,
+      "htmlAndDownloadExact": true,
+      "downloadSha256": "4f95500efe8e76b5f1c99883851c1944b47cd18cd9899b5d0d2939835e490cf7"
+    }
+  ],
+  "documentParagraphs": 184,
+  "pages": [
+    {
+      "url": "https://tangerin.ru/doma/laym",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/doma/limon",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/doma/citrus",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/dlya-bolshoy-kompanii",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/kostroma",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/gde-poest",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/dostoprimechatelnosti",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/muzei",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/za-odin-den",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/s-detmi",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/chto-privezti",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/dlya-komandirovochnyh",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/soglasie-na-obrabotku-personalnyh-dannyh",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/usloviya-bronirovaniya",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/politika-obrabotki-personalnyh-dannyh",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/kontakty",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/zavtraki",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/banya-i-kupel",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/mangalnaya-zona",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/s-detmi",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/s-pitomcami",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/pravila-prozhivaniya",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    },
+    {
+      "url": "https://tangerin.ru/dogovor-oferta",
+      "status": 200,
+      "singleH1": true,
+      "footerLinks": 6,
+      "noBrokenLocalAnchors": true,
+      "noRetiredAmenity": true
+    }
+  ],
+  "bathPhotos": 2,
+  "limePhotos": 10,
+  "galleryPhotos": 11,
+  "sourceCorrections": [
+    "operatorSurname",
+    "retiredAmenityInRules",
+    "offerContactReference",
+    "offerFooterDomain"
+  ],
+  "browserVisualCheck": false
+}
