@@ -1,0 +1,36 @@
+@layer clientPalette {
+html:root body #documents-and-contacts.client-compact-legal {
+ padding:20px 0!important;margin:16px 0 0!important;border-top:1px solid #ddcfbb!important;
+ background:transparent!important;box-shadow:none!important;border-radius:0!important;
+}
+html:root body #documents-and-contacts.client-compact-legal .eyebrow {margin:0 0 12px!important;font-size:12px!important;}
+html:root body #documents-and-contacts.client-compact-legal .compact-legal-columns {display:grid!important;grid-template-columns:minmax(220px,.8fr) minmax(0,1.2fr)!important;gap:24px!important;}
+html:root body #documents-and-contacts.client-compact-legal address {font-style:normal!important;}
+html:root body #documents-and-contacts.client-compact-legal p,html:root body #documents-and-contacts.client-compact-legal a {font-family:var(--font-manrope),Arial,sans-serif!important;font-size:14px!important;line-height:1.5!important;margin:0 0 6px!important;}
+html:root body #documents-and-contacts.client-compact-legal .site-legal-links,html:root body #documents-and-contacts.client-compact-legal #legal-documents {display:flex!important;flex-direction:column!important;gap:4px!important;}
+html:root body #documents-and-contacts.client-compact-legal .site-legal-links a {display:inline!important;padding:0!important;min-height:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;font-weight:400!important;text-decoration:underline!important;text-underline-offset:3px!important;}
+html:root body #documents-and-contacts.client-compact-legal .site-legal-links a::after {display:none!important;}
+html:root body #documents-and-contacts.client-compact-legal .fl-legal-note {font-size:13px!important;opacity:.8!important;margin-top:12px!important;}
+html:root body #main#main .client-legal-document {max-width:960px!important;margin:0 auto!important;overflow-wrap:anywhere!important;}
+html:root body #main#main .client-legal-document p {font-size:17px!important;line-height:1.65!important;}
+html:root body #main#main .client-legal-document h2 {font-size:28px!important;line-height:1.2!important;margin:26px 0 12px!important;}
+html:root body #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-grid {grid-template-columns:minmax(0,1fr)!important;}
+html:root body #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-card {display:grid!important;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)!important;gap:16px 24px!important;}
+html:root body #main#main #additional-services#additional-services #sc-uniform-copy-bath .bath-option-head {grid-column:1/-1!important;}
+html:root body #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-main {grid-row:2/4!important;}
+html:root body #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-bottom {display:block!important;margin:0!important;}
+html:root body #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-bottom .client-bath-photo {max-height:200px!important;margin-bottom:12px!important;}
+html:root body #main#main #additional-services#additional-services #sc-uniform-copy-bath .bath-preparation-note {grid-column:2!important;margin:0!important;}
+html:root body #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking {padding:20px 0!important;margin:20px 0!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;min-height:0!important;}
+html:root body #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking::before,html:root body #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking::after {display:none!important;}
+html:root body #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking h2 {font-size:28px!important;margin:0 0 10px!important;}
+html:root body #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking p {font-size:17px!important;margin:0 0 12px!important;}
+@media(max-width:700px){
+ html:root body #documents-and-contacts.client-compact-legal .compact-legal-columns {grid-template-columns:minmax(0,1fr)!important;gap:14px!important;}
+ html:root body #main#main .client-legal-document p {font-size:16px!important;}
+ html:root body #main#main .client-legal-document h2 {font-size:24px!important;}
+ html:root body #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-card {grid-template-columns:minmax(0,1fr)!important;}
+ html:root body #main#main #additional-services#additional-services #sc-uniform-copy-bath .client-bath-main {grid-row:auto!important;}
+ html:root body #main#main #additional-services#additional-services #sc-uniform-copy-bath .bath-preparation-note {grid-column:1!important;}
+}
+}

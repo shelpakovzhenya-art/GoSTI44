@@ -1,0 +1,38 @@
+{
+  "origin": "https://tangerin.ru",
+  "cmsEditsVerified": 21,
+  "newEntriesVerified": 5,
+  "faqCount": 9,
+  "galleryPhotos": 11,
+  "bathPhotos": 2,
+  "footerDocumentLinks": 6,
+  "documentChecks": [
+    {
+      "route": "/usloviya-bronirovaniya",
+      "paragraphCoverage": true,
+      "downloadSHA": true
+    },
+    {
+      "route": "/soglasie-na-obrabotku-personalnyh-dannyh",
+      "paragraphCoverage": true,
+      "downloadSHA": true
+    },
+    {
+      "route": "/pravila-prozhivaniya",
+      "paragraphCoverage": true,
+      "downloadSHA": true
+    },
+    {
+      "route": "/politika-obrabotki-personalnyh-dannyh",
+      "paragraphCoverage": true,
+      "downloadSHA": true
+    },
+    {
+      "route": "/dogovor-oferta",
+      "paragraphCoverage": true,
+      "downloadSHA": true
+    }
+  ],
+  "paragraphCoverage": true,
+  "http200Pages": 25
+}
