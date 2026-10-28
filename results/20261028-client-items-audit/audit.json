@@ -1,0 +1,511 @@
+{
+  "scope": "Every clause of the user-provided правки.docx and five legal documents",
+  "sourceSha256": "829f1615e457ec4c8e5dbc73234c60f8a3bfcebf71fcba0ab2b8b9d32c896bc3",
+  "requirementsPassed": 41,
+  "requirements": [
+    {
+      "id": "1.1",
+      "requirement": "Название раздела «Баня»",
+      "url": "https://tangerin.ru/vse-dlya-otdyha/banya-i-kupel",
+      "observed": "H1 и название услуги — Баня",
+      "result": "passed"
+    },
+    {
+      "id": "1.2",
+      "requirement": "Убрать все упоминания купели в разделе",
+      "url": "https://tangerin.ru/vse-dlya-otdyha/banya-i-kupel",
+      "observed": "Нет в видимом тексте, alt, метаданных",
+      "result": "passed"
+    },
+    {
+      "id": "1.3",
+      "requirement": "Подзаголовок дословно",
+      "url": "https://tangerin.ru/vse-dlya-otdyha/banya-i-kupel",
+      "observed": "После насыщенного дня приятно согреться в бане и провести время в уютной обстановке",
+      "result": "passed"
+    },
+    {
+      "id": "1.4",
+      "requirement": "Удалить фото купели, сохранить фото бани",
+      "url": "https://tangerin.ru/vse-dlya-otdyha/banya-i-kupel",
+      "observed": "2 фотографии: парная и зона отдыха; обе просмотрены",
+      "result": "passed"
+    },
+    {
+      "id": "1.5",
+      "requirement": "Остальное связанное с баней оставить",
+      "url": "https://tangerin.ru/vse-dlya-otdyha/banya-i-kupel",
+      "observed": "7700₽,3 часа,до6 гостей; парная/веники/полотенца/чайный стол",
+      "result": "passed"
+    },
+    {
+      "id": "1.6",
+      "requirement": "Заключительный заголовок «Как заказать баню»",
+      "url": "https://tangerin.ru/vse-dlya-otdyha/banya-i-kupel",
+      "observed": "Как заказать баню",
+      "result": "passed"
+    },
+    {
+      "id": "1.7",
+      "requirement": "Заключительный текст дословно",
+      "url": "https://tangerin.ru/vse-dlya-otdyha/banya-i-kupel",
+      "observed": "Сообщите нам заранее о своем желании посетить баню, и мы согласуем дату и время.",
+      "result": "passed"
+    },
+    {
+      "id": "1.8",
+      "requirement": "Компактно без плашек и визуальных выделений",
+      "url": "https://tangerin.ru/vse-dlya-otdyha/banya-i-kupel",
+      "observed": "Исправлен каскад: padding-right0/background-image none/border-top0 при320/390/768/1366; статическая проверка",
+      "result": "passed"
+    },
+    {
+      "id": "2.1",
+      "requirement": "Удалить «Купель по тарифу»",
+      "url": "https://tangerin.ru/doma/laym",
+      "observed": "Надпись отсутствует",
+      "result": "passed"
+    },
+    {
+      "id": "2.2",
+      "requirement": "Удалить оснащение «Купель с гидромассажем»",
+      "url": "https://tangerin.ru/doma/laym",
+      "observed": "Нет в оснащении/тексте/API дома",
+      "result": "passed"
+    },
+    {
+      "id": "2.3",
+      "requirement": "Удалить фото купели из карточки и галереи Лайма",
+      "url": "https://tangerin.ru/doma/laym",
+      "observed": "11→10 фото; удалена только купель, порядок остальных сохранён; изображения просмотрены",
+      "result": "passed"
+    },
+    {
+      "id": "3.2",
+      "requirement": "Удалить фото купели из общей галереи",
+      "url": "https://tangerin.ru/#gallery",
+      "observed": "12→11 фото; удалена только купель, порядок остальных сохранён; изображения просмотрены",
+      "result": "passed"
+    },
+    {
+      "id": "2.4",
+      "requirement": "Удалить фото купели из модального набора Лайма",
+      "url": "https://tangerin.ru/doma/laym",
+      "observed": "10 элементов массива images; bath-empty.webp отсутствует в HTML и API",
+      "result": "passed"
+    },
+    {
+      "id": "3.1",
+      "requirement": "В подвале «Для гостей» оставить «Баня»",
+      "url": "https://tangerin.ru/#documents-and-contacts",
+      "observed": "Название ссылки Баня",
+      "result": "passed"
+    },
+    {
+      "id": "4.1",
+      "requirement": "Удалить текст «Сведения о нашей деятельности…»",
+      "url": "https://tangerin.ru/#documents-and-contacts",
+      "observed": "Указанной фразы нет",
+      "result": "passed"
+    },
+    {
+      "id": "4.2",
+      "requirement": "Убрать раздел реквизитов и карточки документов",
+      "url": "https://tangerin.ru/#documents-and-contacts",
+      "observed": "Нет реквизитов/ИНН/ОГРНИП и заголовков карточек",
+      "result": "passed"
+    },
+    {
+      "id": "4.3",
+      "requirement": "Правовая информация вверху",
+      "url": "https://tangerin.ru/#documents-and-contacts",
+      "observed": "Первый дочерний элемент — ПРАВОВАЯ ИНФОРМАЦИЯ",
+      "result": "passed"
+    },
+    {
+      "id": "4.4",
+      "requirement": "Ссылки компактно мелким шрифтом",
+      "url": "https://tangerin.ru/#documents-and-contacts",
+      "observed": "CSS14px/без padding,min-height,рамок,фона,иконок;4ID override",
+      "result": "passed"
+    },
+    {
+      "id": "4.5",
+      "requirement": "В контактной части только адрес/email/телефон",
+      "url": "https://tangerin.ru/#documents-and-contacts",
+      "observed": "3 строки,2 ссылки: телефон и email",
+      "result": "passed"
+    },
+    {
+      "id": "4.6",
+      "requirement": "Убрать ИП Гагарина и все реквизиты",
+      "url": "https://tangerin.ru/#documents-and-contacts",
+      "observed": "Нет прежнего оператора в правовом блоке/публичном API",
+      "result": "passed"
+    },
+    {
+      "id": "4.7",
+      "requirement": "Из адресной информации оставить только адрес",
+      "url": "https://tangerin.ru/#documents-and-contacts",
+      "observed": "Кострома, ул. Октябрьская, 45А",
+      "result": "passed"
+    },
+    {
+      "id": "5.1",
+      "requirement": "Все6 документов и настроек из списка",
+      "url": "https://tangerin.ru/#documents-and-contacts",
+      "observed": "Ровно6 ссылок с заданными названиями и адресами",
+      "result": "passed"
+    },
+    {
+      "id": "5.2",
+      "requirement": "Сохранить фразу о доступности до бронирования",
+      "url": "https://tangerin.ru/#documents-and-contacts",
+      "observed": "Документы доступны для ознакомления до бронирования.",
+      "result": "passed"
+    },
+    {
+      "id": "5.3.soglasie-na-obrabotku-personalnyh-dannyh",
+      "requirement": "Согласие/политика — Яковлев Андрей Николаевич",
+      "url": "https://tangerin.ru/soglasie-na-obrabotku-personalnyh-dannyh",
+      "observed": "Правильный оператор, без Гагариной/опечатки",
+      "result": "passed"
+    },
+    {
+      "id": "5.3.politika-obrabotki-personalnyh-dannyh",
+      "requirement": "Согласие/политика — Яковлев Андрей Николаевич",
+      "url": "https://tangerin.ru/politika-obrabotki-personalnyh-dannyh",
+      "observed": "Правильный оператор, без Гагариной/опечатки",
+      "result": "passed"
+    },
+    {
+      "id": "DOC.usloviya-bronirovaniya",
+      "requirement": "Документ опубликован полностью и скачивается",
+      "url": "https://tangerin.ru/usloviya-bronirovaniya",
+      "observed": "24 абзацев совпало с HTML; DOCX SHA совпал с проверенной копией",
+      "result": "passed"
+    },
+    {
+      "id": "DOC.soglasie-na-obrabotku-personalnyh-dannyh",
+      "requirement": "Документ опубликован полностью и скачивается",
+      "url": "https://tangerin.ru/soglasie-na-obrabotku-personalnyh-dannyh",
+      "observed": "18 абзацев совпало с HTML; DOCX SHA совпал с проверенной копией",
+      "result": "passed"
+    },
+    {
+      "id": "DOC.pravila-prozhivaniya",
+      "requirement": "Документ опубликован полностью и скачивается",
+      "url": "https://tangerin.ru/pravila-prozhivaniya",
+      "observed": "50 абзацев совпало с HTML; DOCX SHA совпал с проверенной копией",
+      "result": "passed"
+    },
+    {
+      "id": "DOC.politika-obrabotki-personalnyh-dannyh",
+      "requirement": "Документ опубликован полностью и скачивается",
+      "url": "https://tangerin.ru/politika-obrabotki-personalnyh-dannyh",
+      "observed": "37 абзацев совпало с HTML; DOCX SHA совпал с проверенной копией",
+      "result": "passed"
+    },
+    {
+      "id": "DOC.dogovor-oferta",
+      "requirement": "Документ опубликован полностью и скачивается",
+      "url": "https://tangerin.ru/dogovor-oferta",
+      "observed": "55 абзацев совпало с HTML; DOCX SHA совпал с проверенной копией",
+      "result": "passed"
+    },
+    {
+      "id": "FAQ.intro",
+      "requirement": "Заголовок и вводный текст FAQ",
+      "url": "https://tangerin.ru/#rules",
+      "observed": "Частые вопросы; Собрали ответы на то, что важно знать перед поездкой.",
+      "result": "passed"
+    },
+    {
+      "id": "FAQ.1",
+      "requirement": "Во сколько заезд и выезд?",
+      "url": "https://tangerin.ru/#rules",
+      "observed": "Вопрос и полный ответ совпадают с DOCX и CMS",
+      "result": "passed"
+    },
+    {
+      "id": "FAQ.2",
+      "requirement": "Можно приехать с детьми?",
+      "url": "https://tangerin.ru/#rules",
+      "observed": "Вопрос и полный ответ совпадают с DOCX и CMS",
+      "result": "passed"
+    },
+    {
+      "id": "FAQ.3",
+      "requirement": "Можно ли приехать с питомцем?",
+      "url": "https://tangerin.ru/#rules",
+      "observed": "Вопрос и полный ответ совпадают с DOCX и CMS",
+      "result": "passed"
+    },
+    {
+      "id": "FAQ.4",
+      "requirement": "Есть ли парковка?",
+      "url": "https://tangerin.ru/#rules",
+      "observed": "Вопрос и полный ответ совпадают с DOCX и CMS",
+      "result": "passed"
+    },
+    {
+      "id": "FAQ.5",
+      "requirement": "Можно ли пригласить гостей, которые не проживают в доме?",
+      "url": "https://tangerin.ru/#rules",
+      "observed": "Вопрос и полный ответ совпадают с DOCX и CMS",
+      "result": "passed"
+    },
+    {
+      "id": "FAQ.6",
+      "requirement": "Можно ли пользоваться баней и мангалом?",
+      "url": "https://tangerin.ru/#rules",
+      "observed": "Вопрос и полный ответ совпадают с DOCX и CMS",
+      "result": "passed"
+    },
+    {
+      "id": "FAQ.7",
+      "requirement": "Как забронировать дом и отменить бронирование?",
+      "url": "https://tangerin.ru/#rules",
+      "observed": "Вопрос и полный ответ совпадают с DOCX и CMS",
+      "result": "passed"
+    },
+    {
+      "id": "FAQ.8",
+      "requirement": "Можно ли приехать большой компанией?",
+      "url": "https://tangerin.ru/#rules",
+      "observed": "Вопрос и полный ответ совпадают с DOCX и CMS",
+      "result": "passed"
+    },
+    {
+      "id": "FAQ.9",
+      "requirement": "Можно ли получить отчётные документы?",
+      "url": "https://tangerin.ru/#rules",
+      "observed": "Вопрос и полный ответ совпадают с DOCX и CMS",
+      "result": "passed"
+    },
+    {
+      "id": "FAQ.link",
+      "requirement": "Ссылка после ответа об отмене",
+      "url": "https://tangerin.ru/#rules",
+      "observed": "Подробнее об условиях бронирования → /usloviya-bronirovaniya",
+      "result": "passed"
+    }
+  ],
+  "documents": [
+    {
+      "slug": "usloviya-bronirovaniya",
+      "paragraphs": 24,
+      "sha256": "e8f3fb13944d345f4c7e5e72fd69703767c732040ac1e88736aedf310c4d526a",
+      "noStaleNamesDomainOrAmenityInAnyXmlPart": true
+    },
+    {
+      "slug": "soglasie-na-obrabotku-personalnyh-dannyh",
+      "paragraphs": 18,
+      "sha256": "18fb8a924e54b94acc46ebf94b7deb7b3ccea034e448ce4d513ad68607937d6c",
+      "noStaleNamesDomainOrAmenityInAnyXmlPart": true
+    },
+    {
+      "slug": "pravila-prozhivaniya",
+      "paragraphs": 50,
+      "sha256": "c7f85dc1c8be6fc4ae376512befd7db61ac7076fd3b9f0a7b8358ccc7c140ae5",
+      "noStaleNamesDomainOrAmenityInAnyXmlPart": true
+    },
+    {
+      "slug": "politika-obrabotki-personalnyh-dannyh",
+      "paragraphs": 37,
+      "sha256": "6d54584d7709725b6297c53f242a054d56345b8f81086677b5f5b212abf4885e",
+      "noStaleNamesDomainOrAmenityInAnyXmlPart": true
+    },
+    {
+      "slug": "dogovor-oferta",
+      "paragraphs": 55,
+      "sha256": "4f95500efe8e76b5f1c99883851c1944b47cd18cd9899b5d0d2939835e490cf7",
+      "noStaleNamesDomainOrAmenityInAnyXmlPart": true
+    }
+  ],
+  "paragraphs": 184,
+  "photosVisuallyInspected": 23,
+  "pages": [
+    {
+      "url": "https://tangerin.ru/doma/laym",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/doma/limon",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/doma/citrus",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/dlya-bolshoy-kompanii",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/kostroma",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/gde-poest",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/dostoprimechatelnosti",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/muzei",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/za-odin-den",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/s-detmi",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/chto-privezti",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/dlya-komandirovochnyh",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/soglasie-na-obrabotku-personalnyh-dannyh",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/usloviya-bronirovaniya",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/politika-obrabotki-personalnyh-dannyh",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/kontakty",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/zavtraki",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/banya-i-kupel",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/mangalnaya-zona",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/s-detmi",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/s-pitomcami",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/pravila-prozhivaniya",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    },
+    {
+      "url": "https://tangerin.ru/dogovor-oferta",
+      "http": 200,
+      "singleH1": true,
+      "currentCSS": true,
+      "footerLinks": 6
+    }
+  ],
+  "publishedApiSha256": "f812efe6cda67ae9e481c6d9df5fc7d4a3433cba53d91a0d829805656c569e28",
+  "gmailThreadRead": false,
+  "gmailReadError": "404 NOT_FOUND in connected account",
+  "browserInteractionVerified": false,
+  "browserError": "browser access host unavailable",
+  "layoutMethod": "static matching CSS declarations; no browser computed styles"
+}

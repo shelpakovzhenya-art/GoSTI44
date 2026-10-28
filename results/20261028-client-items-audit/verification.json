@@ -1,0 +1,15 @@
+{
+  "changedEntries": [],
+  "createdEntries": [],
+  "unchangedRows": 64,
+  "revisionsAdded": 0,
+  "databaseIntegrity": "ok",
+  "runtimeFilesChanged": 6,
+  "runtime": {
+    "files": 1869,
+    "links": 0,
+    "bytes": 266867429,
+    "treeSha256": "365fb5ca1e08c3a278102cb77bc11addcf42e6753811047ada92c7ac457a72c4"
+  },
+  "backup": "/var/www/gosti/backups/20261028-bath-closing-cascade"
+}

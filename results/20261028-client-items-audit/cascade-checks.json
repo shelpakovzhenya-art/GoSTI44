@@ -1,0 +1,249 @@
+{
+  "method": "static matching declarations in clientPalette; not computed browser styles",
+  "checks": [
+    {
+      "width": 320,
+      "before": {
+        "padding-right": {
+          "value": "0",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            10,
+            5,
+            5
+          ]
+        },
+        "background-image": {
+          "value": "none",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            10,
+            5,
+            6
+          ]
+        },
+        "border-top": {
+          "value": "1px solid var(--client-line, #e5ddcd)",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            10,
+            5,
+            4
+          ]
+        }
+      },
+      "after": {
+        "padding-right": {
+          "value": "0",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            11,
+            6,
+            10
+          ]
+        },
+        "background-image": {
+          "value": "none",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            11,
+            6,
+            11
+          ]
+        },
+        "border-top": {
+          "value": "0",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            11,
+            6,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "width": 390,
+      "before": {
+        "padding-right": {
+          "value": "0",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            10,
+            5,
+            5
+          ]
+        },
+        "background-image": {
+          "value": "none",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            10,
+            5,
+            6
+          ]
+        },
+        "border-top": {
+          "value": "1px solid var(--client-line, #e5ddcd)",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            10,
+            5,
+            4
+          ]
+        }
+      },
+      "after": {
+        "padding-right": {
+          "value": "0",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            11,
+            6,
+            10
+          ]
+        },
+        "background-image": {
+          "value": "none",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            11,
+            6,
+            11
+          ]
+        },
+        "border-top": {
+          "value": "0",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            11,
+            6,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "width": 768,
+      "before": {
+        "padding-right": {
+          "value": "150px",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            10,
+            5,
+            1
+          ]
+        },
+        "background-image": {
+          "value": "url(/brand/tangerine-branch.webp)",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            10,
+            5,
+            2
+          ]
+        },
+        "border-top": {
+          "value": "1px solid var(--client-line, #e5ddcd)",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            10,
+            5,
+            4
+          ]
+        }
+      },
+      "after": {
+        "padding-right": {
+          "value": "0",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            11,
+            6,
+            8
+          ]
+        },
+        "background-image": {
+          "value": "none",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            11,
+            6,
+            9
+          ]
+        },
+        "border-top": {
+          "value": "0",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            11,
+            6,
+            10
+          ]
+        }
+      }
+    },
+    {
+      "width": 1366,
+      "before": {
+        "padding-right": {
+          "value": "150px",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            10,
+            5,
+            1
+          ]
+        },
+        "background-image": {
+          "value": "url(/brand/tangerine-branch.webp)",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            10,
+            5,
+            2
+          ]
+        },
+        "border-top": {
+          "value": "1px solid var(--client-line, #e5ddcd)",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            10,
+            5,
+            4
+          ]
+        }
+      },
+      "after": {
+        "padding-right": {
+          "value": "0",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            11,
+            6,
+            8
+          ]
+        },
+        "background-image": {
+          "value": "none",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            11,
+            6,
+            9
+          ]
+        },
+        "border-top": {
+          "value": "0",
+          "selector": "html:root body:has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking",
+          "priority": [
+            11,
+            6,
+            10
+          ]
+        }
+      }
+    }
+  ]
+}

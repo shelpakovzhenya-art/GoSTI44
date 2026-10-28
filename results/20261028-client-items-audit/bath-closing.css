@@ -1,0 +1,18 @@
+/* Client requirement: compact bath closing without decorative highlights.
+   Eleven IDs outrank the legacy ten-ID selectors in the same important layer. */
+@layer clientPalette {
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking {
+ padding:16px 0!important;
+ margin:20px 0!important;
+ background:none!important;
+ border:0!important;
+ border-radius:0!important;
+ box-shadow:none!important;
+ min-height:0!important;
+}
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking::before,
+html:root body:has(#main):has(#main):has(#main):has(#main):has(#main) #main#main #additional-services#additional-services #sc-uniform-copy-bath #bath-booking::after {
+ content:none!important;
+ display:none!important;
+}
+}
