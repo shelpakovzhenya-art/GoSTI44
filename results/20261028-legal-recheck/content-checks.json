@@ -1,0 +1,46 @@
+{
+  "faqExact": true,
+  "docs": [
+    {
+      "url": "https://tangerin.ru/usloviya-bronirovaniya",
+      "paragraphs": 24,
+      "originalDownloadExact": true,
+      "differences": []
+    },
+    {
+      "url": "https://tangerin.ru/soglasie-na-obrabotku-personalnyh-dannyh",
+      "paragraphs": 18,
+      "originalDownloadExact": true,
+      "differences": [
+        {
+          "paragraph": 3
+        }
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/pravila-prozhivaniya",
+      "paragraphs": 50,
+      "originalDownloadExact": true,
+      "differences": [
+        {
+          "paragraph": 24
+        },
+        {
+          "paragraph": 26
+        }
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/politika-obrabotki-personalnyh-dannyh",
+      "paragraphs": 37,
+      "originalDownloadExact": true,
+      "differences": []
+    },
+    {
+      "url": "https://tangerin.ru/dogovor-oferta",
+      "paragraphs": 55,
+      "originalDownloadExact": true,
+      "differences": []
+    }
+  ]
+}

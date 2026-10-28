@@ -1,0 +1,20 @@
+@layer clientPalette {
+html:root body footer.site-footer #documents-and-contacts#documents-and-contacts#documents-and-contacts#documents-and-contacts.client-compact-legal .site-legal-links,
+html:root body footer.site-footer #documents-and-contacts#documents-and-contacts#documents-and-contacts#documents-and-contacts.client-compact-legal #legal-documents {
+ display:flex!important;flex-direction:column!important;gap:4px!important;margin:0!important;padding:0!important;
+}
+html:root body footer.site-footer #documents-and-contacts#documents-and-contacts#documents-and-contacts#documents-and-contacts.client-compact-legal .site-legal-links a {
+ display:inline!important;width:auto!important;min-height:0!important;height:auto!important;padding:0!important;margin:0!important;
+ border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;
+ font:400 14px/1.5 Manrope,Arial,sans-serif!important;color:inherit!important;
+ text-decoration:underline!important;text-underline-offset:3px!important;
+}
+html:root body footer.site-footer #documents-and-contacts#documents-and-contacts#documents-and-contacts#documents-and-contacts.client-compact-legal .site-legal-links a::before,
+html:root body footer.site-footer #documents-and-contacts#documents-and-contacts#documents-and-contacts#documents-and-contacts.client-compact-legal .site-legal-links a::after,
+html:root body footer.site-footer #documents-and-contacts#documents-and-contacts#documents-and-contacts#documents-and-contacts.client-compact-legal .fl-legal-note::before {
+ content:none!important;display:none!important;
+}
+html:root body footer.site-footer #documents-and-contacts#documents-and-contacts#documents-and-contacts#documents-and-contacts.client-compact-legal .fl-legal-note {
+ display:block!important;margin:12px 0 0!important;padding:0!important;font:400 13px/1.5 Manrope,Arial,sans-serif!important;
+}
+}
