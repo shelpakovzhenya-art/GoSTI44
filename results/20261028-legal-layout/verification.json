@@ -1,0 +1,15 @@
+{
+  "changedEntries": [],
+  "createdEntries": [],
+  "unchangedRows": 64,
+  "revisionsAdded": 0,
+  "databaseIntegrity": "ok",
+  "runtimeFilesChanged": 6,
+  "runtime": {
+    "files": 1870,
+    "links": 0,
+    "bytes": 267652898,
+    "treeSha256": "0aa07e616c351fec100ea6d3b7d185759f389509e174689b2660a9e1afe5d74f"
+  },
+  "backup": "/var/www/gosti/backups/20261028-legal-layout"
+}

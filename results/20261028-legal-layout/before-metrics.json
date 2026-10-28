@@ -1,0 +1,332 @@
+[
+  {
+    "address": {
+      "columns": "none",
+      "display": "block",
+      "fontSize": "15px",
+      "gap": "normal",
+      "height": 405.5,
+      "padding": "0px",
+      "width": 220,
+      "x": 892,
+      "y": 408.46875
+    },
+    "columns": {
+      "columns": "220px 139.5px",
+      "display": "grid",
+      "fontSize": "15px",
+      "gap": "24px",
+      "height": 405.5,
+      "padding": "0px",
+      "width": 383.5,
+      "x": 892,
+      "y": 408.46875
+    },
+    "documentLinks": [
+      {
+        "columns": "none",
+        "display": "block",
+        "fontSize": "14px",
+        "gap": "10px",
+        "height": 63,
+        "href": "/usloviya-bronirovaniya",
+        "padding": "0px",
+        "text": "Условия бронирования, оплаты и отмены",
+        "width": 139.5,
+        "x": 1136,
+        "y": 408.46875
+      },
+      {
+        "columns": "none",
+        "display": "block",
+        "fontSize": "14px",
+        "gap": "10px",
+        "height": 84,
+        "href": "/soglasie-na-obrabotku-personalnyh-dannyh",
+        "padding": "0px",
+        "text": "Согласие на обработку персональных данных",
+        "width": 139.5,
+        "x": 1136,
+        "y": 475.46875
+      },
+      {
+        "columns": "none",
+        "display": "block",
+        "fontSize": "14px",
+        "gap": "10px",
+        "height": 63,
+        "href": "/politika-obrabotki-personalnyh-dannyh",
+        "padding": "0px",
+        "text": "Политика обработки персональных данных",
+        "width": 139.5,
+        "x": 1136,
+        "y": 563.46875
+      },
+      {
+        "columns": "none",
+        "display": "block",
+        "fontSize": "14px",
+        "gap": "10px",
+        "height": 42,
+        "href": "/pravila-prozhivaniya",
+        "padding": "0px",
+        "text": "Правила проживания",
+        "width": 139.5,
+        "x": 1136,
+        "y": 630.46875
+      },
+      {
+        "columns": "none",
+        "display": "block",
+        "fontSize": "14px",
+        "gap": "10px",
+        "height": 21,
+        "href": "#cookie-settings",
+        "padding": "0px",
+        "text": "Настройка cookies",
+        "width": 139.5,
+        "x": 1136,
+        "y": 676.46875
+      },
+      {
+        "columns": "none",
+        "display": "block",
+        "fontSize": "14px",
+        "gap": "10px",
+        "height": 42,
+        "href": "https://reservationsteps.ru/rooms/index/07c095b2-87d7-41ee-894d-76339e9f891a",
+        "padding": "0px",
+        "text": "Условия и стоимость бронирования",
+        "width": 139.5,
+        "x": 1136,
+        "y": 701.46875
+      }
+    ],
+    "firstLink": {
+      "columns": "none",
+      "display": "block",
+      "fontSize": "14px",
+      "gap": "10px",
+      "height": 63,
+      "padding": "0px",
+      "width": 139.5,
+      "x": 1136,
+      "y": 408.46875
+    },
+    "heading": {
+      "columns": "none",
+      "display": "flex",
+      "fontSize": "12px",
+      "gap": "10px",
+      "height": 18,
+      "padding": "0px",
+      "width": 796.5,
+      "x": 75.5,
+      "y": 408.46875
+    },
+    "links": {
+      "columns": "none",
+      "display": "flex",
+      "fontSize": "13px",
+      "gap": "4px",
+      "height": 335,
+      "padding": "0px",
+      "width": 139.5,
+      "x": 1136,
+      "y": 408.46875
+    },
+    "note": {
+      "columns": "none",
+      "display": "block",
+      "fontSize": "13px",
+      "gap": "8px",
+      "height": 58.5,
+      "padding": "0px",
+      "width": 139.5,
+      "x": 1136,
+      "y": 755.46875
+    },
+    "overflow": 0,
+    "section": {
+      "columns": "796.5px 383.5px",
+      "display": "grid",
+      "fontSize": "15px",
+      "gap": "20px",
+      "height": 446.5,
+      "padding": "20px 0px",
+      "width": 1200,
+      "x": 75.5,
+      "y": 387.46875
+    },
+    "url": "https://tangerin.ru/",
+    "viewport": {
+      "height": 900,
+      "width": 1366
+    }
+  },
+  {
+    "address": {
+      "columns": "none",
+      "display": "block",
+      "fontSize": "15px",
+      "gap": "normal",
+      "height": 84,
+      "padding": "0px",
+      "width": 343,
+      "x": 16,
+      "y": 411.078125
+    },
+    "columns": {
+      "columns": "343px",
+      "display": "grid",
+      "fontSize": "15px",
+      "gap": "14px",
+      "height": 295,
+      "padding": "0px",
+      "width": 343,
+      "x": 16,
+      "y": 411.078125
+    },
+    "documentLinks": [
+      {
+        "columns": "none",
+        "display": "block",
+        "fontSize": "14px",
+        "gap": "10px",
+        "height": 21,
+        "href": "/usloviya-bronirovaniya",
+        "padding": "0px",
+        "text": "Условия бронирования, оплаты и отмены",
+        "width": 343,
+        "x": 16,
+        "y": 509.078125
+      },
+      {
+        "columns": "none",
+        "display": "block",
+        "fontSize": "14px",
+        "gap": "10px",
+        "height": 21,
+        "href": "/soglasie-na-obrabotku-personalnyh-dannyh",
+        "padding": "0px",
+        "text": "Согласие на обработку персональных данных",
+        "width": 343,
+        "x": 16,
+        "y": 534.078125
+      },
+      {
+        "columns": "none",
+        "display": "block",
+        "fontSize": "14px",
+        "gap": "10px",
+        "height": 21,
+        "href": "/politika-obrabotki-personalnyh-dannyh",
+        "padding": "0px",
+        "text": "Политика обработки персональных данных",
+        "width": 343,
+        "x": 16,
+        "y": 559.078125
+      },
+      {
+        "columns": "none",
+        "display": "block",
+        "fontSize": "14px",
+        "gap": "10px",
+        "height": 21,
+        "href": "/pravila-prozhivaniya",
+        "padding": "0px",
+        "text": "Правила проживания",
+        "width": 343,
+        "x": 16,
+        "y": 584.078125
+      },
+      {
+        "columns": "none",
+        "display": "block",
+        "fontSize": "14px",
+        "gap": "10px",
+        "height": 21,
+        "href": "#cookie-settings",
+        "padding": "0px",
+        "text": "Настройка cookies",
+        "width": 343,
+        "x": 16,
+        "y": 609.078125
+      },
+      {
+        "columns": "none",
+        "display": "block",
+        "fontSize": "14px",
+        "gap": "10px",
+        "height": 21,
+        "href": "https://reservationsteps.ru/rooms/index/07c095b2-87d7-41ee-894d-76339e9f891a",
+        "padding": "0px",
+        "text": "Условия и стоимость бронирования",
+        "width": 343,
+        "x": 16,
+        "y": 634.078125
+      }
+    ],
+    "firstLink": {
+      "columns": "none",
+      "display": "block",
+      "fontSize": "14px",
+      "gap": "10px",
+      "height": 21,
+      "padding": "0px",
+      "width": 343,
+      "x": 16,
+      "y": 509.078125
+    },
+    "heading": {
+      "columns": "none",
+      "display": "flex",
+      "fontSize": "12px",
+      "gap": "8px",
+      "height": 18,
+      "padding": "0px",
+      "width": 343,
+      "x": 16,
+      "y": 381.078125
+    },
+    "links": {
+      "columns": "none",
+      "display": "flex",
+      "fontSize": "13px",
+      "gap": "4px",
+      "height": 146,
+      "padding": "0px",
+      "width": 343,
+      "x": 16,
+      "y": 509.078125
+    },
+    "note": {
+      "columns": "none",
+      "display": "block",
+      "fontSize": "13px",
+      "gap": "8px",
+      "height": 39,
+      "padding": "0px",
+      "width": 343,
+      "x": 16,
+      "y": 667.078125
+    },
+    "overflow": 0,
+    "section": {
+      "columns": "minmax(0px, 1fr)",
+      "display": "block",
+      "fontSize": "15px",
+      "gap": "20px",
+      "height": 366,
+      "padding": "20px 0px",
+      "width": 343,
+      "x": 16,
+      "y": 360.078125
+    },
+    "url": "https://tangerin.ru/",
+    "viewport": {
+      "height": 900,
+      "width": 390
+    }
+  }
+]

@@ -57,3 +57,6 @@
 Production:6 runtime-путей (новый CSS+5 manifests), gosti active. CSS1m2h-bath-closing-20261028.css, runtime1869 файлов/treeSHA365fb5ca1e08c3a278102cb77bc11addcf42e6753811047ada92c7ac457a72c4. Backup /var/www/gosti/backups/20261028-bath-closing-cascade. Применён ранее проверенный results/20261028-final-legal-audit/apply-production.py со свежими полными runtime/API guards и пустым CMS-планом. Локальный runtime-manifest/snapshot обновлены, чужие изменения не затёрты. Предыдущий baseline картинок доступен в content-patch.json server-backup /var/www/gosti/backups/20261028-client-legal.
 
 Откат этой правки: восстановить только5 client-reference manifests из текущего backup, перезапустить gosti; CMS/БД не восстанавливать. Новый CSS можно оставить до истечения кешей. Полнота источника подтверждена пользователем, исправления из полного списка опубликованы. Можно передавать клиенту на проверку. Браузерный прогон не выдавать за выполненный: для него нужен работающий browser host.
+
+
+Уточнение после скриншота пользователя28.10: статический критерий4.4 не проверил внешнюю сетку и пропустил сжатие документов до139.5px. Дефект воспроизведён в браузере и исправлен отдельной задачей: results/20261028-legal-layout/README.md. Актуальная приёмка правового блока —6 production-ширин/реальные снимки/клики, а не только прежняя статическая проверка.
