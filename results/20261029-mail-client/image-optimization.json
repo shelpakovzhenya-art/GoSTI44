@@ -1,0 +1,128 @@
+[
+  {
+    "source": "/images/business-bedroom.jpg",
+    "beforeBytes": 232610,
+    "afterBytes": 114854,
+    "size": [
+      1600,
+      900
+    ]
+  },
+  {
+    "source": "/images/hero.jpg",
+    "beforeBytes": 666705,
+    "afterBytes": 445220,
+    "size": [
+      1600,
+      1200
+    ]
+  },
+  {
+    "source": "/images/lemon-bedroom-wide-20260930.webp",
+    "beforeBytes": 216836,
+    "afterBytes": 134976,
+    "size": [
+      1448,
+      1086
+    ]
+  },
+  {
+    "source": "/images/lime-kitchen-dining-20261002.webp",
+    "beforeBytes": 244720,
+    "afterBytes": 164980,
+    "size": [
+      1448,
+      1086
+    ]
+  },
+  {
+    "source": "/media/client-20261014/gallery-01.webp",
+    "beforeBytes": 497126,
+    "afterBytes": 353426,
+    "size": [
+      1402,
+      1122
+    ]
+  },
+  {
+    "source": "/media/client-20261014/gallery-02.webp",
+    "beforeBytes": 190432,
+    "afterBytes": 117476,
+    "size": [
+      1313,
+      1198
+    ]
+  },
+  {
+    "source": "/media/client-20261014/gallery-03.webp",
+    "beforeBytes": 216836,
+    "afterBytes": 134976,
+    "size": [
+      1448,
+      1086
+    ]
+  },
+  {
+    "source": "/media/client-20261014/gallery-04.webp",
+    "beforeBytes": 336528,
+    "afterBytes": 239058,
+    "size": [
+      1448,
+      1086
+    ]
+  },
+  {
+    "source": "/media/client-20261014/gallery-05.webp",
+    "beforeBytes": 388292,
+    "afterBytes": 289250,
+    "size": [
+      1280,
+      960
+    ]
+  },
+  {
+    "source": "/media/client-20261014/gallery-06.webp",
+    "beforeBytes": 256198,
+    "afterBytes": 189112,
+    "size": [
+      1448,
+      1086
+    ]
+  },
+  {
+    "source": "/media/client-20261014/gallery-07.webp",
+    "beforeBytes": 199824,
+    "afterBytes": 127224,
+    "size": [
+      1313,
+      1198
+    ]
+  },
+  {
+    "source": "/media/client-20261014/gallery-09.webp",
+    "beforeBytes": 326238,
+    "afterBytes": 199528,
+    "size": [
+      1200,
+      1200
+    ]
+  },
+  {
+    "source": "/media/client-20261014/gallery-10.webp",
+    "beforeBytes": 257350,
+    "afterBytes": 154218,
+    "size": [
+      1600,
+      900
+    ]
+  },
+  {
+    "source": "/media/client-20261014/gallery-12.webp",
+    "beforeBytes": 195612,
+    "afterBytes": 116126,
+    "size": [
+      1273,
+      1200
+    ]
+  }
+]

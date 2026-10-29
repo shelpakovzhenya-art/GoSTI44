@@ -66,3 +66,5 @@
 
 - [x] bnovo-reliability-20261029: исправлен sticky script/ложная готовность пустого iframe; общий загрузчик с таймаутами/3 повторами/manual-online/fallback. https://tangerin.ru/vse-dlya-otdyha/zavtraki и https://tangerin.ru/ .12 сценариев/25 HTTP200/SHA/две формы/SPA/поиск/mobile390 проверены.6 runtime-путей;64 CMS строки/API неизменны. results/20261029-bnovo-reliability/README.md.
 
+
+- [x] mail-client-20261029: опубликованы правки нового ТЗ:6 компактных контактных плашек,удаление повторов,карточки/галереи/новые фото,баня4 фото,WhatsApp/личныйTelegram/ОК https://ok.ru/group/70000044385070.23 CMS/46 ревизий,41 другая строка сохранена;14 изображений −1,44МБ,отложенное видео,ARIA/securityheaders/CSPReportOnly.25URL/assetSHA,Chrome320/390/1366,Bnovo поиск проверены. Ограничения:PageSpeed429,реальныеSafari/Android,контрольная бронь/PMS/уведомления и кабинеты поисковиков не проверялись. results/20261029-mail-client/README.md.
