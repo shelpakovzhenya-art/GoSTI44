@@ -1,0 +1,59 @@
+{
+  "productionRoot": "/var/www/gosti/releases/20260925-2/.next/standalone",
+  "backup": "/var/www/gosti/backups/20261029-bnovo-reliability",
+  "runtimeBefore": {
+    "files": 1871,
+    "links": 0,
+    "bytes": 268448019,
+    "treeSha256": "7a0bf4d84f5a72fa599a13fa140867620ac21baf900b04eee352c1042d27b56f"
+  },
+  "runtimeAfter": {
+    "files": 1873,
+    "links": 0,
+    "bytes": 268586047,
+    "treeSha256": "c69d8838ffcd38bd3adc6400e7629da1acb11e01bc770ce161ce1cbd55305353"
+  },
+  "publishedAPI": "f812efe6cda67ae9e481c6d9df5fc7d4a3433cba53d91a0d829805656c569e28",
+  "guards": [
+    {
+      "path": ".next/static/chunks/3cltmr-hydration-20261026.js",
+      "sha256": "43e1c05b74d60ca60f6331b3e43e5e6fbbb1398602e73a9fc63b0299aed57987"
+    },
+    {
+      "path": ".next/static/chunks/1iyslc2xp3jm8-faq-paragraph-20261028.js",
+      "sha256": "c61b2de8bfc4dd8451c25f1cde2c545abee44d7fae714d23b350c5f2e6b26b6f"
+    }
+  ],
+  "additions": [
+    {
+      "path": ".next/static/chunks/3cltmr-bnovo-reliable-20261029.js",
+      "sha256": "36afc0446a2a4ca762974970a84f79da12d0ff4d173db14a7d99e4b0500deeee"
+    },
+    {
+      "path": ".next/static/chunks/1iyslc2xp3jm8-bnovo-reliable-20261029.js",
+      "sha256": "e3ca55e8c0ddabf4ff8dbcfef412843d07a644c4edf2dba5f755e25e9da97985"
+    }
+  ],
+  "replacements": [
+    {
+      "path": ".next/server/app/[...slug]/page_client-reference-manifest.js",
+      "beforeSha256": "2caf68547685bdf59824b3d7158f16653a846a80ec2be1a89504ba8c0989cb07",
+      "afterSha256": "36ce86ccaa0e3d89b606ee7ff67c49d14afe32d5e9fa0aa9a5ad553f8056a01c"
+    },
+    {
+      "path": ".next/server/app/editor-preview/page_client-reference-manifest.js",
+      "beforeSha256": "5535916c3205b47c79060c465b8eeb0e709634b4dd8e81159316dcb21e2e7323",
+      "afterSha256": "b7ebb95321d3306908619a6299e1f3f2fa32b83c7fd9a7d916bfa0d06f692621"
+    },
+    {
+      "path": ".next/server/app/page_client-reference-manifest.js",
+      "beforeSha256": "fdd3d2f874049bd00de5407d37b74d4e2b7a7c9192aae732429b41029aaf2204",
+      "afterSha256": "8bc6b4d979106dfed6ee001ac7830e397dc16b27ac63dfe9f7073e8c147f2316"
+    },
+    {
+      "path": ".next/server/app/preview/page_client-reference-manifest.js",
+      "beforeSha256": "801f1f40b5c78c51d261cc3242ffc4fed7c11b16bf66b9ea41c3ac2dcf8b58f2",
+      "afterSha256": "b882bd229a9e78314e15aee887692c3510936061b96c30da21e7dd7b5f4642b9"
+    }
+  ]
+}

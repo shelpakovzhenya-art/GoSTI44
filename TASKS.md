@@ -63,3 +63,6 @@
 - [x] legal-footer-layout-20261028: по скриншоту воспроизведён пропуск внешней сетки footer (документы139.5px при1200px). Исправлено: heading full-width, контакты/документы рядом desktop,1 колонка mobile. Production6 ширин1920–320/снимки/overflow0/cookies/переход правил/SPA проверены.1366: высота446.5→183.5px.25 HTTP200,64 CMS-строки/API неизменны/0 ревизий,6 runtime-путей. https://tangerin.ru/#documents-and-contacts . Доказательства: results/20261028-legal-layout/README.md.
 
 - [x] bath-spacing-20261028: по3 скриншотам убраны разрывы hero/цены/карточки/closing, уплотнён booking.1366 main1225→891px, карточка528→361px. Production6 ширин/снимки/2 photo-modal/календарь+гости1366/390/SPA проверены, overflow0/console0.25 HTTP200,64 CMS-строки/API неизменны/0 ревизий,6 runtime-путей. https://tangerin.ru/vse-dlya-otdyha/banya-i-kupel . Доказательства: results/20261028-bath-spacing/README.md.
+
+- [x] bnovo-reliability-20261029: исправлен sticky script/ложная готовность пустого iframe; общий загрузчик с таймаутами/3 повторами/manual-online/fallback. https://tangerin.ru/vse-dlya-otdyha/zavtraki и https://tangerin.ru/ .12 сценариев/25 HTTP200/SHA/две формы/SPA/поиск/mobile390 проверены.6 runtime-путей;64 CMS строки/API неизменны. results/20261029-bnovo-reliability/README.md.
+

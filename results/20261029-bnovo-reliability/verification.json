@@ -1,0 +1,166 @@
+{
+  "pages": [
+    {
+      "url": "https://tangerin.ru/doma/laym",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/doma/limon",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/doma/citrus",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/dlya-bolshoy-kompanii",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/kostroma",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/gde-poest",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/dostoprimechatelnosti",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/muzei",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/za-odin-den",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/s-detmi",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/chto-privezti",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/dlya-komandirovochnyh",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/soglasie-na-obrabotku-personalnyh-dannyh",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/usloviya-bronirovaniya",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/politika-obrabotki-personalnyh-dannyh",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/kontakty",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/zavtraki",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/banya-i-kupel",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/mangalnaya-zona",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/s-detmi",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/s-pitomcami",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/pravila-prozhivaniya",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    },
+    {
+      "url": "https://tangerin.ru/dogovor-oferta",
+      "status": 200,
+      "newLoader": true,
+      "existingCSS": true
+    }
+  ],
+  "pageCount": 25,
+  "publishedAPIUnchanged": true,
+  "newAssetHashesVerified": true,
+  "runtime": {
+    "files": 1873,
+    "links": 0,
+    "bytes": 268586047,
+    "treeSha256": "c69d8838ffcd38bd3adc6400e7629da1acb11e01bc770ce161ce1cbd55305353"
+  },
+  "CMSRows": 64,
+  "CMSRowsUnchanged": true,
+  "revisionsAdded": 0
+}

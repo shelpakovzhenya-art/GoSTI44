@@ -1,0 +1,53 @@
+{
+  "passed": 12,
+  "scenarios": [
+    {
+      "name": "baseline: failed script remains sticky",
+      "passed": true
+    },
+    {
+      "name": "SDK error recovers automatically",
+      "passed": true
+    },
+    {
+      "name": "SDK timeout is replaced and recovers",
+      "passed": true
+    },
+    {
+      "name": "empty iframe is not success; it is remounted",
+      "passed": true
+    },
+    {
+      "name": "permanent failure is bounded with a working direct URL",
+      "passed": true
+    },
+    {
+      "name": "late response from timed out attempt cannot touch detached iframe",
+      "passed": true
+    },
+    {
+      "name": "two home forms share the SDK and one popup listener",
+      "passed": true
+    },
+    {
+      "name": "SPA unmount cancels pending work",
+      "passed": true
+    },
+    {
+      "name": "untouched form adapts to resize; used form is preserved",
+      "passed": true
+    },
+    {
+      "name": "online event restores failed SDK",
+      "passed": true
+    },
+    {
+      "name": "hidden footer starts after returning from home",
+      "passed": true
+    },
+    {
+      "name": "manual retry restores exhausted attempts",
+      "passed": true
+    }
+  ]
+}
