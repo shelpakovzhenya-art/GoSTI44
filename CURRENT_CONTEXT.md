@@ -221,3 +221,6 @@ CSS1m2h-bath-gallery-guide-v2-20261030.css. Runtime194737c90df2290102ca687e81358
 
 ## Удаление тёмного финального блока Костромы30.10.2026
 Удалён guide-closing из2SSRкомпонентов для6подстраниц;7URL200,блоков0. На /kostroma светлый gr-plan оставлен. CMS/API/CSSне менялись. Runtimea87e6a7bfd7a368f030b5df3375378b936327d65d68ae05dac1190fd14ceafac. Отчёт changes/20261030-remove-guide-closing/README.md. Не возвращать этот фотоблок.
+
+## Компактные первые блоки Костромы30.10.2026
+6подстраниц:padding24одинраз,колонки1.3:1,кнопкирядом,фотоstretch;музеи795→517px.6desktopпроверокoverflow0. CSS1m2h-guide-hero-compact-20261030.css. Runtimecad97db22793c388e7428e73ddcd163a1e90a291ec2c1422f2691907c3f01277. CMS/APIбезизменений. changes/20261030-guide-hero-compact/README.md.

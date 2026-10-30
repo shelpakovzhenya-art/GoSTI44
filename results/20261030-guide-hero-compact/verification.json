@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "darkBlocks": 0,
+      "height": 517.484375,
+      "overflow": 0,
+      "url": "https://tangerin.ru/kostroma/muzei"
+    },
+    {
+      "darkBlocks": 0,
+      "height": 517.484375,
+      "overflow": 0,
+      "url": "https://tangerin.ru/kostroma/gde-poest"
+    },
+    {
+      "darkBlocks": 0,
+      "height": 579.078125,
+      "overflow": 0,
+      "url": "https://tangerin.ru/kostroma/dostoprimechatelnosti"
+    },
+    {
+      "darkBlocks": 0,
+      "height": 517.484375,
+      "overflow": 0,
+      "url": "https://tangerin.ru/kostroma/za-odin-den"
+    },
+    {
+      "darkBlocks": 0,
+      "height": 517.484375,
+      "overflow": 0,
+      "url": "https://tangerin.ru/kostroma/s-detmi"
+    },
+    {
+      "darkBlocks": 0,
+      "height": 493.484375,
+      "overflow": 0,
+      "url": "https://tangerin.ru/kostroma/chto-privezti"
+    }
+  ],
+  "runtime": {
+    "files": 2067,
+    "bytes": 296652901,
+    "treeSha256": "cad97db22793c388e7428e73ddcd163a1e90a291ec2c1422f2691907c3f01277"
+  },
+  "apiUnchanged": true
+}

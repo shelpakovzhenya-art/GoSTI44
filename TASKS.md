@@ -88,3 +88,5 @@
 -30.10.2026: production — компактная баня/запятая,39подписей галерей безобрезки,7H1Костромы,выделение цели рекомендаций. results/20261030-bath-gallery-guide/README.md.
 
 -30.10.2026: удалён тёмный финальный фотоблок разделаКострома вproduction;7URLпроверены. results/20261030-remove-guide-closing/README.md.
+
+-30.10.2026: первые блокиКостромыкомпактнее,production;results/20261030-guide-hero-compact/README.md.
