@@ -76,3 +76,5 @@
 `n- [x] 2026-10-30 remove video control: deleted Pause/Watch button SSR+CSR on production;390/1366/SSR verified. Background autoplay restored; CMS unchanged. results/20261030-remove-video-button/README.md
 
 - [x] 2026-10-30 contact row:5 icons/labels aligned on production,320/390/1366 verified; CMS/JS unchanged. results/20261030-contact-row/README.md
+
+- [x] 2026-10-30 phone hover: fixed inherited SVG translation/clipping on production; CSSOM/computed styles/API verified. results/20261030-phone-hover/README.md

@@ -196,3 +196,6 @@ Runtime2051файл/287639890байт/treeSHA01210a4ae0fc8d27460956f2b1b18c1eb10
 
 ## Контактный ряд30.10.2026
 На главной .contact-actions все5 круглых кнопок/подписей выровнены в один ряд, включая Позвонить.54px/44px≤359.320/390/1366: одинаковыйtop/overflow0. CSS1m2h-contact-row-v3-20261030.css иhome-only-contact-row-v3-20261030.css, manifest/Nginxссылки обновлены. API/CMS/JS/Bnovo прежние. Отчёт changes/20261030-contact-row/README.md. Runtime 264c141fe8de30e9e6b9821b9b65360da78bc598a49816cbd8880ae09e9e7434.
+
+## Hover Позвонить30.10.2026
+Убран унаследованный сдвигSVG/обрезка/декоративныйbefore только .contact-actions > .button.button-dark. Hover=лёгкое затемнение без движения; ряд/подписи сохранены. CSS1m2h-phone-hover-20261030.css иhome-only-phone-hover-20261030.css; API/JS/CMS прежние. Отчёт changes/20261030-phone-hover/README.md. Runtime 79a7c0c68b81ecbab0d3043d0d6c38e0acf319ad5c951abbac510c0245ee5dd4.

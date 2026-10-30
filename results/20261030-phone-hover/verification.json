@@ -1,0 +1,13 @@
+{
+  "runtime": {
+    "files": 2060,
+    "links": 0,
+    "bytes": 291309413,
+    "treeSha256": "79a7c0c68b81ecbab0d3043d0d6c38e0acf319ad5c951abbac510c0245ee5dd4"
+  },
+  "apiUnchanged": true,
+  "loadedHoverOverrides": true,
+  "iconTransform": "none",
+  "overflow": "visible",
+  "beforeDisplay": "none"
+}
