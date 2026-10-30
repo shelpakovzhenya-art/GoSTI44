@@ -233,3 +233,6 @@ CSS1m2h-bath-gallery-guide-v2-20261030.css. Runtime194737c90df2290102ca687e81358
 
 ## Даты внутреннейформы30.10.2026
 Серверныйrootlayoutвставляетсегодня/завтраEurope/Moscow(value/min),25SSRURLпроверены;браузерзавтраки/мангал/большаякомпанияполянепустые. JSresumeвосстанавливаетпустые,неперезаписываетвведённое. JS3cltmr-booking-native-v3-20261030.js. Runtime3405829706107fc32395c9d02242ebfc12ea76735ca025b8866634555dc96b1f. CMS/CSSне менялись. changes/20261030-booking-date-defaults/README.md.
+
+## Подписи и фото30.10.2026
+Лимон:living-wide→Зона отдыха,living-entry→Вход в гостиную. Общаяphoto-gallery12фото,добавленаПарная/images/spa-sauna.jpg.2CMSзаписи/4ревизии,API8f7da50f81e0ca07bf93c1eb2e452b33120598d5e081cfc51eb2853a0628857e. Runtimeпрежний. changes/20261030-gallery-labels-sauna/README.md.

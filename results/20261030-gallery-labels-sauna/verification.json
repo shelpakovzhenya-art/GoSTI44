@@ -1,0 +1,20 @@
+{
+  "apiSha256": "8f7da50f81e0ca07bf93c1eb2e452b33120598d5e081cfc51eb2853a0628857e",
+  "lemonChanges": [
+    {
+      "src": "/images/lemon-living-wide-20260930.webp",
+      "alt": "Зона отдыха"
+    },
+    {
+      "src": "/images/lemon-living-entry-20260930.webp",
+      "alt": "Вход в гостиную"
+    }
+  ],
+  "galleryCount": 12,
+  "added": {
+    "src": "/images/spa-sauna.jpg",
+    "alt": "Парная"
+  },
+  "browserViewer": "12 / 12 Парная",
+  "runtimeUnchanged": true
+}
