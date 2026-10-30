@@ -1,0 +1,262 @@
+[
+  {
+    "booking": 3,
+    "broken": 0,
+    "closing": 0,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 28,
+    "url": "/",
+    "width": 390
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 0,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 4,
+    "url": "/doma/laym",
+    "width": 390
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 0,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 4,
+    "url": "/doma/limon",
+    "width": 390
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 0,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 4,
+    "url": "/doma/citrus",
+    "width": 390
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 1,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 3,
+    "url": "/dlya-bolshoy-kompanii",
+    "width": 390
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 1,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 3,
+    "url": "/dlya-komandirovochnyh",
+    "width": 390
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 0,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 3,
+    "url": "/vse-dlya-otdyha",
+    "width": 390
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 1,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 3,
+    "url": "/vse-dlya-otdyha/zavtraki",
+    "width": 390
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 1,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 3,
+    "url": "/vse-dlya-otdyha/banya-i-kupel",
+    "width": 390
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 0,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 3,
+    "url": "/vse-dlya-otdyha/mangalnaya-zona",
+    "width": 390
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 1,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 3,
+    "url": "/vse-dlya-otdyha/s-detmi",
+    "width": 390
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 1,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 3,
+    "url": "/vse-dlya-otdyha/s-pitomcami",
+    "width": 390
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 0,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 3,
+    "url": "/kontakty",
+    "width": 390
+  },
+  {
+    "booking": 3,
+    "broken": 0,
+    "closing": 0,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 28,
+    "url": "/",
+    "width": 1366
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 0,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 4,
+    "url": "/doma/laym",
+    "width": 1366
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 0,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 4,
+    "url": "/doma/limon",
+    "width": 1366
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 0,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 4,
+    "url": "/doma/citrus",
+    "width": 1366
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 1,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 3,
+    "url": "/dlya-bolshoy-kompanii",
+    "width": 1366
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 1,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 3,
+    "url": "/dlya-komandirovochnyh",
+    "width": 1366
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 0,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 3,
+    "url": "/vse-dlya-otdyha",
+    "width": 1366
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 1,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 3,
+    "url": "/vse-dlya-otdyha/zavtraki",
+    "width": 1366
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 1,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 3,
+    "url": "/vse-dlya-otdyha/banya-i-kupel",
+    "width": 1366
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 0,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 3,
+    "url": "/vse-dlya-otdyha/mangalnaya-zona",
+    "width": 1366
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 1,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 3,
+    "url": "/vse-dlya-otdyha/s-detmi",
+    "width": 1366
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 1,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 3,
+    "url": "/vse-dlya-otdyha/s-pitomcami",
+    "width": 1366
+  },
+  {
+    "booking": 1,
+    "broken": 0,
+    "closing": 0,
+    "h1": 1,
+    "overflow": 0,
+    "responsive": 3,
+    "url": "/kontakty",
+    "width": 1366
+  }
+]

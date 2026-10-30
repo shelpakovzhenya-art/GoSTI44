@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-30",
+  "url": "https://tangerin.ru/",
+  "method": "Lighthouse mobile, throttling-method=devtools, headless Chrome",
+  "beforeHomeStyles": {
+    "categories": {
+      "performance": 0.34,
+      "accessibility": 1,
+      "best-practices": 0.77,
+      "seo": 1,
+      "agentic-browsing": 1
+    },
+    "audits": {
+      "first-contentful-paint": 5783.059,
+      "largest-contentful-paint": 5783.059,
+      "cumulative-layout-shift": 0,
+      "total-blocking-time": 1639.9209999999966,
+      "total-byte-weight": 3319774,
+      "color-contrast": 1,
+      "target-size": 1,
+      "label-content-name-mismatch": 0
+    }
+  },
+  "final": {
+    "categories": {
+      "performance": 0.39,
+      "accessibility": 1,
+      "best-practices": 0.77,
+      "seo": 1,
+      "agentic-browsing": 1
+    },
+    "audits": {
+      "first-contentful-paint": 4502.84,
+      "largest-contentful-paint": 4619.607,
+      "cumulative-layout-shift": 0.0004487257993766979,
+      "total-blocking-time": 2681.8779999999997,
+      "total-byte-weight": 3188626,
+      "color-contrast": 1,
+      "target-size": 1,
+      "label-content-name-mismatch": 0
+    }
+  },
+  "testBookingSubmitted": false,
+  "physicalDevices": "User will verify; explicitly excluded from agent acceptance"
+}
