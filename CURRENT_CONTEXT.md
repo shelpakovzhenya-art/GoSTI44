@@ -239,3 +239,6 @@ CSS1m2h-bath-gallery-guide-v2-20261030.css. Runtime194737c90df2290102ca687e81358
 
 ## Вёрстка бронирования30.10.2026
 footer-booking:заголовоксверху,формаполнаяширина,203–204pxdesktop;поля278.5pxбезобрезкидат.5страницпроверены. CSS1m2h-booking-layout-v2-20261030.css;≤900две/≤480однаколонка. Runtimeaf5b12465ef80e63a91d2b50b41ff1f082d2269368a5808f20b19b30657d15ec. JS/CMSпрежние. changes/20261030-booking-layout/README.md.
+
+## Телефон30.10.2026
+.contact-phone20px/28px600. CSS1m2h-contact-phone-20261030.css+home-only-contact-phone-20261030.css. Runtimed2028e5ccdff24d18f2e9ab095f54c45b821c74effbc2626ccf65506a4c3340a. changes/20261030-contact-phone-size/README.md.
