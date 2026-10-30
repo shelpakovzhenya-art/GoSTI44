@@ -1,0 +1,89 @@
+{
+  "runtime": {
+    "files": 2063,
+    "links": 0,
+    "bytes": 293561458,
+    "treeSha256": "ce13ef52681fba37366416c9e0a29f4bde496c6ca4adac28d4cc8361c108ef2a"
+  },
+  "apiUnchanged": true,
+  "measurements": [
+    {
+      "cards": [
+        {
+          "height": 168.1875,
+          "width": 232
+        },
+        {
+          "height": 168.1875,
+          "width": 232
+        },
+        {
+          "height": 168.1875,
+          "width": 232
+        },
+        {
+          "height": 168.1875,
+          "width": 232
+        },
+        {
+          "height": 168.1875,
+          "width": 232
+        }
+      ],
+      "overflow": false,
+      "width": 1366
+    },
+    {
+      "cards": [
+        {
+          "height": 113,
+          "width": 343
+        },
+        {
+          "height": 92,
+          "width": 343
+        },
+        {
+          "height": 134,
+          "width": 343
+        },
+        {
+          "height": 113,
+          "width": 343
+        },
+        {
+          "height": 155,
+          "width": 343
+        }
+      ],
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "cards": [
+        {
+          "height": 140.1875,
+          "width": 273
+        },
+        {
+          "height": 113,
+          "width": 273
+        },
+        {
+          "height": 155,
+          "width": 273
+        },
+        {
+          "height": 134,
+          "width": 273
+        },
+        {
+          "height": 155,
+          "width": 273
+        }
+      ],
+      "overflow": false,
+      "width": 320
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+from pathlib import Path
+import hashlib,shutil,subprocess
+b=Path('/var/www/gosti/releases/20260925-2/.next/standalone');c=Path('/etc/nginx/sites-available/gosti');backup=Path('/var/www/gosti/backups/20261030-business-features')
+assert hashlib.sha256(c.read_bytes()).hexdigest()=='370495298ddd87bfa1a4565cb1572736146200230f1c5c678743b0e9c7cd9563'
+assert not backup.exists();backup.mkdir();shutil.copy2(c,backup/'nginx.conf')
+pre='html'+':not(#client-letter-20261029)'*12+' body:has(#business-contact) '
+css='\n@layer clientLetter{'+pre+'.rs-features-section{padding:12px 0!important;margin:12px 0!important}'+pre+'.rs-features-five{gap:10px!important;margin:0!important;grid-template-columns:repeat(5,minmax(0,1fr))!important}'+pre+'.rs-feature{display:grid!important;grid-template-columns:32px minmax(0,1fr)!important;grid-template-rows:auto 1fr!important;align-content:start!important;align-items:start!important;column-gap:10px!important;row-gap:8px!important;min-height:0!important;height:auto!important;padding:14px!important;text-align:left!important}'+pre+'.rs-feature .rs-icon-disc{grid-column:1!important;grid-row:1!important;width:32px!important;height:32px!important;margin:0!important}'+pre+'.rs-feature .rs-icon{width:22px!important;height:22px!important}'+pre+'.rs-feature h3{grid-column:2!important;grid-row:1!important;align-self:center!important;margin:0!important;font-size:21px!important;line-height:1.1!important;min-height:0!important;max-width:none!important}'+pre+'.rs-feature p{grid-column:1/-1!important;grid-row:2!important;margin:0!important;font-size:15px!important;line-height:1.4!important;max-width:none!important;min-height:0!important}@media(max-width:1023px){'+pre+'.rs-features-five{grid-template-columns:repeat(2,minmax(0,1fr))!important}'+pre+'.rs-feature:last-child{grid-column:1/-1!important}}@media(max-width:600px){'+pre+'.rs-features-five{grid-template-columns:minmax(0,1fr)!important}'+pre+'.rs-feature{padding:12px!important;row-gap:5px!important}'+pre+'.rs-feature p{grid-column:2!important}'+pre+'.rs-feature h3{font-size:21px!important}}}'
+old='1m2h-business-compact-v2-20261030.css';new='1m2h-business-features-20261030.css';f=b/'.next/static/chunks'/old;shutil.copy2(f,backup/old);(b/'.next/static/chunks'/new).write_bytes(f.read_bytes()+css.encode())
+for f in (b/'.next/server/app').rglob('page_client-reference-manifest.js'):
+ raw=f.read_bytes()
+ if old.encode()in raw:
+  d=backup/f.relative_to(b);d.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(f,d);f.write_bytes(raw.replace(old.encode(),new.encode()))
+c.write_text(c.read_text().replace(old,new));subprocess.run(['nginx','-t'],check=True);subprocess.run(['systemctl','restart','gosti'],check=True);subprocess.run(['systemctl','reload','nginx'],check=True)

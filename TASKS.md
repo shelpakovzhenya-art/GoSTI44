@@ -80,3 +80,5 @@
 - [x] 2026-10-30 phone hover: fixed inherited SVG translation/clipping on production; CSSOM/computed styles/API verified. results/20261030-phone-hover/README.md
 
 - [x] 2026-10-30 business compact: corrected inconsistent colleagues/conditions/contact blocks on production,desktop1200x117.89px each;320/390 checked; CMS unchanged. results/20261030-business-compact/README.md
+
+- [x] 2026-10-30 business features: cards321.5→168.19px on production;1366/390/320 verified, text/API unchanged. results/20261030-business-features/README.md

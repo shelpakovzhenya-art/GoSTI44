@@ -202,3 +202,6 @@ Runtime2051файл/287639890байт/treeSHA01210a4ae0fc8d27460956f2b1b18c1eb10
 
 ## Командировки: новые замечания30.10.2026
 Прежняя общая гарантия соответствия референсам отозвана: клиент показал несогласованные блоки. Исправлены коллеги/условия/контакты: desktop все1200×117.89px, одинаковыеH2Cormorant26/24mobile иbodyManrope16/24, единыеpadding/background/border. Mobile320/390безoverflow, естественная высота. CMS/API/JSне менялись. CSS1m2h-business-compact-v2-20261030.css, backup /var/www/gosti/backups/20261030-business-compact. Отчёт changes/20261030-business-compact/README.md. Runtime 286835029ecef459dbc8375e057a431819404d3f55695b30c751fc6b5b7c9e71. Проверка этого исправления не доказывает весьпроект.
+
+## Преимущества командировок30.10.2026
+5карточек .rs-features-five компактнее:321.5→168.19px desktop,иконка рядом сH3,body15/21,padding14;mobile1колонка92–155px при390,320безoverflow. Тексты/API/JSсохранены. CSS1m2h-business-features-20261030.css. Backup /var/www/gosti/backups/20261030-business-features. Runtimece13ef52681fba37366416c9e0a29f4bde496c6ca4adac28d4cc8361c108ef2a. Отчёт changes/20261030-business-features/README.md.
