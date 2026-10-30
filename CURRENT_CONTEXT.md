@@ -218,3 +218,6 @@ Runtime2051файл/287639890байт/treeSHA01210a4ae0fc8d27460956f2b1b18c1eb10
 
 
 CSS1m2h-bath-gallery-guide-v2-20261030.css. Runtime194737c90df2290102ca687e813588955f67ed0dfaaa31695ffd67734ddbc7e8;APIc9ae1ba96dcfa36fef58b1e44b83d38ec40b43ae1bb08600f545a4ca52978657. Отчёт changes/20261030-bath-gallery-guide/README.md. Мобильный визуальный проход остаётся непроверенным: viewportoverrideChromeне применился.
+
+## Удаление тёмного финального блока Костромы30.10.2026
+Удалён guide-closing из2SSRкомпонентов для6подстраниц;7URL200,блоков0. На /kostroma светлый gr-plan оставлен. CMS/API/CSSне менялись. Runtimea87e6a7bfd7a368f030b5df3375378b936327d65d68ae05dac1190fd14ceafac. Отчёт changes/20261030-remove-guide-closing/README.md. Не возвращать этот фотоблок.

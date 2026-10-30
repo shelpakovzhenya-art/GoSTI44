@@ -1,0 +1,59 @@
+{
+  "checks": [
+    {
+      "url": "https://tangerin.ru/kostroma",
+      "status": 200,
+      "darkClosingCount": 0,
+      "h1": "Путеводитель по Костроме",
+      "contentCards": 3
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/gde-poest",
+      "status": 200,
+      "darkClosingCount": 0,
+      "h1": "Где поесть в Костроме: рестораны и кафе",
+      "contentCards": 5
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/dostoprimechatelnosti",
+      "status": 200,
+      "darkClosingCount": 0,
+      "h1": "Главные достопримечательности Костромы",
+      "contentCards": 5
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/muzei",
+      "status": 200,
+      "darkClosingCount": 0,
+      "h1": "Музеи Костромы: пять разных тем для поездки",
+      "contentCards": 5
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/za-odin-den",
+      "status": 200,
+      "darkClosingCount": 0,
+      "h1": "Кострома за один день: самостоятельный маршрут",
+      "contentCards": 6
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/s-detmi",
+      "status": 200,
+      "darkClosingCount": 0,
+      "h1": "Куда сходить в Костроме с детьми",
+      "contentCards": 6
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/chto-privezti",
+      "status": 200,
+      "darkClosingCount": 0,
+      "h1": "Что привезти из Костромы в подарок",
+      "contentCards": 5
+    }
+  ],
+  "runtime": {
+    "files": 2066,
+    "bytes": 295861644,
+    "treeSha256": "a87e6a7bfd7a368f030b5df3375378b936327d65d68ae05dac1190fd14ceafac"
+  },
+  "apiUnchanged": true
+}
