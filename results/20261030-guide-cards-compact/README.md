@@ -1,0 +1,3 @@
+# Карточки Костромы —30.10.2026
+Production: убраны min-height360px и auto-margin ссылок, уменьшеныpadding иотступы в guide-card на6страницах. «Что привезти»:360→218–241px. Все6страниц проверены:overflow0,тексты/ссылкисохранены. «Покупайте с расчётом на дорогу» исключён из SSRусловием по noteTitle, остальные noteблокине затронуты. Тёмный guide-closingне возвращён. API/CMS/Bnovoне менялись.
+CSS1m2h-guide-cards-compact-20261030.css. Backup /var/www/gosti/backups/20261030-guide-cards-compact.2SSR/node--check,5manifest/nginx--test. Скриншот proof/cards.png локально;verification.json содержит замеры6URL.

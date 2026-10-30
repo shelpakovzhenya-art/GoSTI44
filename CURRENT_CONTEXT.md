@@ -224,3 +224,6 @@ CSS1m2h-bath-gallery-guide-v2-20261030.css. Runtime194737c90df2290102ca687e81358
 
 ## Компактные первые блоки Костромы30.10.2026
 6подстраниц:padding24одинраз,колонки1.3:1,кнопкирядом,фотоstretch;музеи795→517px.6desktopпроверокoverflow0. CSS1m2h-guide-hero-compact-20261030.css. Runtimecad97db22793c388e7428e73ddcd163a1e90a291ec2c1422f2691907c3f01277. CMS/APIбезизменений. changes/20261030-guide-hero-compact/README.md.
+
+## Карточки Костромы30.10.2026
+6страниц:убраныmin-height360 и auto-margin ссылок;карточки218–293px по содержимому. Удалён только note «Покупайте с расчётом на дорогу» изSSR.6URLoverflow0. CSS1m2h-guide-cards-compact-20261030.css. Runtime12ed1e0a623ac7a46c06c664680545233275b79063e3f1ca2e4ee206e8433756. Отчёт changes/20261030-guide-cards-compact/README.md.
