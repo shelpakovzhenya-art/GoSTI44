@@ -230,3 +230,6 @@ CSS1m2h-bath-gallery-guide-v2-20261030.css. Runtime194737c90df2290102ca687e81358
 
 ## Бронирование30.10.2026: локальная форма
 Вместо внешнегоiframe/SDK—сервернаяформаfooter+локальныйmanagerдля2формглавной. Выбордат/гостейне ждётBnovo. ПоискполнойстраницейвпрежнийUID;dfrom/dtoDD-MM-YYYY,adults/lang.25SSRформпроверены;10–12ноября/3гостяподтвержденывBnovo,заказне создавался. SPAповторнаяпривязкаисправлена. JS3cltmr-booking-native-v2-20261030.js,CSS1m2h-booking-native-20261030.css. CMSfooter2ревизии. API17b375b3ed51446ae756445aeece9ee07d8673f7f59d0dd3e6b115e3c7ca0611. Runtimec3dbc06071f170d0da7eb81a1efafa703fc74afd2f210114340f0110edf00784. ВнешняястраницарезультатоввсёещёзависитотBnovo/сети. changes/20261030-booking-native/README.md.
+
+## Даты внутреннейформы30.10.2026
+Серверныйrootlayoutвставляетсегодня/завтраEurope/Moscow(value/min),25SSRURLпроверены;браузерзавтраки/мангал/большаякомпанияполянепустые. JSresumeвосстанавливаетпустые,неперезаписываетвведённое. JS3cltmr-booking-native-v3-20261030.js. Runtime3405829706107fc32395c9d02242ebfc12ea76735ca025b8866634555dc96b1f. CMS/CSSне менялись. changes/20261030-booking-date-defaults/README.md.

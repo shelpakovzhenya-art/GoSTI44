@@ -1,0 +1,3 @@
+# Даты формы на внутренних страницах30.10.2026
+Устранено пустое начальное значение: текущая дата/следующий день формируются сервернымlayout при рендере, Europe/Moscow;value/min уже вHTML. Не статичные датыCMS. JSresume дополнительно восстанавливает только пустые значения, не затирает выбранные.
+25URLsitemap проверены:обаvalue непустые вSSR. Chrome:завтраки,мангальнаязона,большаякомпания — поля заполнены30/31октября и соответствуютHTML. JS3cltmr-booking-native-v3-20261030.js;rootSSRточечныйhashguard/node--check;backup /var/www/gosti/backups/20261030-booking-date-defaults. CMS/CSS/BnovoUIDне менялись. Скриншотлокально proof/dates.png.

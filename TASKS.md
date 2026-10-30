@@ -94,3 +94,5 @@
 -30.10.2026: карточки6страницКостромыкомпактнее;удалёнблоксоветаодороге;production. results/20261030-guide-cards-compact/README.md.
 
 -30.10.2026: production—локальнаясервернаяформабронированиябезожиданияSDK;25URL/поискBnovoдат/гостей/SPAпроверены,беззаказа. results/20261030-booking-native/README.md.
+
+-30.10.2026: датыбронированиясерверные,25URL+3проблемныхстраницыпроверены. results/20261030-booking-date-defaults/README.md.

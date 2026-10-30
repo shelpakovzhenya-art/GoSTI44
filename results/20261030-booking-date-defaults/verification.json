@@ -1,0 +1,225 @@
+{
+  "checks": [
+    {
+      "url": "https://tangerin.ru/doma/laym",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/doma/limon",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/doma/citrus",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/dlya-bolshoy-kompanii",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/kostroma",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/gde-poest",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/dostoprimechatelnosti",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/muzei",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/za-odin-den",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/s-detmi",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/chto-privezti",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/dlya-komandirovochnyh",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/soglasie-na-obrabotku-personalnyh-dannyh",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/usloviya-bronirovaniya",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/politika-obrabotki-personalnyh-dannyh",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/kontakty",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/zavtraki",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/banya-i-kupel",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/mangalnaya-zona",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/s-detmi",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/s-pitomcami",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/pravila-prozhivaniya",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    },
+    {
+      "url": "https://tangerin.ru/dogovor-oferta",
+      "serverDates": [
+        "2026-10-30",
+        "2026-10-31"
+      ]
+    }
+  ],
+  "runtime": {
+    "files": 2072,
+    "bytes": 298500020,
+    "treeSha256": "3405829706107fc32395c9d02242ebfc12ea76735ca025b8866634555dc96b1f"
+  },
+  "browser": [
+    {
+      "dates": [
+        {
+          "serverValue": "2026-10-30",
+          "value": "2026-10-30"
+        },
+        {
+          "serverValue": "2026-10-31",
+          "value": "2026-10-31"
+        }
+      ],
+      "url": "https://tangerin.ru/vse-dlya-otdyha/zavtraki"
+    },
+    {
+      "dates": [
+        {
+          "serverValue": "2026-10-30",
+          "value": "2026-10-30"
+        },
+        {
+          "serverValue": "2026-10-31",
+          "value": "2026-10-31"
+        }
+      ],
+      "url": "https://tangerin.ru/vse-dlya-otdyha/mangalnaya-zona"
+    },
+    {
+      "dates": [
+        {
+          "serverValue": "2026-10-30",
+          "value": "2026-10-30"
+        },
+        {
+          "serverValue": "2026-10-31",
+          "value": "2026-10-31"
+        }
+      ],
+      "url": "https://tangerin.ru/dlya-bolshoy-kompanii"
+    }
+  ]
+}
