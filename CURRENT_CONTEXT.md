@@ -236,3 +236,6 @@ CSS1m2h-bath-gallery-guide-v2-20261030.css. Runtime194737c90df2290102ca687e81358
 
 ## Подписи и фото30.10.2026
 Лимон:living-wide→Зона отдыха,living-entry→Вход в гостиную. Общаяphoto-gallery12фото,добавленаПарная/images/spa-sauna.jpg.2CMSзаписи/4ревизии,API8f7da50f81e0ca07bf93c1eb2e452b33120598d5e081cfc51eb2853a0628857e. Runtimeпрежний. changes/20261030-gallery-labels-sauna/README.md.
+
+## Вёрстка бронирования30.10.2026
+footer-booking:заголовоксверху,формаполнаяширина,203–204pxdesktop;поля278.5pxбезобрезкидат.5страницпроверены. CSS1m2h-booking-layout-v2-20261030.css;≤900две/≤480однаколонка. Runtimeaf5b12465ef80e63a91d2b50b41ff1f082d2269368a5808f20b19b30657d15ec. JS/CMSпрежние. changes/20261030-booking-layout/README.md.

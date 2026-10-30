@@ -98,3 +98,5 @@
 -30.10.2026: датыбронированиясерверные,25URL+3проблемныхстраницыпроверены. results/20261030-booking-date-defaults/README.md.
 
 -30.10.2026:Лимон2подписи,Парная12мфотообщейгалереи;production. results/20261030-gallery-labels-sauna/README.md.
+
+-30.10.2026:вёрсткаобщегобронированияисправленаproduction;results/20261030-booking-layout/README.md.
