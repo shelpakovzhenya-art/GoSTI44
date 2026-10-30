@@ -205,3 +205,6 @@ Runtime2051файл/287639890байт/treeSHA01210a4ae0fc8d27460956f2b1b18c1eb10
 
 ## Преимущества командировок30.10.2026
 5карточек .rs-features-five компактнее:321.5→168.19px desktop,иконка рядом сH3,body15/21,padding14;mobile1колонка92–155px при390,320безoverflow. Тексты/API/JSсохранены. CSS1m2h-business-features-20261030.css. Backup /var/www/gosti/backups/20261030-business-features. Runtimece13ef52681fba37366416c9e0a29f4bde496c6ca4adac28d4cc8361c108ef2a. Отчёт changes/20261030-business-features/README.md.
+
+## Отступ иконок30.10.2026
+В карточках командировок исправлен box-sizing иконок:36×36 border-box,padding0,отдельнаяgridколонка и14px зазор.1366/390/320:все5 зазоров14px,overflow0,desktopвысота168.19сохранена. CSS1m2h-feature-icon-gap-20261030.css. API/JSне менялись. Отчёт changes/20261030-feature-icon-gap/README.md. Runtime1170dd7186040df4dce820dee645c2a0179513a9cfda41ab928f1ea32d27f06a.

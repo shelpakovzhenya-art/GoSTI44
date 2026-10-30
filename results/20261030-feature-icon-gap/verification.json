@@ -1,0 +1,104 @@
+{
+  "runtime": {
+    "files": 2064,
+    "links": 0,
+    "bytes": 294318405,
+    "treeSha256": "1170dd7186040df4dce820dee645c2a0179513a9cfda41ab928f1ea32d27f06a"
+  },
+  "apiUnchanged": true,
+  "measurements": [
+    {
+      "cards": [
+        {
+          "gap": 14,
+          "height": 168.1875,
+          "iconWidth": 36
+        },
+        {
+          "gap": 14,
+          "height": 168.1875,
+          "iconWidth": 36
+        },
+        {
+          "gap": 14,
+          "height": 168.1875,
+          "iconWidth": 36
+        },
+        {
+          "gap": 14,
+          "height": 168.1875,
+          "iconWidth": 36
+        },
+        {
+          "gap": 14,
+          "height": 168.1875,
+          "iconWidth": 36
+        }
+      ],
+      "overflow": false,
+      "width": 1366
+    },
+    {
+      "cards": [
+        {
+          "gap": 14,
+          "height": 109,
+          "iconWidth": 36
+        },
+        {
+          "gap": 14,
+          "height": 88,
+          "iconWidth": 36
+        },
+        {
+          "gap": 14,
+          "height": 130,
+          "iconWidth": 36
+        },
+        {
+          "gap": 14,
+          "height": 109,
+          "iconWidth": 36
+        },
+        {
+          "gap": 14,
+          "height": 151,
+          "iconWidth": 36
+        }
+      ],
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "cards": [
+        {
+          "gap": 14,
+          "height": 140.1875,
+          "iconWidth": 36
+        },
+        {
+          "gap": 14,
+          "height": 109,
+          "iconWidth": 36
+        },
+        {
+          "gap": 14,
+          "height": 151,
+          "iconWidth": 36
+        },
+        {
+          "gap": 14,
+          "height": 130,
+          "iconWidth": 36
+        },
+        {
+          "gap": 14,
+          "height": 151,
+          "iconWidth": 36
+        }
+      ],
+      "overflow": false,
+      "width": 320
+    }
+  ]
+}
