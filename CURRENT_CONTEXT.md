@@ -245,3 +245,6 @@ footer-booking:заголовоксверху,формаполнаяширина
 
 ## Плашки маршрута30.10.2026
 /kontakty .rc-transport .rc-card компактнее,значения20px500. CSS1m2h-route-cards-v2-20261030.css. Runtime2f5d97a2877b8db46b1c069abb9438fb23b0a1b531e8c79966c18ad2fee9080e. changes/20261030-route-cards/README.md.
+
+## ВК30.10.2026
+Актуальнаяссылкаhttps://vk.ru/tangerin_dom.kostroma,замененаCMSвнастройках/подвале/контактах;25URLпроверены. API168434cbf7baea66e6ced99cb2c22af32937a478ae54361dc54f29a5ff947f44. changes/20261030-vk-link/README.md.

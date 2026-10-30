@@ -104,3 +104,5 @@
 -30.10.2026:уменьшенконтактныйтелефонглавнойдо20px,production. results/20261030-contact-phone-size/README.md.
 
 -30.10.2026:уменьшены3плашкимаршрутаproduction;results/20261030-route-cards/README.md.
+
+-30.10.2026:ссылкаВКобновленавproduction,25URLпроверены;results/20261030-vk-link/README.md.
