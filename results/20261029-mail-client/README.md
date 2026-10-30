@@ -42,8 +42,11 @@ Report-Only выбран по [документации MDN](https://developer.m
 
 ## Сохранность и доказательства
 
-- 23 CMS-записи/46 ревизий;41 другая строка полностью сохранена. Изменялись только проверенные поля published/draft; неизменённые исторические пустые поля не подменялись. SQLite integrity:ok.
+- 23 CMS-записи/48 ревизий;41 другая строка полностью сохранена. Изменялись только проверенные поля published/draft; неизменённые исторические пустые поля не подменялись. SQLite integrity:ok.
 - Runtime1898файлов/274950247байт/treeSHA `c0bcc076c25dc7cceb9f9f0cabe0e95e2d550600a9a5108eb15b860df06391b7`. АктивныйCSS `1m2h-client-letter-v7-20261029.css`; JScommon/home `3cltmr-client-letter-v2-20261029.js` / `1iyslc2xp3jm8-client-letter-v2-20261029.js`.
 - Backup `/var/www/gosti/backups/20261029-mail-client`:БД, исходные изменённые runtime-файлы, nginx; отдельные followupкопии кадрирования/мобильного меню. Gostiactive, nginxconfigurationtest прошёл.
 - Локальные доказательства: `production-http.json`, `technical-checks.json`, `image-optimization.json`, `css-transfer.json`, `proof/browser-checks.json`, `proof/company-desktop.png`. Полный снимок/API и вложения в Git не публикуются.
 - Не закрыты внешней проверкой: свежий PageSpeed, реальныеSafari/Android, контрольная бронь/PMS/уведомления, состояние кабинетов поисковиков. Это ограничения приёмки, а не подтверждение дефектов.
+
+
+30.10.2026: финальная сверка фото «Лимона»: подпись первого фото уточнена до «Спальня с двуспальной кроватью». Только images[0].alt в published/draft, 2 дополнительные ревизии;63 другие строки сохранены. API и HTML https://tangerin.ru/doma/limon проверены, ссылка ОК присутствует. Runtime не менялся. Backup: /var/www/gosti/backups/20261029-mail-client/caption-before-20261030.json.

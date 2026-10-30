@@ -78,7 +78,7 @@ for key in ['lime','lemon','citrus']:
   new=old
   if 'twin' in src:new='Спальня с двумя кроватями'
   elif 'bedroom-window' in src:new='Спальня с двуспальной кроватью'
-  elif 'bedroom-wide' in src and key=='lemon':new='Спальня с двуспальной кроватью и диваном'
+  elif 'bedroom-wide' in src and key=='lemon':new='Спальня с двуспальной кроватью'
   elif any(t in src for t in ['kitchen-detail','kitchen-sofa','kitchen-wide']):new='Обеденная зона'
   elif 'living' in src:new='Гостиная'
   image['alt']=new
