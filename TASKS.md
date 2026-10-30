@@ -74,3 +74,5 @@
 
 - [x] 2026-10-30 technical implementation: responsive images133/21, hero/video, HTTP2, CSS, accessibility100,25URL/26viewport QA, GSCsitemap success25. Production/local SHA verified. User excludes test booking and will test phones. LCP5.8→4.6s devtools; target2.5s not reached. Yandex sitemap read-only at service. results/20261030-technical-completion/README.md
 `n- [x] 2026-10-30 remove video control: deleted Pause/Watch button SSR+CSR on production;390/1366/SSR verified. Background autoplay restored; CMS unchanged. results/20261030-remove-video-button/README.md
+
+- [x] 2026-10-30 contact row:5 icons/labels aligned on production,320/390/1366 verified; CMS/JS unchanged. results/20261030-contact-row/README.md

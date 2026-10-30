@@ -1,0 +1,16 @@
+{
+  "runtime": {
+    "files": 2058,
+    "links": 0,
+    "bytes": 290396836,
+    "treeSha256": "264c141fe8de30e9e6b9821b9b65360da78bc598a49816cbd8880ae09e9e7434"
+  },
+  "widths": [
+    320,
+    390,
+    1366
+  ],
+  "sameIconTop": true,
+  "overflow": false,
+  "apiUnchanged": true
+}

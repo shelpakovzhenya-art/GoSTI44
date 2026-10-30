@@ -193,3 +193,6 @@ Runtime2051файл/287639890байт/treeSHA01210a4ae0fc8d27460956f2b1b18c1eb10
 
 ## Удаление кнопки видео30.10.2026 — последнее изменение
 По повторному требованию пользователя удалена hero-video-toggle из SSR/CSR. НЕ возвращать «Пауза»/«Смотреть видео». Фоновый мобильный автозапуск после load восстановлен; прежние метрики с выключенным autoplay не актуальны. Chrome390/1366/SSR:кнопки0,overflow0; API/CMS/CSS/Nginx/Bnovo неизменны. JS1iyslc2xp3jm8-no-video-control-20261030.js. Runtime2052/287695333/tree90d2335d9aa1cbaa5c118e19a0766380675243f9c3f90557dcca19e4b545bbbb. Backup /var/www/gosti/backups/20261030-remove-video-button. Отчёт changes/20261030-remove-video-button/README.md.
+
+## Контактный ряд30.10.2026
+На главной .contact-actions все5 круглых кнопок/подписей выровнены в один ряд, включая Позвонить.54px/44px≤359.320/390/1366: одинаковыйtop/overflow0. CSS1m2h-contact-row-v3-20261030.css иhome-only-contact-row-v3-20261030.css, manifest/Nginxссылки обновлены. API/CMS/JS/Bnovo прежние. Отчёт changes/20261030-contact-row/README.md. Runtime 264c141fe8de30e9e6b9821b9b65360da78bc598a49816cbd8880ae09e9e7434.
