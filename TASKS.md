@@ -84,3 +84,5 @@
 - [x] 2026-10-30 business features: cards321.5→168.19px on production;1366/390/320 verified, text/API unchanged. results/20261030-business-features/README.md
 
 - [x] 2026-10-30 feature icon spacing:36px border-box and14px measured gap on1366/390/320; production verified. results/20261030-feature-icon-gap/README.md
+
+-30.10.2026: production — компактная баня/запятая,39подписей галерей безобрезки,7H1Костромы,выделение цели рекомендаций. results/20261030-bath-gallery-guide/README.md.

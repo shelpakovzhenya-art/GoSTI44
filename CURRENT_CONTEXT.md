@@ -208,3 +208,13 @@ Runtime2051файл/287639890байт/treeSHA01210a4ae0fc8d27460956f2b1b18c1eb10
 
 ## Отступ иконок30.10.2026
 В карточках командировок исправлен box-sizing иконок:36×36 border-box,padding0,отдельнаяgridколонка и14px зазор.1366/390/320:все5 зазоров14px,overflow0,desktopвысота168.19сохранена. CSS1m2h-feature-icon-gap-20261030.css. API/JSне менялись. Отчёт changes/20261030-feature-icon-gap/README.md. Runtime1170dd7186040df4dce820dee645c2a0179513a9cfda41ab928f1ea32d27f06a.
+
+## Баня/галереи/Кострома30.10.2026
+ https://tangerin.ru/:
+- /vse-dlya-otdyha/banya-i-kupel: компактная карточка по приложению5 исходного письма;1040px, высота532→411px.4фото/тариф7700/3часа/6гостей сохранены. Просмотр фото1→2 проверен. В опубликованной и черновой версиях удалена запятая «баню, и»;2ревизии, точечныйbackup.
+- /doma/laym,/doma/limon,/doma/citrus: снята фиксированная высота подписей. Проверены10/15/14подписей, обрезанных0.
+- /kostroma и6подстраниц: единыйH1Cormorant500,56px;CSSmobile40px. Все7страниц проверены.
+- «Смотреть рекомендации»: существующая прокрутка работала; добавлено видимое выделение целевого блока и scroll-margin. Проверено focus=guide-recommendations,scrollY342,targetTop240,без#вURL.
+
+
+CSS1m2h-bath-gallery-guide-v2-20261030.css. Runtime194737c90df2290102ca687e813588955f67ed0dfaaa31695ffd67734ddbc7e8;APIc9ae1ba96dcfa36fef58b1e44b83d38ec40b43ae1bb08600f545a4ca52978657. Отчёт changes/20261030-bath-gallery-guide/README.md. Мобильный визуальный проход остаётся непроверенным: viewportoverrideChromeне применился.

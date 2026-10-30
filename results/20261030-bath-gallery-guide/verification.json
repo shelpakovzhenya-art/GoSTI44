@@ -1,0 +1,99 @@
+{
+  "runtime": {
+    "files": 2066,
+    "bytes": 295863238,
+    "treeSha256": "194737c90df2290102ca687e813588955f67ed0dfaaa31695ffd67734ddbc7e8"
+  },
+  "apiSha256": "c9ae1ba96dcfa36fef58b1e44b83d38ec40b43ae1bb08600f545a4ca52978657",
+  "checks": [
+    {
+      "captions": 14,
+      "clipped": 0,
+      "font": "500 56px / 61.6px \"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif",
+      "h1": "Цитрус",
+      "overflow": 0,
+      "path": "/doma/citrus"
+    },
+    {
+      "captions": 0,
+      "clipped": 0,
+      "font": "500 56px / 61.6px \"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif",
+      "h1": "Путеводительпо Костроме",
+      "overflow": 0,
+      "path": "/kostroma"
+    },
+    {
+      "captions": 0,
+      "clipped": 0,
+      "font": "500 56px / 61.6px \"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif",
+      "h1": "Где поесть в Костроме: рестораны и кафе",
+      "overflow": 0,
+      "path": "/kostroma/gde-poest"
+    },
+    {
+      "captions": 0,
+      "clipped": 0,
+      "font": "500 56px / 61.6px \"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif",
+      "h1": "Главные достопримечательности Костромы",
+      "overflow": 0,
+      "path": "/kostroma/dostoprimechatelnosti"
+    },
+    {
+      "captions": 0,
+      "clipped": 0,
+      "font": "500 56px / 61.6px \"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif",
+      "h1": "Музеи Костромы: пять разных тем для поездки",
+      "overflow": 0,
+      "path": "/kostroma/muzei"
+    },
+    {
+      "captions": 0,
+      "clipped": 0,
+      "font": "500 56px / 61.6px \"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif",
+      "h1": "Кострома за один день: самостоятельный маршрут",
+      "overflow": 0,
+      "path": "/kostroma/za-odin-den"
+    },
+    {
+      "captions": 0,
+      "clipped": 0,
+      "font": "500 56px / 61.6px \"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif",
+      "h1": "Куда сходить в Костроме с детьми",
+      "overflow": 0,
+      "path": "/kostroma/s-detmi"
+    },
+    {
+      "captions": 0,
+      "clipped": 0,
+      "font": "500 56px / 61.6px \"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif",
+      "h1": "Что привезти из Костромы в подарок",
+      "overflow": 0,
+      "path": "/kostroma/chto-privezti"
+    },
+    {
+      "captions": 10,
+      "clipped": 0,
+      "overflow": 0,
+      "path": "/doma/laym"
+    },
+    {
+      "captions": 15,
+      "clipped": 0,
+      "overflow": 0,
+      "path": "/doma/limon"
+    }
+  ],
+  "bathDesktop": {
+    "beforeHeight": 532.1875,
+    "afterHeight": 411.1875,
+    "photos": 4,
+    "viewerNextVerified": true
+  },
+  "guideButton": {
+    "focus": "guide-recommendations",
+    "scrollY": 342,
+    "targetViewportTop": 240,
+    "urlHash": ""
+  },
+  "mobileLimitation": "Chrome viewport override returned success but actual viewport remained1920; no mobile browser pass claimed."
+}
