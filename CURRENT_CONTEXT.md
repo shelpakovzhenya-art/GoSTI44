@@ -227,3 +227,6 @@ CSS1m2h-bath-gallery-guide-v2-20261030.css. Runtime194737c90df2290102ca687e81358
 
 ## Карточки Костромы30.10.2026
 6страниц:убраныmin-height360 и auto-margin ссылок;карточки218–293px по содержимому. Удалён только note «Покупайте с расчётом на дорогу» изSSR.6URLoverflow0. CSS1m2h-guide-cards-compact-20261030.css. Runtime12ed1e0a623ac7a46c06c664680545233275b79063e3f1ca2e4ee206e8433756. Отчёт changes/20261030-guide-cards-compact/README.md.
+
+## Бронирование30.10.2026: локальная форма
+Вместо внешнегоiframe/SDK—сервернаяформаfooter+локальныйmanagerдля2формглавной. Выбордат/гостейне ждётBnovo. ПоискполнойстраницейвпрежнийUID;dfrom/dtoDD-MM-YYYY,adults/lang.25SSRформпроверены;10–12ноября/3гостяподтвержденывBnovo,заказне создавался. SPAповторнаяпривязкаисправлена. JS3cltmr-booking-native-v2-20261030.js,CSS1m2h-booking-native-20261030.css. CMSfooter2ревизии. API17b375b3ed51446ae756445aeece9ee07d8673f7f59d0dd3e6b115e3c7ca0611. Runtimec3dbc06071f170d0da7eb81a1efafa703fc74afd2f210114340f0110edf00784. ВнешняястраницарезультатоввсёещёзависитотBnovo/сети. changes/20261030-booking-native/README.md.

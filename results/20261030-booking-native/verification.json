@@ -1,0 +1,173 @@
+{
+  "checks": [
+    {
+      "url": "https://tangerin.ru/doma/laym",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/doma/limon",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/doma/citrus",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/dlya-bolshoy-kompanii",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/kostroma",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/gde-poest",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/dostoprimechatelnosti",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/muzei",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/za-odin-den",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/s-detmi",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/kostroma/chto-privezti",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/dlya-komandirovochnyh",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/soglasie-na-obrabotku-personalnyh-dannyh",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/usloviya-bronirovaniya",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/politika-obrabotki-personalnyh-dannyh",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/kontakty",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/zavtraki",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/banya-i-kupel",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/mangalnaya-zona",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/s-detmi",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/vse-dlya-otdyha/s-pitomcami",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/pravila-prozhivaniya",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    },
+    {
+      "url": "https://tangerin.ru/dogovor-oferta",
+      "status": 200,
+      "serverRenderedForm": true,
+      "inputs": 2
+    }
+  ],
+  "runtime": {
+    "files": 2071,
+    "bytes": 298416653,
+    "treeSha256": "c3dbc06071f170d0da7eb81a1efafa703fc74afd2f210114340f0110edf00784"
+  },
+  "apiSha256": "17b375b3ed51446ae756445aeece9ee07d8673f7f59d0dd3e6b115e3c7ca0611",
+  "liveSearch": {
+    "arrival": "2026-11-10",
+    "departure": "2026-11-12",
+    "guests": 3,
+    "bnovoResultsConfirmed": true,
+    "bookingCreated": false
+  },
+  "home": {
+    "activeNativeForms": 2,
+    "vendorSDKRequests": 0
+  },
+  "limitations": "External Bnovo results availability still depends on Bnovo/network; local form no longer depends on its SDK or iframe.",
+  "spaHomeToHouse": "ready, populated dates, native form"
+}

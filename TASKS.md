@@ -92,3 +92,5 @@
 -30.10.2026: первые блокиКостромыкомпактнее,production;results/20261030-guide-hero-compact/README.md.
 
 -30.10.2026: карточки6страницКостромыкомпактнее;удалёнблоксоветаодороге;production. results/20261030-guide-cards-compact/README.md.
+
+-30.10.2026: production—локальнаясервернаяформабронированиябезожиданияSDK;25URL/поискBnovoдат/гостей/SPAпроверены,беззаказа. results/20261030-booking-native/README.md.
