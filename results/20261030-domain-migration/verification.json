@@ -1,0 +1,168 @@
+{
+  "checked_at": "2026-10-30T14:16:58.174467+00:00",
+  "method": "curl --resolve to production IP; TLS validation enabled; DNS separately checked",
+  "checks": [
+    {
+      "url": "http://gostevoidom44.ru/",
+      "status": 301,
+      "location": "https://tangerin.ru/",
+      "pass_check": true
+    },
+    {
+      "url": "http://gostevoidom44.ru/page26164900.html?utm_source=migration-check",
+      "status": 301,
+      "location": "https://tangerin.ru/?utm_source=migration-check",
+      "pass_check": true
+    },
+    {
+      "url": "http://gostevoidom44.ru/page26590216.html",
+      "status": 410,
+      "location": null,
+      "pass_check": true
+    },
+    {
+      "url": "http://gostevoidom44.ru/migration-check-not-found",
+      "status": 404,
+      "location": null,
+      "pass_check": true
+    },
+    {
+      "url": "http://gostevoidom44.ru/robots.txt",
+      "status": 200,
+      "location": null,
+      "pass_check": true
+    },
+    {
+      "url": "http://gostevoidom44.ru/sitemap.xml",
+      "status": 301,
+      "location": "https://tangerin.ru/sitemap.xml",
+      "pass_check": true
+    },
+    {
+      "url": "https://gostevoidom44.ru/",
+      "status": 301,
+      "location": "https://tangerin.ru/",
+      "pass_check": true
+    },
+    {
+      "url": "https://gostevoidom44.ru/page26164900.html?utm_source=migration-check",
+      "status": 301,
+      "location": "https://tangerin.ru/?utm_source=migration-check",
+      "pass_check": true
+    },
+    {
+      "url": "https://gostevoidom44.ru/page26590216.html",
+      "status": 410,
+      "location": null,
+      "pass_check": true
+    },
+    {
+      "url": "https://gostevoidom44.ru/migration-check-not-found",
+      "status": 404,
+      "location": null,
+      "pass_check": true
+    },
+    {
+      "url": "https://gostevoidom44.ru/robots.txt",
+      "status": 200,
+      "location": null,
+      "pass_check": true
+    },
+    {
+      "url": "https://gostevoidom44.ru/sitemap.xml",
+      "status": 301,
+      "location": "https://tangerin.ru/sitemap.xml",
+      "pass_check": true
+    },
+    {
+      "url": "http://www.gostevoidom44.ru/",
+      "status": 301,
+      "location": "https://tangerin.ru/",
+      "pass_check": true
+    },
+    {
+      "url": "http://www.gostevoidom44.ru/page26164900.html?utm_source=migration-check",
+      "status": 301,
+      "location": "https://tangerin.ru/?utm_source=migration-check",
+      "pass_check": true
+    },
+    {
+      "url": "http://www.gostevoidom44.ru/page26590216.html",
+      "status": 410,
+      "location": null,
+      "pass_check": true
+    },
+    {
+      "url": "http://www.gostevoidom44.ru/migration-check-not-found",
+      "status": 404,
+      "location": null,
+      "pass_check": true
+    },
+    {
+      "url": "http://www.gostevoidom44.ru/robots.txt",
+      "status": 200,
+      "location": null,
+      "pass_check": true
+    },
+    {
+      "url": "http://www.gostevoidom44.ru/sitemap.xml",
+      "status": 301,
+      "location": "https://tangerin.ru/sitemap.xml",
+      "pass_check": true
+    },
+    {
+      "url": "https://www.gostevoidom44.ru/",
+      "status": 301,
+      "location": "https://tangerin.ru/",
+      "pass_check": true
+    },
+    {
+      "url": "https://www.gostevoidom44.ru/page26164900.html?utm_source=migration-check",
+      "status": 301,
+      "location": "https://tangerin.ru/?utm_source=migration-check",
+      "pass_check": true
+    },
+    {
+      "url": "https://www.gostevoidom44.ru/page26590216.html",
+      "status": 410,
+      "location": null,
+      "pass_check": true
+    },
+    {
+      "url": "https://www.gostevoidom44.ru/migration-check-not-found",
+      "status": 404,
+      "location": null,
+      "pass_check": true
+    },
+    {
+      "url": "https://www.gostevoidom44.ru/robots.txt",
+      "status": 200,
+      "location": null,
+      "pass_check": true
+    },
+    {
+      "url": "https://www.gostevoidom44.ru/sitemap.xml",
+      "status": 301,
+      "location": "https://tangerin.ru/sitemap.xml",
+      "pass_check": true
+    }
+  ],
+  "dns": {
+    "gostevoidom44.ru": [
+      {
+        "name": "gostevoidom44.ru.",
+        "type": 1,
+        "TTL": 21600,
+        "data": "186.246.50.205"
+      }
+    ],
+    "www.gostevoidom44.ru": [
+      {
+        "name": "www.gostevoidom44.ru.",
+        "type": 1,
+        "TTL": 21600,
+        "data": "186.246.50.205"
+      }
+    ]
+  }
+}

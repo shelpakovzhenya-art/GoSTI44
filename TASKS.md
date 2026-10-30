@@ -106,3 +106,5 @@
 -30.10.2026:уменьшены3плашкимаршрутаproduction;results/20261030-route-cards/README.md.
 
 -30.10.2026:ссылкаВКобновленавproduction,25URLпроверены;results/20261030-vk-link/README.md.
+
+- 30.10.2026: настроены301 gostevoidom44.ru→tangerin.ru, DNS/HTTPS/автопродление/robots/sitemap/legacy anchors;24проверкипройдены. Bnovo оформлен подТанжерин,публичные3дома/адрес/логотип/цвета/приветствие. DNS-кэши ещё распространяются; GSC/Yandex move не отправлен. results/20261030-domain-migration/README.md.
