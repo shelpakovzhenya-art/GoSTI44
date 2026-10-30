@@ -1,0 +1,83 @@
+{
+  "runtime": {
+    "files": 2062,
+    "links": 0,
+    "bytes": 292806092,
+    "treeSha256": "286835029ecef459dbc8375e057a431819404d3f55695b30c751fc6b5b7c9e71"
+  },
+  "apiUnchanged": true,
+  "measurements": [
+    {
+      "blocks": [
+        {
+          "font": "500 26px / 29.9px \"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif",
+          "height": 117.890625,
+          "sel": ".rs-colleagues",
+          "width": 1200
+        },
+        {
+          "font": "500 26px / 29.9px \"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif",
+          "height": 117.890625,
+          "sel": ".rs-business-conditions",
+          "width": 1200
+        },
+        {
+          "font": "500 26px / 29.9px \"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif",
+          "height": 117.890625,
+          "sel": "#business-contact",
+          "width": 1200
+        }
+      ],
+      "overflow": false,
+      "width": 1366
+    },
+    {
+      "blocks": [
+        {
+          "font": "500 24px / 27.6px \"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif",
+          "height": 200,
+          "sel": ".rs-colleagues",
+          "width": 343
+        },
+        {
+          "font": "500 24px / 27.6px \"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif",
+          "height": 237.59375,
+          "sel": ".rs-business-conditions",
+          "width": 343
+        },
+        {
+          "font": "500 24px / 27.6px \"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif",
+          "height": 274.6875,
+          "sel": "#business-contact",
+          "width": 343
+        }
+      ],
+      "overflow": false,
+      "width": 390
+    },
+    {
+      "blocks": [
+        {
+          "font": "500 24px / 27.6px \"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif",
+          "height": 245.1875,
+          "sel": ".rs-colleagues",
+          "width": 273
+        },
+        {
+          "font": "500 24px / 27.6px \"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif",
+          "height": 289.1875,
+          "sel": ".rs-business-conditions",
+          "width": 273
+        },
+        {
+          "font": "500 24px / 27.6px \"Cormorant Garamond\", \"Cormorant Garamond Fallback\", Georgia, serif",
+          "height": 353.875,
+          "sel": "#business-contact",
+          "width": 273
+        }
+      ],
+      "overflow": false,
+      "width": 320
+    }
+  ]
+}

@@ -199,3 +199,6 @@ Runtime2051файл/287639890байт/treeSHA01210a4ae0fc8d27460956f2b1b18c1eb10
 
 ## Hover Позвонить30.10.2026
 Убран унаследованный сдвигSVG/обрезка/декоративныйbefore только .contact-actions > .button.button-dark. Hover=лёгкое затемнение без движения; ряд/подписи сохранены. CSS1m2h-phone-hover-20261030.css иhome-only-phone-hover-20261030.css; API/JS/CMS прежние. Отчёт changes/20261030-phone-hover/README.md. Runtime 79a7c0c68b81ecbab0d3043d0d6c38e0acf319ad5c951abbac510c0245ee5dd4.
+
+## Командировки: новые замечания30.10.2026
+Прежняя общая гарантия соответствия референсам отозвана: клиент показал несогласованные блоки. Исправлены коллеги/условия/контакты: desktop все1200×117.89px, одинаковыеH2Cormorant26/24mobile иbodyManrope16/24, единыеpadding/background/border. Mobile320/390безoverflow, естественная высота. CMS/API/JSне менялись. CSS1m2h-business-compact-v2-20261030.css, backup /var/www/gosti/backups/20261030-business-compact. Отчёт changes/20261030-business-compact/README.md. Runtime 286835029ecef459dbc8375e057a431819404d3f55695b30c751fc6b5b7c9e71. Проверка этого исправления не доказывает весьпроект.
