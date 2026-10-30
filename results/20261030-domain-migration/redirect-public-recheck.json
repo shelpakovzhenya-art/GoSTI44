@@ -1,0 +1,42 @@
+[
+  {
+    "url": "http://gostevoidom44.ru/",
+    "result": "200 1 https://tangerin.ru/",
+    "error": ""
+  },
+  {
+    "url": "https://gostevoidom44.ru/",
+    "result": "200 1 https://tangerin.ru/",
+    "error": ""
+  },
+  {
+    "url": "http://www.gostevoidom44.ru/",
+    "result": "200 1 https://tangerin.ru/",
+    "error": ""
+  },
+  {
+    "url": "https://www.gostevoidom44.ru/",
+    "result": "200 1 https://tangerin.ru/",
+    "error": ""
+  },
+  {
+    "url": "https://gostevoidom44.ru/page26164900.html?utm_source=check",
+    "result": "200 1 https://tangerin.ru/?utm_source=check",
+    "error": ""
+  },
+  {
+    "url": "https://gostevoidom44.ru/page26590216.html",
+    "result": "410 0 https://gostevoidom44.ru/page26590216.html",
+    "error": ""
+  },
+  {
+    "url": "https://gostevoidom44.ru/robots.txt",
+    "result": "200 0 https://gostevoidom44.ru/robots.txt",
+    "error": ""
+  },
+  {
+    "url": "https://gostevoidom44.ru/sitemap.xml",
+    "result": "200 1 https://tangerin.ru/sitemap.xml",
+    "error": ""
+  }
+]
