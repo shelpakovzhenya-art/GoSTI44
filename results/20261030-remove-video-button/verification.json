@@ -1,0 +1,16 @@
+{
+  "runtime": {
+    "files": 2052,
+    "links": 0,
+    "bytes": 287695333,
+    "treeSha256": "90d2335d9aa1cbaa5c118e19a0766380675243f9c3f90557dcca19e4b545bbbb"
+  },
+  "buttonCountSSR": 0,
+  "browserWidths": [
+    390,
+    1366
+  ],
+  "buttonCountBrowser": 0,
+  "overflow": false,
+  "apiUnchanged": true
+}
