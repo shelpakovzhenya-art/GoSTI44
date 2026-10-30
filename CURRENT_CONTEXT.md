@@ -242,3 +242,6 @@ footer-booking:заголовоксверху,формаполнаяширина
 
 ## Телефон30.10.2026
 .contact-phone20px/28px600. CSS1m2h-contact-phone-20261030.css+home-only-contact-phone-20261030.css. Runtimed2028e5ccdff24d18f2e9ab095f54c45b821c74effbc2626ccf65506a4c3340a. changes/20261030-contact-phone-size/README.md.
+
+## Плашки маршрута30.10.2026
+/kontakty .rc-transport .rc-card компактнее,значения20px500. CSS1m2h-route-cards-v2-20261030.css. Runtime2f5d97a2877b8db46b1c069abb9438fb23b0a1b531e8c79966c18ad2fee9080e. changes/20261030-route-cards/README.md.
